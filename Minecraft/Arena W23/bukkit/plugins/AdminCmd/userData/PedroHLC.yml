@@ -1,0 +1,66 @@
+﻿infos:
+  lastLoc:
+    world: world_arena
+    x: 29.568345702381237
+    y: 5.0
+    z: -4.8010498019411845
+    yaw: -184.51283
+    pitch: 26.734932
+  presentation: ''
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+  firstTime: false
+  last-ip: 192.168.0.3
+  immunityLvl: 1
+  lastDisconnect: 1373205484102
+  lastConnection: 1373203764806
+  totalTime: 216040734
+home:
+  world:
+    world: world
+    x: -216.07019686623067
+    y: 64.0
+    z: 278.09709564550013
+    yaw: 95.26135
+    pitch: 12.150008
+  spawn:
+    world: world
+    x: -224.2084884830707
+    y: 64.0
+    z: 239.3048073654063
+    yaw: 0.011199951
+    pitch: -0.6000005
+  casa:
+    world: world
+    x: -737.8653859529429
+    y: 71.0
+    z: 180.77138705419432
+    yaw: -235.84145
+    pitch: 9.124142
+  stad_fora:
+    world: world_stadium
+    x: 178.60485378696933
+    y: 2.0
+    z: 933.7583626590942
+    yaw: 156.90085
+    pitch: 12.299992
+  stad_dentro:
+    world: world_stadium
+    x: 178.44886280538023
+    y: 3.0
+    z: 924.3425167754837
+    yaw: 199.80066
+    pitch: 23.849983
+  BAU:
+    world: world
+    x: -685.0761549869065
+    y: 26.0
+    z: 752.7542167046372
+    yaw: 176.25487
+    pitch: 26.550014
+powers:
+  super_breaker: true
+  tp_request: true
+  eternal: 20
+  fly: 1.75
+  spymsg: true
+kitsUse: {}

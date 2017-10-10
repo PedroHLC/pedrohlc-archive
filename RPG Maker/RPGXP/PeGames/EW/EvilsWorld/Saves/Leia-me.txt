@@ -1,0 +1,15 @@
+#####################
+#     IMPORTANTE    #
+#####################
+Se você esta vendo esta pasta,
+provavelmente pode estar planejando
+editar os nomes dos arquivos para
+ganhar vantagens no jogo. Aviso
+que cada arquivo tem gravado
+um código que é único, caso edite
+o nome do arquivo, o jogo irá
+deletar esse arquivo pois irá considerar
+como uma tentativa de hack.
+
+Atenciosamente
+Administração

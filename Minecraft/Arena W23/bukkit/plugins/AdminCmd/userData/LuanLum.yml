@@ -1,0 +1,146 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: 181.22809855844557
+    y: 66.0
+    z: -710.2740480217255
+    yaw: 230.9414
+    pitch: 30.813206
+  presentation: ''
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+  firstTime: false
+  last-ip: 177.126.54.190
+  immunityLvl: 1
+  lastDisconnect: 1360972113541
+  lastConnection: 1360972158911
+  totalTime: 358894194
+home:
+  '1':
+    world: world
+    x: -234.6081635941007
+    y: 64.0
+    z: 276.4188205678288
+    yaw: -153.41565
+    pitch: 37.307926
+  farm:
+    world: world
+    x: -172.38410425919506
+    y: 69.0
+    z: 329.08256866417514
+    yaw: -80.717255
+    pitch: 15.335418
+  s:
+    world: world
+    x: -266.7384015934956
+    y: 67.0
+    z: 141.05997265246097
+    yaw: 4.2561035
+    pitch: 90.0
+  Mina:
+    world: world
+    x: -208.94813191988794
+    y: 13.0
+    z: 306.8488709474681
+    yaw: 42.09778
+    pitch: 11.365836
+  spawn:
+    world: world
+    x: -224.40738829452974
+    y: 64.0
+    z: 248.0510833392791
+    yaw: 359.24127
+    pitch: 48.11687
+  Snow:
+    world: world
+    x: 25.88460757289515
+    y: 64.0
+    z: 429.8834310715026
+    yaw: 256.51392
+    pitch: 9.771388
+  lava:
+    world: world
+    x: -1331.7337774230432
+    y: 71.0
+    z: 106.5842929054284
+    yaw: -191.84357
+    pitch: 25.790466
+  jungle:
+    world: world
+    x: -1743.6919567168864
+    y: 70.0
+    z: -254.11688298038484
+    yaw: -196.18298
+    pitch: 34.089596
+  neve:
+    world: world
+    x: 179.37161580278476
+    y: 65.875
+    z: -706.892315531916
+    yaw: 304.6692
+    pitch: 40.0292
+  buraco:
+    world: world
+    x: -1397.5132335581484
+    y: 63.0
+    z: -2243.2724592537634
+    yaw: 352.47876
+    pitch: 10.127996
+  buraco2:
+    world: world
+    x: -1230.7669959708883
+    y: 65.0
+    z: -2381.7006431889604
+    yaw: 299.64185
+    pitch: 42.69122
+  deserto:
+    world: world
+    x: -905.4094454133663
+    y: 64.0
+    z: -2529.1440654213984
+    yaw: 252.89868
+    pitch: 12.661795
+  everest:
+    world: world
+    x: -414.94527746177107
+    y: 97.0
+    z: -2847.035050263311
+    yaw: 115.423584
+    pitch: 57.43689
+  Precipício:
+    world: world
+    x: -472.64665776860215
+    y: 64.0
+    z: -3133.9060413264265
+    yaw: 9.163574
+    pitch: 27.331259
+  Precipicio:
+    world: world
+    x: -472.64665776860215
+    y: 64.0
+    z: -3133.9060413264265
+    yaw: 9.163574
+    pitch: 27.331259
+  bau:
+    world: world
+    x: 296.7630856652209
+    y: 63.0
+    z: -429.1086648297825
+    yaw: 4.534668
+    pitch: 34.609505
+  explorando:
+    world: world
+    x: 173.71428742248042
+    y: 63.0
+    z: -763.1174585112498
+    yaw: 180.94409
+    pitch: 1.9363202
+  shaft:
+    world: world
+    x: 145.70370159104283
+    y: 12.0
+    z: -747.2798452581158
+    yaw: 185.28564
+    pitch: 13.397198
+powers: {}
+kitsUse:
+  nb: 1360975033281

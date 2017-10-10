@@ -1,0 +1,70 @@
+#Nom : Traineur 2.0
+#Auteur, demandeur, concepteur : Fabien. (fabien_35@hotmail.com)
+#But : Les événements laissent une trainée lorsqu'ils se déplacent.
+#Mode d'emploi : "Inserer Script" : traineur id1,id2,...
+#                exemple :traineur 0,1,3,4
+#                Le nombre d'id est illimité.
+def traineur(*ids)
+  $traineur=Traineur.new(ids,150,Tone.new(0,0,0),0)
+end
+#------------------------------------
+Traineur = Struct.new("Traineur", :ids, :persistance, :tone, :blend_type)
+$traineur=Traineur.new([],150,Tone.new(0,0,0),0)
+#=============================================
+class Spriteset_Map
+  alias initialize_traineur initialize
+  alias dispose_traineur dispose
+  alias update_traineur update
+  #----------------------------------
+  def initialize
+    @traineur=Sprite.new
+    @traineur.bitmap=Bitmap.new(1,1)
+    @data_traineur=Hash.new
+    @bitmap_sav=Bitmap.new($game_map.width*32,$game_map.height*32)
+    initialize_traineur
+    @traineur=Sprite.new(@viewport1)
+    @traineur.z=10
+    @traineur.bitmap=Bitmap.new($game_map.width*32,$game_map.height*32)
+  end
+  #----------------------------------
+  def dispose
+    dispose_traineur
+    @traineur.dispose
+    @data_traineur=Hash.new
+  end
+  #---------------------------------
+  def update
+    update_traineur
+    @traineur.tone=$traineur.tone
+    @traineur.blend_type=$traineur.blend_type
+    for id in $traineur.ids
+      evt=(id==0 ? $game_player : $game_map.events[id])
+      x=evt.screen_x+$game_map.display_x/4
+      y=evt.screen_y+$game_map.display_y/4
+      tracer(id,x,y) if @data_traineur.has_key?(id)
+      @data_traineur[id]=[x,y]
+    end   
+    @bitmap_sav.blt(0,0,@traineur.bitmap,@traineur.bitmap.rect,$traineur.persistance)
+    @traineur.bitmap.clear
+    @traineur.bitmap.blt(0,0,@bitmap_sav,@bitmap_sav.rect)
+    @bitmap_sav.clear
+    @traineur.ox=$game_map.display_x/4
+    @traineur.oy=$game_map.display_y/4
+  end
+  #--------------------------------
+  def tracer(id,x,y)   
+    dx=x-@data_traineur[id][0]
+    dy=y-@data_traineur[id][1]
+    return if dx==0 and dy==0
+    d=Math.hypot(dx,dy).to_f
+    ux,uy=dx/d,dy/d
+    id-=1
+    x+=-dx-@character_sprites[id].ox
+    y+=-dy-@character_sprites[id].oy
+    d.to_i.times do
+      @traineur.bitmap.blt(x,y,@character_sprites[id].bitmap,@character_sprites[id].src_rect,200)
+      x+=ux
+      y+=uy
+    end   
+  end
+  #=========================================

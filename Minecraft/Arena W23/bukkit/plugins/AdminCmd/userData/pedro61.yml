@@ -1,0 +1,12 @@
+﻿infos:
+  lastLoc: {}
+  firstTime: false
+  last-ip: 177.3.200.84
+  immunityLvl: 1
+  lastConnection: 1360278361264
+  totalTime: 224725
+  lastDisconnect: 1360278503975
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+home: {}
+powers: {}
+kitsUse: {}

@@ -1,0 +1,745 @@
+#==============================================================================
+# Sundry Menu (Menu Diverso)
+#------------------------------------------------------------------------------
+# Criador: ->mArCeLo»QeJiNhO
+# Agradecimentos à LegendsX, por apresentar os scripts que inspiraram esse
+# Função de Confirmação de Save por rpg_advocate
+# Baseado no Alternative Menu e no Icon Menu Command, de criadores desconhecidos.
+# 08 de Setembro de 2007
+# Versão 1.5
+#==============================================================================
+# É o Menu original com algumas mudanças.
+# Acrescenta imagens dos Battlers, icones, o local e a opção de Carregar.
+# Pedido de confirmação de Save e fundo do mapa na janela de saída.
+# Para ativar esse Menu, cole o código acima do Main com qualquer nome.
+# Atenção! O Battler e o Character devem ter o mesmo nome!
+# Você pode apagar todos os comentários! Exceto os créditos! xD
+#==============================================================================
+# ERROS CONHECIDOS: (Os erros serão consertados, se possível.)
+# Se o nome da classe do personagem for muito grande, pode passar por cima do Status do personagem.
+# Pode ser incompatível com alguns scripts de Save/Load...
+# É recomendado o uso de fonte pequena ou tamanho de fonte baixo (entre 20 e 25). (Arial 24 é ideal)
+#==============================================================================
+# O QUE HÁ DE NOVO?
+# Ícone para o relógio
+# Corrigido o bug que fazia entrar no status do primeiro personagem
+#==============================================================================
+class Scene_Menu
+#--------------------------------------------------------------------------
+def initialize (menu_index = 0)
+@menu_index = menu_index
+end
+#--------------------------------------------------------------------------
+def main
+#==============================================================================
+# Definição dos Ícones
+#==============================================================================
+# Aqui são definidos os ícones que aparecerão no menu. Personalize a seu gosto! =)
+$stepsicon = "020-Accessory05" # ícone dos passos
+$goldicon = "032-Item01" # ícone do dinheiro
+$mapicon = "038-Item07" # ícone do mapa
+$itemicon = "034-Item03" # icone do item
+$skillicon = "044-Skill01" # ícone da habilidade
+$equipicon = "009-Shield01" # ícone do equipamento
+$statusicon = "040-Item09" # ícone do status
+$saveicon = "047-Skill04" # ícone de salvar
+$loadicon = "048-Skill05" # ícone de carregar
+$exiticon = "046-Skill03" # ícone de sair
+$clockicon = "036-Item05" # ícone do relógio (tempo de jogo)
+#==============================================================================
+# Os espaços dados antes da palavra são necessários para que os ícones não fiquem 'por cima' do texto.
+# Talvez você tenha que adicionar ou remover espaços entre as aspas, para adaptar o texto do menu aos ícones.
+# Por exemplo, a palavra "Habilidade" fica por baixo do ícone, mas um espaço a mais resolve isso.
+# Dependendo da fonte do texto, também pode ser necessário que você altere os espaços.
+s1 = "    " + $data_system.words.item
+s2 = "    " + $data_system.words.skill
+s3 = "    " + $data_system.words.equip
+s4 = "    " + "Status"
+s5 = "    " + "Salvar"
+s6 = "    " + "Carregar"
+s7 = "    " + "Sair"
+@command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7])
+@command_window.index = @menu_index
+@command_window.x = 0
+@command_window.y = 0
+if $game_party.actors.size == 0
+@command_window.disable_item(0)
+@command_window.disable_item(1)
+@command_window.disable_item(2)
+@command_window.disable_item(3)
+end
+if $game_system.save_disabled
+@command_window.disable_item(4)
+end
+#==============================================================================
+# Definição das Janelas do Menu
+#==============================================================================
+@playtime_window = Window_PlayTime1.new
+@playtime_window.x = 0
+@playtime_window.y = 336
+@steps_window = Window_Steps1.new
+@steps_window.x = 0
+@steps_window.y = 255
+@gold_window = Window_Gold1.new
+@gold_window.x = 0
+@gold_window.y = 416
+@status_window = Window_MenuStatus1.new
+@status_window.x = 160
+@status_window.y = 0
+@title_window = Window_Title.new
+@title_window.x = 160
+@title_window.y = 416
+#==============================================================================
+# Definição das Posições em que os Ícones serão exibidos
+#==============================================================================
+@icon_item = Sprite.new
+@icon_item.bitmap = RPG::Cache.icon($itemicon)
+@icon_item.x = 18
+@icon_item.y = 20
+@icon_item.z = 255
+@icon_skill = Sprite.new
+@icon_skill.bitmap = RPG::Cache.icon($skillicon)
+@icon_skill.x = 19
+@icon_skill.y = 52
+@icon_skill.z = 255
+@icon_equip = Sprite.new
+@icon_equip.bitmap = RPG::Cache.icon($equipicon)
+@icon_equip.x = 18
+@icon_equip.y = 84
+@icon_equip.z = 255
+@icon_status = Sprite.new
+@icon_status.bitmap = RPG::Cache.icon($statusicon)
+@icon_status.x = 18
+@icon_status.y = 116
+@icon_status.z = 255
+@icon_save = Sprite.new
+@icon_save.bitmap = RPG::Cache.icon($saveicon)
+@icon_save.x = 18
+@icon_save.y = 148
+@icon_save.z = 255
+@icon_load = Sprite.new
+@icon_load.bitmap = RPG::Cache.icon($loadicon)
+@icon_load.x = 18
+@icon_load.y = 180
+@icon_load.z = 255
+@icon_exit = Sprite.new
+@icon_exit.bitmap = RPG::Cache.icon($exiticon)
+@icon_exit.x = 19
+@icon_exit.y = 212
+@icon_exit.z = 255
+@icon_steps = Sprite.new
+@icon_steps.bitmap = RPG::Cache.icon($stepsicon)
+@icon_steps.x = 20
+@icon_steps.y = 300
+@icon_steps.z = 255
+@icon_map = Sprite.new
+@icon_map.bitmap = RPG::Cache.icon($mapicon)
+@icon_map.x = 180
+@icon_map.y = 436
+@icon_map.z = 255
+@icon_clock = Sprite.new
+@icon_clock.bitmap = RPG::Cache.icon($clockicon)
+@icon_clock.x = 20
+@icon_clock.y = 375
+@icon_clock.z = 255
+
+Graphics.transition
+loop do
+Graphics.update
+Input.update
+update
+if $scene != self
+break
+end
+end
+Graphics.freeze
+@command_window.dispose
+@playtime_window.dispose
+@gold_window.dispose
+@status_window.dispose
+@steps_window.dispose
+@icon_item.dispose
+@icon_skill.dispose
+@icon_equip.dispose
+@icon_status.dispose
+@icon_save.dispose
+@icon_load.dispose
+@icon_exit.dispose
+@icon_steps.dispose
+@icon_map.dispose
+@icon_clock.dispose
+@title_window.dispose
+
+end
+#--------------------------------------------------------------------------
+def update
+@command_window.update
+@playtime_window.update
+@gold_window.update
+@status_window.update
+@steps_window.update
+@icon_item.update
+@icon_skill.update
+@icon_equip.update
+@icon_status.update
+@icon_save.update
+@icon_load.update
+@icon_exit.update
+@icon_clock.update
+if @command_window.active
+update_command
+return
+end
+if @status_window.active
+update_status
+return
+end
+end
+#--------------------------------------------------------------------------
+def update_command
+if Input.trigger?(Input::B)
+$game_system.se_play($data_system.cancel_se)
+$scene = Scene_Map.new
+return
+end
+if Input.trigger?(Input::C)
+if $game_party.actors.size == 0 and @command_window.index < 4
+$game_system.se_play($data_system.buzzer_se)
+return
+end
+case @command_window.index
+when 0
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_Item.new
+when 1
+$game_system.se_play($data_system.decision_se)
+@command_window.active = false
+@status_window.active = true
+@status_window.index = 0
+when 2
+$game_system.se_play($data_system.decision_se)
+@command_window.active = false
+@status_window.active = true
+@status_window.index = 0
+when 3
+$game_system.se_play($data_system.decision_se)
+@command_window.active = false
+@status_window.active = true
+@status_window.index = 0
+when 4
+if $game_system.save_disabled
+$game_system.se_play($data_system.buzzer_se)
+return
+end
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_MenuSave.new
+when 5
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_MenuLoad.new
+when 6
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_MenuEnd.new
+end
+return
+end
+end
+#--------------------------------------------------------------------------
+def update_status
+if Input.trigger?(Input::B)
+$game_system.se_play($data_system.cancel_se)
+@command_window.active = true
+@status_window.active = false
+@status_window.index = -1
+return
+end
+if Input.trigger?(Input::C)
+case @command_window.index
+when 1
+if $game_party.actors[@status_window.index].restriction >= 2
+$game_system.se_play($data_system.buzzer_se)
+return
+end
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_Skill.new(@status_window.index)
+when 2
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_Equip.new(@status_window.index)
+when 3
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_Status.new(@status_window.index)
+end
+return
+end
+end
+end
+#==============================================================================
+# Janela de Status (Personagens)
+#==============================================================================
+
+class Window_MenuStatus1 < Window_Selectable
+def initialize
+super(0, 0, 480, 416) #medidas da janela de status (personagens)
+self.contents = Bitmap.new(width - 32, height - 32)
+self.contents.font.name = $fontface #fonte da janela de status
+self.contents.font.size = $fontsize #tamanho da fonte da janela de status
+refresh
+self.active = false
+self.index = -1
+end
+
+def refresh
+self.contents.clear
+@item_max = $game_party.actors.size
+for i in 0...$game_party.actors.size
+x = 64
+y = i * 90
+actor = $game_party.actors[i]
+draw_actor_face(actor, x + 200, y + 79) #coordenadas do desenho do Battler
+draw_actor_graphic(actor, x - 50, y + 80)#Coordenadas do desenho do Character
+self.contents.font.size = 18 #Fonte definida em tamanho 18 para caber o texto
+draw_actor_name(actor, x - 60, y + 4) #desenho do nome do personagem
+self.contents.font.color = system_color
+self.contents.draw_text(x - 5, y + 2, 120, 32, '-')
+self.contents.font.color = normal_color
+draw_actor_class(actor, x + 75, y + 4) #desenho do nome da classe
+draw_actor_level(actor, x + 5, y + 4) #desenho do nível
+draw_actor_state(actor, x + 135, y + 4) #desenho do status
+draw_actor_exp(actor, x - 35, y + 54) #desenho da experiência
+draw_actor_hp(actor, x - 35, y + 32) #desenho do HP
+draw_actor_sp(actor, x + 115, y + 32) #desenho do MP
+end
+end
+
+def update_cursor_rect
+if @index < 0
+self.cursor_rect.empty
+else
+self.cursor_rect.set(1, @index * 90 + 33, 26, 48)
+end
+end
+
+def draw_actor_face(actor, x, y)
+face = RPG::Cache.battler(actor.character_name, actor.character_hue)
+fw = face.width
+fh = 90 # Posição vertical do Battler.
+src_rect = Rect.new(3, -1, fw, fh)
+opacity = 255 # opacidade do desenho do Battler, de 0 a 255.
+self.contents.blt(x - fw / 23, y - fh, face, src_rect, opacity)
+end
+end
+
+#==============================================================================
+# Janela de Localização ("Title")
+#==============================================================================
+class Window_Title < Window_Base
+
+def initialize
+super(0, 0, 480, 64) #medida da janela de localização
+self.contents = Bitmap.new (width - 32, height - 32)
+self.contents.font.name = $fontface #fonte da janela de localização
+self.contents.font.size = 18 # tamanho da fonte da janela de localização
+refresh
+end
+def refresh
+self.contents.clear
+self.contents.font.color = system_color
+self.contents.font.color = normal_color
+$maps = load_data("Data/MapInfos.rxdata")
+@map_id = $game_map.map_id
+@currmap = $maps[@map_id].name
+self.contents.draw_text(40, 0, 120, 32, "Localização:") #Definição da palavra "Localização"
+self.contents.draw_text(140, 0, 820, 32, @currmap) #mapa corrente (localização)
+end
+end
+
+#==============================================================================
+# Janela do Tempo de Jogo
+#==============================================================================
+
+class Window_PlayTime1< Window_Base
+#--------------------------------------------------------------------------
+def initialize
+super(0, 0, 160, 80) # medida da janela de tempo de jogo
+self.contents = Bitmap.new(width - 32, height - 32)
+self.contents.font.name = $fontface #fonte da janela do tempo de jogo
+self.contents.font.size = $fontsize #tamanho da fonte da janela do tempo de jogo
+refresh
+end
+def refresh
+self.contents.clear
+self.contents.font.color = system_color
+self.contents.draw_text(4, -5, 120, 32, "Tempo") #Esse código define as posições da palavra "Tempo"
+@total_sec = Graphics.frame_count / Graphics.frame_rate
+hour = @total_sec / 60 / 60
+min = @total_sec / 60 % 60
+sec = @total_sec % 60
+text = sprintf("%02d:%02d:%02d", hour, min, sec)
+self.contents.font.color = normal_color
+self.contents.draw_text(30, 20, 90, 32, text, 2) #Posições do texto do tempo de jogo
+end
+def update
+super
+if Graphics.frame_count / Graphics.frame_rate != @total_sec
+refresh
+end
+end
+end
+#==============================================================================
+# Janela da Contagem dos Passos
+#==============================================================================
+
+class Window_Steps1 < Window_Base
+def initialize
+super(0, 0, 160, 81)#Medida da janela de passos
+self.contents = Bitmap.new(width - 32, height - 32)
+self.contents.font.name = $fontface #fonte da janela de passos
+self.contents.font.size = $fontsize #tamanho da fonte da janela de passos
+refresh
+end
+def refresh
+self.contents.clear
+self.contents.font.color = system_color
+self.contents.draw_text(4, -3, 120, 32, "Passos") #definida a posição da palavra "Passos"
+self.contents.font.color = normal_color
+self.contents.draw_text(30, 20, 80, 32, $game_party.steps.to_s, 2) # definida a posição dos passos contados
+end
+end 
+
+#==============================================================================
+# Janela do Dinheiro
+#==============================================================================
+
+class Window_Gold1 < Window_Base
+#--------------------------------------------------------------------------
+def initialize
+super(0, 0, 160, 64)
+self.contents = Bitmap.new(width - 32, height - 32)
+self.contents.font.name = $fontface
+self.contents.font.size = $fontsize
+refresh
+end
+#--------------------------------------------------------------------------
+def refresh
+rect = Rect.new(x, y, self.width - 32, 32)
+self.contents.fill_rect(rect, Color.new(0, 0, 0, 0))
+bitmap = RPG::Cache.icon($goldicon)
+opacity = self.contents.font.color == normal_color ? 255 : 128
+self.contents.blt(x, y + 4, bitmap, Rect.new(0, 0, 24, 24), opacity)
+cx = contents.text_size($data_system.words.gold).width
+self.contents.font.color = normal_color
+self.contents.draw_text(4, 0, 120-cx-2, 32, $game_party.gold.to_s, 2)
+self.contents.font.color = system_color
+self.contents.draw_text(124-cx, 0, cx, 32, $data_system.words.gold, 2)
+end
+end
+#==============================================================================
+# Cena de Carregar
+#==============================================================================
+
+class Scene_MenuLoad < Scene_File
+#--------------------------------------------------------------------------
+def initialize
+$game_temp = Game_Temp.new
+$game_temp.last_file_index = 0
+latest_time = Time.at(0)
+for i in 0..3
+filename = make_filename(i)
+if FileTest.exist?(filename)
+file = File.open(filename, "r")
+if file.mtime > latest_time
+latest_time = file.mtime
+$game_temp.last_file_index = i
+end
+file.close
+end
+end
+super("Carregar qual Arquivo?")
+end
+#--------------------------------------------------------------------------
+def on_decision(filename)
+unless FileTest.exist?(filename)
+$game_system.se_play($data_system.buzzer_se)
+return
+end
+$game_system.se_play($data_system.load_se)
+file = File.open(filename, "rb")
+read_save_data(file)
+file.close
+$game_system.bgm_play($game_system.playing_bgm)
+$game_system.bgs_play($game_system.playing_bgs)
+$game_map.update
+$scene = Scene_Menu.new(5)
+end
+#--------------------------------------------------------------------------
+def on_cancel
+$game_system.se_play($data_system.cancel_se)
+$scene = Scene_Menu.new(5)
+end
+#--------------------------------------------------------------------------
+def read_save_data(file)
+characters = Marshal.load(file)
+Graphics.frame_count = Marshal.load(file)
+$game_system = Marshal.load(file)
+$game_switches = Marshal.load(file)
+$game_variables = Marshal.load(file)
+$game_self_switches = Marshal.load(file)
+$game_screen = Marshal.load(file)
+$game_actors = Marshal.load(file)
+$game_party = Marshal.load(file)
+$game_troop = Marshal.load(file)
+$game_map = Marshal.load(file)
+$game_player = Marshal.load(file)
+if $game_system.magic_number != $data_system.magic_number
+$game_map.setup($game_map.map_id)
+$game_player.center($game_player.x, $game_player.y)
+end
+$game_party.refresh
+end
+end
+
+#==============================================================================
+# Menu de Saída
+#==============================================================================
+
+class Scene_MenuEnd
+#--------------------------------------------------------------------------
+def main
+@spriteset = Spriteset_Map.new
+s1 = "Tela de Título"
+s2 = "Sair do Jogo"
+s3 = "Voltar"
+@command_window = Window_Command.new(192, [s1, s2, s3])
+@command_window.x = 320 - @command_window.width / 2
+@command_window.y = 240 - @command_window.height / 2
+Graphics.transition
+loop do
+Graphics.update
+Input.update
+update
+if $scene != self
+break
+end
+end
+Graphics.freeze
+@spriteset.dispose
+@command_window.dispose
+if $scene.is_a?(Scene_Title)
+Graphics.transition
+Graphics.freeze
+end
+end
+#--------------------------------------------------------------------------
+def update
+@command_window.update
+if Input.trigger?(Input::B)
+$game_system.se_play($data_system.cancel_se)
+$scene = Scene_Menu.new(6)
+return
+end
+if Input.trigger?(Input::C)
+case @command_window.index
+when 0
+command_to_title
+when 1
+command_shutdown
+when 2
+command_cancel
+end
+return
+end
+end
+#--------------------------------------------------------------------------
+def command_to_title
+$game_system.se_play($data_system.decision_se)
+Audio.bgm_fade(800)
+Audio.bgs_fade(800)
+Audio.me_fade(800)
+$scene = Scene_Title.new
+end
+#--------------------------------------------------------------------------
+def command_shutdown
+$game_system.se_play($data_system.decision_se)
+Audio.bgm_fade(800)
+Audio.bgs_fade(800)
+Audio.me_fade(800)
+$scene = nil
+end
+#--------------------------------------------------------------------------
+def command_cancel
+$game_system.se_play($data_system.decision_se)
+$scene = Scene_Menu.new(6)
+end
+end
+#==============================================================================
+# Cena de Salvar
+#==============================================================================
+
+class Scene_MenuSave < Scene_File
+#--------------------------------------------------------------------------
+def initialize
+super("Salvar em qual Arquivo?")
+end
+#--------------------------------------------------------------------------
+def on_decision(filename)
+$game_system.se_play($data_system.save_se)
+file = File.open(filename, "wb")
+write_save_data(file)
+file.close
+if $game_temp.save_calling
+$game_temp.save_calling = false
+$scene = Scene_Map.new
+return
+end
+$scene = Scene_Menu.new(4)
+end
+#--------------------------------------------------------------------------
+def on_cancel
+$game_system.se_play($data_system.cancel_se)
+if $game_temp.save_calling
+$game_temp.save_calling = false
+$scene = Scene_Map.new
+return
+end
+$scene = Scene_Menu.new(4)
+end
+#--------------------------------------------------------------------------
+def write_save_data(file)
+characters = []
+for i in 0...$game_party.actors.size
+actor = $game_party.actors[i]
+characters.push([actor.character_name, actor.character_hue])
+end
+Marshal.dump(characters, file)
+Marshal.dump(Graphics.frame_count, file)
+$game_system.save_count += 1
+$game_system.magic_number = $data_system.magic_number
+Marshal.dump($game_system, file)
+Marshal.dump($game_switches, file)
+Marshal.dump($game_variables, file)
+Marshal.dump($game_self_switches, file)
+Marshal.dump($game_screen, file)
+Marshal.dump($game_actors, file)
+Marshal.dump($game_party, file)
+Marshal.dump($game_troop, file)
+Marshal.dump($game_map, file)
+Marshal.dump($game_player, file)
+end
+end
+#==============================================================================
+# ** Scene_File
+#------------------------------------------------------------------------------
+#  Base scene for load and save menus.
+#==============================================================================
+
+class Scene_File
+#--------------------------------------------------------------------------
+# * main
+#--------------------------------------------------------------------------
+alias rpg_advocate_overwrite_confirm_file_main main
+def main
+  rpg_advocate_overwrite_confirm_file_main
+  # If current scene is Scene_Save
+  if self.is_a?(Scene_Save)
+    # dispose overwrite confirming windows
+    @confirm_window.dispose
+    @yes_no_window.dispose
+  end
+end
+end
+
+#==============================================================================
+# ** Scene_Save
+#------------------------------------------------------------------------------
+#  This class performs save screen processing.
+#==============================================================================
+
+class Scene_MenuSave < Scene_File
+#--------------------------------------------------------------------------
+# * Object Initialization
+#--------------------------------------------------------------------------
+alias rpg_advocate_overwrite_confirm_save_initialize initialize
+def initialize
+  rpg_advocate_overwrite_confirm_save_initialize
+  overwrite_confirm_window
+end
+#--------------
+def overwrite_confirm_window
+  @confirm_window = Window_Base.new(120, 188, 400, 64)
+  @confirm_window.contents = Bitmap.new(368, 32)
+  string = "Substituir Arquivo?"
+  @confirm_window.contents.font.name = [$fontface]
+  @confirm_window.contents.font.size = $fontsize
+  @confirm_window.contents.draw_text(4, 0, 368, 32, string)
+  @yes_no_window = Window_Command.new(100, ["Sim", "Não"])
+  @confirm_window.visible = false
+  @confirm_window.z = 1500
+  @yes_no_window.visible = false
+  @yes_no_window.active = false
+  @yes_no_window.index = 1
+  @yes_no_window.x = 270
+  @yes_no_window.y = 252
+  @yes_no_window.z = 1500
+  @mode = 0
+end
+#--------------------------------------------------------------------------
+# * Decision Processing
+#--------------------------------------------------------------------------
+alias rpg_advocate_overwrite_confirm_save_decision on_decision
+def on_decision(filename)
+  if FileTest.exist?(filename)
+    @confirm_window.visible = true
+    @yes_no_window.visible = true
+    @yes_no_window.active = true
+    @mode = 1
+  else
+    rpg_advocate_overwrite_confirm_save_decision(filename)
+  end
+end
+# -----------------------------
+def update
+  if @mode == 0
+    super
+  else
+    @help_window.update
+    @yes_no_window.update
+    if Input.trigger?(Input::C)
+      $game_system.se_play($data_system.decision_se)
+      if @yes_no_window.index == 0
+        filename = make_filename(@file_index)
+        $game_system.se_play($data_system.save_se)
+        file = File.open(filename, "wb")
+        write_save_data(file)
+        file.close
+      
+          @confirm_window.visible = false
+  @yes_no_window.visible = false
+  @yes_no_window.active = false
+
+      
+        if $game_temp.save_calling
+          $game_temp.save_calling = false
+          $scene = Scene_Map.new
+
+        else
+          $scene = Scene_Menu.new(4)
+        end
+      else
+        @confirm_window.visible = false
+        @yes_no_window.visible = false
+        @yes_no_window.active = false
+        @yes_no_window.index = 1
+        @mode = 0
+      end
+    end
+
+    if Input.trigger?(Input::B)
+      @confirm_window.visible = false
+      @yes_no_window.visible = false
+      @yes_no_window.active = false
+      @yes_no_window.index = 1
+      @mode = 0
+    return
+    end
+  end
+end 
+end

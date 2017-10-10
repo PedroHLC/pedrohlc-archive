@@ -1,0 +1,325 @@
+################################################################################
+################################################################################
+##########################  RTH Zelda Transfer  ##################################
+################################################################################
+################################################################################
+#===============================================================================
+# Criado por : Renan Tsuneo Hangai Junior
+#===============================================================================
+
+$RTHScript["Zelda_Transfer"] = true
+
+class Tile_Maps_Transfer
+  
+  # Velocidade de mudança dos mapas
+  
+  CHANGE_MAP_SPEED = 17
+  
+  # Definição dos autotiles
+  
+  AUTOLTILES = [
+  26, 27, 32, 33, 4,  27, 32, 33, 26, 5,  32, 33, 4,  5,  32, 33,
+  26, 27, 32, 11, 4,  27, 32, 11, 26, 5,  32, 11, 4,  5,  32, 11,
+  26, 27, 10, 33, 4,  27, 10, 33, 26, 5,  10, 33, 4,  5,  10, 33,
+  26, 27, 10, 11, 4,  27, 10, 11, 26, 5,  10, 11, 4,  5,  10, 11,
+  24, 25, 30, 31, 24, 5,  30, 31, 24, 25, 30, 11, 24, 5,  30, 11,
+  14, 15, 20, 21, 14, 15, 20, 11, 14, 15, 10, 21, 14, 15, 10, 11,
+  28, 29, 34, 35, 28, 29, 10, 35, 4,  29, 34, 35, 4,  29, 10, 35,
+  38, 39, 44, 45, 4,  39, 44, 45, 38, 5,  44, 45, 4,  5,  44, 45,
+  24, 29, 30, 35, 14, 15, 44, 45, 12, 13, 18 ,19, 12, 13, 18, 11,
+  16, 17, 22, 23, 16, 17, 10, 23, 40, 41, 46, 47, 4,  41, 46, 47,
+  36, 37, 42, 43, 36, 5,  42, 43, 12, 17, 18, 23, 12, 13, 42, 43,
+  36, 41, 42, 47, 16, 17, 46, 47, 12, 17, 42, 47, 0,  1,  6,  7
+  ]
+
+  attr_reader :dif_x
+  attr_reader :dif_y
+  attr_reader :ready
+  attr_reader :mapa
+  
+  def initialize(id, player, direction)
+    @player = player
+    @sprites = []
+    @direction_transfer = direction
+    @dif_x = (direction == 4 ? CHANGE_MAP_SPEED : direction == 6 ? -CHANGE_MAP_SPEED : 0)
+    @dif_y = (direction == 2 ? -CHANGE_MAP_SPEED : direction == 8 ? CHANGE_MAP_SPEED : 0)
+    @player_x_dif = $game_temp.player_pre_tel_x - $game_player.screen_x
+    @player_y_dif = $game_temp.player_pre_tel_y - $game_player.screen_y
+    @player_raise_rate_x = (@player_x_dif.abs.to_f / (640.0 / @dif_x.abs.to_f))
+    @player_raise_rate_y = (@player_y_dif.abs.to_f / (480.0 / @dif_y.abs.to_f))
+    if direction == 6
+      @player_raise_rate_x *= -1
+    elsif direction == 2
+      @player_raise_rate_y *= -1
+    end
+    for i in 0..2
+      @sprites[i] = Sprite.new
+    end
+    $bitmaps_maps = [] if $bitmaps_maps == nil
+    @mapa = Game_Map.new
+    @mapa.setup(id)
+    @autotiles = []
+    for i in 0..6
+      @autotiles[i] = RPG::Cache.autotile(mapa.autotile_names[i])
+    end
+    if $bitmaps_maps[id] == nil
+      $bitmaps_maps[id] = []
+      for i in 0..2
+        $bitmaps_maps[id][i] = Bitmap.new(mapa.width * 32, mapa.height * 32)
+      end
+      vx = [0, 1, 0, 1]
+      vy = [0, 0, 1, 1]
+      for i in 0...(mapa.width * mapa.height)
+        x = i % mapa.width
+        y = i / mapa.width
+        for level in 0..2
+          tile_id = mapa.data[x, y, level]
+          if tile_id >= 384 
+            tileset_bitmap = RPG::Cache.tile(mapa.tileset_name, tile_id, 0)
+            src_rect = Rect.new(0, 0, 32, 32)
+            $bitmaps_maps[id][level].blt(x * 32, y * 32, tileset_bitmap, src_rect)
+          elsif tile_id >= 48 and tile_id < 384
+            aid = tile_id / 48 - 1
+            for j in 0..3
+              h = 4 * (tile_id % 48) + j
+              src_rect = Rect.new((AUTOLTILES[h] % 6) * 16, (AUTOLTILES[h] / 6 ) * 16, 16, 16)
+              ax = x * 32 + vx[j] * 16
+              ay = y * 32 + vy[j] * 16
+              $bitmaps_maps[id][level].blt(ax, ay, @autotiles[aid], src_rect)
+            end
+          end 
+        end
+      end
+    end
+    for i in 0..2
+      @sprites[i].bitmap = $bitmaps_maps[id][i].dup
+    end
+    @pos_x = (direction == 4 ? -@sprites[0].bitmap.width : direction == 6 ? 640 : -($game_map.display_x / 4))
+    @pos_y = (direction == 2 ? 480 : direction == 8 ? -@sprites[0].bitmap.height : -($game_map.display_y / 4))
+    fx = (player ? (direction == 4 ? -640 : direction == 6 ? 640 : 0) :0)
+    fy = (player ? (direction == 2 ? 480 : direction == 8 ? -480 : 0) :0)
+    view = Viewport.new(0, 0, 640, 480)
+    view.z = 9999
+    @fog = Plane.new(view)
+    @fog.z = 9999
+    @fog.bitmap = RPG::Cache.fog(@mapa.fog_name, @mapa.fog_hue)
+    v2 = Viewport.new(0, 0, 640, 480)
+    v2.z = -1000
+    @panorama = Plane.new(v2)
+    #@panorama = Plane.new(Viewport.new(@pos_x, @pos_y, 640, 480))
+    @panorama.bitmap = RPG::Cache.panorama(@mapa.panorama_name, @mapa.panorama_hue)
+    @panorama.z = -1000000
+    for i in 0..2
+      @sprites[i].x = @pos_x
+      @sprites[i].y = @pos_y
+    end
+    @character_sprites = []
+    for i in mapa.events.keys.sort
+      sprite = Sprite_Character.new(@viewport1, mapa.events[i])
+      @character_sprites.push(sprite)
+    end
+    for sprite in @character_sprites
+      sprite.update
+      sprite.y += @pos_y
+      sprite.x += (direction == 2 ? 0 : @pos_x)
+    end
+    if @player
+      @train_actors_sprites = []
+      if $RTHScript["Train Actor"]
+        for i in 0...$train_actor.size
+          sprite = Sprite_Character.new(@viewport1, $train_actor[i])
+          sprite.x = $game_temp.train_actors_tel_x[i]
+          sprite.y = $game_temp.train_actors_tel_y[i]
+          @train_actors_sprites.push(sprite)
+        end
+      end
+      @player_sprite = Sprite_Character.new(@viewport1, $game_player)
+      @player_sprite.x = $game_temp.player_pre_tel_x
+      @player_sprite.y = $game_temp.player_pre_tel_y
+    end
+    @ready = false
+    update
+  end
+
+  def update
+    @fog.ox -= @dif_x
+    @fog.oy -= @dif_x
+    for sprite in @sprites + @character_sprites
+      sprite.x += @dif_x
+      sprite.y += @dif_y
+    end     
+    if @player
+      for sprite in @train_actors_sprites
+        sprite.x += @player_raise_rate_x
+        sprite.y += @player_raise_rate_y
+      end
+      @player_sprite.x += @player_raise_rate_x
+      @player_sprite.y += @player_raise_rate_y
+    end
+    case @direction_transfer
+    when 2
+      @ready = (@sprites[0].y <= 0)
+    when 4
+      @ready = (@sprites[0].x >= (640 - @sprites[0].bitmap.width))
+    when 6
+      @ready = (@sprites[0].x <= 0)
+    when 8
+      @ready = (@sprites[0].y >= (480 - @sprites[0].bitmap.height))
+    end
+  end
+  
+  def dispose
+    for sprite in @sprites + @character_sprites
+      sprite.bitmap.dispose unless sprite.bitmap.nil?
+      sprite.dispose
+    end
+    @fog.bitmap.dispose
+    @fog.dispose
+    @panorama.bitmap.dispose
+    @panorama.dispose
+    if @player
+      for sprite in @train_actors_sprites
+        sprite.bitmap.dispose unless sprite.bitmap.nil?
+        sprite.dispose
+      end
+      @player_sprite.bitmap.dispose
+      @player_sprite.dispose
+    end
+  end
+  
+end
+
+class Game_Temp
+  attr_accessor :zelda_transfer
+  attr_accessor :zelda_transfer_direction
+  attr_accessor :player_pre_tel_x
+  attr_accessor :player_pre_tel_y
+  attr_accessor :train_actors_tel_x
+  attr_accessor :train_actors_tel_y
+  @zelda_transfer
+  @zelda_transfer_direction
+  @player_pre_tel_x
+  @player_pre_tel_y
+  @train_actors_tel_x
+  @train_actors_tel_y
+end
+
+class Interpreter
+  
+  alias rth_zelda_transfer_int_command_201 command_201
+  def command_201
+    if $game_temp.in_battle
+      return true
+    end
+    if $game_temp.player_transferring or
+       $game_temp.message_window_showing or
+       $game_temp.transition_processing
+      return false
+    end
+    item = @list[@index-1]
+    if item != nil and item.code == 108
+      if item.parameters[0].downcase =~ /zelda[ ]?transfer[ ]?(\d+)?/
+        $game_temp.zelda_transfer_direction = $1.to_i
+        $game_temp.zelda_transfer = true
+      end
+    end
+    return rth_zelda_transfer_int_command_201
+  end
+  
+end
+    
+class Spriteset_Map
+  attr_reader :character_sprites
+  attr_reader :tilemap
+end
+
+class Scene_Map
+  
+  alias rth_zelda_transfer_scene_map_transfer_player transfer_player
+  def transfer_player
+    $game_temp.zelda_transfer = false if $game_temp.zelda_transfer == nil
+    if $game_temp.zelda_transfer == false
+      rth_zelda_transfer_scene_map_transfer_player
+      return
+    end  
+    $game_temp.zelda_transfer = false
+    $game_temp.player_pre_tel_x = $game_player.screen_x
+    $game_temp.player_pre_tel_y = $game_player.screen_y
+    if $RTHScript["Train Actor"]
+      $game_temp.train_actors_tel_x = []
+      $game_temp.train_actors_tel_y = []
+      for i in 0...$train_actor.size
+        $game_temp.train_actors_tel_x[i] = $train_actor[i].screen_x
+        $game_temp.train_actors_tel_y[i] = $train_actor[i].screen_y
+      end
+    end     
+    $game_temp.player_pre_tel_x = $game_player.screen_x
+    $game_temp.player_pre_tel_y = $game_player.screen_y
+    now_id = $game_map.map_id
+    # Limpar flag de teletransporte
+    $game_temp.player_transferring = false
+    # Se o destino for para outro mapa
+    if $game_map.map_id != $game_temp.player_new_map_id
+      # Definir o novo mapa
+      $game_map.setup($game_temp.player_new_map_id)
+    end
+    # Definir o destino de Jogador
+    $game_player.moveto($game_temp.player_new_x, $game_temp.player_new_y)
+    # Definir a direção
+    case $game_temp.player_new_direction
+    when 2  # Abaixo
+      $game_player.turn_down
+    when 4  # Esquerda
+      $game_player.turn_left
+    when 6  # Direita
+      $game_player.turn_right
+    when 8  # Acima
+      $game_player.turn_up
+    end
+    # Alinhar a posição do Jogador
+    $game_player.straighten
+    # Atualizar mapa (executar eventos de Processo Paralelo)
+    $game_map.update
+    # Recriar o Spriteset
+    tile_new_map = Tile_Maps_Transfer.new($game_temp.player_new_map_id, true, $game_temp.zelda_transfer_direction)
+    Graphics.transition(1)
+    loop {
+      Graphics.update
+      Input.update
+      tile_new_map.update
+      #@spriteset.tilemap.ox -= tile_new_map.dif_x
+      #@spriteset.tilemap.oy -= tile_new_map.dif_y
+      @spriteset.tilemap.viewport.rect.x += tile_new_map.dif_x
+      @spriteset.tilemap.viewport.rect.y += tile_new_map.dif_y
+      for sprite in @spriteset.character_sprites
+        if sprite.character.is_a?(Game_Player)
+          sprite.visible = false
+        end
+        if $RTHScript["Train Actor"] and sprite.character.is_a?(Train_Actor)
+          sprite.visible = false
+        end
+        #sprite.x += tile_new_map.dif_x
+        #sprite.y += tile_new_map.dif_y
+      end
+      break if tile_new_map.ready
+    }
+    tile_new_map.dispose
+    @spriteset.dispose
+    @spriteset = Spriteset_Map.new
+    # Se estiver processando uma transição
+    if $game_temp.transition_processing
+      # Limpar flag de transição
+      $game_temp.transition_processing = false
+      # Executar transição
+      Graphics.transition(20)
+    end
+    # Executar as definições do mapa como BGM e BGS
+    $game_map.autoplay
+    # Aqui os frames são resetados
+    Graphics.frame_reset
+    # Atualizar a entrada de informações
+    Input.update
+  end
+
+end
+

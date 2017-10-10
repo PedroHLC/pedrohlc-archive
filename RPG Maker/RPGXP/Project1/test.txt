@@ -1,0 +1,26 @@
+Pesquisa feita por: PedroHLC
+Testes realizados no Scene_Map com o jogador parado, com frame_rate de 120, uzando a versão 1.03 do RGSS
+
+DirectX 8 (Padrão RMXP)
+Compatibilidade: Windows Xp ou superior
+Min: 52 FPS
+Max: 50 FPS
+
+DirectX 9
+Compatibilidade: Windows Xp ou superior
+Min: 71 FPS
+Max: 76 FPS
+
+DirectX 10
+Compatibilidade: Windows Vista ou superior
+Min: 49 FPS
+Max: 60 FPS
+
+DirectX 11
+Compatibilidade: Windows Vista SP2 ou superior
+Min: 53 FPS
+Max: 50 FPS
+
+"DirectX"  ©2010 Microsoft Corp. All Rights Reserved.
+Página do DirectX na Wikipédia(pt-br): http://pt.wikipedia.org/wiki/DirectX
+Para ver a versão mais recente do Direct X Instalado em seu computador execute o "dxdiag"

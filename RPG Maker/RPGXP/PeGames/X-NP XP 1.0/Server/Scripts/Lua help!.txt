@@ -1,0 +1,22 @@
+Ok everyone, lua.  I'm sorry I'm not good at these things lol but i'll try.
+
+Functions
+------------
+NP():SendToAll( data )  --  Sends the string data to all connected clients.
+
+NP():ShowMessage( data ) -- Shows the string data in the chat window.
+
+NP():SendToUser(user.id,data) -- Sends to the user with 'id'
+
+NP():GetServerName() -- Gets the string from "Server Name" on the General Tab.
+
+NP():BanIP( user.ip ) -- add the users Ip to the ban list.
+
+NP():CloseSocket( user.ip ) -- disconnect that user for any reason
+
+Global Variables
+----------------
+[String] user.id --  The users unique id number, use it to send certain things to that user only
+[String] user.name -- The users username, use it to greet him/her or to aware others of an event involving that person.
+[String] user.group -- The users group
+[String] user.ip -- The users ip

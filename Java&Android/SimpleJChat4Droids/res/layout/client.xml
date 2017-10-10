@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:maxLines="1" android:cursorVisible="true"/>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/send" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/exit" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/edtOutput"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cursorVisible="false"
+        android:inputType="textMultiLine"
+        android:linksClickable="true"
+        android:saveEnabled="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="Por favor espere..." android:clickable="false">
+
+        <requestFocus />
+    </EditText>
+
+</TableLayout>

@@ -1,0 +1,4 @@
+@img = Sprite.new
+@img.bitmap = RPG::Cache.picture("nomedapicture")
+@img.x = X
+@img.y = Y

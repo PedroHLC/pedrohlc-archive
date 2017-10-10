@@ -1,0 +1,296 @@
+=begin
+#=============================================================================
+# Joypad Module
+# By Unknown Coders, trebor777.
+# 14/12/2007
+# v.0.8
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Handle Joypads with up to 32 buttons. Handles the default key as well defined
+# in the F1 menu.(Note that you need to close/restart the game.exe if you decide
+# to change the config)
+#
+# v.0.8
+- Support all the 8 directions with the basic 8 direction pad.
+- detect analogic mode or not.
+- Default keys handled correctly
+- Trigger, press method works.
+- New methods(compared to the Input Module):
+    . x_trigger and x_press: those methods will return true, if only the key or
+    combinaison specified is pressed or triggered. False if there is also other
+    key pressed.
+    It's a good shorcut to prevent this:
+      if Joypad.trigger?(button1) and !Joypad.trigger?(button2)
+    . any_key? will return true if at least one key is pressed on the joypad
+    . analog? return true if the analog mode is true.
+    . pov_dir8, return the direction pressed on the 8-direction pad in analog
+      mode, return 0 if the any 8 dir are pressed or not in analog mode.
+    . command, the method behind all the test methods:
+              (trigger, press, x_trigger, and x_press), look at the code to
+              understand.
+    . buttons? return the number of buttons pressed, by default without the
+          directions
+# TODO!
+- Add analog Joystick support(as only the 8dir pad works)
+- Include the repeat method
+#=============================================================================
+# ** Module Keys
+#=============================================================================
+=end
+module Keys
+  include Aleworks
+  module_function
+  def convert_keys(key)
+    keys = []
+    reg_key = 'HKEY_CURRENT_USER\\Software\\Enterbrain\\RGSS'
+    data = Registry.read_entry(reg_key, 'ButtonAssign')[0,10].scan(/./)
+    10.times {|i| keys.push(2**i) if key == data[i].unpack('C')[0]}
+    keys
+  end
+  # Set the default keys.
+  A = convert_keys(11)
+  B = convert_keys(12)
+  C = convert_keys(13)
+  X = convert_keys(14)
+  Y = convert_keys(15)
+  Z = convert_keys(16)
+  L = convert_keys(17)
+  R = convert_keys(18)
+  # Define the 32 buttons constants
+  32.times{|i| eval("JOY_#{i+1} = 2**#{i}")}
+  # 8_dir pad, in Digital Mode for the 1st 2 values, analog for the 3rd
+  UP = [31525,0,0]              # UP
+  UP_R = [65535,0,4500]         # UP and RIGHT
+  RIGHT = [65535,31055,9000]    # RIGHT
+  DOWN_R = [65535,65535,13500]  # DOWN and RIGHT
+  DOWN = [31525,65535,18000]    # DOWN
+  DOWN_L = [0,65535,22500]      # DOWN and LEFT
+  LEFT = [0,31055,27000]        # LEFT
+  UP_L = [0,0,31500]            # UP and LEFT
+end
+#=============================================================================
+# ** Module Joypad
+#=============================================================================
+module Joypad
+  JoyGetDevCaps = Win32API.new('winmm', 'joyGetDevCaps', 'LPL', 'L')
+  JoyGetNumDevs = Win32API.new('winmm', 'joyGetNumDevs', '', 'L')
+  JoyGetPos = Win32API.new('winmm', 'joyGetPos', 'LP', 'L')
+  JoyGetPosEx = Win32API.new('winmm', 'joyGetPosEx', 'LP', 'L')
+  @@plugged_joystick = []
+  @@buffer = [52, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0].pack('L13')
+  module_function
+#------------------------------------------------ 
+  def get_Joypads
+    JoyGetNumDevs.call.times do |i|
+      @@plugged_joystick << i if JoyGetPos.call(i, ' ' * 16) == 0
+    end
+  end
+#------------------------------------------------
+  get_Joypads # Initialization
+#------------------------------------------------
+  def get_state
+    JoyGetPosEx.call(@@plugged_joystick.first, @@buffer)
+    result = @@buffer.unpack('L13')
+    return result[2...result.size-2]
+  end
+#------------------------------------------------ 
+  @@state = @@previous_state=get_state # Get Initial Joypad State
+#------------------------------------------------
+  def update
+    @@previous_state = @@state
+    @@state     = get_state
+    @@analog     = @@state[2..3]!=[32767,32767]
+    @@left_dir   = @@state[0..1]
+    @@right_dir  = @@state[2..3]
+    @@nb_buttons = @@state[7]
+    @@buttons    = @@state[6]
+    @@pov        = @@state[8]
+  end
+#------------------------------------------------
+# Return true if the joypad is in analogic mode.
+#------------------------------------------------
+  def analog?
+    return @@analog
+  end
+#------------------------------------------------ 
+# Return true if any key of the joypad is pressed
+#------------------------------------------------
+  def any_key?
+    return (@@nb_buttons > 0 and Joypad.pov_dir8 != 0 and Joypad.dir8 != 0)
+  end
+#------------------------------------------------ 
+# Return the number of keys pressed, if the argument is true, will include
+# the direction pressed.
+#------------------------------------------------
+  def buttons?(dir=false)
+    r = 0
+    if dir
+      r = Joypad.pov_dir8==0 ? 0 : 1 if @@analog
+      r = Joypad.dir8==0 ? 0 : 1 if !@@analog
+    end
+    return @@nb_buttons+r
+  end
+#------------------------------------------------ 
+=begin
+For trigger and press, I use Binary comparison, if the bit for the key
+compared to the Joypad state, return itself, it means this key is pressed.
+  Example:
+ 
+  Joy_4 = 8, so in binary it's   0b1000
+    so if State returns 0b1xxx, (x for any value 0 or 1)
+    (Joy_4 & State) will return 8. as they both got 1 same bit in common
+  It works the same for combinaition of keys^^
+  Joy4 and Joy 1, is 8+1 = 9, so 0b1001
+  if State returns 1xx1, it means at least Joy4 and Joy1 are pressed,
+    which is what we want.
+ 
+For the only difference between press and trigger is the previous state.
+So we do the same thing checking the previous state of the key, see if it was
+pressed or not
+ 
+#======================================================
+  Trigger? or Press?
+  argument:
+    - button, can only be one of the Direction Constants.
+                    or the sum of different Joy_xx values
+#------------------------------------------------------   
+  Example:
+ 
+  Joypad.trigger?(Keys::JOY_1+Keys::JOY_3)
+ 
+  And for directions:
+ 
+  Joypad.trigger?(Keys::JOY_UP_R) for UP and RIGHT keys.
+#------------------------------------------------------- 
+#===============================================================================
+# Joypad.command
+# General Method for trigger and press.
+# As they all use the same structure with minor change
+# Arguments
+#   button: The key to test
+#   type: By default is 0, determines the kind of test wanted:
+#           0 = trigger, 1 = press, 2 = x_trigger, 3 = x_press
+#===============================================================================
+=end
+  def command(button,type=0)
+    case type
+    when 0
+      com = Proc.new {|key| ((key & @@previous_state[6]) != key and (key & @@buttons) == key) }
+    when 1
+      com = Proc.new {|key| ((key & @@previous_state[6]) == key and (key & @@buttons) == key) }
+    when 2
+      com = Proc.new {|key| (@@previous_state[6] != key and @@buttons == key) }
+    when 3
+      com = Proc.new {|key| (@@previous_state[6] == key and @@buttons == key) }
+    else
+      return false
+    end
+    if button==Keys::A or button==Keys::B or button==Keys::C or button==Keys::X or
+      button==Keys::Y or button==Keys::Z or button==Keys::L or button==Keys::R
+      result = []
+      button.each do |value|
+        result.push( com.call(value) )
+      end
+      return result.include?(true)
+    else
+      if button.is_a?(Array)
+        if !@@analog
+          return (@@previous_state[0..1] != button[0..1] and @@left_dir == button[0..1])
+        else
+          return (@@previous_state[8] != button.last and @@pov == button.last)
+        end
+      else
+        return ( com.call(button) )
+      end
+    end
+  end
+#==========================================
+#Shortcuts
+#===========================================
+  def trigger?(button)
+    Joypad.command(button)
+  end
+  def press?(button) #return true if the key was triggered previously
+    Joypad.command(button,1)
+  end
+#===========================================
+# Exclusive trigger and press methods,
+# will return true only if the given key is pressed or triggered. Not if there is
+# also another key pressed
+#===========================================
+  def x_trigger?(button)
+    Joypad.command(button,2)
+  end
+  def x_press?(button)
+    Joypad.command(button,3)
+  end
+#============================================
+# Directional tests
+#============================================
+  def dir8
+    if @@analog
+    else
+      case @@left_dir
+      when [31525,31055] #No keys
+        return 0
+      when [0,65535] #Down_Left
+        return 1
+      when [31525,65535] #Down
+        return 2
+      when [65535,65535] #Down_Right
+        return 3
+      when [65535,31055] #Right
+        return 6
+      when [65535,0] #Up_right
+        return 9
+      when [31525,0] #Up
+        return 8
+      when [0,0] #Up_Left
+        return 7
+      when [0,31055] #Left
+        return 4
+      end
+    end
+  end
+#-------------------
+  def dir4
+    if @@analog
+    else
+      case @@left_dir
+      when [31525,31055] #No keys
+        return 0
+      when [31525,65535] #Down
+        return 2
+      when [65535,31055] #Right
+        return 6
+      when [31525,0] #Up
+        return 8
+      when [0,31055] #Left
+        return 4
+      end
+    end
+  end
+#-------------------
+  def pov_dir8
+    return 0 if !@@analog
+    case @@pov
+    when 65535 #No keys
+      return 0
+    when 22500 #Down_Left
+      return 1
+    when 18000 #Down
+      return 2
+    when 13500 #Down_Right
+      return 3
+    when 9000 #Right
+      return 6
+    when 4500 #Up_right
+      return 9
+    when 0 #Up
+      return 8
+    when 31500 #Up_Left
+      return 7
+    when 27000 #Left
+      return 4
+    end
+  end
+end

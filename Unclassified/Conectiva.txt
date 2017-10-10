@@ -1,0 +1,36 @@
+A '''Conectiva''' foi uma companhia fundada em 28 de Agosto de 1995 em Curitiba, Paraná, Brasil, por um grupo de amigos, juntamente com Arnaldo Carvalho de Melo, que foi um pioneiro em distribuições Linux e softwares livres no Brasil e em toda a América Latina.
+Além da distribuição Linux para o mercado da América Latina, a Conectiva desenvolveu uma série de produtos e outros serviços direcionados ao mercado de utilitários para softwares livres, incluindo livros, manuais, e softwares adicionais como o ''Linux Tools'' e suporte a toda a América Latina através de seus centros de serviços e parceiros.
+A Conectiva também providenciou desenvolvimento, customização e serviços profissionalizantes em todo o mundo através de seu grupo de engenheiros de softwares livres. Este grupo tinha conhecimentos em, além de outras, as seguintes áreas: desenvolvimento do ''Kernel'' do Linux, drivers de dispositivos, desenvolvimento do ''XFree86'' (uma implementação do ''X11'', bibliotecas de interface gráfica e acesso às redes), de protocolos de internet, de ''firewalls'', e ''clustering'' (técnica em que diversos computadores trabalham interligados para realizar a mesma tarefa conjuntamente), analise de desempenho e optimização, sistemas de arquivos e gerenciamento de recursos.
+Em 24 de Janeiro de 2005 foi anunciado que a empresa Mandrake Soft tinha adquirido a Conectiva por 1,79 milhões de euros. Em 7 de Abril de 2005 a Mandrake Soft anunciou a mudança do nome da companhia para Mandriva e suas distribuições para o nome de Mandriva Linux (no Brasil, somente Mandriva).
+==Versões Instaláveis==
+* Conectiva Red Hat Linux Parolin 1.0 - Outubro de 1997
+* Conectiva Red Hat Linux Marumbi 2.0 - Maio de 1998
+* Conectiva Linux Guarani 3.0 - Dezembro de 1998
+* Conectiva Linux Server (Intel) 1.0  - Abril de 1999
+* Conectiva Linux Server (Compaq Alpha) - Maio de 1999
+* Conectiva Linux 4.0 -  Julho de 1999
+* Conectiva Linux 4.2 Server - Outubro de 1999
+* Conectiva Linux 5.0 -  Fevereiro de 2000
+* Conectiva Linux 5.1 Server -  Junho de 2000
+* Conectiva Linux 6.0 Desktop -  Novembro de 2000
+* Conectiva Linux 6.0 Server -  Novembro de 2000
+* Conectiva Linux 7.0 Desktop  - Julho de 2001
+* Conectiva Linux 7.0 Server - Julho de 2001
+* Conectiva Linux 8.0 Desktop - Abril de 2002
+* Conectiva Linux 8.0 Server  - Abril de 2002
+* Conectiva Linux Enterprise Edition  - Novembro de 2002
+* Conectiva Linux 9 Professional -   Abril de 2003
+* Conectiva Linux 9 Standard - Abril de 2003
+* Conectiva Linux 10 Desktop - Julho de 2004
+* Conectiva Linux 10 Professional - Julho de 2004
+
+==Versões Live CD==
+* Conectiva Linux Live CD 0.5 - 11 de agosto de 2004
+* Conectiva Linux Live CD 0.7 Beta 2 - 10 de setembro de 2004
+
+==Links interessantes==
+* [ftp://ftp.conectiva.com/pub/ Servidor FTP do Conectiva]
+
+==ESCOLA==
+A8E1C6EB0BFF964038ED5E7EF7FA1FE7
+1nf0rm@t1c@

@@ -1,0 +1,3 @@
+{
+"GlobalEvent00" => (Event.new(1, 38, 48, 12, 13, 8, 8, false)),
+};

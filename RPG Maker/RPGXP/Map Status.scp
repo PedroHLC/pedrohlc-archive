@@ -1,0 +1,108 @@
+#=============================================================================
+# Map Status
+# Script por: PedroHLC(jogosrpg.com.br)
+# Versão:     1.0
+#------------------------------------------------------------------------------
+# Esta janela exibe o Status se vc apertar o botão escolhido no mapa no mapa.
+#=============================================================================
+
+
+class Window_MapStatus < Window_Base
+ 
+  #--------------------------------------------------------------------------
+  # Inicialização dos Objetos
+  #
+  #     ator : Objeto
+  #--------------------------------------------------------------------------
+ 
+  def initialize(actor)
+    super(400, 0, 240, 480)
+    self.contents = Bitmap.new(width - 32, height - 32)
+    self.contents.font.name = $fontface
+    self.contents.font.size = $fontsize
+    self.opacity = 100 #Transparencia da Janela
+    @actor = actor
+    @old_hp = @actor.hp
+    @old_sp = @actor.sp
+    @old_exp = @actor.exp
+    @level = @actor.level
+    @gold_n = $game_party.gold
+    @states = @actor.states.to_s
+    refresh
+  end
+  
+  #--------------------------------------------------------------------------
+  # Atualizar
+  #--------------------------------------------------------------------------
+ 
+  def refresh
+    self.contents.clear
+    draw_actor_name(@actor, 4, 0)
+    draw_actor_class(@actor, 4 + 94, 0)
+    draw_actor_level(@actor, 4, 32)
+    draw_actor_state(@actor, 4, 66)
+    draw_actor_hp(@actor, 4, 116, 172)
+    draw_actor_sp(@actor, 4, 148, 172)
+    draw_actor_parameter(@actor, 4, 192, 0)
+    draw_actor_parameter(@actor, 4, 224, 1)
+    draw_actor_parameter(@actor, 4, 256, 2)
+    draw_actor_parameter(@actor, 4, 304, 3)
+    draw_actor_parameter(@actor, 4, 336, 4)
+    draw_actor_parameter(@actor, 4, 368, 5)
+    draw_actor_parameter(@actor, 4, 400, 6)
+    self.contents.font.color = system_color
+    self.contents.draw_text(4, 48, 80, 32, "EXP")
+    self.contents.draw_text(4, 88, 80, 32, "Próximo")
+    self.contents.font.color = normal_color
+    self.contents.draw_text(4 + 10, 48, 84, 32, @actor.exp_s, 2)
+    self.contents.draw_text(4 + 15, 88, 84, 32, @actor.next_rest_exp_s, 2)
+    self.contents.font.color = system_color
+  end
+
+  #--------------------------------------------------------------------------
+  # * Atualizar se ouve mudança
+  #--------------------------------------------------------------------------
+  def update
+    refresh if something_changed?
+  end
+  #--------------------------------------------------------------------------
+  # * Verfica se algo foi alterado
+  #--------------------------------------------------------------------------
+  def something_changed?
+    return false if Graphics.frame_count % 30 != 0
+    return true if @actor != $game_party.actors[0]
+    return true if @old_hp != @actor.hp or @old_sp != @actor.sp or @old_exp != @actor.exp
+    return true if @level != @actor.level
+    return true if @gold_n != $game_party.gold
+    return true if @states.to_s != @actor.states.to_s
+    return false
+  end
+end
+
+class Scene_Map
+  #--------------------------------------------------------------------------
+  alias ms_main main
+  alias ms_update update
+  #--------------------------------------------------------------------------
+  def main
+    @status_window_show = false if @status_window_show == nil
+    # Selecionar Herói
+    @actor = $game_party.actors[0]
+    # Criar a janela de Status
+    @status_window = Window_MapStatus.new(@actor)
+    ms_main
+    @status_window.dispose
+  end
+  #--------------------------------------------------------------------------
+  def update
+    ms_update
+    @ms_key = Input::Letters["C"] #Botão que mostra/esconde a janela.
+    if Input.trigger?(@ms_key)
+      if @status_window.visible == true
+        @status_window.visible = false
+      else
+        @status_window.visible = true
+      end
+    end
+  end
+end

@@ -1,0 +1,59 @@
+#Método para copiar imagens que serão uzadas durante o jogo para
+#uma pasta especifica.
+
+$copiedtofile = {}
+$img_types = ['.png','.jpg','.jpeg','.gif','.bmp']
+$copyprojectfiles = false
+module RPG
+module Cache
+  def self.load_bitmap(folder_name, filename, hue = 0)
+    path = folder_name + filename
+    if $copiedtofile[path] == nil
+      filetocopy = nil
+      filetocopyext = ""
+      if FileTest.exist?(path+".*")
+        filetocopy = File.open(path,"rb").read if $copyprojectfiles == true
+      elsif FileRTPTest.no_ext_exist?(path)
+        rtppath = (FileRTPTest.rtp_paths[0].to_s + "/")
+        for i in 0..($img_types.size - 1)
+          path_wrtp = (rtppath.to_s + path.to_s + $img_types[i].to_s)
+          if FileTest.exist?(path_wrtp)
+            filetocopy = File.open(path_wrtp,"rb").read
+            filetocopyext = $img_types[i].to_s
+            break
+          end
+        end
+      end
+      if filetocopy != nil
+        path = "./Extracted/"+path.to_s+filetocopyext.to_s
+        if FileTest.exist?(path) == false
+          copytofile = File.open(path,"wb")
+          copytofile.write(filetocopy)
+          copytofile.close
+        end
+      else
+        print "O seguinte arquivo não pode ser copiado: #{path}"
+      end
+      $copiedtofile[path] = "created"
+    end
+    
+    if not @cache.include?(path) or @cache[path].disposed?
+      if filename != ''
+        @cache[path] = Bitmap.new(path)
+      else
+        @cache[path] = Bitmap.new(32, 32)
+      end
+    end
+    if hue == 0
+      @cache[path]
+    else
+      key = [path, hue]
+      if not @cache.include?(key) or @cache[key].disposed?
+        @cache[key] = @cache[path].clone
+        @cache[key].hue_change(hue)
+      end
+      @cache[key]
+    end
+  end
+end
+end

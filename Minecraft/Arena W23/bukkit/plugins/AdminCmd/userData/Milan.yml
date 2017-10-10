@@ -1,0 +1,19 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: -706.9993043311542
+    y: 12.0
+    z: 690.1066595783337
+    yaw: 54.00849
+    pitch: 14.250011
+  firstTime: false
+  last-ip: 177.71.8.20
+  immunityLvl: 1
+  lastConnection: 1360789443029
+  totalTime: 7269820
+  lastDisconnect: 1360450444952
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+home: {}
+powers: {}
+kitsUse:
+  nb: 1360351263918

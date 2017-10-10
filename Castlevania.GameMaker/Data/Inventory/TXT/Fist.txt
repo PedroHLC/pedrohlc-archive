@@ -1,0 +1,26 @@
+<i>1</i>
+<v>icon=Sotn-knckdstr-1-</v>
+<v>title=Knuckle Duster</v>
+<v>description=Iron-Studded Brass Knuckles</v>
+<v>atk_plus=1</v>
+<i>2</i>
+<v>icon=Sotn-blueknck-1-</v>
+<v>title=Blue Knuckles</v>
+<v>description=Knuckles For Upper-Cut</v>
+<v>atk_plus=7</v>
+<i>3</i>
+<v>icon=Sotn-jwlknckls-1-</v>
+<v>title=Jewel Knuckles</v>
+<v>description=Jewel-Reinforced Knuckles</v>
+<v>atk_plus=21</v>
+<i>4</i>
+<v>icon=Sotn-irfist-1-</v>
+<v>title=Iron Fist</v>
+<v>description=Owned By Karate Master</v>
+<v>atk_plus=26</v>
+<i>5</i>
+<v>icon=Sotn-fstoftlks-1-</v>
+<v>title=Fist of Tulkas</v>
+<v>description=Blessed By Tulkas the Valar</v>
+<v>atk_plus=32</v>
+<v>def_plus=5</v>

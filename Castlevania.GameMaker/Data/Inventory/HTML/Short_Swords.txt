@@ -1,0 +1,150 @@
+﻿<tr>
+<td><a href="/wiki/File:Satquip-dagger-1-.gif" class="image" title="File:Satquip-dagger-1-.gif"><img alt="File:Satquip-dagger-1-.gif" src="http://images2.wikia.nocookie.net/__cb20100807155817/castlevania/images/0/06/Satquip-dagger-1-.gif" width="49" height="25" border="0" /></a>
+
+</td><td><b><a href="/wiki/Astral_Dagger" title="Astral Dagger">Astral Dagger</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a> (Saturn Only)
+</td><td>'
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (<a href="/wiki/Knife" title="Knife" class="mw-redirect">Knife</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK + 12<br />
+
+</td><td><b>Find</b>:  Cursed Prison<br />
+</td><td><b>Effect</b>:  Quarter Circle Forward - Homing attack<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-basilard-1-.gif" class="image" title="Sotn-basilard-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807155211/castlevania/images/b/bb/Sotn-basilard-1-.gif" width="50" height="21" border="0" /></a>
+</td><td><b><a href="/wiki/Basilard" title="Basilard" class="mw-redirect">Basilard</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Basic short sword</i>
+
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (<a href="/wiki/Knife" title="Knife" class="mw-redirect">Knife</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK +1<br />
+</td><td><b>Find</b>:  <a href="/wiki/Alchemy_Laboratory" title="Alchemy Laboratory">Alchemy Laboratory</a><br /><b>Drop</b>:  <a href="/wiki/Bloody_Zombie" title="Bloody Zombie" class="mw-redirect">Bloody Zombie</a><br />
+
+</td><td><b>Effect</b>:  Stab; Back-Forward Attack - Slash (ATK +5)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-cmbtknfe-1-.gif" class="image" title="Sotn-cmbtknfe-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807155243/castlevania/images/c/ce/Sotn-cmbtknfe-1-.gif" width="50" height="21" border="0" /></a>
+</td><td><b><a href="/wiki/Combat_Knife" title="Combat Knife">Combat Knife</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Flat Combat Dagger</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (<a href="/wiki/Knife" title="Knife" class="mw-redirect">Knife</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK +24<br />
+</td><td><b>Find</b>:  <a href="/wiki/Abandoned_Mine" title="Abandoned Mine">Abandoned Mine</a><br /><b>Drop</b>:  <a href="/wiki/Gurkha" title="Gurkha" class="mw-redirect">Gurkha</a><br />
+</td><td><b>Effect</b>:  Stab; Second Attack - Slash; Back-Forward Attack - Slash<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-holbiendag-1-.gif" class="image" title="Sotn-holbiendag-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807155323/castlevania/images/e/e8/Sotn-holbiendag-1-.gif" width="50" height="21" border="0" /></a>
+</td><td><b><a href="/wiki/Holbein_Dagger" title="Holbein Dagger">Holbein Dagger</a>&nbsp;(Swift Dirk)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Swift Upper Diagonal Attack</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (<a href="/wiki/Knife" title="Knife" class="mw-redirect">Knife</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK + 6<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Lesser_Demon" title="Lesser Demon">Lesser Demon</a><br />
+</td><td><b>Effect</b>:  Very fast swing that can be done while walking<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-shorsword-1-.gif" class="image" title="Sotn-shorsword-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807155506/castlevania/images/9/93/Sotn-shorsword-1-.gif" width="50" height="45" border="0" /></a>
+</td><td><b><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a>&nbsp;(ショートソード)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Common short sword</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+2<br />
+
+</td><td><b>Drop</b>:  <a href="/wiki/Bone_Scimitar" title="Bone Scimitar" class="mw-redirect">Bone Scimitar</a> (first one destroyed always drops)<br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-stneswrd-1-.gif" class="image" title="Sotn-stneswrd-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807155629/castlevania/images/a/a3/Sotn-stneswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Stone_Sword" title="Stone Sword" class="mw-redirect">Stone Sword</a>&nbsp;(ミリカンの石刀 - Milican's Stone Sword)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>May "petrify" enemies...</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Stone<br />
+</td><td>ATK +1<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Gorgon" title="Gorgon">Gorgon</a><br />
+</td><td><b>Effect</b>:  May cause enemy to turn to stone<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-jwlswrd-1-.gif" class="image" title="Sotn-jwlswrd-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807155358/castlevania/images/9/9b/Sotn-jwlswrd-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Jewel_Sword" title="Jewel Sword">Jewel Sword</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Transforms enemies into jewels</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+
+</td><td>ATK +15<br />
+</td><td><b>Find</b>:  <a href="/wiki/Entrance" title="Entrance" class="mw-redirect">Entrance</a><br /><b>Drop</b>:  <a href="/wiki/Discus_Lord" title="Discus Lord" class="mw-redirect">Discus Lord</a><br />
+</td><td><b>Effect</b>:  Sometime changes killed enemies to Jewels; Roll Attack:  Drops $1 coins; In Saturn version, stats increase when Jewels equipped.<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-shotel-1-.gif" class="image" title="Sotn-shotel-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807155553/castlevania/images/8/8a/Sotn-shotel-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Shotel" title="Shotel">Shotel</a></b><br /><a href="/wiki/Symphony_of_the_Night" title="Symphony of the Night" class="mw-redirect">Symphony of the Night</a>
+</td><td><i>Abyssinian curved sword</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK +20<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Outer_Wall" title="Reverse Outer Wall">Reverse Outer Wall</a><br /><b>Drop</b>:  <a href="/wiki/Blade_Master" title="Blade Master" class="mw-redirect">Blade Master</a><br />
+
+</td><td><b>Effect</b>:  Roll Attack - Throw<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-rapier-1-.gif" class="image" title="Sotn-rapier-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807155429/castlevania/images/d/da/Sotn-rapier-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Rapier" title="Rapier">Rapier</a>&nbsp;(レイピア)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Long bladed sword</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (Rapier)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +5<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Armor_Lord" title="Armor Lord" class="mw-redirect">Armor Lord</a>, <a href="/wiki/Dhuron" title="Dhuron" class="mw-redirect">Dhuron</a><br />
+</td><td><b>Effect</b>:  Strike foes repeatedly with spell (ATK = 15)<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-werebane-1-.gif" class="image" title="Sotn-werebane-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807155704/castlevania/images/a/ae/Sotn-werebane-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Were_Bane" title="Were Bane">Were Bane</a>&nbsp;(ウェアバスター - Were Buster)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Effective against werebeasts</i>
+</td><td><i><a href="/wiki/Short_Sword" title="Short Sword">Short Sword</a> (Rapier)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +18<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Hunting_Girl" title="Hunting Girl" class="mw-redirect">Hunting Girl</a><br />
+</td><td><b>Effect</b>:  Stronger against were beasts (<a href="/wiki/Werewolf" title="Werewolf">Werewolf</a>, <a href="/wiki/Minotaur" title="Minotaur">Minotaur</a>)<br />
+
+</td></tr>

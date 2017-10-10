@@ -1,0 +1,70 @@
+<i>1</i>
+<v>icon=Sotn-lshield-1-</v>
+<v>title=Leather Shield</v>
+<v>description=Leather Shield - Low DEF</v>
+<v>def_plus=1</v>
+<i>2</i>
+<v>icon=Sotn-knigshld-1-</v>
+<v>title=Knight Shield</v>
+<v>description=Armored Knight's Shield</v>
+<v>def_plus=2</v>
+<i>3</i>
+<v>icon=Sotn-irnshld-1-</v>
+<v>title=Iron Shield</v>
+<v>description=Hard Iron Shield</v>
+<v>def_plus=2</v>
+<i>4</i>
+<v>icon=Sotn-alucartsh-1-</v>
+<v>title=Alucart Shield</v>
+<v>description=Resembles Family Shield</v>
+<v>def_plus=1</v>
+<i>5</i>
+<v>icon=Sotn-shmanshld-1-</v>
+<v>title=Shaman Shield</v>
+<v>description=Shield Used In Magic Ritual</v>
+<v>def_plus=4</v>
+<i>6</i>
+<v>icon=Sotn-hrldshld-1-</v>
+<v>title=Herald Shield</v>
+<v>description=Shield With Heart Crest</v>
+<v>def_plus=4</v>
+<i>7</i>
+<v>icon=Equip-AxeLord_shield-1-</v>
+<v>title=AxeLord Shield</v>
+<v>description=Favorite Shield of Axe Lords</v>
+<v>def_plus=3</v>
+<i>8</i>
+<v>icon=Sotn-medshield-1-</v>
+<v>title=Medusa Shield</v>
+<v>atk_plus=1</v>
+<v>def_plus=13</v>
+<i>9</i>
+<v>icon=Equip-Skull_shield-1-</v>
+<v>title=Skull Shield</v>
+<v>description=Shield With Knight's Crest</v>
+<v>def_plus=4</v>
+<i>10</i>
+<v>icon=Sotn-gddshld-1-</v>
+<v>title=Goddess Shield</v>
+<v>description=Engraved With Goddess Image</v>
+<v>def_plus=4</v>
+<i>11</i>
+<v>icon=Equip-Dark_shield-1-</v>
+<v>title=Dark Shield</v>
+<v>description=Unholy Dark Shield</v>
+<v>atk_plus=3</v>
+<v>def_plus=10</v>
+<i>12</i>
+<v>icon=Equip-Fire_shield-1-</v>
+<v>title=Fire Shield</v>
+<v>description=Shield With Fire Properties</v>
+<v>attribute=Immunity vs Fire when equipped</v>
+<v>def_plus=4</v>
+<i>13</i>
+<v>icon=Sotn-alucartsh-1-</v>
+<v>title=Alucard Shield</v>
+<v>description=Strong Versus All Attacks</v>
+<v>def_plus=5</v>
+<i>14</i>
+<v>title=Woodland Shield</v>
+<v>def_plus=3</v>

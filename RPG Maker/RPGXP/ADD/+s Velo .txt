@@ -1,0 +1,40 @@
+
+	
+Botão de Correr + Velocidade - FantasyX2
+« : Novembro 03, 2008, 14:42:24 »
+	
+
+By FantasyX2 - Olá pessoal fiz meu 3° script no RGSS não é muito dificil hehe
+Bem com esse script você tem um personagem com uma velocidade realista com a velocidade do RPG Maker você zera o jogo em 10 minutos hehe, então esta ai o script não foi dificil de fazer demorou ums 15 minutos , so tive dificudade em descobrir as classes hehe.
+
+Código:
+
+#-----------------------------------------------------
+#
+#                    Criado por FantasyX2
+#
+#-----------------------------------------------------
+=begin
+---Instruções---
+
+Botão para Correr: SHIFT
+Modifique a velocidade nas linhas: 17 e 19
+
+Se quiser mudar o botão de correr mude no (Input::SHIFT) para outra
+tecla.
+=end
+
+class Game_Character
+  attr_accessor :move_speed
+end
+class Scene_Map
+  alias new_update update
+  def update
+    new_update
+    if Input.press?(Input::SHIFT)
+      $game_player.move_speed = 3
+    else
+      $game_player.move_speed = 2
+  end
+  end
+end

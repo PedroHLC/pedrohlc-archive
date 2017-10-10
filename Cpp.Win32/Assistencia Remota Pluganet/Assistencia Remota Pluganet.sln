@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assistencia Pluganet Client", "Assistencia Pluganet Client\Assistencia Remota Pluganet.vcxproj", "{528FDBBE-E23B-4DE0-B370-5D5CA30AB203}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assistencia Pluganet Helper", "Assistencia Pluganet Helper\Assistencia Remota Pluganet Helper.vcxproj", "{9B8553BB-DD2C-4E16-8212-4632D7BED16E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PHLCServer", "PHLCServer\PHLCServer.vcxproj", "{65A3E45A-8022-48EE-A7D8-13D0160A3DC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{528FDBBE-E23B-4DE0-B370-5D5CA30AB203}.Debug|Win32.ActiveCfg = Debug|Win32
+		{528FDBBE-E23B-4DE0-B370-5D5CA30AB203}.Debug|Win32.Build.0 = Debug|Win32
+		{528FDBBE-E23B-4DE0-B370-5D5CA30AB203}.Release|Win32.ActiveCfg = Release|Win32
+		{528FDBBE-E23B-4DE0-B370-5D5CA30AB203}.Release|Win32.Build.0 = Release|Win32
+		{9B8553BB-DD2C-4E16-8212-4632D7BED16E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B8553BB-DD2C-4E16-8212-4632D7BED16E}.Debug|Win32.Build.0 = Debug|Win32
+		{9B8553BB-DD2C-4E16-8212-4632D7BED16E}.Release|Win32.ActiveCfg = Release|Win32
+		{9B8553BB-DD2C-4E16-8212-4632D7BED16E}.Release|Win32.Build.0 = Release|Win32
+		{65A3E45A-8022-48EE-A7D8-13D0160A3DC8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65A3E45A-8022-48EE-A7D8-13D0160A3DC8}.Debug|Win32.Build.0 = Debug|Win32
+		{65A3E45A-8022-48EE-A7D8-13D0160A3DC8}.Release|Win32.ActiveCfg = Release|Win32
+		{65A3E45A-8022-48EE-A7D8-13D0160A3DC8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

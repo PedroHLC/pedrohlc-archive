@@ -1,0 +1,17 @@
+#Botões
+0 = Seta do lado do Inimigo
+1 = Seta do lado contrario do inimigo
+2 = Acima ou Abaixo
+3 = Q
+4 = Espaço
+#Combos
+[2, 3, 2, 0, 3, 4, 999] = Special
+[2, 3, 2, 1, 0, 3, 50] = Fire 3
+[2, 2, 2, 2, 2, 2, 52] = Ice 2
+[2, 2, 2, 0, 2, 2, 53] = Ice 3
+[4, 4, 4, 2, 4, 4, 154] = X-Volt
+[nil, 0, 0, 1, 0, 0, 75] = Plasma Wave
+[nil, nil, nil, 1, 2, 0, 102] = Fire Ball 2
+[nil, nil, nil, 3, 2, 2, 54] = Thunder 1
+[nil, nil, nil, nil, 3, 0, 49] = Fire 2
+[nil, nil, nil, nil, 3, (-1), 48] = Fire 1

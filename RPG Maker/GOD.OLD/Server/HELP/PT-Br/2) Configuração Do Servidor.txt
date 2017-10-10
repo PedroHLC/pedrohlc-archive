@@ -1,0 +1,78 @@
+1) Após ter terminado o 1º parte do tutorial, abra o arquivo "init.rb" na pasta do servidor, depois de alguns segundos uma janela
+com varias opções deverá aparecer. Esta é uma descrição de como deverá ser configurado os quadros vazios:
+
+ENDEREÇO\IP		| PORTA
+MENSAGEM DE BEM-VINDO	| NOME DO SERVER
+ARQUIVO DO CLIENTE	| CLASSE DO CLIENTE (.new)
+USUARIO DA SQL		| SENHA DA SQL
+ENDEREÇO\IP DA SQL	| NOME DA DATABASE
+
+EX:
+
+127.0.0.1			| 5000
+Bem-Vindo		| MeuServervidor
+root			| 123456
+localhost			| supremenetplay
+
+Se você seguiu a 1ª parte do tutorial corretamente algumas informações deverão ser as seguintes:
+
+USUARIO DA SQL = root
+ENDEREÇO\IP DA SQL = localhost
+
+Quanto ao "NOME DA DATABASE" e a "SENHA DA SQL" você terá que usar as mesmas que usou na 1ª parte
+Para completar o "ENDEREÇO\IP" vá para a prox. parte
+
+
+2) Agora nós teremos três tipos de conexão: "LocalHost", "No-ip" e "Hamachi"
+Quando usar:
+$LocalHost: Bom para testes com apenas um jogador.
+$No-ip: Para a publicação do jogo, este é obrigatório para pessoas que não tem "ip fixo" ou seja o "ip da maquina" altera toda vez que se conecta na internet
+$Hamachi: Este será feito para quem tem internet compartilhada.
+
+++LocalHost:
+Este é o mais fácil apenas coloque "127.0.0.1"(sem "") ou "localhost"(sem "") no "ENDEREÇO\IP"
+No client coloque o endereço do servidor como o mesmo que colocou no servidor
+
+++No-Ip:
+Para este tipo de conexão será necessário criar uma conta no site "no-ip.com", baixar e instalar o "no-ip duc":
+@) Criar Conta: Entre no site, selecione "Login", agora selecion "FREE register",
+complete todas as informações como é pedido, selecione a caixa "I agree" e selecione "I accept, Create My Account",
+depois de fazer tudo o que o site pedir, você verá um panel cheio de opções, selecione "Hosts/Redirects" na barra
+principal, logo depois clique em "Add a Host"
+Em "Host Name" coloque o nome do seu jogo (tudo junto, em letras minusculas e sem caracteres especiais)
+No quadrado branco logo após ao que colocamos o nome do seu jogo, selecione a opção "servegame.com"
+Em "Host Type" selecione "DNS Host (A)"
+Agora é só clicar em "Creat Host"
+
+@) Download: Atenção este download ("ducsetup.exe") foi pedido durante a criação da conta, mas caso você não tenha abaixado:
+https://www.no-ip.com/downloads.php
+
+@) Instalção: Abra o arquivo baixado e selecione "Next" toda vez que este botão estiver disponível, no final selecione "Finish"
+Ele pedira o e-mail e a senha que usou no No-Ip, marque a caixa que estará do lado do host que você criou, e apenas feche a janela
+sem tirar o ícone da barra de ferramentas
+
+No client coloque o endereço do servidor com o endereço do host que você criou ex: "supremenetplay.servergame.com"
+Para terminar entre nesse site: "meuip.com.br" e o ip que ele te passar você deverá colocar em "ENDEREÇO\IP"
+
+++Hamachi:
+Para esta instalação será necessário ter o seguinte arquivo(ATENÇÃO ESTE TUTORIAL VAI USAR O HAMACHI 2) :
+https://secure.logmein.com/products/hamachi2/download.aspx
+Abra o arquivo abaixado, 
+Na 1ª Janela(Language Selection): Selecione "Portuguese" (caso esteja no Brasil selecione "Portuguese (Brazilian)"), clique em "Next"
+Na 2ª Janela(LogMeIn Hamachi): Clique "Avançar"
+Na 3ª Janela(Termos e Condições de Uso): Clique em "Concordo"
+Na 4ª Janela(Escolher Opções): Marque a caixa "Criar atalho" e clique em "Instalar"
+Na 5ª Janela(Instalação): O Programa irá se instalar sozinho
+Na 6ª Janela(Configuração concluída): Selecione "Iniciar Hamachi", e clique "Finalizar"
+Abra a janela principal do hamachi, provavelmente ele pedira um "Nick"/"Apelido" colqoue o que você desejar
+Logo após o botão de desligar haverá um Ip ("5.*.*.*") coloque este ip em "ENDEREÇO\IP'
+Clique em Rede>Criar uma nova Rede... 
+Em "ID da rede" coloque o nome do seu jogo (tudo minusculo, junto  e sem caracters especiais)
+Em "Senha de rede" coloque 1234, e clique em criar
+No client tb coloque o endereço do servidor com a mesma coisa que "ENDEREÇO\IP'
+ATENÇÃO, PARA JOGAR TODOS DEVERÃO TER O HAMACHI E ESTAR DENTRO DE SUA SALA DO HAMACHI!
+
+
+
+TENHA UM BOM JOGO!!
+Um Abraço de PedroHLC para você

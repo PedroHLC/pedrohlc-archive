@@ -1,0 +1,14 @@
+2011-07-11 19:51:43 UTC; 1 (test44) - Error:
+Foi forçado o cancelamento de uma conexão existente pelo host remoto. - send(2)
+./Data/Sender.rb:21:in `send'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Sender.rb:21:in `send'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Client.rb:881:in `send'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Sender.rb:125:in `block in send_to_clients'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Sender.rb:118:in `each'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Sender.rb:118:in `send_to_clients'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Sender.rb:101:in `send_to_map'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Extensions/Blizz-ABS.rb:113:in `client_update'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Client.rb:43:in `block in handle'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Client.rb:43:in `each_value'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Client.rb:43:in `handle'
+C:/Users/PedroHLC/Desktop/PiecePlayers/RMX-OS Server/Data/Server.rb:272:in `block in run'

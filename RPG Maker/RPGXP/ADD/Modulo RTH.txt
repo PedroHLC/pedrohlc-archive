@@ -1,0 +1,1455 @@
+################################################################################
+################################################################################
+########################### Modulo RTH #########################################
+################################################################################
+################################################################################
+#===============================================================================
+# Criado por Renan Tsuneo Hangai Junior
+#===============================================================================
+# Modulo RTH
+# --- Atualizado dia 13/03/07 14:35
+#-------------------------------------------------------------------------------
+# Classes Principais
+#===============================================================================
+=begin
+
+  Módulo RTH
+  
+    Adiciona varias funções que facilitam na hora de criar o 
+  script, dentre essas funcões estão :
+  
+  1-Variavel $data:
+    - Representa os valores gravados pelo database dentro de $data
+    você acha os valors:
+      - $data.actors       ( Database dos personagens           )
+      - $data.classe       ( Database das classes               )
+      - $data.skills       ( Database das habilidades           )
+      - $data.items        ( Database dos itens                 )
+      - $data.weapons      ( Database das armas                 )
+      - $data.armors       ( Database das armaduras             )
+      - $data.enemies      ( Database dos inimigos              )
+      - $data.troops       ( Database dos grupos de inimigos    )
+      - $data.states       ( Database dos status                )
+      - $data.animations   ( Database das animações             )
+      - $data.tilesets     ( Database dos tilesets              )
+      - $data.common_events( Database dos eventos comuns        )
+    - Representa a informações dos mapas
+      - $data.mapinfos     ( Informações sobre os mapas         )
+      
+    OBS: Lembre-se que eles são uma array, para chamar um elemento
+    especifico use $data.funcao[id]
+      
+  2-Funções:
+    - RTH.scene_name:
+      - Retorna o nome da cena atual
+    - RTH.scene_update
+      - Loop principal de uma cena
+    - RTH.save_game_puts(var)
+      - Adiciona uma variavel global para ser gravada e carregada toda a vez
+      que um jogo começar ( var = Nome da var (em string ou simbolo))
+    - RTH.ini_var_add(var, classe)
+      - Adiciona uma variavel global para ser inicializada no começo do jogo
+      (var = Nome da var (em string ou simbolo), classe = Nome da classe (em string ou simbolo)))
+    - RTH.check_string_array(array, string)
+      - Verifica uma array e retorna um valor ( valor = [soma dos valores apos a string, [valores]] )
+      (array = Array a ser verificada, string = String que será verificada na Array)
+  
+  3-Adição de Funções
+    - String
+      - number?
+        Retorna verdadeiro se todos os elementos forem um numero
+    - Array:
+      - todos_objetos(metodo)
+        Se for possivel, executa o método em todas as arrays
+        Método pode estar em String ou Simbolo
+      - dispose
+        Utiliza o método dispose para todos os elementos da array
+      - update
+        Utiliza o método update para todos os elementos da array
+      - refresh
+        Utiliza o método refresh para todos os elementos da array
+    - Font:
+      - save_color
+        Grava a cor da fonte atual
+      - save_font
+        Grava o nome da fonte atual
+      - save_size
+        Grava o tamanho da fonte atual
+      - retorna
+        Retorna s valores gravados
+    - RPG::Armor ( $data.armors )
+      - guard_element_names
+        Retorna o nome de todos os elementos de uma armadura
+    - RPG::Enemy ( $data.enemies )
+      - name
+        Mudança no nome do inimigo ( Deleta todos os valores entre os [], inclusive este )
+      - original_name
+        Nome original do inimigo
+      - name_include?(txt)
+        Retorna verdadeiro se no nome incluir [txt]
+      - name_value(txt)
+        Retorna o valor [txt(valor)]
+    - RPG::Skill ( $data.skills )
+      - element_names
+        Retorna o nome de todos os elementos de uma habilidade
+    - RPG::State ( $data.states )
+      - element_names
+        Retorna o nome de todos os elementos de um estado
+    - RPG::Weapon
+      - element_names
+        Retorna o nome de todos os elementos de uma arma
+    - Game_Battler
+      - state_name?(nome)
+        Retorna true se o battler possuir status com o nome nome
+    - Game_Actor
+      - guard_elements
+        Retorna uma Array com o nome de todos os elementos em suas armaduras
+      - atacker_elements
+        Retorna uma Array com o nome dos elementos de sua arma
+      - equiped_elements
+        Retorna uma Array com o nome de todos os elementos equipados
+      - equiped?(id, tipo)
+        Retorna true se equipado com id (tipo (0 = Armas, 1=Armaduras))
+    - Game_Enemy
+      - check_enemy_name(txt)
+        Retorna o valor [txt(valor)]
+      - original_name
+        Retorna o nome completo do inimigo
+    - Bitmap
+      - draw_gauge(id, x, y, w, h, filled, color1, color2, [opa, [triangular, [back_color, [type]]]])
+        Desenha uma barra
+          id         : Id da barra em string para evitar lags
+          x          : Posição X da barra
+          y          : Posição Y da barra
+          w          : Largura da barra
+          h          : Altura da barra
+          filled     : Quantidade da barra que está preenchida
+          color1     : Cor 1 da barra
+          color2     : Cor 2 da barra
+          opa        : Transparência da barra ( Opcional )
+          triangular : Barra é triangular(true ou false) ( Opcional )
+          back_color : Cor do fundo da barra ( Opcional )
+          type       : Tipo ( 0 ou 1 ) ( Opcional )
+      - draw_line(sx, sy, ex, ey, color, w)
+        Desenha uma linha
+          sx    : Ponto X inicial
+          sy    : Ponto Y inicial
+          ex    : Ponto X Final
+          ey    : Ponto Y Final
+          color : Cor da linha ( Branca ) ( Opcional )
+          w     : Largura da linha ( 1 ) ( Opcional )
+      - draw_circle(x, y, r, color)
+        Desenha um círculo
+          x     : Posição X do círculo
+          y     : Posição Y do círculo
+          r     : Raio do círculo
+          color : Cor do círculo
+      - mirror(tipo)
+        Redenha o bitmap espelhado
+          tipo : 0 = Invertido Horizontalmente
+                 1 = Invertido verticalmente
+                 2 = Invertiodo Horizontalmente e verticalmente
+      - hue_normal
+        Caso tenha mudado a hue com o comando hue_change, ela retorna ao normal
+    - Game_Map
+      - name(id)
+        Retorna o nome do mapa atual caso id seja nula
+        Retorna o nome do mapa de id tal caso id não seja nula
+    - Game_Character
+      - bit_width
+        Retorna a largura do bitmap do char
+      - bit_height
+        Retorna a altura do bitmap do char
+    - Game_Event
+      - comment_list
+        Retorna uma Array contendo todos os comentários da página atual do evento
+      - comment_value(txt)
+        Retorna o valor após o txt nos comentários
+  
+  4 - Faça bom uso
+  
+=end
+
+module RTH
+
+  #===============================================================================
+  # Classe Loaded Data
+  #   *Classe que carrega os dados da pasta data
+  #===============================================================================
+  
+  class Loaded_Data
+    
+    attr_reader(:actors, :classes, :skills, :items, :weapons, :armors, :enemies, :troops)
+    attr_reader(:states, :animations, :tilesets, :common_events, :system, :mapinfos)
+    
+    def initialize
+      @actors        = load_data("Data/Actors.rxdata")
+      @classes       = load_data("Data/Classes.rxdata")
+      @skills        = load_data("Data/Skills.rxdata")
+      @items         = load_data("Data/Items.rxdata")
+      @weapons       = load_data("Data/Weapons.rxdata")
+      @armors        = load_data("Data/Armors.rxdata")
+      @enemies       = load_data("Data/Enemies.rxdata")
+      @troops        = load_data("Data/Troops.rxdata")
+      @states        = load_data("Data/States.rxdata")
+      @animations    = load_data("Data/Animations.rxdata")
+      @tilesets      = load_data("Data/Tilesets.rxdata")
+      @common_events = load_data("Data/CommonEvents.rxdata")
+      @system        = load_data("Data/System.rxdata")
+      @mapinfos      = load_data("Data/MapInfos.rxdata")
+    end
+  
+  end
+  
+end
+
+#===============================================================================
+# Modulo RTH
+#-------------------------------------------------------------------------------
+# Valores Principais
+#===============================================================================
+
+module RTH
+  
+  $RTHScript = {}
+  $data = Loaded_Data.new
+  $save_game_add = []
+  $ini_var_add = []
+  
+  # Definição dos autotiles para desenhar o mapa
+  AUTOLTILES_DEFINITION = [
+  26, 27, 32, 33, 4,  27, 32, 33, 26, 5,  32, 33, 4,  5,  32, 33,
+  26, 27, 32, 11, 4,  27, 32, 11, 26, 5,  32, 11, 4,  5,  32, 11,
+  26, 27, 10, 33, 4,  27, 10, 33, 26, 5,  10, 33, 4,  5,  10, 33,
+  26, 27, 10, 11, 4,  27, 10, 11, 26, 5,  10, 11, 4,  5,  10, 11,
+  24, 25, 30, 31, 24, 5,  30, 31, 24, 25, 30, 11, 24, 5,  30, 11,
+  14, 15, 20, 21, 14, 15, 20, 11, 14, 15, 10, 21, 14, 15, 10, 11,
+  28, 29, 34, 35, 28, 29, 10, 35, 4,  29, 34, 35, 4,  29, 10, 35,
+  38, 39, 44, 45, 4,  39, 44, 45, 38, 5,  44, 45, 4,  5,  44, 45,
+  24, 29, 30, 35, 14, 15, 44, 45, 12, 13, 18 ,19, 12, 13, 18, 11,
+  16, 17, 22, 23, 16, 17, 10, 23, 40, 41, 46, 47, 4,  41, 46, 47,
+  36, 37, 42, 43, 36, 5,  42, 43, 12, 17, 18, 23, 12, 13, 42, 43,
+  36, 41, 42, 47, 16, 17, 46, 47, 12, 17, 42, 47, 0,  1,  6,  7
+  ]
+  
+end
+
+#===============================================================================
+# Modulo RTH
+#-------------------------------------------------------------------------------
+# Métodos Principais
+#===============================================================================
+
+module RTH
+  
+  #-------------------------------------------------------------------------------
+  # RTH.scene_name
+  #   - Retorna o nome da cena atual
+  #-------------------------------------------------------------------------------
+
+  def self.scene_name
+    if $scene != nil
+      return $scene.class
+    end
+  end
+  
+  #-------------------------------------------------------------------------------
+  # RTH.scene_update
+  #   - Faz o loop principal de uma cena
+  #-------------------------------------------------------------------------------
+
+  def self.scene_update
+    pre_scene = $scene
+    while $scene == pre_scene
+      Graphics.update
+      Input.update
+      $scene.update
+    end
+  end
+  
+  #-------------------------------------------------------------------------------
+  # RTH.save_game_puts
+  #   - adiciona uma variavel global para ser salva no arquivo de save
+  #-------------------------------------------------------------------------------
+  #   var: Variável que será salva e carregada
+  #     (Pode ser em simbolo ou string)
+  #-------------------------------------------------------------------------------
+
+  def self.save_game_puts(var)
+    if var.is_a?(Symbol)
+      var = "$" + var.id2name
+    elsif svar.is_a?(String)
+      var = "$" + var unless var[0, 1] == "$"
+    end
+    if $save_game_add.size == 0
+      $save_game_add.push(var)
+      return
+    end
+    for item in $save_game_add
+      return if item == var
+    end
+    $save_game_add.push(var)
+  end
+  
+  #-------------------------------------------------------------------------------
+  # RTH.ini_var_add
+  #   - adiciona uma variavel global paa ser iniciada assim que o jogo começar
+  #-------------------------------------------------------------------------------
+  #   var: Variável que será iniciada (Pode ser em simbolo ou string)
+  #   classe: Classe que representara a variavel
+  #-------------------------------------------------------------------------------
+
+  def self.ini_var_add(var, classe)
+    if var.is_a?(Symbol)
+      var = "$" + var.id2name
+    elsif svar.is_a?(String)
+      var = "$" + var unless var[0, 1] == "$"
+    end
+    classe = classe.to_s
+    if $ini_var_add.size == 0
+      $ini_var_add.push([var, classe])
+      return
+    end
+    for item in $ini_var_add
+      return if item[0] == var
+    end
+    $ini_var_add.push([var, classe])
+  end
+  
+  #-------------------------------------------------------------------------------
+  # RTH.check_string_array
+  #   - Pega uma array e verifica o valor
+  #-------------------------------------------------------------------------------
+  #   array: Array a ser verificada
+  #   check: Nome a ser verificado
+  #-------------------------------------------------------------------------------
+
+  def self.check_string_array(array, check)
+    pre_array = array.dup
+    valor = [0, []]
+    for element in array
+      next unless element.is_a?(String)
+      if element =~ /#{check}[ ]?(\d+)?/
+        valor[0] += $1.to_i
+        valor[1].push($1.to_i)
+      end
+    end
+    return valor
+  end
+  
+end
+
+#===============================================================================
+# Classe Scene_Title
+#-------------------------------------------------------------------------------
+# Mudanças
+#   Aqui é feita a adição das variaveis que são adicionadas pelo comando
+#   RTH.ini_var_add
+#===============================================================================
+
+class Scene_Title
+  
+  alias rth_module_ini_var_add_command_new_game command_new_game
+  def command_new_game
+    $ini_var_add = [] if $save_game_add == nil
+    for i in $ini_var_add
+      next if i == nil
+      eval("#{i[0]} = #{i[1]}.new")
+    end
+    rth_module_ini_var_add_command_new_game
+  end
+  
+  alias rth_module_ini_var_add_command_battle_test battle_test
+  def battle_test
+    $ini_var_add = [] if $save_game_add == nil
+    for i in $ini_var_add
+      next if i == nil
+      eval("#{i[0]} = #{i[1]}.new")
+    end
+    rth_module_ini_var_add_command_new_game
+  end
+  
+end
+
+#===============================================================================
+# Classe Interpreter
+#-------------------------------------------------------------------------------
+# Mudanças
+#   É feita a mudança em comando que evita o Lag
+#===============================================================================
+
+class Interpreter
+  
+  def command_123
+    # Se o ID do evento for válido
+    if @event_id > 0
+      # Criar uma chave de Auto-Switch
+      key = [@map_id, @event_id, @parameters[0]]
+      # Mudar Auto-Switches
+      $game_self_switches[key] = (@parameters[1] == 0)
+      # Atualizar
+      if @map_id == $game_map.map_id
+        $game_map.events[@event_id].refresh
+      end
+    end
+    # Continuar
+    return true
+  end
+
+end
+
+#===============================================================================
+# Classe Scene_Save
+#-------------------------------------------------------------------------------
+# Mudanças
+#   Aqui é feita a adição das variaveis que são adicionadas pelo comando
+#   RTH.save_game_puts
+#===============================================================================
+
+class Scene_Save < Scene_File
+
+  
+  alias rth_module_save_add_write_save_data write_save_data
+  def write_save_data(file)
+    rth_module_save_add_write_save_data(file)
+    $save_game_add = [] if $save_game_add == nil
+    Marshal.dump($save_game_add, file)
+    if $save_game_add.size >= 1
+      for item in $save_game_add
+        eval("Marshal.dump(#{item}, file)")
+      end
+    end
+  end
+  
+end
+    
+#===============================================================================
+# Classe Scene_Save
+#-------------------------------------------------------------------------------
+# Mudanças
+#   Aqui são carregadas as variaveis que são adicionadas pelo comando
+#   RTH.save_game_puts
+#===============================================================================
+
+class Scene_Load < Scene_File
+  
+  alias rth_module_save_add_read_save_data read_save_data
+  def read_save_data(file)
+    rth_module_save_add_read_save_data(file)
+    $save_game_add = Marshal.load(file)
+    if $save_game_add.size >= 1
+      for item in $save_game_add
+        eval("#{item} = Marshal.load(file)")
+      end
+    end
+  end
+  
+end
+
+#===============================================================================
+# Classe RTH_Table
+#-------------------------------------------------------------------------------
+# Uma tabela mais avançada em que se pode colocar muito mais coisa
+#===============================================================================
+
+class RTH_Table
+  
+  attr_reader :xsize
+  attr_reader :ysize
+  attr_reader :zsize
+  
+  def initialize(xsize, ysize=nil, zsize=nil)
+    resize(xsize, ysize, zsize, true)
+  end
+  
+  def [](x, y=nil, z=nil)
+    y = 1 if @lados <= 1
+    z = 1 if @lados <= 2
+    return @conteudo[x][y][z]
+  end
+  
+  def xsize=(valor)
+    pre_xsize = @xsize
+    @xsize = valor
+    for x in (pre_xsize-1)...@xsize
+      for y in 0...@ysize
+        for z in 0...@zsize
+          @conteudo[x][y][z] = nil
+        end
+      end
+    end
+  end
+  
+  def ysize=(valor)
+    raise("Não se pode mudar o lado y de uma Table de #{@lados} lados") if @lados < 2
+    pre_ysize = @ysize
+    @ysize = valor
+    for x in 0...@xsize
+      for y in (pre_ysize-1)...@ysize
+        for z in 0...@zsize
+          @conteudo[x][y][z] = nil
+        end
+      end
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # number?
+  #   - retorna true se a string for somente numeros
+  #-------------------------------------------------------------------------------
+  
+  def zsize=(valor)
+    raise("Não se pode mudar o lado z de uma Table de #{@lados} lados") if @lados < 3
+    pre_zsize = @zsize 
+    @zsize = valor
+    for x in 0...@xsize
+      for y in 0...@ysize
+        for z in (pre_zsize-1)...@zsize
+          @conteudo[x][y][z] = nil
+        end
+      end
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # number?
+  #   - retorna true se a string for somente numeros
+  #-------------------------------------------------------------------------------
+  
+  def resize(xsize, ysize=nil, zsize=nil, deleteall=false)
+    @xsize = xsize.abs
+    @lados = (ysize.nil? ? 1 : zsize.nil? ? 2 : 3)
+    @ysize = (ysize.abs <= 0 ? 1 : ysize.abs)
+    @zsize = (zsize.abs <= 0 ? 1 : zsize.abs)
+    @conteudo = [] if @conteudo.nil? or deleteall
+    for x in 0...@xsize
+      @conteudo[x] = [] if @conteudo[x].nil? or deleteall
+      for y in 0...@ysize
+        @conteudo[x][y] = [] if @conteudo[x][y].nil? or deleteall
+        for z in 0...@zsize
+          @conteudo[x][y][z] = nil if @conteudo[x][y][z].nil? or deleteall
+        end
+      end
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # number?
+  #   - retorna true se a string for somente numeros
+  #-------------------------------------------------------------------------------
+  
+  def clear
+    resize(@xsize, @ysize, @zsize, true)
+  end
+
+  #-------------------------------------------------------------------------------
+  # number?
+  #   - retorna true se a string for somente numeros
+  #-------------------------------------------------------------------------------
+  
+  def []=(x, y, z=nil, valor=nil)
+    if @lados <= 2
+      valor = z
+      z = 1
+    end
+    if @lados <= 1
+      valor = y
+      y = 1
+    end
+    @conteudo[x][y][z] = valor
+  end
+  
+end
+
+#===============================================================================
+# Classe Object
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Object
+
+  #-------------------------------------------------------------------------------
+  # false?
+  #   - retorna true se o objeto for false
+  #-------------------------------------------------------------------------------
+  
+  def false?
+    return self.is_a?(FalseClass)
+  end
+
+  #-------------------------------------------------------------------------------
+  # true?
+  #   - retorna true se o objeto for true
+  #-------------------------------------------------------------------------------
+  
+  def true?
+    return self.is_a?(TrueClass)
+  end
+  
+end
+
+#===============================================================================
+# Classe Array
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class String
+
+  #-------------------------------------------------------------------------------
+  # number?
+  #   - retorna true se a string for somente numeros
+  #-------------------------------------------------------------------------------
+
+  def number?
+    valor = true
+    pre_text = self.dup
+    while ((c = pre_text.slice!(/./)) != nil)
+      proximo = false
+      (0..9).each {|i|
+      proximo = true if c == i.to_s 
+      break if proximo
+      }
+      valor = proximo
+      break unless valor
+    end
+    return valor
+  end
+
+end
+
+#===============================================================================
+# Classe Array
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Array
+
+  #-------------------------------------------------------------------------------
+  # todos_objetos
+  #   - utiliza um método em todos os objetos da array
+  #-------------------------------------------------------------------------------
+  #   metodo: Método que será utilizado nos objetos
+  #     (Pode ser em simbolo ou string)
+  #-------------------------------------------------------------------------------
+
+  def todos_objetos(metodo)
+    metodo = metodo.to_s
+    array = self
+    index = 0
+    begin
+      if index <= array.size
+        for i in index...array.size
+          next if array[i] == nil
+          object = array[i]
+          eval("object.#{metodo}")
+        end
+      end
+    rescue
+      index = i + 1
+      retry
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # update
+  #   - utiliza o método dispose em todos os elementos da array
+  #-------------------------------------------------------------------------------
+
+  def dispose
+    self.todos_objetos(:dispose)
+  end
+
+  #-------------------------------------------------------------------------------
+  # update
+  #   - utiliza o método update em todos os elementos da array
+  #-------------------------------------------------------------------------------
+
+  def update
+    self.todos_objetos(:update)
+  end
+
+  #-------------------------------------------------------------------------------
+  # refresh
+  #   - utiliza o método refresh em todos os elementos da array
+  #-------------------------------------------------------------------------------
+
+  def refresh
+    self.todos_objetos(:refresh)
+  end
+
+  #-------------------------------------------------------------------------------
+  # mix
+  #   - Junta uma (ou mais) array(s) em uma só, igual a +
+  #-------------------------------------------------------------------------------
+  #   arrays: arrays a serem agrupadas
+  #-------------------------------------------------------------------------------
+
+  def mix(*arrays)
+    for array in arrays
+      for n_array in array
+        self.push(n_array)
+      end
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # no_case_include?
+  #   - Retorna se incluir o valor, não importando se maisculo ou minusculo
+  #-------------------------------------------------------------------------------
+  #   valor: valor a procurar na array
+  #-------------------------------------------------------------------------------
+
+  def no_case_include?(valor)
+    ar = self.dup
+    ar.todos_objetos(:downcase)
+    return ar.include?(valor.downcase)
+  end  
+  
+end
+
+#===============================================================================
+# Classe Font
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Font
+
+  #-------------------------------------------------------------------------------
+  # ini_rth_vars
+  #    - Inicia as variaveis da classe Font utilizadas no meu método
+  #-------------------------------------------------------------------------------
+
+  def ini_rth_vars
+    @save_size   = default_size
+    @save_name   = default_name
+    @save_color  = Color.new(255, 255, 255)
+    @saved = {
+    "size"  => false,
+    "name"  => false,
+    "color" => false
+    }
+  end
+
+  private :ini_rth_vars
+  
+  #-------------------------------------------------------------------------------
+  # save_size
+  #    - Grava o tamanho da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def save_size
+    ini_rth_vars if @saved == nil
+    @saved["size"] = true
+    @save_size = self.size
+  end
+
+  #-------------------------------------------------------------------------------
+  # save_name
+  #    - Grava o nome da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def save_name
+    ini_rth_vars if @saved == nil
+    @saved["name"] = true
+    @save_name = self.name
+  end
+
+  #-------------------------------------------------------------------------------
+  # save_color
+  #    - Grava a cor da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def save_color
+    ini_rth_vars if @saved == nil
+    if self.color != nil
+      @save_color = self.color 
+      @saved["color"] = true
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # save_all
+  #    - Grava o nome, a cor, e o tamanho da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def save_all
+    save_size
+    save_name
+    save_color
+  end
+
+  #-------------------------------------------------------------------------------
+  # retorna
+  #    - Retorna e desgrava o nome, a cor, e o tamanho da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def retorna
+    ini_rth_vars if @saved == nil    
+    self.size  = @save_size  if @saved["size"]
+    self.name  = @save_name  if @saved["name"]
+    self.color = @save_color if @saved["color"]
+    @saved["size"]  = false
+    @saved["name"]  = false
+    @saved["color"] = false
+  end
+
+  #-------------------------------------------------------------------------------
+  # save_size
+  #    - Grava o tamanho da fonte atual
+  #-------------------------------------------------------------------------------
+
+  def rth_font
+    self.name = "Comic Sans MS"
+    self.size = 19
+    self.bold = false
+    self.italic = false
+  end
+  
+end
+
+#===============================================================================
+# Module RPG
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+module RPG
+  
+  #===============================================================================
+  # class Armor
+  #===============================================================================
+  
+  class Armor
+
+    #-------------------------------------------------------------------------------
+    # guard_element_names
+    #    - Retorna o nome dos elementos das armaduras
+    #-------------------------------------------------------------------------------
+
+    def guard_element_names
+      set = @guard_element_set 
+      names = []
+      set.each {|el| names.push($data.system.elements[el]) }
+      names = [""] if names.size == 0
+      return names
+    end
+    
+  end
+  
+  #===============================================================================
+  # class Enemy
+  #===============================================================================
+  
+  class Enemy
+
+    #-------------------------------------------------------------------------------
+    # name(mudança)
+    #    - Retorna o nome do inimigo sem o []
+    #-------------------------------------------------------------------------------
+
+    alias rth_module_rpg_enemy_name name
+    def name
+      name = rth_module_rpg_enemy_name.dup
+      name.gsub!(/\[(.*?)\]/, "")
+      return name
+    end
+
+    #-------------------------------------------------------------------------------
+    # original_name
+    #    - Retorna o nome originial do inimigo
+    #-------------------------------------------------------------------------------
+
+    def original_name
+      return rth_module_rpg_enemy_name.dup
+    end
+
+    #-------------------------------------------------------------------------------
+    # name_include?
+    #    - Retorna verdadeiro se no nome incluir [txt]
+    #-------------------------------------------------------------------------------
+
+    def name_include?(txt)
+      name = original_name.downcase.dup
+      if name =~ /\[#{txt.downcase}\]/
+        return true
+      end
+      return false
+    end
+
+    #-------------------------------------------------------------------------------
+    # name_value
+    #    - Retorna o valor em [txt(valor)]
+    #-------------------------------------------------------------------------------
+
+    def name_value(txt)
+      name = original_name.downcase.dup
+      if name =~ /\[#{txt.downcase}[ ]?(\d+)?\]/
+        return $1.to_i
+      end
+      return -1
+    end
+    
+  end
+  
+  #===============================================================================
+  # class Skill
+  #===============================================================================
+  
+  class Skill
+
+    #-------------------------------------------------------------------------------
+    # element_names
+    #    - Retorna o nome dos elementos das habilidades
+    #-------------------------------------------------------------------------------
+
+    def element_names
+      set = @element_set
+      names = []
+      set.each {|el| names.push($data.system.elements[el]) }
+      names = [""] if names.size == 0
+      return names
+    end
+    
+  end
+  
+  #===============================================================================
+  # class Skill
+  #===============================================================================
+  
+  class State
+
+    #-------------------------------------------------------------------------------
+    # element_names
+    #    - Retorna o nome dos elementos das habilidades
+    #-------------------------------------------------------------------------------
+
+    def element_names
+      set = @guard_element_set
+      names = []
+      set.each {|el| names.push($data.system.elements[el]) }
+      names = [""] if names.size == 0
+      return names
+    end
+    
+  end
+  
+  #===============================================================================
+  # class Weapon
+  #===============================================================================
+  
+  class Weapon
+
+    #-------------------------------------------------------------------------------
+    # element_names
+    #    - Retorna o nome dos elementos das armas
+    #-------------------------------------------------------------------------------
+
+    def element_names
+      set = @element_set
+      names = []
+      set.each {|el| names.push($data.system.elements[el]) }
+      names = [""] if names.size == 0
+      return names
+    end
+    
+  end
+  
+end
+
+#===============================================================================
+# classe Game_Battler
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Battler
+
+  #-------------------------------------------------------------------------------
+  # state_name?
+  #    - Retorna true se possuir estatus com o nome
+  #-------------------------------------------------------------------------------
+  #   name :Nome a ser verificado
+  #-------------------------------------------------------------------------------
+  
+  def state_name?(name)
+    for state_id in @states
+      state = $data.states[state_id]
+      return true if state.name.downcase == name.downcase
+    end
+    return false
+  end
+  
+end
+
+#===============================================================================
+# Classe Game_Actor
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Actor < Game_Battler
+
+  #-------------------------------------------------------------------------------
+  # guard_elements
+  #    - Retorna o nome dos elementos dos equipamentos de defesa
+  #-------------------------------------------------------------------------------
+
+  def guard_elements
+    elements = []
+    for id in [@armor1_id, @armor2_id, @armor3_id, @armor4_id]
+      next if $data.armors[id] == nil
+      elements.mix($data.armors[id].guard_element_names) 
+    end
+    return elements
+  end
+
+  #-------------------------------------------------------------------------------
+  # atacker_element
+  #    - Retorna o nome dos elementos da arma
+  #-------------------------------------------------------------------------------
+
+  def atacker_element
+    elements = []
+    elements.mix($data.weapons[@weapon_id].element_names) if $data.weapons[@weapon_id] != nil
+    return elements
+  end
+
+  #-------------------------------------------------------------------------------
+  # equiped_elements
+  #    - Retorna o nome dos elementos equipados
+  #-------------------------------------------------------------------------------
+
+  def equiped_elements
+    elements = atacker_element
+    elements.mix(guard_elements)
+    return elements
+  end
+
+  #-------------------------------------------------------------------------------
+  # equiped?
+  #    - Retorna verdadeiro se arma está equipada
+  #-------------------------------------------------------------------------------
+  #   id   :Id do objeto a ser verificado
+  #   tipo :Tipo do objeto a ser verificado(0 = Armas : 1 = Armaduras)
+  #-------------------------------------------------------------------------------
+
+  def equiped?(id, tipo=0)
+    equips = []
+    if tipo == 0
+      equips.push(@weapon_id)
+    elsif tipo == 1
+      for i in 0..4
+        eval("equips.push(@armor#{i}_id)")
+      end
+    end
+    return equips.include?(id)
+  end
+  
+end
+
+#===============================================================================
+# Classe Game_Enemy
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Enemy < Game_Battler
+  
+  alias rth_enemy_check_initialize initialize
+
+  #-------------------------------------------------------------------------------
+  # initialize(mudança)
+  #    - Definido o inimigo como sendo uma variavel local
+  #    - Definido o nome original do inimigo
+  #-------------------------------------------------------------------------------
+
+  def initialize(*args)
+    rth_enemy_check_initialize(*args)
+    @enemy = $data_enemies[@enemy_id]
+    @enemy_name = @enemy.name
+  end
+
+  #-------------------------------------------------------------------------------
+  # check_enemy_name (Novo)
+  #    - Retorna o texto entre os []
+  #-------------------------------------------------------------------------------
+
+  def check_enemy_name(check)
+    valor = ""
+    if self.original_name =~ /\[#{check}[ ]?(\d+)?\]/
+      valor = $1.to_i
+    end
+    return valor
+  end
+
+  #-------------------------------------------------------------------------------
+  # original_name (Novo)
+  #    - Retorna o nome original do inimigo
+  #-------------------------------------------------------------------------------
+
+  def original_name
+    return @enemy.original_name.dup
+  end
+  
+end
+
+#===============================================================================
+# classe BITMAP
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Bitmap
+
+  #-------------------------------------------------------------------------------
+  # draw_gauge
+  #    - Desehna uma barra
+  #       x         : Posição x da barra
+  #       y         : Posição y da barra
+  #       w         : Largura da barra
+  #       h         : Altura da barra
+  #       filled    : Largura preenchida da barra
+  #       color1    : cor 1 da barra
+  #       color2    : cor 2 da barra
+  #       back_color: Cor do fundo da barra
+  #-------------------------------------------------------------------------------
+
+  def draw_gauge(id, x, y, w, h, filled, color1, color2, opa=255, triangular=false, back_color=nil, type=0)
+    #y += h/4
+    $gauges = {} if $gauges == nil
+    $back_gauges = {} if $back_gauges == nil
+    real_w = w - 4
+    real_h = h - 4   
+    real_filled = 104.to_f * filled.to_f / 100.to_f
+    if $gauges[id] != nil
+      back_gauge = $back_gauges[id].dup
+      gauge = $gauges[id].dup
+      if triangular
+        bx = h/2
+        for ay in 0..h
+          if ay % 2 != (h % 2)
+            bx -= 1
+          end
+          back_gauge.fill_rect(0, ay, bx, 1, Color.new(0, 0, 0, 0))
+          gauge.fill_rect(2, ay, bx, 1, Color.new(0, 0, 0, 0))
+          back_gauge.fill_rect(w-(h/2-bx), ay, (h/2-bx)+2, 1, Color.new(0, 0, 0, 0))
+          gauge.fill_rect(w-(h/2-bx)-2, ay, (h/2-bx), 1, Color.new(0, 0, 0, 0))
+          back_gauge.fill_rect(w-(h/2-bx)-2, ay, 2, 1, Color.new(70, 70, 0, 200))
+        end
+      end
+      rect = Rect.new(0, 0, w, h)
+      blt(x, y, back_gauge, rect, opa)
+      type == 0 ? rect.width = real_filled : rect.height = real_filled
+      ay = y
+      ay = ((y + h) - filled) if type != 0
+      blt(x, ay, gauge, rect, opa) if filled > 0
+      return
+    end
+    $gauges[id] = Bitmap.new(w, h)
+    $back_gauges[id] = draw_back_gauge(w, h, back_color)
+    if filled > 0
+      if type == 0
+        for i in 2 .. real_w
+          red   = color1.red   + (color2.red   - color1.red)   * (i - 2) / real_w
+          green = color1.green + (color2.green - color1.green) * (i - 2) / real_w
+          blue  = color1.blue  + (color2.blue  - color1.blue)  * (i - 2) / real_w
+          alpha = color1.alpha + (color2.alpha - color1.alpha) * (i - 2) / real_w
+          color = Color.new(red, green, blue, alpha)
+          $gauges[id].fill_rect(i, 2, 1, real_h, color)
+        end
+      else
+        for i in 2 .. real_h
+          red   = color1.red   + (color2.red   - color1.red)   * (i - 2) / real_h
+          green = color1.green + (color2.green - color1.green) * (i - 2) / real_h
+          blue  = color1.blue  + (color2.blue  - color1.blue)  * (i - 2) / real_h
+          alpha = color1.alpha + (color2.alpha - color1.alpha) * (i - 2) / real_h
+          color = Color.new(red, green, blue, alpha)
+          $gauges[id].fill_rect(2, i, real_w, 1, color)
+        end
+      end
+    end
+    draw_gauge(id, x, y, w, h, filled, color1, color2, opa, triangular, back_color, type)
+  end
+    
+  #-------------------------------------------------------------------------------
+  # draw_back_gauge
+  #    - Sub-método do método draw_gauge
+  #-------------------------------------------------------------------------------
+  
+  def draw_back_gauge(w, h, back_color=nil)
+    back_gauge = Bitmap.new(w, h)
+    back_gauge.fill_rect(rect, Color.new(0, 0, 0))
+    rect.set(1, 1, w-2, h-2)
+    cor = back_color.is_a?(Color) ? back_color : Color.new(70, 70, 0, 200)
+    back_gauge.fill_rect(rect, cor)
+    black_1 = Color.new(0, 0, 0)
+    black_2 = Color.new(78, 78, 78)
+    for i in 2 ... (w-4)
+      red   = black_1.red   + (black_2.red   - black_1.red)   * (i - 2) / (w-4)
+      green = black_1.green + (black_2.green - black_1.green) * (i - 2) / (w-4)
+      blue  = black_1.blue  + (black_2.blue  - black_1.blue)  * (i - 2) / (w-4)
+      alpha = black_1.alpha + (black_2.alpha - black_1.alpha) * (i - 2) / (w-4)
+      fundo_cor = Color.new(red, green, blue, alpha)
+      back_gauge.fill_rect(i, 2, 1, h-4, fundo_cor)
+    end
+    return back_gauge
+  end
+  
+  private :draw_back_gauge
+  
+  #-------------------------------------------------------------------------------
+  # *Retirado do jogo Nakiri Dungeon (Editado)
+  #    Creditos a um japa (não sei o nome)
+  #-------------------------------------------------------------------------------
+  # draw_line
+  #    - Desenha uma linha
+  #-------------------------------------------------------------------------------
+  #   sx    :Posição x inicial
+  #   sy    :Posição y inicial
+  #   ex    :Posição x final
+  #   ey    :Posição y final
+  #   color :Cor da lina
+  #   w     :Largura da linha
+  #-------------------------------------------------------------------------------
+  
+  def draw_line(sx, sy, ex, ey, color=Color.new(255, 255, 255), w=1)
+    rad = Math.atan2(ey-sy, ex-sx) 
+    dx = Math.cos(rad)
+    dy = Math.sin(rad)
+    while ((sx - ex).abs > 1 && (sy - ey).abs > 1)
+      sx += dx
+      sy += dy
+      rect = Rect.new(sx, sy, w, w)
+      fill_rect(rect, color)
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # *Retirado do jogo Nakiri Dungeon (Editado)
+  #    Creditos a um japa (não sei o nome)
+  #-------------------------------------------------------------------------------
+  # draw_circle
+  #    - Desenha um circulo
+  #-------------------------------------------------------------------------------
+  #   x     :Posição x
+  #   y     :Posição y
+  #   r     :Raio
+  #   color :Cor
+  #-------------------------------------------------------------------------------
+  
+  def draw_circle(x, y, r, color)
+    for ax in 0..r
+      for ay in 0..r
+        set_pixel(x + ax, y + ay, color) if Math.hypot((r/2) - ax, (r/2) - ay) < r/2
+      end
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # mirror
+  #    - Inverte um desenho
+  #       (Não recomendado para Bitmaps grandes, causa lag e até mesmo erros)
+  #-------------------------------------------------------------------------------
+  #   tipo :Valor entre 0 e 2
+  #           Quando 0 é invertido horizontalmente
+  #           Quando 1 é invertido verticalmente
+  #           Quando 2 é invertido horizontalmente e verticalmente
+  #-------------------------------------------------------------------------------
+  
+  def mirror(tipo=0)
+    a = self.dup
+    return a unless tipo.between?(0, 2)
+    for x in 0..a.width
+      for y in 0..a.height
+        value_x = (tipo == 0 or tipo == 2 ? (a.width - x) : x)
+        value_y = (tipo >= 1 ? (a.height - y) : y)
+        a.set_pixel(value_x, value_y, get_pixel(x, y))
+      end
+    end
+    return a
+  end
+
+  #-------------------------------------------------------------------------------
+  # hue_change(Mudança)
+  #   Adições que permite ver o quanto modificado foi o bitmap
+  #-------------------------------------------------------------------------------
+  #   change :Valor a ser mudado(0 a 360)
+  #-------------------------------------------------------------------------------
+  
+  alias rth_module_bitmap_hue_change hue_change
+  def hue_change(change)
+    @changed = 0 if @changed == nil
+    @changed += change
+    @changed %= 360
+    rth_module_bitmap_hue_change(change)
+  end
+
+  #-------------------------------------------------------------------------------
+  # hue_normal
+  #    - Retorna ao hue original
+  #-------------------------------------------------------------------------------
+  
+  def hue_normal
+    @changed = 0 if @changed == nil
+    return if @changed == 0
+    hue_change(-@changed)
+    @changed = 0
+  end
+  
+end
+
+#===============================================================================
+# classe Game_Map
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Map
+
+  #-------------------------------------------------------------------------------
+  # name
+  #    - Retorna o nome do mapa
+  #-------------------------------------------------------------------------------
+  #   map_id :id do mapa a ser retornado o nome, quando nulo
+  #       retorna o nome do mapa atual
+  #-------------------------------------------------------------------------------
+  
+  def name(map_id=nil)
+    id = (map_id == nil ? @map_id : map_id)
+    return ($data.mapinfos[id] == nil ? "" : $data.mapinfos[id].name)
+  end
+  
+end
+
+#===============================================================================
+# classe Game_Character
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Character
+
+  #-------------------------------------------------------------------------------
+  # bit_width
+  #    - Retorna a largura original do bitmap do char (sem dividir por 4)
+  #-------------------------------------------------------------------------------
+  
+  def bit_width
+    return 0 if @character_name == nil or @character_name == ""
+    return (RPG::Cache.character(@character_name, 0).width)
+  end
+
+  #-------------------------------------------------------------------------------
+  # bit_width
+  #    - Retorna a altura original do bitmap do char (sem dividir por 4)
+  #-------------------------------------------------------------------------------
+  
+  def bit_height
+    return 0 if @character_name == nil or @character_name == ""
+    return (RPG::Cache.character(@character_name, 0).height)
+  end
+  
+end
+
+#===============================================================================
+# classe Game_Event
+#-------------------------------------------------------------------------------
+# Inserções de métodos utéis
+#===============================================================================
+
+class Game_Event < Game_Character
+   
+  alias rth_module_gevent_refresh refresh
+  
+  #-------------------------------------------------------------------------------
+  # name
+  #    - Retorna o nome do evento
+  #-------------------------------------------------------------------------------
+  
+  def name
+    return @event.name
+  end
+  
+  #-------------------------------------------------------------------------------
+  # refresh
+  #    - Atualiza o Evento
+  #-------------------------------------------------------------------------------
+  
+  def refresh
+    rth_module_gevent_refresh
+    set_comment_list
+  end
+  
+  #-------------------------------------------------------------------------------
+  # comment_list
+  #    - Retorna os comentarios do evento
+  #-------------------------------------------------------------------------------
+  
+  def comment_list
+    set_comment_list if @comment_list.nil?
+    return @comment_list
+  end
+  
+  #-------------------------------------------------------------------------------
+  # set_comment_list
+  #    - Retorna os comentarios do evento
+  #-------------------------------------------------------------------------------
+  
+  def set_comment_list
+    @comment_list = []
+    return if @list == nil
+    for item in @list
+      next if item.nil?
+      @comment_list.push(item.parameters[0].downcase) if item.code == 108 or item.code == 408
+    end
+  end
+
+  #-------------------------------------------------------------------------------
+  # comment_value
+  #    - Retorna ovalor após o comentário
+  #-------------------------------------------------------------------------------
+  #   comment :Comentário a ser retornado o valor
+  #-------------------------------------------------------------------------------
+  
+  def comment_value(comment)
+    code = comment_list
+    comment = comment.downcase
+    set_comment_list if @comment_list.nil?
+    for txt in @comment_list
+      if txt =~ /#{comment}[ ]?(\d+)?/
+        value = $1.to_i
+        return value
+      end
+    end
+    return nil
+  end
+
+  #-------------------------------------------------------------------------------
+  # comment_values
+  #    - Retorna uma Array com os valores após o comentário
+  #-------------------------------------------------------------------------------
+  #   comment :Comentário a ser retornado o valor
+  #-------------------------------------------------------------------------------
+  
+  def comment_values(comment)
+    value = []
+    code = comment_list
+    comment = comment.downcase
+    set_comment_list if @comment_list.nil?
+    for txt in @comment_list
+      if txt =~ /#{comment}[ ]?(\d+)?/
+        value << $1.to_i
+      end
+    end
+    return value
+  end
+  
+end
+
+#===============================================================================
+# Fim do módulo RTH
+#===============================================================================

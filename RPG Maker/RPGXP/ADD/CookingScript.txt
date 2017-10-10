@@ -1,0 +1,605 @@
+#---------------------------------------------------------------------------------------------
+#Cooking Module & Control Ver. 0.4
+#Script de: Theodore Van Vermillious
+#traduzido por: PedroHLC
+#28 de Agosto de 2008
+#---------------------------------------------------------------------------------------------
+#
+#
+#iNTRODUÇÃO
+#
+#  Como você sabe, cozinhar é algo encensial em alguns jogos.
+#  E é isso que o script faz...
+#  
+#iSTÓRIA
+#Ver 0.1
+# Criação do módulo
+#
+#Ver 0.2
+#  Criado uma janela de controle
+#  Criado uma estutura
+#  Algumas Adaptações
+#  Menu , igredienter, Receitas e etc....
+#
+#--------------------------------------------------------------------------
+# Nome : Module_Cook
+# Tipo : module
+# Descrição : Contole de varias funções.
+#--------------------------------------------------------------------------
+module Module_Cook
+
+# Não mude aki
+  USED = true # Efeito de cozinhar
+  UNUSED = false # Retornar depois de acabar de cozinha????????
+  
+# Lista  de Itens
+  # Para Ganhar um desses items execute esse comando $game_party.gain_cook(id, n)sendo "id" o id e "n" a
+  # sendo "id" o id e "n" a quantidade.
+  #
+  # Legendas:
+  # ID = Código do item na  dabase]
+  # Name = O nome do Item
+  # Type = Tipo
+  # Price = Preço
+  MATERIALS = [
+  {
+  'ID' => 0,
+  'Name' => 'Bread',
+  'Type' => 'Material',
+  'Price' => 10
+  },
+  {
+  'ID' => 1,
+  'Name' => 'Mayonnaise',
+  'Type' => 'Material',
+  'Price' => 32
+  },
+  {
+  'ID' => 2,
+  'Name' => 'Spatula',
+  'Type' => 'Tool',
+  'Price' => 1000
+  },
+  {
+  'ID' => 3,
+  'Name' => 'Hot Sauce',
+  'Type' => 'Material',
+  'Price' => 20
+  },
+  {
+  'ID' => 4,
+  'Name' => 'Egg',
+  'Type' => 'Material',
+  'Price' => 5
+  },
+  {
+  'ID' => 5,
+  'Name' => 'Noodle',
+  'Type' => 'Material',
+  'Price' => 50
+  },
+  {
+  'ID' => 6,
+  'Name' => 'Frying Fan',
+  'Type' => 'Tool',
+  'Price' => 2500
+  },
+  {
+  'ID' => 7,
+  'Name' => 'Knife',
+  'Type' => 'Tool',
+  'Price' => 1500
+  },
+  {
+  'ID' => 8,
+  'Name' => 'Oven',
+  'Type' => 'Tool',
+  'Price' => 5000
+  },
+  {
+  'ID' => 9,
+  'Name' => 'Salt',
+  'Type' => 'Material',
+  'Price' => 20
+  },
+  {
+  'ID' => 10,
+  'Name' => 'Oil',
+  'Type' => 'Material',
+  'Price' => 13
+  },
+  {
+  'ID' => 11,
+  'Name' => 'Flour',
+  'Type' => 'Material',
+  'Price' => 22
+  },
+  {
+  'ID' => 12,
+  'Name' => 'Tomato',
+  'Type' => 'Material',
+  'Price' => 10
+  },
+  {
+  'ID' => 13,
+  'Name' => 'Pepper',
+  'Type' => 'Material',
+  'Price' => 12
+  },
+  {
+  'ID' => 14,
+  'Name' => 'Carrot',
+  'Type' => 'Material',
+  'Price' => 21
+  },
+  {
+  'ID' => 15,
+  'Name' => 'Pumpkin',
+  'Type' => 'Material',
+  'Price' => 96
+  },
+  {
+  'ID' => 16,
+  'Name' => 'Spinach',
+  'Type' => 'Material',
+  'Price' => 102
+  },
+  {
+  'ID' => 17,
+  'Name' => 'Strawberry',
+  'Type' => 'Material',
+  'Price' => 120
+  },
+  {
+  'ID' => 18,
+  'Name' => 'Whisk',
+  'Type' => 'Tool',
+  'Price' => 2100
+  },
+  {
+  'ID' => 19,
+  'Name' => 'Salmon',
+  'Type' => 'Material',
+  'Price' => 200
+  },
+  {
+  'ID' => 20,
+  'Name' => 'Pot',
+  'Type' => 'Tool',
+  'Price' => 6500
+  }
+  
+  ]
+  # Fim da Lista de Itens
+
+#Lista de Receitas
+  # Crie uma receita assim:
+  # {
+  # 'Name' => 'nome',
+  # 'Result' => [item_id , quantidade], #item_id = Id do item na database.
+  # 'Description' => 'Descição',
+  # 'COMPONENTS' => [[cook_id, Quantidade, Usado ou não],[cook_id, Quantidade, Usado ou não],...] #cook_id = Id do Iem no script
+  # }, #end of this Recipe
+  #
+  # Legenda:
+  # Name = Nome
+  # Result = Resultado
+  # Descrition = Descrição
+  # COMPONENTS = Componentes
+  RLIST = [
+  {
+  'Name' => 'Baked Bread',
+  'Result' => [33, 1],
+  'Description' => 'Regular Bread baked in oven. Great for breakfast.',
+  'COMPONENTS' => [[0, 1, USED],[7, 1, UNUSED],[8, 1, UNUSED]]
+  },
+  {
+  'Name' => 'Omelet',
+  'Result' => [34, 1],
+  'Description' => 'Omelet.',
+  'COMPONENTS' => [[2, 1, USED],[4, 1, UNUSED],[6, 1, UNUSED],[9, 1, USED],[10, 1, USED],[18, 1, UNUSED]]
+  },
+  {
+  'Name' => 'Scramble Egg',
+  'Result' => [35, 1],
+  'Description' => 'Scramble Egg.',
+  'COMPONENTS' => [[2, 1, USED],[4, 1, UNUSED],[6, 1, UNUSED],[9, 1, USED],[10, 1, USED]]
+  },
+  {
+  'Name' => 'Hot Water',
+  'Result' => [36, 1],
+  'Description' => 'Water Bomb made from 10 litter of water and boiled in pot for 100 hours.',
+  'COMPONENTS' => [[20, 1, UNUSED],[21, 10, USED]]
+  }
+  ]
+  #  fim da lista de receitas
+  #---------------------------------------------------------------------------------------------
+  #Module_Cook.valid_recipe?(name)
+  #Verifica se a receita existe.
+  #---------------------------------------------------------------------------------------------
+  def self.valid_recipe?(name)
+    for recipe in RLIST
+      return true if name == recipe['Name']
+    end
+    return false
+  end
+  
+  #---------------------------------------------------------------------------------------------
+  #Module_Cook.can_make?(name)
+  #Verifica o nome da receita e seus componentes.
+  #---------------------------------------------------------------------------------------------
+  def self.can_make?(name)
+    return false unless self.valid_recipe?(name)
+    for r in RLIST
+      next unless name == r['Name']
+      recipe = r
+      return false unless recipe
+    end
+    for component in recipe['COMPONENTS']
+      return false unless $game_party.cook_number(component[0]) >= component[1]
+    end
+      return true
+  end
+  #---------------------------------------------------------------------------------------------
+  #Module_Cook.get_recipe(name)
+  #Verifica o nome da receita e seus componentes#2.
+  #---------------------------------------------------------------------------------------------
+  def self.get_recipe(name)
+    return nil unless self.valid_recipe?(name)
+    for recipe in RLIST
+      return recipe if recipe['Name'] == name
+    end
+    return nil
+  end
+end
+#--------------------------------------------------------------------------
+# Nome : Game_Party
+# Tipo : class
+# Descrição : Adiciona o comando de ganmhar o item.
+#--------------------------------------------------------------------------
+class Game_Party
+  attr_reader :recipe_got
+  attr_reader :cook_item
+  
+  alias cooking_theo_init initialize
+  
+  def initialize
+    cooking_theo_init
+    @recipe_got = []
+    @cook_item = {}
+  end
+  
+  def cook_number(item_id)
+    if valid_material(item_id)
+      return @cook_item.include?(item_id) ? @cook_item[item_id] : 0
+    end
+    return nil
+  end
+  
+  def valid_material(item_id)
+    for materi in Module_Cook::MATERIALS
+      return true if materi['ID'] == item_id
+    end
+    return false
+  end
+  
+  def gain_recipe(name)
+    @recipe_got.push(name) if Module_Cook.valid_recipe?(name) and !have_recipes(name)
+  end
+  
+  def remove_recipe(name)
+    @recipe_got.delete(name)
+  end
+  
+  def gain_cook(item_id, n)
+    @cook_item[item_id] = [[cook_number(item_id) + n, 0].max, 99].min
+  end
+  
+  def lose_cook(item_id, n)
+    gain_cook(item_id, -n)
+  end
+    
+  def have_recipes(name)
+    return @recipe_got.include?(name)
+  end
+end
+#Scenas
+#--------------------------------------------------------------------------
+# Nome : Scene_Menu
+# Tipp : class
+# Descrição : Menu.
+#--------------------------------------------------------------------------
+class Scene_Menu
+  alias cook_theo_main main
+  alias cook_theo_init initialize
+  alias cook_theo_update update
+  alias cook_theo_update_command update_command
+  def initialize(menu_index = 0)
+    cook_theo_init
+  end
+  def main
+    s1 = $data_system.words.item
+    s2 = $data_system.words.skill
+    s3 = $data_system.words.equip
+    s4 = "Estado"
+    s5 = "Salvar"
+    s6 = "Sair"
+    s7 = 'Cozinhar'
+    @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7])
+    @command_window.height = 224
+    @command_window.index = @menu_index
+    if $game_party.actors.size == 0
+      @command_window.disable_item(0)
+      @command_window.disable_item(1)
+      @command_window.disable_item(2)
+      @command_window.disable_item(3)
+    end
+    if $game_system.save_disabled
+      @command_window.disable_item(4)
+    end
+    @playtime_window = Window_PlayTime.new
+    @playtime_window.x = 0
+    @playtime_window.y = 224
+    @steps_window = Window_Steps.new
+    @steps_window.x = 0
+    @steps_window.y = 320
+    @gold_window = Window_Gold.new
+    @gold_window.x = 0
+    @gold_window.y = 416
+    @status_window = Window_MenuStatus.new
+    @status_window.x = 160
+    @status_window.y = 0
+    Graphics.transition
+    loop do
+      Graphics.update
+      Input.update
+      update
+      if $scene != self
+        break
+      end
+    end
+    Graphics.freeze
+    @command_window.dispose
+    @playtime_window.dispose
+    @steps_window.dispose
+    @gold_window.dispose
+    @status_window.dispose
+  end
+  def update
+    cook_theo_update
+  end
+  def update_command
+    cook_theo_update_command
+    if Input.trigger?(Input::C)
+      case @command_window.index
+      when 6
+        $game_system.se_play($data_system.decision_se)
+        $scene = Scene_Material_Cook_List.new('Menu')
+      end
+    end
+    return
+  end
+end
+#--------------------------------------------------------------------------
+# Name : Scene_Cook
+# Type : class
+# Descrição : Scena Principal
+#--------------------------------------------------------------------------
+class Scene_Cook
+  #-----------------------------------------------------------------------------
+  def main
+    @recipe_list = Window_Reseplist.new
+    @cook_desc = Window_Cook_Description.new
+    Graphics.transition
+    loop do
+      Graphics.update
+      Input.update
+      update
+      break if $scene != self
+    end
+    Graphics.freeze
+    @recipe_list.dispose
+    @cook_desc.dispose
+  end
+  #-----------------------------------------------------------------------------
+  def item
+    return @recipe_list.data[@recipe_list.index]
+  end
+  def description
+    for recipe in Module_Cook::RLIST
+      name = recipe['Name']
+      descrip = recipe['Description']
+      database = @recipe_list.data
+      if database == name
+          return descrip
+      end
+    end
+  return ""
+  end
+  def update
+    @recipe_list.update
+    @cook_desc.update
+    if @recipe_list.active
+      update_help
+    end
+    if Input.trigger?(Input::B)
+      $game_system.se_play($data_system.cancel_se)
+      $scene = Scene_Map.new
+      return
+    end
+    if Input.trigger?(Input::C)
+      if cook(@recipe_list.data)
+        $game_system.se_play($data_system.decision_se)
+      else
+        $game_system.se_play($data_system.buzzer_se)
+      end
+      @recipe_list.refresh
+      return
+    end
+  end
+  #-----------------------------------------------------------------------------
+  def update_help
+    return @cook_desc.set_text(self.item == nil ? "" : self.description)
+  end
+  #-----------------------------------------------------------------------------
+  def cook(recipe)
+    return false unless Module_Cook.can_make?(recipe)
+    recipe = Module_Cook.get_recipe(@recipe_list.data)
+    for component in recipe['COMPONENTS']
+      $game_party.lose_cook(component[0], component[1]) if component[2]
+    end
+    recipe = Module_Cook.get_recipe(@recipe_list.data)
+      $game_party.gain_item(recipe['Result'][0], recipe['Result'][1])
+    return true
+  end
+end
+#--------------------------------------------------------------------------
+# Nome : Scene_Material_Cook_List
+# Tipo : class
+# Descrição : Scena que mostra os items que você tem.
+#--------------------------------------------------------------------------
+class Scene_Material_Cook_List
+  def initialize(type = nil)
+    @type = type
+  end
+  def main
+    @material_window = Window_materiallist.new(@type)
+    Graphics.transition
+    loop do
+      Graphics.update
+      Input.update
+      update
+      if $scene != self
+        break
+      end
+    end
+    Graphics.freeze
+    @material_window.dispose
+  end
+  def update
+    @material_window.update
+    if @material_window.active
+      update_material
+      return
+    end
+  end
+  def update_material
+    if Input.trigger?(Input::B)
+      $game_system.se_play($data_system.cancel_se)
+      if @type == 'Menu'
+        $scene = Scene_Menu.new(6)
+      else
+        $scene = Scene_Map.new
+      end
+      return
+    end
+  end
+end
+
+#Janelas
+#--------------------------------------------------------------------------
+# Nome : Window_Reseplist
+# Tipo : class
+# Descrição : Mostra suas receitas
+#--------------------------------------------------------------------------
+class Window_Reseplist < Window_Selectable
+  def initialize
+    super(0, 80, 640, 400)
+    self.contents = Bitmap.new(width - 32, height - 32)
+    @data = []
+    refresh
+  end
+  #-----------------------------------------------------------------------------
+  def data
+    return @data[self.index]
+  end
+  def refresh
+    self.contents.clear
+    @data = []
+    for recipe in $game_party.recipe_got
+      @data.push(recipe) if Module_Cook.valid_recipe?(recipe)
+    end
+    @item_max = @data.size
+    self.index = [[self.index, 0].max, @item_max].min
+    for i in 0..@data.size
+      data = @data[i]
+      x = @data.size
+      self.contents.font.color = (Module_Cook.can_make?(data) ? Color.new(0, 255, 0, 255) : Color.new(255, 0, 0, 255))
+      self.contents.draw_text(x, i * 32, self.contents.width - x, 32, data.to_s)
+    end
+  end
+end
+
+#--------------------------------------------------------------------------
+# Nome : Window_Cook_Description
+# Tipo : class
+# Descriçã : Informalções sobre as receitas
+#--------------------------------------------------------------------------
+class Window_Cook_Description < Window_Base
+  def initialize
+    super(0, 0, 640, 80)
+    self.contents = Bitmap.new(width - 32, height - 32)
+    self.contents.font.name = $defaultfonttype
+    self.contents.font.size = $defaultfontsize
+  end
+  #--------------------------------------------------------------------------
+  def set_text(text, align = 0)
+    if text != @text or align != @align
+      self.contents.clear
+      self.contents.font.color = normal_color
+      self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
+      @text = text
+      @align = align
+      @actor = nil
+    end
+    self.visible = true
+  end
+end
+# Resultaso
+#--------------------------------------------------------------------------
+# Nome : Window_materiallist
+# Tipo : class
+# Descrição : Está janela mostra os items que você conseguio
+#--------------------------------------------------------------------------
+class Window_materiallist < Window_Selectable
+  def initialize(type)
+    super(0, 0, 640, 480)
+    self.contents = Bitmap.new(width - 32, height - 32)
+    @data = []
+    @cook_list = Module_Cook::MATERIALS
+    @type = type
+    refresh
+  end
+  #-----------------------------------------------------------------------------------
+  def data
+    return @data[self.index]
+  end
+  #-----------------------------------------------------------------------------------
+
+  def refresh
+    self.contents.clear
+    item = @cook_list
+    @data = []
+    x = 0; y = 0
+    for recipe in $game_party.cook_item
+      @data.push('')
+    end
+    for recipe in $game_party.cook_item
+      for name in @cook_list
+        if name['ID'] == recipe[0]
+          self.contents.draw_text(x + 28, y, 212, 32, name['Name'], 0)
+          self.contents.draw_text(x + 240, y, 16, 32, ":", 1)
+          self.contents.draw_text(x + 256, y, 24, 32, recipe[1].to_s, 2)
+          y += 32
+        end
+      end
+    end
+    @item_max = @data.size
+    self.index = [[self.index, 0].max, @item_max].min
+    for i in 0..@data.size
+      data = @data[i]
+      x = @data.size
+      self.contents.draw_text(x, i * 32, self.contents.width - x, 32, data.to_s)
+    end
+  end
+end

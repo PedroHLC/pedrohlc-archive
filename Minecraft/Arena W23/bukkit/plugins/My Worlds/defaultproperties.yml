@@ -1,0 +1,16 @@
+#> This file contains the default world properties applied when loading or creating completely new worlds
+#> All the nodes found in the worlds.yml can be set here
+loaded: false
+keepSpawnLoaded: true
+forcedRespawn: false
+pvp: true
+operators: []
+deniedCreatures: []
+holdWeather: false
+formIce: true
+formSnow: true
+showRain: true
+showSnow: true
+difficulty: NORMAL
+reloadWhenEmpty: false
+

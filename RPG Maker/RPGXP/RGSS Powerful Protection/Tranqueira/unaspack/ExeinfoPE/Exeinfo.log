@@ -1,0 +1,27 @@
+Log file for Exeinfo PE - ver.0.0.2.9    created : 21/06/2011
+
+User Name : [ PedroHLC ]  User Domain : [ PedroHLC-PC ]  OS : [ Microsoft Windows ]
+
+
+EP    EP Address    EP bytes
+02/04 00029D2A | B8 40 8F 76 00 50 64 FF 35 00 00 00 00 64 89 25 00 00 00 00 33   Game.exe - PEcompact ver.2.78a ~ 3.0.3.9  - www.bitsum.com ( aPlib/Lzma )
+01/05 000C1214 | 83 7C 24 08 01 75 05 E8 F3 E2 00 00 FF 74 24 04 8B 4C 24 10 8B   RGSS103J.dll - *** Unknown DLL  -> CRC Checksum is Set ! <- - standard Compiler section , maybe new MS C++ compiler 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e-unpacked.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+01/04 0001D711 | 8B FF 55 8B EC 83 7D 0C 01 75 0D FF 75 10 6A 01 FF 75 08 E8 25   user32.dll - Microsoft Visual C++ v7.10/8.0/9.0 DLL ( 8B )
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e-unpacked.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e-unpacked.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC-final.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC-final.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point
+06/07 0017C001 | 60 E8 03 00 00 00 E9 EB 04 5D 45 55 C3 E8 01 00 00 00 EB 5D BB   RGSS102e.dll - ASProtect V2.X DLL -> Alexey Solodovnikov 
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC-final.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point
+01/05 00001010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   RGSS102E-unPacked-byPedroHLC-final.dll - ExE Corrupted - over 100 bytes are ZERO data - WRONG Entry Point

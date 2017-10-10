@@ -1,0 +1,19 @@
+*AutoSave na SQL a cada tecla,
+*Char Selector,
+*Super HUD interativa,
+*Cursor interativo com varias formas,
+*Um Criador de char super simples,
+*Sistema de Raça e Genero,
+*Game Over Especial para o Jogo,
+*Upar por pontos,
+*Sistema de mineração,
+*Resolução: 1024x768
+*Classes com privilégios de status,
+*Sistema de banco compartilhado entre todos os chars de um usuario,
+*Multi-Chars com limite de chars definidos pelo criador,
+*Console no jogo integrado para staffers,
+*Scenes do netplay em Mapas,
+*Limit Breaker,
+*Extras para Staff, quando staffers entrão em qualquer loja, compram qualquer item existente no jogo de graça, podem pular apertando "Espaço", podem voar apertando 'Tab", e podem fazer outras coisas com as teclas "F9" e "F10"
+*Server com interface grafica, console, logs, facil de configurar e muito mais...
+*Sistema de Save dos Itens,Armas,Armaduras,Skills na SQL 100% sem bugs!

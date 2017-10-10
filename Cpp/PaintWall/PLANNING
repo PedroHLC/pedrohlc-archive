@@ -1,0 +1,277 @@
+﻿//+	LibOpenWalls PLANNING
+//-	LibOpenWalls is a freeware, cross-platform, lightweight, open-source and royalty-free next-generation 2D graphics library
+//-	Created by Pedro Henrique Lara Campos in 13-02-2013
+//
+//-	Was designed for being used in multiple languages running in various system.
+//-	Requires a system compatible with Mesa (or some similar and its derivations) and C.
+//
+//-	Consists of these modules:
+//		[CORE]
+//			OpenWalls = for graphics M&R*
+//			OpenWallsC =  for complementing C language
+//			OpenWallsLanguage = for multiple languages support
+//			OpenWallsEvents = for intern event processing
+//			OpenWallsPC = for PC only
+//		[COMPLEMENTS - HIGH PRIORITY]
+//			OpenWallsUI = for Interface M&R*
+//			OpenWallsGOps =  for graphics related operations
+//		[COMPLEMENTS - LOW PRIORITY]
+//			OpenWallsControllers = for 'Controllers' suport {keyboard, joystick and mouse/touch}
+//			OpenWallsGHWOps =  for graphics related operations (Hardware accelerated)
+//			OpenWallFileMan = for formats-file managing
+//			OpenWallsES = for Embedded Systems only
+//	*M&R: Manipulation and rendering
+//
+//-	Possible future ports includes: C++ and D.
+//-	Possible future binds includes: Java, JavaScript and LUA.
+//-	Runs in Linux, Windows, iOS and some embedded systems (compatibles with Mesa).
+//-	Targeted to be compatible with 3D engines, sound librarys.
+
+
+OpenWalls { //2D Sprite
+	owPaint_create (w, h, alpha) //RAM image
+	owPaint_clear (&painting, color)
+	owPaint_free (&painting)
+	
+	(struct)  owPaint {
+		uint w, h //NEVER SHOULD BE CHANGED
+		bool alpha
+		void *pixels
+	}
+		
+	owSurface_create (x, y, &painting) //screen result (Mesa Texture)
+	owSurface_updateRect (&surface, x, y, w, h) //update rect
+	owSurface_updateFull (&surface) //update whole surface
+	owSurface_setChromaKeyColor (&surface, (int)rgb) //0 = NONE or RGBA
+	owSurface_free (&surface)
+	
+	(struct)  owSurface {
+		owPaint *source
+		owTexture target
+		int chromaKeyColor
+	}
+	
+	#define owVideoData \
+		int basez \
+		OpenWallsC_List<owSurface> *surfaces \
+		FUNC onCreate ()
+	
+	owVideo_setLowestZ (&video, (int)basez) //Surfaces base-Z
+	owVideo_addSurface (&video, &surface, (float)subz) : index
+	owVideo_display (&video) //Draw in OpenGL
+	
+	(struct)  owVideo {
+		##owVideoData
+	}
+}
+
+OpenWallsPC {
+	owPCVideo_create (w, h)
+	owPCVideo_setFullScreen (&video, (bool)fullScreenState, (bool)fillDislays)
+	owPCVideo_show ((bool)show)
+	
+	(struct) owPCVideo {
+		##owVideoData
+		uint w, h
+		bool fullScreenState, fillDislays
+	}
+}
+
+OpenWallsES {
+	owESVideo_create ()
+	
+	(struct) owESVideo {
+		##owVideoData
+	}
+}
+
+OpenWallsC {
+	owcList_create ()
+	#owcList_getElem (list, index, type)
+	owcList_addElem (list, value) : index
+	owcList_clearAlloc (list) //realloc removing NULL elements
+	owcList_free ()
+	
+	(struct) owcList { //like-array lightweight C type
+		uint elemNums
+		void *elem
+	}
+	
+	(enum) owError {
+		owError_unexpected=0,
+	}
+	
+	owCritical (error, (int)occurrence, message...)
+}
+
+OpenWallsEvents {
+	(enum) owEventType {
+		oweVideoResized,
+		oweVideoActivated,
+		oweVideoDeactivated,
+		oweVideoMinimized, //Restauration calls 'owiVideoActivated'
+		oweVideoMaximized,
+		oweVideoCallsClose,
+		oweMouseMoved,
+		oweKeyUp, //for KEYBOARD, MOUSE and JOYSTICK
+		oweKeyDown,
+		oweJoystickAxeMoved
+	}
+	
+	#define oweAnyEventData \
+		owEventType type
+	
+	(struct) oweAnyEvent {
+		##oweAnyEventData
+	}
+	
+	(struct) oweVideoResizedEvent {
+		##oweAnyEventData
+		uint oldw, oldh, neww, newh
+	}
+	
+	(struct) oweListen {
+		owEventType type,
+		FUNC call (oweAnyEvent)
+	}
+	
+	#oweListeners_create ()
+	OpenWallsC_List<oweListen> oweListeners
+}
+
+OpenWallsLanguage {
+	[nontype] (struct) owlErrorsMessages {(char*), ...}
+	[nontype] (struct) owlCommonWords {(char*), ...}
+	[nontype] (struct) owlMessages {(char*), ...}
+}
+
+OpenWallsUI { //2D User Interface
+	#owUI_create ()
+	
+	(struct) owUI {
+		owVideo *target
+		owiState *activeState
+		owiDefaults defaults
+	}
+	
+	(struct) owiDefaults {
+		owiSkin windowSkin,
+			buttonNormalSkin,
+			buttonPositiveSkin,
+			buttonNegativeSkin,
+			buttonDisabledSkin,
+			windowSkinSelectedSkin,
+			buttonNormalSelectedSkin,
+			buttonPositiveSelectedSkin,
+			buttonNegativeSelectedSkin,
+			buttonDisabledSelectedSkin,
+			windowClickedSkin,
+			buttonNormalClickedSkin,
+			buttonPositiveClickedSkin,
+			buttonNegativeClickedSkin,
+			buttonDisabledClickedSkin
+		owiState *states
+	}
+	
+	#define owiComponentData \
+		owiComponent *parent \
+		owPaint paint \
+		owSurface surface \
+		FUNC draw (void*)
+	
+	(struct) owiComponent {
+		##owiComponentData
+	}
+	
+	#define owiInteractiveComponent \
+		##owiComponentData \
+		FUNC onGotClick () \
+		FUNC onLostClick () \
+		FUNC onGotSelection () \
+		FUNC onLostSelection () \
+	
+	(struct) owiInteractiveComponent {
+		##owiInteractiveComponent
+	}
+	
+	#owiWindow_create (x, y, w, h, &skin)
+	owiWindow_draw (&window)
+	
+	(struct) owiWindow{
+		##owiComponentData
+		owiSkin *skin
+	}
+	
+	#owiButton_create (x, y, w, h, enabled)
+	owiButton_draw (&draw)
+	
+	(struct) owiButton {
+		##owiComponentData
+		##owiInteractiveComponent
+		owiSkin *enabledSkin,
+			*disabledSkin
+		bool enabled
+		owiPaint *symbol
+		owiText *label
+	}
+	
+	owiFont_free (&font)
+	
+	(struct) owiFont { //Pre-rendered Font
+		char *id
+		owiPaint *data
+		uint *kernings //NULL for Non-Kerned
+		uint h
+	}
+	
+	#owiText_create (&font, string)
+	owiText_render (text)
+	
+	(struct) owiText {
+		owiFont *font
+		char *string
+	}
+	
+	(struct) owiSkin {
+		// 3x3 Skin Mask
+	}
+	
+	#owiState_create ()
+	owiState_free (&state)
+	
+	(struct) owiState {
+		OpenWallsC_List<owiComponent> statics
+		OpenWallsC_List<owiInteractiveComponent> interactives
+		uint selection
+		FUNC create ()
+		FUNC free ()
+	}
+}
+
+OpenWallsControllers {
+	owcMouse_getGlobalPos (&gx, &gy)
+	owcMouse_getVideoPos (&video, &vx, &vy)
+	
+	owControllers_initialize () : bool
+	[nontype] (struct) owControllers {
+		owVideo *activeVideo
+		bool pointIsMouse //FALSE for TOUCH
+	}
+	
+	(enum) owcKeyList{
+		//TODO
+	}
+}
+
+OpenWallsFileMan {
+	owLoader_loadJPG (char *fname)
+	owLoader_loadPNG (char *fname)
+	owLoader_loadSVG (char *fname)
+	owLoader_loadPaintRAW (char *fname)
+	owLoader_loadTTF (char *fname)
+	owLoader_loadFontRAW (char *fname)
+	owLoader_loadLanguageRAW (char *fname)
+	
+	owSaver_savePaint (char *fname)
+	owSaver_saveFont (char *fname)
+}

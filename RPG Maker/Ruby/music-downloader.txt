@@ -1,0 +1,1 @@
+﻿"http://www.google.com/search?q=#{pesquisa}.mp3+site%3A4shared.com&tbs=vid%3A1&tbo=p&source=vgc&num=50"

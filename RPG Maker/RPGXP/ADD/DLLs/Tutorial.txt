@@ -1,0 +1,80 @@
+RGSS com DLLs
+Tutorial por PedoHLC
+
+Foi usado como base o seguinte tópico:http://www.rmxp.org/forums/viewtopic.php?t=7855
+
+Vocês já devem ter visto scripts que usam alguma DLL para utilizar algo que no “RGSS” não seria possível.
+Essas DLLs são escritas em “C” ou “C++”(DLLs em "C#" não são compativeis), então sera necessário você saber o básico.
+Neste processo vou explicar desde criar uma DLL compatível com o RGSS até usa-la em seu projeto.
+
+Parte 1-Criando sua DLL compatível com o RGSS.
+
+Primeiro crie um arquivo no bloco de notas e cole isso:
+[code]// dll.h
+#ifdef __cplusplus
+#define EXPORT extern "C" __declspec (dllexport)
+#else
+#define EXPORT __declspec (dllexport)
+#endif
+
+EXPORT int CALLBACK YourMethodName(YourMethodArguments);[/code]
+Agora salve-o com o nome de “dll” e a extensão como “.h” (“dll.h”).
+
+Agora crie um outro arquivo no bloco de notas e cole isso:
+[code]// dllmain.ccp
+#include <windows.h>
+#include "dll.h"
+
+EXPORT int CALLBACK YourMethodName(YourMethodArguments)
+{
+   Your_Method_Here
+}[/code]
+Agora salve-o com o nome de “dllmain” e a extensão como “.ccp” (“dllmain.cpp”).
+
+Mas e agora aonde eu vô editar?
+
+Simples aonde você encontra as seguintes palavras mude para o valor desejado:
+
+“YourMethodName”=> O nome do seu método.
+“YourMethodArguments”=> O argumento do seu método.
+“Your_Method_Here”=> O que vai acontecer se este método for executado.
+(Mais informações na próxima parte)
+
+Lembre-se sempre de fazer retornar algum valor (você verá que tipo de valor retornar mais a frente).
+Sera necessário algum programa de compilação da dll(Se você conhecer algum que funcione muito bem, por favor, diga-me)
+
+Parte 2-Usando uma DLL no meu projeto
+
+Para usar uma dll, você ira usar esse comando
+[code]@mydll =Win32API.new("dllname","YourMethodName","[YourMethodArguments]","returntype")
+finalvalue = @mydll.call(“[YourMethodArguments]”)[/code]
+ou
+[code]finalvalue = Win32API.new("dllname","YourMethodName","[YourMethodArguments]","returntype").call(“[YourMethodArguments]”)[/code]
+
+Para configurar troque as seguintes palavras mude para o valor desejado:
+“@mydll”=> A variavel que representara a sua DLL
+“dllname”=> O nome do arquivo de sua DLL
+“YourMethodName”=> O nome do seu método.
+“YourMethodArguments”=> Os argumentos a ser usados entre “[]” e separados por virgula ou tudo junto
+“returntype”=>O tipo de valor a ser retornado e esses são:
+    “n” = Numeric
+    “i” = Integer
+    “l” = String
+    “p” = Pointer 
+"finalvalue" => O valor que a DLL irá retornar
+
+Antes de usar o “returntype” e “um dos argumento” você deverá entender algumas coisas:
+*O valor do “returntype”/“um dos argumento” deve ser apenas a mascara de como chegara o resultado. Ex:
+Se o valor que a dll enviou for= a17683
+O “returntype”/“YourMethodArgument” será= lnnnnn
+
+*Se um dos valores que a DLL for uma letra maiúscula o “returntype”/“um dos argumento” também deve ser:
+Se o valor que a dll enviou for= a17BCF683
+O “returntype”/“um dos argumento” será= lnnLLLnnn
+
+Se quiser saber mais sobre os comandos a ser usado na DLL, aconselho procurar uma aula de “C++” em algum fórum.
+
+Pronto agora você pode começar a fazer coisas incrível com seu RMXP.
+Atenção eu não sei se no RMVX é igual mas pelo menos a 1ª parte é!
+Encontrou algo de errado nesse tópico? Diga-o(s) pra min, ficarei grato com sua ajuda!
+

@@ -1,0 +1,164 @@
+﻿Bitmap
+   text_size
+   draw_text
+   hue_change
+   set_pixel
+   get_pixel
+   clear
+   fill_rect
+   stretch_blt
+   blt rect
+   height
+   width
+   disposed?
+   dispose
+   initialize_copy
+   initialize
+Color
+   eql?
+   alpha=
+   alpha
+   blue=
+   blue
+   green=
+   green
+   red=
+   red_load
+   red_dump
+   set
+Font
+   @@default_color
+   @@default_italic
+   @@default_bold
+   @@default_size
+   @@default_name
+   exist?
+   default_size=
+   default_size
+   default_color=
+   default_color
+   default_italic=
+   default_italic
+   default_bold=
+   default_bold
+   default_size=
+   default_name=
+   default_name    
+Graphics
+   visible=
+   visible 
+   frame_count=
+   frame_count
+   frame_rate=
+   frame_rate
+   frame_reset
+   transition
+   freeze
+   update
+Input
+   F9
+   F8
+   F7
+   F6
+   F5
+   ALT
+   CTRL
+   SHIFT
+   DOWN
+   RIGHT
+   UP
+   LEFT
+   dir8
+   dir4
+   repeat?
+   trigger?
+   press?
+Marshal
+   eval
+   dump
+   wb
+Plane
+   plane
+   tone
+   tone=
+   viewport
+   bitmap
+   blend_type
+   blend_type=
+   opacity=
+   opacity
+   zoom_y=
+   zoom_y
+   zoom_x=
+   zoom_x
+   oy=
+   oy
+   ox=
+   ox
+   z=
+   z
+   bitmap=
+   dup
+   clone
+Rect
+   height=
+   width=
+   y=
+   y
+   x=
+   x
+   empty
+Sprite
+   disposed
+   sprite
+   src_rect
+   src_rect=
+   bush_depth=
+   bush_depth
+   mirror=
+   mirror
+   angle=
+   angle
+   flash
+Table
+   zsize
+   ysize
+   xsize
+   []=
+   []
+   resize
+TilemapAutotiles
+   disposed
+   tilemap
+   autotiles
+   tileset
+   at
+   map_data
+   flash_data
+   priorities
+Tone
+   gray=
+   gray
+Viewport
+   disposed
+   viewport
+   rect=
+Window
+   disposed
+   window
+   cursor_rect
+   cursor_rect=
+   windowskin
+   contents
+   contents_opacity=
+   contents_opacity 
+   back_opacity= 
+   back_opacity 
+   pause= 
+   pause 
+   active=
+   active 
+   stretch=
+   stretch
+   contents= 
+   windowskin= 

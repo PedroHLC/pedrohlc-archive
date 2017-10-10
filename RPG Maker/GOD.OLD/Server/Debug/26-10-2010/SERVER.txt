@@ -1,0 +1,12 @@
+Tue Oct 26 16:04:15 -0200 2010:
+ no such file to load -- gtk2
+ ["C:/Backup/Projetos/GOD Online/Server/init.rb:27:in `require'", "C:/Backup/Projetos/GOD Online/Server/init.rb:27"]
+
+2010-10-26 16:04:38 -0300:
+ no such file to load -- gtk2
+ ["C:/Backup/Projetos/GOD Online/Server/init.rb:27:in `require'", "C:/Backup/Projetos/GOD Online/Server/init.rb:27:in `<main>'"]
+
+Tue Oct 26 16:08:33 -0200 2010:
+ no such file to load -- gtk2
+ ["C:/Backup/Projetos/GOD Online/Server/init.rb:27:in `require'", "C:/Backup/Projetos/GOD Online/Server/init.rb:27"]
+

@@ -1,0 +1,1 @@
+PHLCServer.exe -printdebug

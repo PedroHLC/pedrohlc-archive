@@ -1,0 +1,8 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor: {}
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+    damage: 19

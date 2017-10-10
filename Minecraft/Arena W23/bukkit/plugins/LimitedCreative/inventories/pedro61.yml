@@ -1,0 +1,9 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor: {}
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 3
+    amount: 3

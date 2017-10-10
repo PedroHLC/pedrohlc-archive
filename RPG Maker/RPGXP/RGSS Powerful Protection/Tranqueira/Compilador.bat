@@ -1,0 +1,1 @@
+"C:\Ruby186\bin\exerb.bat" "W:\Projetos\RPGXP\RGSS Powerful Protection\Tranqueira\CompiladorAI.rb"

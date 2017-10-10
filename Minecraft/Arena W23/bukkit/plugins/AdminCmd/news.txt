@@ -1,0 +1,3 @@
+﻿&2Novidades:
+	'Repair Shop' adicionado, no centro da 'Staff Shop'!
+	'Feirinha Pública' criada, próximo aos portais!

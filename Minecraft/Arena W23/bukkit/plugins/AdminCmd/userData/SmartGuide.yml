@@ -1,0 +1,97 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: -240.02041025787886
+    y: 64.5
+    z: 276.87671948881683
+    yaw: 121.98638
+    pitch: 5.9999948
+  presentation: ''
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+  firstTime: false
+  last-ip: 192.168.0.10
+  immunityLvl: 1
+  lastDisconnect: 1360796721671
+  lastConnection: 1360796005679
+  totalTime: 183096119
+home:
+  entrada:
+    world: world
+    x: -248.57730091846892
+    y: 63.0
+    z: 516.6642735027314
+    yaw: 117.86719
+    pitch: 16.752356
+  vsf:
+    world: world
+    x: -175.4810606920861
+    y: 46.0
+    z: 328.8843966510726
+    yaw: 105.608864
+    pitch: 81.3145
+  casa:
+    world: world
+    x: -236.58815027711472
+    y: 65.0
+    z: 109.1754304164157
+    yaw: 4.3544197
+    pitch: 69.73394
+  home:
+    world: world
+    x: -210.22108521622104
+    y: 13.0
+    z: 525.6142328794396
+    yaw: 86.87358
+    pitch: 5.7532277
+  world:
+    world: world
+    x: -250.2061079209677
+    y: 65.0
+    z: 172.49270160654908
+    yaw: 353.43457
+    pitch: 24.358913
+  p:
+    world: world
+    x: -250.61797008349566
+    y: 65.0
+    z: 172.5350345819873
+    yaw: 353.43457
+    pitch: 24.358913
+  villa:
+    world: world
+    x: -724.7525878604783
+    y: 69.0
+    z: 179.76523052502876
+    yaw: -262.49225
+    pitch: -2.1000104
+  lol:
+    world: world
+    x: -1763.4106388968428
+    y: 65.0
+    z: -1272.1268620009273
+    yaw: -197.10098
+    pitch: 3.0791895
+  '1':
+    world: world
+    x: -1736.820859802193
+    y: 67.0
+    z: -1425.9749430910258
+    yaw: -240.99205
+    pitch: 5.946989
+  minalokaaaaaaaa:
+    world: world
+    x: -698.2927926416189
+    y: 23.0
+    z: 739.8041244527951
+    yaw: -209.39499
+    pitch: 40.64999
+  test:
+    world: world
+    x: -242.51469781377412
+    y: 69.0
+    z: 283.01833824176566
+    yaw: -42.438625
+    pitch: 28.350004
+powers: {}
+kitsUse:
+  nb: 1360794415158

@@ -1,0 +1,81 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 19
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_BUTTON
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    damage: 107
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 8
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: PORK
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 53
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 24
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 14
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 18
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR_CANE
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 34
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR_CANE
+    amount: 9
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_DOOR
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_DOOR
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 55
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SPADE
+    damage: 136
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 59

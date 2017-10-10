@@ -1,0 +1,8 @@
+config:
+  language: de
+messages-de:
+  find-diamond: $e&player& $9hat einen $bDiamanten $9gefunden!
+  find-emerald: $e&player& $9hat einen $aSmaragd $9gefunden!
+messages-en:
+  find-diamond: $e&player& $9has found a $bDiamond$9!
+  find-emerald: $e&player& $9has found a $aEmerald$9!

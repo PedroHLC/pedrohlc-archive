@@ -1,0 +1,18 @@
+module TXT_Scanner
+  def self.scan(file_path)
+    mod = 0
+    @file = File.open(file_path, 'rb').readlines
+    data = []
+    for line in @file
+      next if line.nil?
+      if line.gsub('(',':').gsub(')','').strip =~ /pos:(.*),(.*)=(.*)/
+        x, y, id = $1.to_i, $2.to_i, $3.to_i
+        data[mod][y] = [] if data[mod][y].nil?
+        data[mod][y][x] = id
+      elsif line.gsub('[','<').gsub(']','>').strip =~ /<mod_(.*)>/
+        data[mod] = []
+      end
+    end
+    return data
+  end
+end

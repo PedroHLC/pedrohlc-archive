@@ -1,0 +1,10 @@
+#===============================================
+# RGSS103P
+# By: PedroHLC
+# Version: 0.3
+#===============================================
+A RGSS103P é uma edição da RGSS103J, veja o que foi alterado:
+-Usa DirectX9 ao invés de 8
+-Menu de configuração do teclado e do joystick foi removido
+-Ao pressionar Alt+Enter nada acontece
+-Textos do Menu Principal do F1 ficaram mais claros e facíl de entender

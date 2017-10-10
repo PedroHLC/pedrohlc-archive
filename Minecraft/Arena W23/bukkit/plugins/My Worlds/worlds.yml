@@ -1,0 +1,127 @@
+world_arena:
+  loaded: true
+  keepSpawnLoaded: true
+  environment: NORMAL
+  gamemode: SURVIVAL
+  lockedtime: 38000
+  forcedRespawn: false
+  pvp: false
+  operators: []
+  deniedCreatures: []
+  holdWeather: true
+  formIce: true
+  formSnow: true
+  showRain: true
+  showSnow: true
+  difficulty: EASY
+  reloadWhenEmpty: false
+  spawn:
+    world: world_arena
+    x: 34.03773288439883
+    y: 5.0
+    z: 2.2572572381821736
+    yaw: -270.81103515625
+    pitch: -1.4999985694885254
+world_stadium:
+  loaded: true
+  keepSpawnLoaded: true
+  environment: NORMAL
+  gamemode: SURVIVAL
+  lockedtime: 12500
+  forcedRespawn: false
+  pvp: true
+  operators: []
+  deniedCreatures:
+  - PIG
+  - OCELOT
+  - SHEEP
+  - WOLF
+  - MUSHROOM_COW
+  - SQUID
+  - CHICKEN
+  - COW
+  holdWeather: true
+  formIce: true
+  formSnow: true
+  showRain: true
+  showSnow: true
+  difficulty: EASY
+  reloadWhenEmpty: false
+  spawn:
+    world: world_stadium
+    x: 179.4084603432754
+    y: 3.0
+    z: 911.20439196158
+    yaw: 89.55006408691406
+    pitch: 2.2500088214874268
+4th_Arena_W23:
+  loaded: false
+  keepSpawnLoaded: true
+  environment: NORMAL
+  gamemode: SURVIVAL
+  forcedRespawn: false
+  pvp: true
+  operators: []
+  deniedCreatures: []
+  holdWeather: false
+  formIce: true
+  formSnow: true
+  showRain: true
+  showSnow: true
+  difficulty: PEACEFUL
+  reloadWhenEmpty: false
+  spawn:
+    world: 4th_Arena_W23
+    x: -323.9112919346777
+    y: 64.5
+    z: 277.96443960097776
+    yaw: 359.85003662109375
+    pitch: 1.1999993324279785
+mortal_parkour:
+  loaded: true
+  keepSpawnLoaded: true
+  environment: NORMAL
+  gamemode: SURVIVAL
+  lockedtime: 38000
+  forcedRespawn: false
+  pvp: false
+  operators: []
+  deniedCreatures: []
+  holdWeather: true
+  formIce: true
+  formSnow: true
+  showRain: true
+  showSnow: true
+  difficulty: NORMAL
+  reloadWhenEmpty: false
+  spawn:
+    world: mortal_parkour
+    x: 0.0
+    y: 128.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+world:
+  loaded: true
+  keepSpawnLoaded: true
+  environment: NORMAL
+  gamemode: SURVIVAL
+  forcedRespawn: false
+  pvp: false
+  operators: []
+  deniedCreatures: []
+  holdWeather: false
+  formIce: true
+  formSnow: true
+  showRain: true
+  showSnow: true
+  difficulty: EASY
+  reloadWhenEmpty: false
+  spawn:
+    world: world
+    x: -224.2084884830707
+    y: 64.0
+    z: 239.3048073654063
+    yaw: 0.011199951171875
+    pitch: -0.6000005006790161
+

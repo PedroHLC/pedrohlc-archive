@@ -1,0 +1,72 @@
+﻿Build started 09/10/2011 13:09:47.
+     1>Project "L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version).vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\RM Susano'o Encrypter (Console Version).unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Encrypter.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "RM Susano'o Encrypter (Console Version).cpp"
+         RM Susano'o Encrypter (Console Version).cpp
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(57): error C2011: 'vc_attributes::YesNoMaybe' : 'enum' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(57) : see declaration of 'vc_attributes::YesNoMaybe'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(67): error C2011: 'vc_attributes::AccessType' : 'enum' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(67) : see declaration of 'vc_attributes::AccessType'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(81): error C2011: 'vc_attributes::Pre' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(81) : see declaration of 'vc_attributes::Pre'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(78): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(112): error C2011: 'vc_attributes::Post' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(112) : see declaration of 'vc_attributes::Post'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(109): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(143): error C2011: 'vc_attributes::FormatString' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(143) : see declaration of 'vc_attributes::FormatString'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(155): error C2011: 'vc_attributes::InvalidCheck' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(155) : see declaration of 'vc_attributes::InvalidCheck'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(152): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(165): error C2011: 'vc_attributes::Success' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(165) : see declaration of 'vc_attributes::Success'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(176): error C2011: 'vc_attributes::PreBound' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(176) : see declaration of 'vc_attributes::PreBound'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(173): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(186): error C2011: 'vc_attributes::PostBound' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(186) : see declaration of 'vc_attributes::PostBound'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(183): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(196): error C2011: 'vc_attributes::PreRange' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(196) : see declaration of 'vc_attributes::PreRange'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(193): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(208): error C2011: 'vc_attributes::PostRange' : 'struct' type redefinition
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(208) : see declaration of 'vc_attributes::PostRange'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(205): error C3094: 'repeatable': anonymous usage not allowed
+                 y:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\predefined c++ attributes (compiler internal)(147) : see declaration of 'repeatable'
+                 attribute can only be applied to: 'class', 'struct'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(245): error C2370: 'SA_Yes' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(245) : see declaration of 'SA_Yes'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(246): error C2370: 'SA_No' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(246) : see declaration of 'SA_No'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(247): error C2370: 'SA_Maybe' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(247) : see declaration of 'SA_Maybe'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(250): error C2370: 'SA_NoAccess' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(250) : see declaration of 'SA_NoAccess'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(251): error C2370: 'SA_Read' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(251) : see declaration of 'SA_Read'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(252): error C2370: 'SA_Write' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(252) : see declaration of 'SA_Write'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(253): error C2370: 'SA_ReadWrite' : redefinition; different storage class
+                 c:\program files\microsoft visual studio\vc\include\codeanalysis\sourceannotations.h(253) : see declaration of 'SA_ReadWrite'
+     1>l:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\rm susano'o encrypter (console version).cpp(119): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>l:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\rm susano'o encrypter (console version).cpp(120): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>l:\projetos\rpgxp\rgss powerful protection\novo\rm susano'o encrypter (console version)\rm susano'o encrypter (console version)\rm susano'o encrypter (console version).cpp(135): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>Done Building Project "L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version).vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.37

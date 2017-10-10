@@ -1,0 +1,8 @@
+#Na próxima versão, essa lista será desnecessaria
+[
+["Best of you","Foo Fighters",0,0,0,1],
+["Yugioh GX","Nick",0,0,0,1],
+["Música","Max",0,0,0,1],
+]
+#Use: ["Nome do arquivo","Titulo","Autor",easy,medium,hard,expert],
+#Lembre-se: 0 = Nao Tem, 1 = Tem

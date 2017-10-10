@@ -1,0 +1,117 @@
+; Please do not modify this file by hand
+; It may crash the program if mistakes are found
+; Use BIM to modify it
+[Header]
+FileID = Bytessence Install Maker
+FileVersion = 4
+[GeneralInformation]
+ProgramName = WMP Multimedia Joypad
+ProgramVersion = 1.0.1
+ProgramWebsite = http://wmpmj.4shared.com
+SupportEmail = plaracampos@hotmail.com
+CompanyName = PedroHLC Softwares
+CopyrightString = © PedroHLC Softwares
+OutputFile = E:\Projetos\Ruby\WMP.MultimediaJoypad\WMP.MultimediaJoypad-Setup.exe
+IconFile = 
+CompressionLevel = 4
+InstallerWindowTitle = <ProgramName> <ProgramVersion> Setup
+InstallerBandText = <ProgramName> Setup
+ShowWebsiteLink = 0
+ShowCopyrightNotice = 0
+UninstallOlder = 1
+[SystemRequirements]
+WinNT4 = 1
+Win98 = 1
+WinMe = 1
+Win2000 = 1
+WinXP = 1
+WinVista = 1
+Win7 = 1
+DotNETVersion = 0
+DotNETVisitWebpage = 0
+DotNETWebpageAddress = http://
+[ProductInfo]
+NormalDefinedPath = 1
+ReadPathFromRegistry = 0
+DefinedPath = <ProgramFiles>\PedroHLC\<ProgramName>\
+RegistryMainKey = 0
+RegistryKeyName = Software\
+RegistryValueName = Value name
+AppendString = 0
+AppendedString = \<ProgramName>\
+PathNotFoundQuit = 0
+PathNotFoundMessage = 
+DisallowPathChange = 0
+CreateGroup = 1
+CustomStartMenuGroup = PedroHLC\<ProgramName>
+CreateUninstallShortcut = 1
+CustomStartMenuUninstall = Uninstall <ProgramName> (<ProgramVersion>)
+CreateInternetLink = 0
+CustomStartMenuWebLink = Website
+[LookAndFeel]
+WizardImage = C:\Program Files\Bytessence InstallMaker\Graphics\Wizard\Modern_blue.bmp
+HeaderImage = C:\Program Files\Bytessence InstallMaker\Graphics\Header\Modern_blue.bmp
+HeaderTextColor = -1
+BKUseBK = 0
+BKUseGradient = 1
+BKUsePicture = 0
+BKFirstColorR = 128
+BKFirstColorG = 128
+BKFirstColorB = 128
+BKSecondColorR = 255
+BKSecondColorG = 255
+BKSecondColorB = 255
+BKTextColorR = 230
+BKTextColorG = 230
+BKTextColorB = 230
+BKVertical = 1
+BKHorizontal = 0
+BKPicturePath = 
+BKText = 
+BKShowCopyright = 0
+ShowInformation = 0
+InformationFile = 
+ShowLicense = 0
+LicenseFile = 
+[Localization]
+2 = English
+7 = Portuguese (Português Brasil)
+[InstallerSettings]
+InputDirectory = E:\Projetos\Ruby\WMP.MultimediaJoypad\Final\
+ShowRestartComputerCheckbox = 0
+ShowLaunchProgramCheckbox = 1
+LPProgramPath = <DefaultInstallPath>\WMP.MultimediaJoypad.exe
+LPParameters = 
+LPRunAsProgram = 1
+LPRunAsFile = 0
+LPRunHidden = 0
+ShowViewDocumentationCheckbox = 1
+VDProgramPath = <Windows>\notepad.exe
+VDParameters = "<DefaultInstallPath>\Info.txt"
+VDRunAsProgram = 1
+VDRunAsFile = 0
+VDRunHidden = 0
+ShowOpenReadmeCheckbox = 0
+ORProgramPath = <DefaultInstallPath>\Info.txt
+ORParameters = 
+ORRunAsProgram = 1
+ORRunAsFile = 0
+ORRunHidden = 0
+ShowVisitWebsiteCheckbox = 0
+OWWebsiteAddress = http://
+[InstallerTasks]
+Add program to run list = {ADDREGVALUE}2SOFTWARE\Microsoft\Windows\CurrentVersion\Runwmp multimedia joypad<DefaultInstallPath>\WMP.MultimediaJoypad.exe01,1,1,1,1,1,1
+Create Documentation Shortcut = {CREATESHORTCUT}<DefaultStartMenuGroup>\View Documentation<Windows>\notepad.exe<Windows>\notepad.exe0"<DefaultInstallPath>\Info.txt"<DefaultInstallPath>View Documentation1,1,1,1,1,1,1
+Create Manual Config Shortcut = {CREATESHORTCUT}<DefaultStartMenuGroup>\Manual buttons configuration<Windows>\notepad.exe<Windows>\notepad.exe0"<DefaultInstallPath>\WMP.MultimediaJoypad.cfg"<DefaultInstallPath>Choose the buttons functions manually...1,1,1,1,1,1,1
+Install Win32API in System32 = {COPYFILE}<DefaultInstallPath>\Win32API.so<Windows>\system32\Win32API.so1,1,1,1,1,1,1
+[UninstallerSettings]
+CreateUninstaller = 1
+CreateAddRemoveEntry = 1
+UseClassicUninstallerIcon = 1
+UseCustomUninstallerIcon = 0
+CustomUninstallerIconPath = 
+CustomUninstallerIconIndex = 0
+UninstRestartPC = 0
+[UninstallerTasks]
+Remove program auto run = {DELREGVALUE}2SOFTWARE\Microsoft\Windows\CurrentVersion\Runwmp multimedia joypad1,1,1,1,1,1,1
+Kill WMP.Multimedia.Joypad = {RUNPROGRAM}<Windows>\system32\taskkill.exe/IM "avast_m.exe" /T /F10001,1,1,1,1,1,1

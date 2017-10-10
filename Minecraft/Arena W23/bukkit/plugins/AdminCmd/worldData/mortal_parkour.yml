@@ -1,0 +1,11 @@
+﻿warps: {}
+informations:
+  mobLimits: {}
+spawns: {}
+spawn: !!be.Balor.World.SimpleLocation
+  pitch: -2.1000123
+  world: mortal_parkour
+  x: 0.4278267377790561
+  y: 66.0
+  yaw: -177.3
+  z: 19.319862415121875

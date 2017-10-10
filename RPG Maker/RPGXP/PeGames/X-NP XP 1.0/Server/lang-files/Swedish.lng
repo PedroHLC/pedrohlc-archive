@@ -1,0 +1,69 @@
+[main-tab]
+TabSheet1=Huvudmeny
+GroupBox1=Allmänt
+ServerName=Server Namn
+MaxPlayers=Max Spelare
+Port=Server Port
+GroupBox4=Övriga Inställningar
+AutoStart=AutoStart vid öppning
+Version=Version
+
+[security-tab]
+TabSheet5=Säkerhet
+TabSheet6=Registerade Användare
+ListView-Username=Användarnamn
+ListView-Password=Lösenord
+ListView-Group=Grupp
+EditLabel-Username=Användarnamn
+EditLabel-Password=Lösenord
+EditLabel-Group=Grupp
+Add=Lägg till
+Delete=Ta bort
+Bans=Bannade
+IPBans=IP Bannade
+IPBox=Skriv IP här, tryck sedan enter
+
+[stats-tab]
+TabSheet2=Status
+GroupBox5=Allmänt
+Label-Players=Spelare:
+Label-MPlayers=Mest Spelare:
+GroupBox2=Bandbredd Status / i bytes
+Label-Incoming=Inkommande:
+Label-Outgoing=Utgående:
+Label-TBR=Totala Bytes Mottagna:
+Label-TBS=Totala Bytes Sända:
+GroupBox3=Socket Undantag
+Label-OnAccept=PåAcceptera:
+Label-OnConnect=PåKopplaUpp:
+Label-OnDisconnect=PåKopplaNer:
+Label-OnRead=PåLästa:
+Label-OnError=PåLästa:
+
+[debug-tab]
+TabSheet3=Felsök
+ShowRaw=Visa Rådata
+
+[options-tab]
+TabSheet8=Alternativ
+GroupBox6=Språk
+Button3=Verkställ
+
+[chat-tab]
+TabSheet8=Chat
+
+[status-bar]
+Online=Uppkopplad
+Offline=Nerkopplad
+Players=Spelare
+
+[mainmenu]
+Start=Start
+Stop=Stop
+Exit=Stäng
+Options=Alternativ
+Scripting=Scripting
+Help=Hjälp
+About=Om
+Contents=Innehåll
+

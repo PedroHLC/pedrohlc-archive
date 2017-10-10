@@ -1,0 +1,67 @@
+#=================================================================
+# EDITE AQUI:
+#-----------------------------------------------------------------
+module MADA
+  # sufixo do gráfico do personagem sentado
+  S_SU_SEN = "_sentado"
+  # A tecla que faz sentar
+  S_TECLA = Input::X # Tecla A
+  # Quanto de HP e MP é recuperado por frame
+  # lembrando que 20 frames = 1 segundo
+  S_VAL_REC = 1
+  SIT_SWITCH = 0 #id da switch que vai ligar quando sentar, 0 para nenhuma
+end
+#------------------------------------------------------------------
+# Fim da Edição
+#==================================================================
+class Game_Character
+  alias mada_gc_s_initialize initialize
+  def initialize
+     mada_gc_s_initialize
+     @sentado = false
+  end
+  def moving?
+    return (@real_x != @x * 128 or @real_y != @y * 128 or @sentado)
+  end
+end
+class Game_Player < Game_Character
+  alias mada_gp_s_initialize initialize
+  alias mada_gp_s_update update
+  def update
+    actor = $game_party.actors[0]
+    def tem_img_sen?(actor)
+      begin
+        RPG::Cache.character(actor.character_name.to_s + MADA::S_SU_SEN, actor.character_hue)
+      rescue
+        return false
+      end
+      return true
+    end   
+    unless @sentado == true
+      if Input.trigger?(MADA::S_TECLA)
+        sentar
+      end
+    else
+      $game_party.actors[0].hp += MADA::S_VAL_REC
+      $game_party.actors[0].sp += MADA::S_VAL_REC
+      if Input.trigger?(MADA::S_TECLA)
+        @character_name = actor.character_name
+        @sentado = false
+        if MADA::SIT_SWITCH != 0
+  $game_switches[MADA::SIT_SWITCH] = false
+        end
+      end
+    end
+    mada_gp_s_update
+  end
+  def sentar
+    actor = $game_party.actors[0]
+    if tem_img_sen?(actor)
+      @character_name = actor.character_name + MADA::S_SU_SEN
+    end
+    @sentado = true
+    if MADA::SIT_SWITCH != 0
+$game_switches[MADA::SIT_SWITCH] = true
+    end
+  end
+end    

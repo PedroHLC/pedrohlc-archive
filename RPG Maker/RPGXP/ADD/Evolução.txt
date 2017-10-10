@@ -1,0 +1,65 @@
+#===============================================================#
+#            Script de Evoluções - Feito por RdJpB              #
+#---------------------------------------------------------------#
+# Este script permite o personagem poder transformar-se e ficar #
+# mais forte quando ele chega a um certo nível. Ou seja, o      #
+# personagem evolui. Quando o personagem evolui, a sua forma,  #
+# o seu battler, a sua velocidade e os seus stats mudam,        #
+# ficando assim mais forte.                                    #
+# Está tudo explicado no script.                                #
+#===============================================================#
+
+class Game_Battler
+    attr_accessor:battler_name
+  end
+
+class Game_Player < Game_Character
+  alias evoluir_update update
+  def update
+    evoluir_update
+    #Evolução número 3. (Evolui em nível 8)
+    #Defina aqui o ID do personagem e da classe e o nível em que deseja evoluir.
+    if $game_party.actors[0].class_id == 1 and $game_party.actors[0].level >= 8
+      #Escolha aqui a imagem do personagem da evolução número 3.
+      @character_name = "082-Angel04"
+      #Defina a velocidade do personagem da evolução número 3.
+      @move_speed = 4
+      #Animação Fixa? True ou False?
+      @step_anime = false
+      #Defina aqui o battler do personagem da evolução número 3.
+      $game_party.actors[0].battler_name = "082-Angel04"
+    #Evolução número 2. (Evolui em nível 6)
+    #Defina aqui o ID do personagem e da classe e o nível em que deseja evoluir.
+    elsif $game_party.actors[0].class_id == 1 and $game_party.actors[0].level >= 6
+      #Escolha aqui a imagem do personagem da evolução número 2.
+      @character_name = "081-Angel03"
+      #Defina a velocidade do personagem da evolução número 2.
+      @move_speed = 4
+      #Animação Fixa? True ou False?
+      @step_anime = false
+      #Defina aqui o battler do personagem da evolução número 2.
+      $game_party.actors[0].battler_name = "081-Angel03"
+    #Evolução número 1. (Evolui em nível 3)
+    #Defina aqui o ID do personagem e da classe e o nível em que deseja evoluir.
+    elsif $game_party.actors[0].class_id == 1 and $game_party.actors[0].level >= 3
+      #Escolha aqui a imagem do personagem da evolução número 1.
+      @character_name = "080-Angel02"
+      #Defina a velocidade do personagem da evolução número 1.
+      @move_speed = 4
+      #Animação Fixa? True ou False?
+      @step_anime = false
+      #Defina aqui o battler do personagem da evolução número 1.
+      $game_party.actors[0].battler_name = "080-Angel02"
+    #Este aqui é o personagem normal sem evoluções.
+    else
+      #Escolha aqui a imagem do personagem normal sem evoluções.
+      @character_name = "079-Angel01"
+      #Defina a velocidade do personagem normal sem evoluções.
+      @move_speed = 4
+      #Animação Fixa? True ou False?
+      @step_anime = true
+      #Defina aqui o battler do personagem normal sem evoluções.
+      $game_party.actors[0].battler_name = "079-Angel01"
+    end
+  end
+end

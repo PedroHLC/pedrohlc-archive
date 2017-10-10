@@ -1,0 +1,16 @@
+﻿disabledCommands: []
+prioritizedCommands:
+- reload
+- /
+- stop
+aliases:
+  god:
+    gg: ''
+    gd: ''
+  fly:
+    ofly: -o
+  egg:
+    grenade: -E ExplosionEgg
+onNewJoin:
+- /kit nb
+- /motd

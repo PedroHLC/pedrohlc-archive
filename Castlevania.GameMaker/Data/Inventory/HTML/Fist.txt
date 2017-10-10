@@ -1,0 +1,70 @@
+<tr>
+<td><a href="/wiki/File:Sotn-knckdstr-1-.gif" class="image" title="Sotn-knckdstr-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100819034809/castlevania/images/b/b3/Sotn-knckdstr-1-.gif" width="50" height="38" border="0" /></a>
+</td><td><b><a href="/wiki/Knuckle_Duster" title="Knuckle Duster" class="mw-redirect">Knuckle Duster</a>&nbsp;(Knuckle)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Iron-Studded Brass Knuckles</i>
+</td><td><i><a href="/wiki/Fist" title="Fist" class="mw-redirect">Fist</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+
+</td><td>ATK +1<br />
+</td><td><b>Find</b>:  <a href="/wiki/Underground_Caverns" title="Underground Caverns">Underground Caverns</a><br /><b>Drop</b>:  <a href="/wiki/Frog" title="Frog" class="mw-redirect">Frog</a><br />
+</td><td><b>Effect</b>:  Punch<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-blueknck-1-.gif" class="image" title="Sotn-blueknck-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100819034948/castlevania/images/0/0f/Sotn-blueknck-1-.gif" width="50" height="38" border="0" /></a>
+</td><td><b><a href="/wiki/Blue_Knuckles" title="Blue Knuckles">Blue Knuckles</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Knuckles For Upper-Cut</i>
+</td><td><i><a href="/wiki/Fist" title="Fist" class="mw-redirect">Fist</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +7<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Toad" title="Toad" class="mw-redirect">Toad</a><br />
+
+</td><td><b>Effect</b>:  Uppercut<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-jwlknckls-1-.gif" class="image" title="Sotn-jwlknckls-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100819035042/castlevania/images/7/78/Sotn-jwlknckls-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Jewel_Knuckles" title="Jewel Knuckles">Jewel Knuckles</a>&nbsp;(Diamond Knuckle)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Jewel-Reinforced Knuckles</i>
+</td><td><i><a href="/wiki/Fist" title="Fist" class="mw-redirect">Fist</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td>
+</td><td>ATK +21<br />
+</td><td><b>Find</b>:  <a href="/wiki/Outer_Wall" title="Outer Wall">Outer Wall</a><br /><b>Drop</b>:  <a href="/wiki/Rock_Knight" title="Rock Knight">Rock Knight</a><br />
+</td><td><b>Effect</b>:  Punch<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-irfist-1-.gif" class="image" title="Sotn-irfist-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100819035154/castlevania/images/0/05/Sotn-irfist-1-.gif" width="50" height="27" border="0" /></a>
+</td><td><b><a href="/wiki/Iron_Fist" title="Iron Fist" class="mw-redirect">Iron Fist</a>&nbsp;(Kaiser Knuckle)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Owned By Karate Master</i>
+</td><td><i><a href="/wiki/Fist" title="Fist" class="mw-redirect">Fist</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +26<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Werewolf" title="Werewolf">Werewolf</a><br />
+
+</td><td><b>Effect</b>:  Punch; Roll Attack - Flurry of Fists<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-fstoftlks-1-.gif" class="image" title="Sotn-fstoftlks-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100819035239/castlevania/images/c/c8/Sotn-fstoftlks-1-.gif" width="50" height="55" border="0" /></a>
+</td><td><b><a href="/wiki/Fist_of_Tulkas" title="Fist of Tulkas">Fist of Tulkas</a>&nbsp;(Orichalchum)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Blessed By Tulkas the Valar</i>
+</td><td><i><a href="/wiki/Fist" title="Fist" class="mw-redirect">Fist</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td>
+</td><td>ATK +32, DEF +5<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Lion" title="Lion">Lion</a><br />
+</td><td><b>Effect</b>:  Punch: Roll Attack - Homing Fireball; Back-Forward Attack - Flurry of Fists<br />
+</td></tr>

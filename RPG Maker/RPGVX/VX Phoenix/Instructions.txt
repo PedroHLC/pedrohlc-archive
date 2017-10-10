@@ -1,0 +1,23 @@
+Setup Instructions by Michael
+2. Open the Client folder, and click on the Game.rvproj.
+3. Go in the script editor (F11), and click on Network_Data.
+4. Now where it says IP, type in your IP address, most of you won't have a static please follow to do so.
+
+Setting Up Static Address
+1. Basically if your using windows open the control panel.
+2. Double click on network connections.
+3. Whatever you mainly use, if you use Local Area click on that, otherwise click on Wireless Network properties.
+4. In the general settings, click on Internet Protocol (TPC/IP), it might be different for Vista users.
+5. Click properties, and change IP Address, Subnet mask and default gateway to your needs.
+6. I don't know what internet your using, but normally the default could be similar to XX.XXX.X.X
+
+FAQ
+
+Question: I have a TCPSocket error on line 45 !
+Answer: If you have TCPSocket error try re-registering Tabctl32.dll. Another option is you haven't setup the server.
+
+Question: When running Server.exe I get an error: Tabctl32.OCX not registered!
+Answer: This happened to me cause that file was missing in my windows/system32 folder. I added it to my VX_Online translation, in Server folder. just copy it to windows/system32 and open start menu - run and copy this into the bar: regsvr32 \windows\system32\TABCTL32.OCX
+Now You should see a message saying "DllRegisterServer ... succeeded".
+
+Further Support (I got the info here): http://www.ascentive.com/support/new/support_dll.phtml?dllname=TABCTL32.OCX

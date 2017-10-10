@@ -1,0 +1,97 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: -258.93576596591043
+    y: 68.0
+    z: 199.34023815871623
+    yaw: -143.83813
+    pitch: 9.599966
+  presentation: ''
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+  firstTime: false
+  last-ip: 192.168.0.3
+  immunityLvl: 1
+  lastDisconnect: 1373042179926
+  lastConnection: 1373041024050
+  totalTime: 42222297
+home:
+  LuanLumFazenda:
+    world: world
+    x: -173.53808148554913
+    y: 69.0
+    z: 335.05584723017313
+    yaw: -96.43869
+    pitch: 15.600013
+  vigia_dentro:
+    world: world
+    x: -273.69999998807907
+    y: 68.5
+    z: 220.54187642441005
+    yaw: -41.8385
+    pitch: 33.600014
+  world:
+    world: world
+    x: -255.48935495810207
+    y: 68.0
+    z: 200.57530775930414
+    yaw: -207.28746
+    pitch: 16.799995
+  loja:
+    world: world
+    x: -243.20674071186636
+    y: 64.0
+    z: 247.95685451586473
+    yaw: 91.21119
+    pitch: 4.2000003
+  paulo_templo:
+    world: world
+    x: -233.05101013389927
+    y: 65.0
+    z: 109.63315058965576
+    yaw: 7.2124634
+    pitch: 11.099987
+  j:
+    world: world
+    x: -406.48941537745003
+    y: 117.0
+    z: 322.38742580696646
+    yaw: -92.38739
+    pitch: 8.400124
+  ezio43:
+    world: world
+    x: -547.8701387452545
+    y: 63.0
+    z: 478.35021680494424
+    yaw: 72.16127
+    pitch: 19.199986
+  g:
+    world: world
+    x: -747.6638809080762
+    y: 97.0
+    z: 720.7246327606164
+    yaw: -299.98895
+    pitch: 25.199945
+  duffz:
+    world: world
+    x: -280.8952441800235
+    y: 77.0
+    z: 173.84630649981804
+    yaw: -207.73761
+    pitch: 30.150015
+  lastbase:
+    world: world
+    x: -708.5633282595309
+    y: 25.0
+    z: 726.0327295139139
+    yaw: -281.8452
+    pitch: 7.3500085
+  emerald:
+    world: world
+    x: -661.8767682525213
+    y: 24.0
+    z: 717.3955152044076
+    yaw: -234.44525
+    pitch: 23.850016
+powers: {}
+kitsUse:
+  nb: 1360450303880

@@ -1,0 +1,102 @@
+#============================================================================
+# Horloge Heure HUD
+# Script by PedroHLC(No Limite Games)
+# v1.6 2009
+#============================================================================
+HUD_IMAGE = "hud2"
+HUD_SWITCH = 5
+HUD_X = -20
+HUD_Y = 0
+#--------------------------------------------------------------------------
+HP_X = 469
+HP_Y = 83
+HP_WIDTH = 170
+HP_HEIGHT = 15
+HP_IMAGE = "HP_Meter"
+#--------------------------------------------------------------------------
+SP_X = 468
+SP_Y = 103
+SP_WIDTH = 170
+SP_HEIGHT = 15
+SP_IMAGE = "SP_Meter"
+#--------------------------------------------------------------------------
+WEAPON_X = 424
+WEAPON_Y = 46
+#--------------------------------------------------------------------------
+ITEM_X = 475
+ITEM_Y = 46
+#--------------------------------------------------------------------------
+ARMOR_X = 524
+ARMOR_Y = 46
+#============================================================================
+class Window_HUD < Window_Base
+  #--------------------------------------------------------------------------
+  def initialize
+    super(HUD_X, HUD_Y, 700, 700)
+    self.contents = Bitmap.new(width, height)
+    self.opacity = 0
+    @actor = $game_party.actors[0]
+    @old_hp = @actor.hp
+    @old_sp = @actor.sp
+    refresh
+  end 
+  #--------------------------------------------------------------------------
+  def refresh
+    self.contents.clear
+    @actor = $game_party.actors[0]
+    @old_hp = @actor.hp
+    @old_sp = @actor.sp
+    
+    bitmap = RPG::Cache.picture(HUD_IMAGE)
+    self.contents.blt(0, 0, bitmap, Rect.new(0, 0, 640, 137))
+    
+    draw_gradient_bar(HP_X, HP_Y, @actor.hp, @actor.maxhp, HP_IMAGE, HP_WIDTH, HP_HEIGHT)
+    draw_gradient_bar(SP_X, SP_Y, $game_temp.jump_run, $game_temp.jump_run_max, SP_IMAGE, SP_WIDTH, SP_HEIGHT)
+    
+    if @actor.weapon_id > 0
+      weapon_bitmap = RPG::Cache.icon($data_weapons[@actor.weapon_id].icon_name)
+      self.contents.blt(WEAPON_X, WEAPON_Y, weapon_bitmap, Rect.new(0, 0, 24, 24))
+    end
+    if @actor.armor4_id > 0
+      item_bitmap = RPG::Cache.icon($data_armors[@actor.armor4_id].icon_name)
+      self.contents.blt(ITEM_X, ITEM_Y, item_bitmap, Rect.new(0, 0, 24, 24))
+    end
+    if @actor.armor3_id > 0
+      armor_bitmap = RPG::Cache.icon($data_armors[@actor.armor3_id].icon_name)
+      self.contents.blt(ARMOR_X, ARMOR_Y, armor_bitmap, Rect.new(0, 0, 24, 24))
+    end
+    
+    self.contents.font.size = 20
+  end 
+  #--------------------------------------------------------------------------
+  def something_changed?
+    return false if Graphics.frame_count % 30 != 0
+    return true if @old_hp != @actor.hp or @old_sp != @actor.sp or @old_exp != @actor.exp
+    return false
+  end
+  #--------------------------------------------------------------------------
+  def update
+    refresh if something_changed?
+  end
+end
+#============================================================================
+class Scene_Map
+  #--------------------------------------------------------------------------
+  alias hud_main main
+  alias hud_update update
+  #--------------------------------------------------------------------------
+  def main
+    @hud = Window_HUD.new
+    hud_main
+    $game_switches[HUD_SWITCH] = true
+    @hud.dispose
+  end
+  #--------------------------------------------------------------------------
+  def update 
+    @hud.visible = $game_switches[HUD_SWITCH]
+    @hud.update
+    @actor = $game_party.actors[0]
+    @jump_run_max = (50 * @actor.level)
+    hud_update
+  end
+end

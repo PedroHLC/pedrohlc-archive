@@ -1,0 +1,167 @@
+														{
+"window": {
+	"skin": "../data/res/cleanlook.png",
+	"decoration-mask": {
+		"top-left":		"0x0,8x8",
+		"top":			"8x0,24x8",
+		"top-right":	"32x0,8x8",
+		"left":			"0x8,8x24",
+		"center":		"8x8,24x24",
+		"right":		"32x8,8x24",
+		"bottom-left":	"0x32,8x8",
+		"bottom":		"8x32,24x8",
+		"bottom-right":	"32x32,8x8"
+	},
+	"skin-flat": 1,
+	
+	"font": "../data/res/DroidSans.ttf",
+	"font-size": 14,
+	"text-color": "0x0x0",
+	
+	"_width": 480,
+	"_height": 320
+},
+
+"buttons": {
+	"disabled": {
+		"decoration-mask": {
+			"top-left":		"80x0,8x8",
+			"top":			"88x0,24x8",
+			"top-right":	"112x0,8x8",
+			"left":			"80x8,8x24",
+			"center":		"88x8,24x24",
+			"right":		"112x8,8x24",
+			"bottom-left":	"80x32,8x8",
+			"bottom":		"88x32,24x8",
+			"bottom-right":	"112x32,8x8"
+		}
+	},
+	"positive": {
+		"default": {
+			"decoration-mask": {	
+				"top-left":		"0x40,8x8",
+				"top":			"8x40,24x8",
+				"top-right":	"32x40,8x8",
+				"left":			"0x48,8x24",
+				"center":		"8x48,24x24",
+				"right":		"32x48,8x24",
+				"bottom-left":	"0x72,8x8",
+				"bottom":		"8x72,24x8",
+				"bottom-right":	"32x72,8x8"
+			}
+		},
+		"over": {
+			"decoration-mask": {
+				"top-left":		"40x40,8x8",
+				"top":			"48x40,24x8",
+				"top-right":	"72x40,8x8",
+				"left":			"40x48,8x24",
+				"center":		"48x48,24x24",
+				"right":		"72x48,8x24",
+				"bottom-left":	"40x72,8x8",
+				"bottom":		"48x72,24x8",
+				"bottom-right":	"72x72,8x8"
+			}
+		},
+		"clicked": {
+			"decoration-mask": {
+				"top-left":		"80x40,8x8",
+				"top":			"88x40,24x8",
+				"top-right":	"112x40,8x8",
+				"left":			"80x48,8x24",
+				"center":		"88x48,24x24",
+				"right":		"112x48,8x24",
+				"bottom-left":	"80x72,8x8",
+				"bottom":		"88x72,24x8",
+				"bottom-right":	"112x72,8x8"
+			}
+		},
+		"text-color": "255x255x255"
+	},
+	"negative": {
+		"default": {
+			"decoration-mask": {	
+				"top-left":		"0x80,8x8",
+				"top":			"8x80,24x8",
+				"top-right":	"32x80,8x8",
+				"left":			"0x88,8x24",
+				"center":		"8x88,24x24",
+				"right":		"32x88,8x24",
+				"bottom-left":	"0x112,8x8",
+				"bottom":		"8x112,24x8",
+				"bottom-right":	"32x112,8x8"
+			}
+		},
+		"over": {
+			"decoration-mask": {
+				"top-left":		"40x80,8x8",
+				"top":			"48x80,24x8",
+				"top-right":	"72x80,8x8",
+				"left":			"40x88,8x24",
+				"center":		"48x88,24x24",
+				"right":		"72x88,8x24",
+				"bottom-left":	"40x112,8x8",
+				"bottom":		"48x112,24x8",
+				"bottom-right":	"72x112,8x8"
+			}
+		},
+		"clicked": {
+			"decoration-mask": {
+				"top-left":		"80x80,8x8",
+				"top":			"88x80,24x8",
+				"top-right":	"112x80,8x8",
+				"left":			"80x88,8x24",
+				"center":		"88x88,24x24",
+				"right":		"112x88,8x24",
+				"bottom-left":	"80x112,8x8",
+				"bottom":		"88x112,24x8",
+				"bottom-right":	"112x112,8x8"
+			}
+		},
+		"text-color": "0x0x0"
+	},
+	"normal": {
+		"default": {
+			"decoration-mask": {	
+				"top-left":		"0x120,8x8",
+				"top":			"8x120,24x8",
+				"top-right":	"32x120,8x8",
+				"left":			"0x128,8x24",
+				"center":		"8x128,24x24",
+				"right":		"32x128,8x24",
+				"bottom-left":	"0x152,8x8",
+				"bottom":		"8x152,24x8",
+				"bottom-right":	"32x152,8x8"
+			}
+		},
+		"over": {
+			"decoration-mask": {
+				"top-left":		"40x120,8x8",
+				"top":			"48x120,24x8",
+				"top-right":	"72x120,8x8",
+				"left":			"40x128,8x24",
+				"center":		"48x128,24x24",
+				"right":		"72x128,8x24",
+				"bottom-left":	"40x152,8x8",
+				"bottom":		"48x152,24x8",
+				"bottom-right":	"72x152,8x8"
+			}
+		},
+		"clicked": {
+			"decoration-mask": {
+				"top-left":		"80x120,8x8",
+				"top":			"88x120,24x8",
+				"top-right":	"112x120,8x8",
+				"left":			"80x128,8x24",
+				"center":		"88x128,24x24",
+				"right":		"112x128,8x24",
+				"bottom-left":	"80x152,8x8",
+				"bottom":		"88x152,24x8",
+				"bottom-right":	"112x152,8x8"
+			}
+		},
+		"text-color": "255x255x255"
+	}
+}
+
+														}

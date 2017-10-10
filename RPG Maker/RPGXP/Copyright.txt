@@ -1,0 +1,10 @@
+GAME NAME (GAME VERSION):
+   Copyright © YEAR AUTOR. All Rights Reserved
+Rpg Maker XP (v1.02):
+   Copyright © 2004 Enterbrain, Inc. / Yoji Ojima. All Rights Reserved
+Scintilla (v1.65):
+   Copyright © 1998-2005 Neil Hodgson. All Rights Reserved
+Ruby (v1.8.1):
+   Copyright © 1993-2005 Yukihiro Matsumoto. All Rights Reserved
+LibOgg / LibVorbis (v1.0):
+   Copyright © 2004 Xiph.Org Foundation. All Rights Reserved

@@ -1,0 +1,35 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE_GATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARROT_STICK
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK

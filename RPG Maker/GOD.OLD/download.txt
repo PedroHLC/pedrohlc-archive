@@ -1,0 +1,19 @@
+[c=1][b][s][c=4]GOD Online[/c][/s] (Versão para funcionarios da RPG-Soft)[/b]
+[c=31][b]Download :[/b][/c]
+http://www.4shared.com/file/237827219/d93c05c4/Pra_Maa_Abacaxi_Maa_Pra.html
+
+[c=31][b]Tamanho :[/b][/c]
+22,7 Mb 
+
+[c=31][b]Senha :[/b][/c]
+123dj123²
+(Obs: com o ²)
+
+[c=31][b]Necessario :[/b][/c]
+1) LogMe In Hamachi (sala: GOD Beta, senha: GOD Online Beta)
+2) RPG Maker XP Standart RTP (RTP Padrão usado pelo RMXP)
+3) Pedir para o PedroHLC/DarkADM ligar o server
+4) Pedir updates para PedroHLC
+
+[c=31][b]Atenção :[/b][/c]
+Se o jogo ficar com muito lag, aperta ctrl+al+tdel, vai na aba de processos, aperta com o botão direito do mouse em "Game.exe", seleciona Prioridade>Alta e clika Ok na mensagem que aparecer![/c]

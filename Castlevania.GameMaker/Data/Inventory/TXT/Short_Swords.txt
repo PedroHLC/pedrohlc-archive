@@ -1,0 +1,56 @@
+<i>1</i>
+<v>icon=Satquip-dagger-1-</v>
+<v>title=Astral Dagger</v>
+<v>attribute=Cut</v>
+<v>atk_plus= 12</v>
+<i>2</i>
+<v>icon=Sotn-basilard-1-</v>
+<v>title=Basilard</v>
+<v>description=Basic short sword</v>
+<v>attribute=Cut</v>
+<v>atk_plus=1</v>
+<i>3</i>
+<v>icon=Sotn-cmbtknfe-1-</v>
+<v>title=Combat Knife</v>
+<v>description=Flat Combat Dagger</v>
+<v>attribute=Cut</v>
+<v>atk_plus=24</v>
+<i>4</i>
+<v>icon=Sotn-holbiendag-1-</v>
+<v>title=Holbein Dagger</v>
+<v>description=Swift Upper Diagonal Attack</v>
+<v>attribute=Cut</v>
+<v>atk_plus= 6</v>
+<i>5</i>
+<v>icon=Sotn-shorsword-1-</v>
+<v>title=Short Sword</v>
+<v>description=Common short sword</v>
+<v>attribute=Cut</v>
+<i>6</i>
+<v>icon=Sotn-stneswrd-1-</v>
+<v>title=Stone Sword</v>
+<v>description=May "petrify" enemies...</v>
+<v>attribute=Stone</v>
+<v>atk_plus=1</v>
+<i>7</i>
+<v>icon=Sotn-jwlswrd-1-</v>
+<v>title=Jewel Sword</v>
+<v>description=Transforms enemies into jewels</v>
+<v>attribute=Cut</v>
+<v>atk_plus=15</v>
+<i>8</i>
+<v>icon=Sotn-shotel-1-</v>
+<v>title=Shotel</v>
+<v>description=Abyssinian curved sword</v>
+<v>attribute=Cut</v>
+<v>atk_plus=20</v>
+<i>9</i>
+<v>icon=Sotn-rapier-1-</v>
+<v>title=Rapier</v>
+<v>description=Long bladed sword</v>
+<v>attribute=Cut</v>
+<i>10</i>
+<v>icon=Sotn-werebane-1-</v>
+<v>title=Were Bane</v>
+<v>description=Effective against werebeasts</v>
+<v>attribute=Cut</v>

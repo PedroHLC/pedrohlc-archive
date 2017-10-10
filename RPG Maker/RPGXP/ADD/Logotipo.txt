@@ -1,0 +1,25 @@
+#################################################################################
+########################Selecione o main e cole abaixo de begin###########################
+#####A imagem do logotipo deve estar em "titles" na pasta do jogo e o audio deve estar na pasta ME####
+#---------------------------------------------------------------------------------------------------------#
+case rand(1)
+ when 0
+Audio.me_play("Audio/ME/nome do audio", 90, 100)
+end 
+  @posicao = Viewport.new(50, -1, 550, 550)
+  @variavel = Plane.new(@posicao)
+  @variavel.bitmap = RPG::Cache.title("nome da imagem do logotipo")
+  @variavel.opacity = 0
+  for i in 0..255
+    if @variavel.opacity < 254
+      @variavel.opacity += 1
+      Graphics.update
+    end
+  end
+  @variavel.opacity = 255
+  for i in 0..255
+  if @variavel.opacity > 0
+    @variavel.opacity -= 1
+      Graphics.update
+    end
+  end

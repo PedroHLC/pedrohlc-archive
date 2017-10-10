@@ -1,0 +1,46 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 140
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 107
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 10
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 2
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: MINECART
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: APPLE
+    amount: 2
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 5

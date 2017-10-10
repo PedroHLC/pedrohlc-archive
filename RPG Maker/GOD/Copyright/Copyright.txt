@@ -1,0 +1,8 @@
+﻿Rpg Maker XP (v1.02):
+   Copyright © 2004 Enterbrain, Inc. / Yoji Ojima. Todos os direitos reservados.
+Ruby (v1.8.1):
+   Copyright © 2005 Yukihiro Matsumoto. Todos os direitos reservados.
+LibOgg / LibVorbis (v1.0):
+   Copyright © 2004 Xiph.Org Foundation. Todos os direitos reservados.
+Flash (v9.0):
+   Copyright © 2008 Adobe Systems Incorporated. Todos os direitos reservados.

@@ -1,0 +1,236 @@
+#_________________________________________________
+# MOG_Luck System V1.2
+#_________________________________________________
+# By Moghunter
+# http://www.atelier-rgss.com
+#_________________________________________________
+#Adiciona o atributo sorte, que interfere na na
+#chance de ganhar itens ou de causar dano crítico.
+#_________________________________________________
+module MOG
+# Limite maximo para a sorte.
+# Valores maiores que 100% serão limitados a esse valor.
+# MAX_LUCK = {A=>B}
+#
+# A = ID do personagem
+# B = valor maximo de sorte para cada personagem.
+#
+# Caso não definir nada o valor maximo será 100%.
+MAX_LUCK = {
+1=>60,
+2=>45,
+7=>23
+}
+#_________________________________________________
+#Definição dos parâmetros iniciais de sorte do personagem.
+# INILUCK = {A =>B}
+#
+# A = ID do personagem.
+# B = valor inicial da sorte.
+#
+#Se não definir nada o valor inicial será 1.
+INILUCK = {
+1 =>5,
+2 =>3,
+7 =>2
+}
+#_________________________________________________
+#Definição da quantidade de sorte que ganhará por level.
+#LKUP = {A =>B}
+#
+# A = ID do personagem
+# B = Valor da bonificação.
+#
+#Se não definir nada o valor da bonificação será 1.
+LKUP = {1 =>2,
+2 =>3
+}
+#_________________________________________________
+#Calculo para ganhar item.
+#
+# false = Chance de ganhar item é baseado no luck mais alto do grupo.
+# true = Chance de ganhar item é baseado na média do grupo.
+LKITEMEDIA = true
+#_________________________________________________
+#Quantidade % de HP recuperado.
+LKHPRECPER = 10
+end
+#_________________________________________________
+$mogscript = {} if $mogscript == nil
+$xrxs = {} if $xrxs == nil
+$mogscript["luck_system"] = true
+##############
+# Game Actor #
+##############
+class Game_Actor < Game_Battler
+alias mog23_setup setup
+def setup(actor_id)
+iniluck = MOG::INILUCK[actor_id]
+maxluck = MOG::MAX_LUCK[actor_id]
+if maxluck == nil
+@max_luck = 100
+else
+@max_luck = maxluck
+end
+if MOG::INILUCK[actor_id] == nil
+@luck = 1
+else
+@luck = iniluck
+end
+if MOG::LKUP[actor_id] == nil
+@luckup = 1
+else
+@luckup = MOG::LKUP[actor_id]
+end
+mog23_setup(actor_id)
+end
+def max_luck
+return @max_luck
+end
+def luck
+if @max_luck != nil and @luck > @max_luck
+@luck = @max_luck
+else
+if @luck > 100
+@luck = 100
+end
+return @luck
+end
+end
+def exp=(exp)
+@exp = [[exp, 9999999].min, 0].max
+while @exp >= @exp_list[@level+1] and @exp_list[@level+1] > 0
+@level += 1
+@luck += @luckup
+for j in $data_classes[@class_id].learnings
+if j.level == @level
+learn_skill(j.skill_id)
+end
+end
+end
+while @exp < @exp_list[@level]
+@level -= 1
+@luck -= @luckup
+end
+@hp = [@hp, self.maxhp].min
+@sp = [@sp, self.maxsp].min
+end
+end
+###############
+# Game_Enemy #
+###############
+class Game_Enemy < Game_Battler
+def treasure_prob
+for i in 0...$game_party.actors.size
+actor = $game_party.actors[i]
+if MOG::LKITEMEDIA == true
+return actor.luck / $game_party.actors.size
+else
+return actor.luck
+end
+end
+end
+end
+################
+# Game_Battler #
+################
+class Game_Battler
+def attack_effect(attacker)
+self.critical = false
+hit_result = (rand(100) < attacker.hit)
+if hit_result == true
+atk = [attacker.atk - self.pdef / 2, 0].max
+self.damage = atk * (20 + attacker.str) / 20
+self.damage *= elements_correct(attacker.element_set)
+self.damage /= 100
+if self.damage > 0
+if attacker.is_a?(Game_Actor)
+if rand(100) < attacker.luck
+self.damage *= 2
+self.critical = true
+end
+else
+if rand(100) < 4 * attacker.dex / self.agi
+self.damage *= 2
+self.critical = true
+end
+end
+if self.guarding?
+self.damage /= 2
+end
+end
+if self.damage.abs > 0
+amp = [self.damage.abs * 15 / 100, 1].max
+self.damage += rand(amp+1) + rand(amp+1) - amp
+end
+eva = 8 * self.agi / attacker.dex + self.eva
+hit = self.damage < 0 ? 100 : 100 - eva
+hit = self.cant_evade? ? 100 : hit
+hit_result = (rand(100) < hit)
+end
+if hit_result == true
+remove_states_shock
+self.hp -= self.damage
+@state_changed = false
+states_plus(attacker.plus_state_set)
+states_minus(attacker.minus_state_set)
+else
+self.damage = "Miss"
+self.critical = false
+end
+return true
+end
+end
+###############
+# Window Base #
+###############
+class Window_Base < Window
+def draw_actor_luck(actor, x, y)
+self.contents.font.color = normal_color
+self.contents.draw_text(x, y, 120, 32, "Sorte " + actor.luck.to_s + "%")
+if $mogscript["menu_eva"] == true
+back = RPG::Cache.picture("STBAR_Back")
+cw = back.width
+ch = back.height
+src_rect = Rect.new(0, 0, cw, ch)
+self.contents.blt(x , y - ch + 40, back, src_rect)
+meter = RPG::Cache.picture("STBAR.png")
+cw2 = meter.width * actor.luck / actor.max_luck
+ch2 = meter.height
+src_rect2 = Rect.new(0, 0, cw2, ch2)
+self.contents.blt(x , y - ch + 40, meter, src_rect2)
+end
+end
+end
+#################
+# Window Status #
+#################
+class Window_Status < Window_Base
+alias mog23_refresh refresh
+def refresh
+mog23_refresh
+if $mogscript["menu_eva"] == true
+draw_actor_luck(@actor, 520,210)
+else
+draw_actor_luck(@actor, 325,120)
+end
+end
+end
+################
+# Scene Battle #
+################
+class Scene_Battle
+alias mog23_start_phase5 start_phase5
+def start_phase5
+mog23_start_phase5
+for actor in $game_party.actors
+if rand(100) < actor.luck
+lkhprec = actor.maxhp * MOG::LKHPRECPER / 100
+actor.hp += lkhprec
+actor.damage_pop = true
+actor.damage = -lkhprec
+end
+end
+@status_window.refresh
+end
+end

@@ -1,0 +1,53 @@
+#> This is the configuration of MyWorlds
+#> For more information, you can visit the following websites:
+#> http://dev.bukkit.org/server-mods/my-worlds/
+#> http://forums.bukkit.org/threads/myworlds.31718
+
+# The interval in miliseconds a player has to wait before being teleported again
+teleportInterval: 2000
+
+# Whether water stream portals are allowed
+useWaterTeleport: true
+
+# The tick interval at which time is kept locked
+timeLockInterval: 20
+
+# Whether or not world inventories are being separated using the settings
+useWorldInventories: false
+useWorldEnterPermissions: false
+usePortalEnterPermissions: false
+useWorldBuildPermissions: false
+useWorldUsePermissions: false
+useWorldChatPermissions: false
+
+# Whether only players are allowed to teleport through portals
+onlyPlayerTeleportation: true
+
+# Whether portals can be replaced by other portals with the same name on the same world
+allowPortalNameOverride: true
+
+# Whether each world has it's own operator list
+useWorldOperators: false
+
+# Whether only portal blocks surrounded by obsidian can teleport players
+onlyObsidianPortals: false
+
+# Whether the world info command will calculate the world size on disk
+# If this process takes too long, disable it to prevent possible server freezes
+calculateWorldSize: true
+
+# The main world in which new players spawn
+# If left empty, the main world defined in the server.properties is used
+mainWorld: ''
+
+# Whether all players respawn on the main world at all times
+forceMainWorldSpawn: false
+
+# Whether survival players instantly teleport when entering a nether portal
+alwaysInstantPortal: true
+
+# Whether individually placed nether/end portals create their own destination portal
+# False: Players are teleported to the spawn point of the world
+# True: Players are teleported to their own portal on the other world
+allowPersonalPortals: true
+

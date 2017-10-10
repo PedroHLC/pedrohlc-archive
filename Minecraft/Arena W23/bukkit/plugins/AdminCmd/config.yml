@@ -1,0 +1,246 @@
+﻿#Configuration file of AdminCmd
+#Plugin Version: 7.3.5 (BUILD 06.04.2013 @ 18:26:29)
+#
+#MessageOfTheDay	:	if true, display MOTD on join (Default : true)
+#DisplayNewsOnJoin	:	If true, display the news message on Join (Default : true)
+#DisplayRulesOnJoin	:	If true, display the rules on Join (Default : true)
+#DisplayRulesOnlyOnFirstJoin	:	If true, display the rules ONLY ON FIRST JOIN
+#(override the above parameter DisplayRulesOnJoin) (Default : false)
+#DefaultVulcanPower	:	Default value for Vulcan power (Default : 4.0)
+#DefaultFireBallPower	:	Default value for Fireball power (Default : 1.0)
+#forceOfficialBukkitPerm	:	Only useful when using bridge with SuperPerm,
+#to avoid the use of the bridge. (Default : false)
+#locale	:	Language of messages displayed in the plugin. (Default : en_US)
+#noMessage	:	Disable every message of the plugin (Default : false)
+#autoAfk	:	Activate the autoAfk, meaning the player
+#will be set AFK after the given time (Default : true)
+#afkTimeInSecond	:	Time before setting the player AFK (Default : 60)
+#autoKickAfkPlayer	:	Activate the auto kick AFK people after the given time (Default : false)
+#afkKickInMinutes	:	Time before kicking the AFK player (Default : 3)
+#statusCheckInSec	:	After how many seconds the plugin will check
+#if the player didn't move for the AFK
+#Also used to send update about the Invisible status. (Default : 20)
+#maxHomeByUser	:	How many homes a user can have. 0 = Infinite, max = 150 (Default : 0)
+#maxItemAmount	:	How many Items a user can spawn at once. 0 = Infinite, max = 150 (Default : 0)
+#firstConnectionToSpawnPoint	:	If true and if it's the first time that the player connect,
+#he will be spawn at the spawn point you set (Default : false)
+#resetPowerWhenTpAnotherWorld	:	Fly,God,vulcan, etc ... are power.
+#If true, these power are lost when tp to another world. (Default : true)
+#fakeQuitWhenInvisible	:	Fake quit when you become invisible (Default : true)
+#InvisAndNoPickup	:	Setting this to true, will disable the auto-picking item when invisible (Default : true)
+#fly.DefaultFlyPower	:	Default value for Fly power (Default : 1.75)
+#fly.maxFlyValue	:	Maximum value for the fly commands (Default : 2.0)
+#fly.glideWhenFallingInFlyMode	:	Activate the parachute when falling in fly mode (Default : true)
+#fly.gliding.newYvelocity	:	New velocity to slower the fall (Default : -0.5)
+#fly.gliding.YvelocityCheckToGlide	:	Velocity needed to open the parachute (Default : -0.2)
+#fly.gliding.multiplicator	:	Gliding multiplicator (Default : 0.1)
+#ColoredSign	:	Activate the color sign, using & to select the color. (Default : true)
+#mutedPlayerCantPm	:	Disallow muted player to send private message (Default : false)
+#maxRangeForTpAtSee	:	Max Range in block for the tp at see. (Default : 312)
+#tpRequestActivatedByDefault	:	Mean, when you want to tp to a player or tp the player,
+#he'll receive a request that he can ignore or accept.
+#By setting this option to true,
+#the tp request will be activated by default. (Default : false)
+#tpRequestTimeOutInMinutes	:	How much minute before a tp request become invalid. (Default : 1)
+#verboseLog	:	Disable some "debug" message when launching the plugin
+#(change it to true only if you have a good reason to do it.) (Default : false)
+#logPrivateMessages	:	Private message send with command /msg are logged in the server.log (Default : true)
+#broadcastServerReload	:	Broadcast a message to every player when reloading the server. (Default : true)
+#help.entryPerPage	:	Number of help entry per page (Default : 9)
+#help.shortenEntries	:	Shorten the help text (Default : false)
+#help.useWordWrap	:	Check the word to do the new line (Default : false)
+#help.wordWrapRight	:	Wrap by the right (Default : false)
+#help.getHelpForAllPlugins	:	If set to true, get the commands of every plugins installed
+#Else only from the folder HelpFiles where you set your help files. (Default : true)
+#help.color.normal	:	Number (hexa decimal) representing the normal color of the help text. (Default : f)
+#help.color.required	:	Number (hexa decimal) representing the color of the required params in the help text. (Default : c)
+#help.color.optional	:	Number (hexa decimal) representing the color of the optional params in the help text. (Default : 2)
+#help.color.command	:	Number (hexa decimal) representing the color of the requiered params in the help text. (Default : 6)
+#superBreakerItem	:	ID of the item used for the SuperBreaker mode (Default : 278)
+#DateAndTime.Format	:	Date/Time format (Default : dd/MM/yy - HH:mm:ss)
+#DateAndTime.GMToffset	:	TimeZone to be displayed, only Use GMT or UTC here (Default : GMT+00:00)
+#useImmunityLvl	:	if you want to use the immunity level explained in the Read Me. (Default : false)
+#defaultImmunityLvl	:	Level assigned by default to an user. (Default : 1)
+#useDisplayName	:	Use the DisplayName of the player when using the player name (Default : true)
+#debug	:	To activate the debug log (debug.log file) (Default : false)
+#globalRespawnSetting	:	To change the global Respawn point
+#Can be : globalSpawn, bed, home, group, none (Default : globalSpawn)
+#checkTeleportLocation	:	When using a Spawn/Home command, the plugin will check
+#if the player didn't moved (Default : false)
+#teleportDelay	:	Delay before teleporting (Spawn/Home) in ticks (20 Ticks = 1 Sec). 0 for no delay. (Default : 0)
+#logAllCmd	:	To log all command in the console and server.log (Default : false)
+#useJoinQuitMsg	:	To activate the change of the Join/Quit message
+#(that can be configured in the locale file) (Default : true)
+#delayBeforeWriteUserFileInSec	:	Delay before writing the user file on the disk (in seconds) (Default : 120)
+#groupNames	:	Will be used in a later version (Default : [default, mod, admin])
+#timeOutScale	:	When using the parameter -t in power commands (god, fly, etc ...)
+#Configure the scale used for the time (here 60 sec).
+#It mean if you type /god -t 5 you will be god for 5 minutes (Default : 60)
+#timeInSecBeforeStop	:	Time before stopping the server when using the AdminCmd command Stop. (Default : 0)
+#tpInDiffWorld	:	Allow users to teleport to other user that are in a different world.
+#If FALSE the player that want to tp to another player that is in an another world will have to have the permission node :
+#admincmd.tp.world.WORLDNAME (where WORLDNAME is the name of the world where the space are replaced by underscore (_) ) (Default : true)
+#armorKitOverride	:	When using an armored kit, if this options is set to true, it will override what the player is wearing to replace it by the armor of the kit. (Default : true)
+#usePSfix	:	Use the prefix and the suffix when displaying names (Default : true)
+#egg.killer.defaultRadiusInBlock	:	When the Killer Egg is used, this radius will be used if no radius is set in the command. (Default : 15)
+#egg.killer.maxRadiusInBlock	:	When the Killer Egg is used, this radius will be the max radius possible for the command. (Default : 30)
+#egg.block.Timeout	:	How much time the new blocks stay (in sec) when using the BlockEgg. Put 0 for never change back. (Default : 5)
+#egg.block.defaultRadiusInBlock	:	Default freeze radius when using the Block (Default : 8)
+#egg.block.maxRadiusInBlock	:	Maximum radius for the BlockEgg (Default : 12)
+#egg.freezer.Timeout	:	How much time the ice stay (in sec) when using the FreezerEgg. Put 0 for never change back. (Default : 5)
+#egg.freezer.defaultRadiusInBlock	:	Default freeze radius when using the FreezerEgg (Default : 8)
+#egg.freezer.maxRadiusInBlock	:	Maximum radius for the FreezergEgg (Default : 12)
+#egg.explosion.defaultRadiusInBlock	:	Default freeze radius when using the ExplosionEgg (Default : 8)
+#egg.explosion.maxRadiusInBlock	:	Maximum radius for the ExplosionEgg (Default : 12)
+#egg.high.Timeout	:	How much time (in sec) the high effect least. (Default : 20)
+#egg.high.defaultRadiusInBlock	:	Default radius when using the HighEgg (Default : 5)
+#egg.high.maxRadiusInBlock	:	Maximum radius for the HighEgg (Default : 12)
+#importBannedPlayersTXT	:	If set to true, this will import any player which does not exist in the banned.yml, afterwards it will be set to false! (Default : false)
+#supBlacklist	:	With this mode, the users that don't have the admincmd.spec.noblacklist can't pickup/drop/use any blacklisted items. (Default : false)
+#editSignRightClick	:	When true, when you right click a sign, you'll be able to edit it. If you delete every lines, the sign will be deleted and droped. (Default : true)
+#logSameIP	:	When set to true all players joining from the same IP will be loged in the console and a message is sent to all players with the permission: admincmd.spec.ipbroadcast (Default : false)
+#nbItemsPerPageInList	:	How many items are displayed per page in banlist/mutelist etc ... (Default : 8)
+#importFrom.essentials	:	If set to true AdminCmd will look for Essential datas the next time the server starts, import them if they exist and deactivate this feature. (Default : true)
+#turnPowersOff	:	If set to true all powers(god etc.) are removed from a player when he leaves the game. (Default : false)
+#deathMessage	:	If set to true a death message will be broadcasted if a player dies. (Default : true)
+#turnCustomDeathMessageOff	:	If set to true only MC default death messages will be displayed. (Default : false)
+#executeCommandsOnNewJoin	:	If set to true, the commands set in the commands.yml section onNewJoin will be executed on the player that join the server for the first time. (Default : false)
+#dataWrapper	:	DON'T TOUCH !
+#IF YOU WANT TO CHANGE IT USE THE CONVERTINTO.
+#How the player data, world data are saved. Possible options : mysql,sqlite,yml. (Default : sqlite)
+#convertInto	:	By setting this parameter, you tell AdminCmd that it have to convert the data to the new format. Possible format : mysql,sqlite,yml.
+# Mysql need the host,user,database,password to be setIF the DataWrapper is the same as the convertInto NO CONVERSION WILL BE DONE. (Default : sqlite)
+#mysql.host	:	Host to be set if mysql used. (Default : localhost)
+#mysql.user	:	Username to connect to mysql database (Default : root)
+#mysql.password	:	Password to connect to mysql database (Default : toor)
+#mysql.database	:	Database name (Default : minecraft)
+#respawn.changeDestination	:	If set to true, the player will respawn in the world defined by respawn.world if he died in the nether/the_end. (Default : false)
+#respawn.world	:	The worlds' name where a player respawns after death.
+#If the world can't be found, a warning will be displayed in the console when a player die. (Default : world)
+#addBannerNameInBan	:	Add or not the 'by Player' in the ban reason (Default : true)
+#checkForUpdate.status	:	If AdminCmd has to check if there is a new version of the plugin. (Default : true)
+#checkForUpdate.updateChannel	:	Which version to check. Can be stable or dev. (Default : stable)
+#delayBeforeSendToDb	:	Number of seconds before the plugin execute the request to the database (in case of SQLite or MySQL).
+#This feature have been done to avoid lag by execut the request in another thread than the main one. (Default : 10)
+#mk.KillVillagerAndGolem	:	If set to true, the mobkill command when used with ALL will also kill the vilager and the golem. (Default : false)
+#mk.DefaultRadiusInBlock	:	Set the default radius for the mobkill command. (Default : 5)
+
+MessageOfTheDay: true
+DisplayNewsOnJoin: true
+DisplayRulesOnJoin: true
+DisplayRulesOnlyOnFirstJoin: false
+DefaultVulcanPower: 4.0
+DefaultFireBallPower: 1.0
+forceOfficialBukkitPerm: false
+locale: en_US
+noMessage: false
+autoAfk: true
+afkTimeInSecond: 60
+autoKickAfkPlayer: true
+afkKickInMinutes: 3
+statusCheckInSec: 20
+maxHomeByUser: 0
+maxItemAmount: 0
+firstConnectionToSpawnPoint: false
+resetPowerWhenTpAnotherWorld: true
+fakeQuitWhenInvisible: false
+InvisAndNoPickup: true
+fly:
+  DefaultFlyPower: 1.75
+  maxFlyValue: 2.0
+  glideWhenFallingInFlyMode: true
+  gliding:
+    newYvelocity: -0.5
+    YvelocityCheckToGlide: -0.2
+    multiplicator: 0.1
+ColoredSign: true
+mutedPlayerCantPm: false
+maxRangeForTpAtSee: 312
+tpRequestActivatedByDefault: false
+tpRequestTimeOutInMinutes: 1
+verboseLog: false
+logPrivateMessages: true
+broadcastServerReload: true
+help:
+  entryPerPage: 9
+  shortenEntries: false
+  useWordWrap: false
+  wordWrapRight: false
+  getHelpForAllPlugins: true
+  color:
+    normal: f
+    required: c
+    optional: 2
+    command: 6
+superBreakerItem: 278
+DateAndTime:
+  Format: dd/MM/yy - HH:mm:ss
+  GMToffset: GMT-30:00
+useImmunityLvl: false
+defaultImmunityLvl: 1
+useDisplayName: true
+debug: false
+globalRespawnSetting: globalSpawn
+checkTeleportLocation: false
+teleportDelay: 0
+logAllCmd: false
+useJoinQuitMsg: true
+delayBeforeWriteUserFileInSec: 120
+groupNames:
+- default
+- mod
+- admin
+timeOutScale: 60
+timeInSecBeforeStop: 0
+tpInDiffWorld: true
+armorKitOverride: true
+usePSfix: true
+egg:
+  killer:
+    defaultRadiusInBlock: 15
+    maxRadiusInBlock: 30
+  block:
+    Timeout: 5
+    defaultRadiusInBlock: 8
+    maxRadiusInBlock: 12
+  freezer:
+    Timeout: 5
+    defaultRadiusInBlock: 8
+    maxRadiusInBlock: 12
+  explosion:
+    defaultRadiusInBlock: 8
+    maxRadiusInBlock: 12
+  high:
+    Timeout: 20
+    defaultRadiusInBlock: 5
+    maxRadiusInBlock: 12
+importBannedPlayersTXT: false
+supBlacklist: false
+editSignRightClick: true
+logSameIP: false
+nbItemsPerPageInList: 8
+importFrom:
+  essentials: false
+turnPowersOff: false
+deathMessage: true
+turnCustomDeathMessageOff: false
+executeCommandsOnNewJoin: false
+dataWrapper: yml
+convertInto: yml
+mysql:
+  host: localhost
+  user: root
+  password: toor
+  database: minecraft
+respawn:
+  changeDestination: false
+  world: world
+  inNormalWorld: 'true'
+addBannerNameInBan: true
+checkForUpdate:
+  status: true
+  updateChannel: stable
+delayBeforeSendToDb: 10
+mk:
+  KillVillagerAndGolem: false
+  DefaultRadiusInBlock: 5

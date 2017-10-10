@@ -1,0 +1,1 @@
+"C:\Ruby18\bin\exerb.bat" "C:\Users\PedroHLC\Documents\Projetos\RPGXP\GOD\Onion Force\Emissor\init.rb" "C:\Users\PedroHLC\Documents\Projetos\RPGXP\GOD\Onion Force\Emissor\init.exy"

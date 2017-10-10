@@ -1,0 +1,32 @@
+#===============================================================================
+# *** Real FPS Counter
+# por: PedroHLC
+#===============================================================================
+
+$fps_sprite = Sprite.new
+$fps_sprite.bitmap = Bitmap.new(128,32)
+$fps_sprite.z = 99999
+$fps_sprite.x = 6
+$fps_sprite.y = 448
+$fps_real_frame = 0
+
+class << Graphics
+  attr_reader('now_fps')
+  
+  @old_sec = Time.now.sec
+  @old_frame = 0
+  
+  alias old_update update
+  
+  def update
+    $fps_real_frame += 1
+    old_update
+    if @old_sec != Time.now.sec
+      @now_fps = ($fps_real_frame - @old_frame.to_i)
+      @old_sec = Time.now.sec
+      @old_frame = $fps_real_frame
+    end
+    $fps_sprite.bitmap.clear
+    $fps_sprite.bitmap.draw_text(0, 0, 128, 32, "#{@now_fps} FPS", 0)
+  end
+end

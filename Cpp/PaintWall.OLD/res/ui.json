@@ -1,0 +1,21 @@
+														{
+
+"window": {
+	"skin": "../res/skin.png",
+	"decoration-mask": {
+		"top-left":		"0x0,32x32",
+		"top":			"32x0,32x32",
+		"top-right":	"64x0,32x32",
+		"left":			"0x32,32x32",
+		"center":		"32x32,32x32",
+		"right":		"64x32,32x32",
+		"bottom-left":	"0x64,32x32",
+		"bottom":		"32x64,32x32",
+		"bottom-right":	"64x64,32x32"
+	},
+	
+	"width": 1280,
+	"height": 1024
+}
+
+														}

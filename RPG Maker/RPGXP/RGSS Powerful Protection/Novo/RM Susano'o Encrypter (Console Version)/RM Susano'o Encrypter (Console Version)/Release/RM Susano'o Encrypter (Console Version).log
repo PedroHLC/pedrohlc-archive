@@ -1,0 +1,199 @@
+﻿Build started 25/09/2011 13:36:06.
+     1>Project "Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version).vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\RM Susano'o Encrypter (Console Version).unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\RM Susano'o Encrypter (Console Version).pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\RM Susano'o Encrypter (Console Version).pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "RM Susano'o Encrypter (Console Version).cpp"
+         RM Susano'o Encrypter (Console Version).cpp
+     1>RM Susano'o Encrypter (Console Version).cpp(58): warning C4018: '<' : signed/unsigned mismatch
+     1>RM Susano'o Encrypter (Console Version).cpp(65): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>RM Susano'o Encrypter (Console Version).cpp(78): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>RM Susano'o Encrypter (Console Version).cpp(102): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>RM Susano'o Encrypter (Console Version).cpp(104): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>RM Susano'o Encrypter (Console Version).cpp(112): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(118): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>RM Susano'o Encrypter (Console Version).cpp(119): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>RM Susano'o Encrypter (Console Version).cpp(134): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>RM Susano'o Encrypter (Console Version).cpp(154): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(304) : see declaration of 'scanf'
+     1>RM Susano'o Encrypter (Console Version).cpp(162): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(165): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>RM Susano'o Encrypter (Console Version).cpp(167): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>RM Susano'o Encrypter (Console Version).cpp(169): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(172): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>RM Susano'o Encrypter (Console Version).cpp(182): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(195): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(196): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(197): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(199): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(227): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(228): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(230): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(231): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(232): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(233): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(235): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(236): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(245): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(246): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(248): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(249): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(250): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(251): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(253): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(254): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(259): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(261): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(262): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(264): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(287): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(288): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(289): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(291): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(322): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(323): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(325): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(326): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(327): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(328): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(330): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(331): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(344): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(345): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(347): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(348): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(349): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(350): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(352): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(353): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(358): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(360): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(361): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(363): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(386): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(387): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(388): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(390): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(422): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(423): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(425): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(426): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(427): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(428): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(430): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(431): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(444): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(445): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(447): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(448): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(449): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(450): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(452): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(453): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(459): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(460): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(462): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>RM Susano'o Encrypter (Console Version).cpp(464): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\string.h(110) : see declaration of 'strcat'
+     1>RM Susano'o Encrypter (Console Version).cpp(480): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>RM Susano'o Encrypter (Console Version).cpp(487): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio\VC\include\stdio.h(234) : see declaration of 'fopen'
+       Link:
+         C:\Program Files\Microsoft Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\Release\RM Susano'o Encrypter (Console Version).exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\RM Susano'o Encrypter (Console Version).exe.intermediate.manifest" /MANIFESTUAC:"level='highestAvailable' uiAccess='false'" /DEBUG /PDB:"Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\Release\RM Susano'o Encrypter (Console Version).pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\Release\RM Susano'o Encrypter (Console Version).lib" /MACHINE:X86 "Release\RM Susano'o Encrypter (Console Version).obj"
+         Release\stdafx.obj
+         RM Susano'o Encrypter (Console Version).vcxproj -> Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\Release\RM Susano'o Encrypter (Console Version).exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\Release\RM Susano'o Encrypter (Console Version).exe;#1" /manifest "Release\RM Susano'o Encrypter (Console Version).exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\RM Susano'o Encrypter (Console Version).unsuccessfulbuild".
+         Touching "Release\RM Susano'o Encrypter (Console Version).lastbuildstate".
+     1>Done Building Project "Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version)\RM Susano'o Encrypter (Console Version).vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.73

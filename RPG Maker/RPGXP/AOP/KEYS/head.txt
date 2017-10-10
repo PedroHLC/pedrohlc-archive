@@ -1,0 +1,20 @@
+#==========================================================================
+# Virtual-Key Codes
+# Written by MSDN
+# Ripped by PedroHLC
+# Last update: XX/XX/XX - XX:XX - XXX Keys
+#--------------------------------------------------------------------------
+# Some unknow, nonamed and reserved keys were removed
+# See in original state at:
+# http://msdn.microsoft.com/en-us/library/dd375731%28v=VS.85%29.aspx
+#==========================================================================
+module VirtualKeyCode
+  
+  #The following table shows the symbolic constant names, hexadecimal
+  #values, and mouse or keyboard equivalents for the virtual-key codes used
+  #by the system. The codes are listed in numeric order.
+  
+  #Constant = value #Description
+  
+  (*)
+end

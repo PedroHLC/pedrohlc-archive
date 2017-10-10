@@ -1,0 +1,18 @@
+﻿Build started 25/07/2011 21:51:55.
+     1>Project "Y:\Projetos\RPGXP\PHLC Netplay\PHLCServer\PHLCServer\PHLCServer.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\PHLCServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         PHLCServer.vcxproj -> Y:\Projetos\RPGXP\PHLC Netplay\PHLCServer\Release\PHLCServer.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\PHLCServer.unsuccessfulbuild".
+         Touching "Release\PHLCServer.lastbuildstate".
+     1>Done Building Project "Y:\Projetos\RPGXP\PHLC Netplay\PHLCServer\PHLCServer\PHLCServer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.83
