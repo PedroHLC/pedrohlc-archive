@@ -1,0 +1,30 @@
+﻿Build started 30/12/2011 17:11:44.
+     1>Project "L:\Projetos\Cpp\Input\Input\Input.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Input.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D INPUT_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Input.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Input.cpp
+         Input.cpp
+     1>Input.cpp(99): warning C4244: '=' : conversion from 'WORD' to 'char', possible loss of data
+     1>Input.cpp(101): warning C4244: '=' : conversion from 'WORD' to 'char', possible loss of data
+     1>Input.cpp(94): warning C4101: 'cchBuff' : unreferenced local variable
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"L:\Projetos\Cpp\Input\Release\Input.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib winmm.lib /MANIFEST /ManifestFile:"Release\Input.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"L:\Projetos\Cpp\Input\Release\Input.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"L:\Projetos\Cpp\Input\Release\Input.lib" /MACHINE:X86 /DLL Release\dllmain.obj
+         Release\Input.obj
+         Release\stdafx.obj
+            Creating library L:\Projetos\Cpp\Input\Release\Input.lib and object L:\Projetos\Cpp\Input\Release\Input.exp
+         Generating code
+         Finished generating code
+         Input.vcxproj -> L:\Projetos\Cpp\Input\Release\Input.dll
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"L:\Projetos\Cpp\Input\Release\Input.dll;#2" /manifest Release\Input.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Input.unsuccessfulbuild".
+         Touching "Release\Input.lastbuildstate".
+     1>Done Building Project "L:\Projetos\Cpp\Input\Input\Input.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.96

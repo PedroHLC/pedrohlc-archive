@@ -1,0 +1,15 @@
+[System-6/9/2010 17:15:7] Leitura de DLLs terminada
+[System-6/9/2010 17:15:7] Variaveis necessarias criadas
+[System-6/9/2010 17:15:7] Adição dos ficheiros da Library
+[System-6/9/2010 17:15:7] Leitura do ficheiro ./Library/Config.ini, tag Base, linha Version
+[System-6/9/2010 17:15:7] Leitura das Configs (Library)
+[System-6/9/2010 17:15:7] Leitura do ficheiro ./Library/Config.ini, tag Game, linha Fullscreen
+[System-6/9/2010 17:15:7] Leitura das Configs (Jogo)
+[System-6/9/2010 17:15:7] Leitura do ficheiro ./Library/Config.ini, tag Debug, linha DebugTest
+[System-6/9/2010 17:15:7] Leitura do ficheiro ./Library/Config.ini, tag Debug, linha DebugVersion
+[System-6/9/2010 17:15:7] Leitura das Configs (Debug)
+[System-6/9/2010 17:15:7] Leitura do ficheiro ./Library/Config.ini, tag Server, linha Version
+[System-6/9/2010 17:15:7] Leitura das Configs (Server)
+[System-6/9/2010 17:15:7] Variaveis de leitura de DLLs criadas
+[System-6/9/2010 17:15:7] Variaveis dos metodos da library criadas
+[System-6/9/2010 17:15:9] O Evento 2 foi adiciona nas coordenadas (6, 3) do mapa 5

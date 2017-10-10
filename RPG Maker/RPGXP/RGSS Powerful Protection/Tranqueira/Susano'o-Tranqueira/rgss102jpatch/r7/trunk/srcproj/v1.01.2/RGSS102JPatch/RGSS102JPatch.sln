@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RGSS102JPatch", "RGSS102JPatch\RGSS102JPatch.vcxproj", "{C0CD9734-76B2-4FB7-A406-89E23BB6D98C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllExtTest", "DllExtTest\DllExtTest.vcxproj", "{F46B1CB3-2F5B-4E46-8902-A2A36CF66141}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0CD9734-76B2-4FB7-A406-89E23BB6D98C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0CD9734-76B2-4FB7-A406-89E23BB6D98C}.Debug|Win32.Build.0 = Debug|Win32
+		{C0CD9734-76B2-4FB7-A406-89E23BB6D98C}.Release|Win32.ActiveCfg = Release|Win32
+		{C0CD9734-76B2-4FB7-A406-89E23BB6D98C}.Release|Win32.Build.0 = Release|Win32
+		{F46B1CB3-2F5B-4E46-8902-A2A36CF66141}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F46B1CB3-2F5B-4E46-8902-A2A36CF66141}.Debug|Win32.Build.0 = Debug|Win32
+		{F46B1CB3-2F5B-4E46-8902-A2A36CF66141}.Release|Win32.ActiveCfg = Release|Win32
+		{F46B1CB3-2F5B-4E46-8902-A2A36CF66141}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

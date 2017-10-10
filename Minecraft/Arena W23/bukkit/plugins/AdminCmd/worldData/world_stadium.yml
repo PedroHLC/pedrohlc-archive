@@ -1,0 +1,14 @@
+﻿warps: {}
+informations:
+  mobLimits: {}
+spawns: {}
+respawn:
+  world: world
+  inNormalWorld: 'true'
+spawn: !!be.Balor.World.SimpleLocation
+  pitch: 2.2500088
+  world: world_stadium
+  x: 179.4084603432754
+  y: 3.0
+  yaw: 89.550064
+  z: 911.20439196158

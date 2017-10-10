@@ -1,0 +1,210 @@
+#==============================================================================
+# Game_Event
+#------------------------------------------------------------------------------
+# Esta é a classe que engloba os eventos. O que inclui as funções nas páginas de
+# evento alterando estas através das Condições de Evento, e faz funcionar os
+# Processos Paralelos. Esta classe está inserida na classe Game_Map.
+#==============================================================================
+
+class Game_Event < Game_Character
+ 
+  attr_accessor :id
+ 
+  #--------------------------------------------------------------------------
+  # - Inicialização dos Objetos
+  #     map_id : ID do mapa
+  #     event  : evento (RPG::Event)
+  #--------------------------------------------------------------------------
+ 
+  def initialize(map_id, event, new_id=nil)
+    super()
+    @map_id = map_id
+    @event = event
+    if new_id.nil?
+      @id = @event.id
+    else
+      @id = new_id
+    end
+    @erased = false
+    @starting = false
+    @through = true
+    # Mover para a posição de início
+    moveto(@event.x, @event.y)
+    refresh
+  end
+ 
+  #--------------------------------------------------------------------------
+  # - Id
+  #--------------------------------------------------------------------------
+ 
+  def self_id
+    @id
+  end
+     
+  #--------------------------------------------------------------------------
+  # - Se deleta
+  #--------------------------------------------------------------------------
+ 
+  def erase_me
+    $game_map.delete_event(@id)
+  end
+end
+
+#==============================================================================
+# Game_Map
+#------------------------------------------------------------------------------
+# Esta classe engloba o mapa. Isso determina o Scroll e a determinante de
+# passagem. Se refere a $game_map para as instâncias desta classe.
+#==============================================================================
+
+class Game_Map
+
+  attr_accessor :events_count
+
+  alias create_new_event_initialize initialize
+  alias create_new_event_setup setup
+ 
+  #--------------------------------------------------------------------------
+  # - Inicialização dos Objetos
+  #--------------------------------------------------------------------------
+ 
+  def initialize
+    create_new_event_initialize
+    @events_count = [0, 1, []]
+  end
+ 
+  #--------------------------------------------------------------------------
+  # - Configurar
+  #     map_id : ID do mapa
+  #--------------------------------------------------------------------------
+ 
+  def setup(map_id)
+    create_new_event_setup(map_id)
+    @events_count[0] = @map.events.size
+  end
+   
+  #--------------------------------------------------------------------------
+  # - Cria um novo evento
+  #--------------------------------------------------------------------------
+ 
+  def create_event(map_id, event_id, x, y, d)
+    for i in @events.keys
+      if @events.x == x and @events.y == y
+        return
+      end
+    end
+    if((event = load_data(sprintf("Data/Map%03d.rxdata", map_id)).events[event_id]) == nil)
+      return
+    end
+    if @events_count[2] != []
+      count = @events_count[2][0]
+      @events_count[2][0] = nil
+      @events_count[2].compact!
+    else
+      count = @events_count[0] + @events_count[1]
+      @events_count[1] += 1
+    end
+    event.id = count
+    event = Game_Event.new(@map_id, event, count)
+    event.moveto(x, y)
+    case d
+    when 2
+      event.turn_down
+    when 4
+      event.turn_right
+    when 6
+      event.turn_left
+    when 8
+      event.turn_up
+    end
+    @events[count] = event
+    return if !$scene.is_a?(Scene_Map)
+    $scene.spriteset.create_sprite_character(count)
+  end
+   
+  #--------------------------------------------------------------------------
+  # - Deleta um evento
+  #--------------------------------------------------------------------------
+ 
+  def delete_event(event_id)
+    if @events[event_id].nil?
+      return
+    end
+    if $scene.is_a?(Scene_Map)
+      $scene.spriteset.delete_sprite_character(event_id)
+    end
+    @events.delete(event_id)
+    #$game_system.map_interpreter.clear
+    @events_count[2].push(event_id)
+  end
+end
+
+#==============================================================================
+# Scene_Map
+#------------------------------------------------------------------------------
+# Esta classe processa a tela de Mapa
+#==============================================================================
+
+class Scene_Map
+  attr_accessor :spriteset
+end
+
+#==============================================================================
+# Spriteset_Map
+#------------------------------------------------------------------------------
+# Esta classe engloba todos os sprites da tela, Tilesets, Heróis, etc
+# Esta classe está inserida na classe Scene_Map.
+#==============================================================================
+
+class Spriteset_Map
+   
+  #--------------------------------------------------------------------------
+  # - Cria um sprite
+  #--------------------------------------------------------------------------
+ 
+  def create_sprite_character(character_id)
+    sprite = Sprite_Character.new(@viewport1, $game_map.events[character_id])
+    @character_sprites.push(sprite)
+  end
+   
+  #--------------------------------------------------------------------------
+  # - Deleta um sprite
+  #--------------------------------------------------------------------------
+ 
+  def delete_sprite_character(character_id)
+    for i in 0...@character_sprites.size
+      if @character_sprites.character == $game_map.events[character_id]
+        @character_sprites.dispose
+        @character_sprites = nil
+        @character_sprites.compact!
+        break
+      end
+    end
+  end
+end
+
+#==============================================================================
+# Interpreter Parte 1
+#------------------------------------------------------------------------------
+# É a classe que interpreta os comandos de eventos. Esta classe, Game_System,
+# É usada dentro da classe Game_Event.
+#==============================================================================
+
+class Interpreter
+   
+  #--------------------------------------------------------------------------
+  # - O id do evento
+  #--------------------------------------------------------------------------
+ 
+  def self_id
+    @event_id
+  end
+     
+  #--------------------------------------------------------------------------
+  # - Se deleta
+  #--------------------------------------------------------------------------
+ 
+  def erase_me
+    $game_map.delete_event(@event_id)
+  end
+end

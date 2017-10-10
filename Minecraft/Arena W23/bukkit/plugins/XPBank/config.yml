@@ -1,0 +1,287 @@
+# Set to 'true' for MySQL, 'false' for flat-file.
+UseMySQL: false
+
+MySQL:
+  # Address to MySQL database
+  host: localhost
+  
+  # Port number from which to access database (default: 3306)
+  port: 3306
+  
+  # Name of database
+  database: minecraft
+  
+  # Username used to connect to database
+  user: minecraft
+  
+  # Password used to connect to database
+  password: password
+  
+  # Prefix to the SQL table names
+  # Must be changed if you are running this plugin on multiple servers that use the same database
+  # Or you can leave it the same if you want to sync the accounts across servers (DisableCache must be set to true, and SecondsBetweenWrites set very low)
+  # Offline servers without a whitelist beware the issues that may result from account synchronization across servers
+  prefix: xpb_
+  
+XPB:
+  # Currency name for singular amounts (ex. 1 dollar)
+  CurrencyName: XP
+  
+  # Currency name for plural amounts (ex. 2 dollars)
+  CurrencyNamePlural: XP
+  
+  # How often XPB writes data for accounts with new information to database, best to leave at default
+  # More frequent writes will lessen the amount of data lost between writes in the event of a server crash
+  # If set very low, you may wish to disable auto-banking (by not granting permission) or its deposit notifications
+  # If people already had auto-bank on, run this SQL query while server is offline: "UPDATE xpb_players SET autobank = '0' WHERE autobank = '1';"
+  SecondsBetweenWrites: 60
+  
+  # Setting this to true will force XPBank to always query the database for information
+  # Not recommended in most situations, but it can be pretty nifty to sync balances across servers
+  # To do this, the database information must be the same, and SecondsBetweenWrites set to a very low number (0-1 seconds or so)
+  DisableCache: false
+  
+  # Setting this to true will disable the message that says how much XP was auto-banked since last write
+  DisableAutoBankNotifications: false
+  
+  Players:
+    # Balance new players start with
+    NewPlayerBalance: 0
+    
+    # Interest gain for players every interest interval
+    # Only players in Group Banks who have a positive contribution amount gain interest
+    # (group contribution * InterestRate) + balance = new balance
+    InterestRate: 0.025
+    
+    # Time in minutes for player interest gains
+    InterestInterval: 60
+    
+    # Whether or not to announce interest gains
+    ShowInterest: true
+    
+    # Percent of XP players with the 'XPB.keepxp.custom' permission keep when dying
+    XPKeptOnDeath: 60
+    
+    # Percent of XP lost by players upon death that drop as orbs
+    XPDroppedOnDeath: 50
+    
+  GroupBanks:
+    # Minimum length for Group Bank names
+    MinLength: 4
+    
+    #Maximum length for Group Bank names
+    MaxLength: 16
+    
+    # Controls whether or not Group Banks show prefixes in normal chat
+    DisplayPrefix: true
+    
+    # Balance new Group Banks start with
+    # Making this equal to the group bank cost would be a good way to keep people from forming banks too easily, but not take their money from them
+    NewGroupBankBalance: 0
+    
+    # Price to form a Group Bank
+    GroupBankCost: 0
+    
+    # Interest gain for Group Banks every interest interval (Group Bank's balance * InterestRate = new balance)
+    InterestRate: 0.06
+    
+    #Time in minutes for Group Bank interest gains
+    InterestInterval: 120
+    
+    # Required number of group members that need to be online to earn interest
+    # Will always require at least one player
+    OnlineForInterest: 3
+    
+    #Whether or not to announce Group Bank interest gains
+    ShowInterest: true
+  
+# All text output by XPBank, except the plugin and developer name, can be configured here
+# Colors can be added or removed easily with basic color codes (Ex. &4 = red)
+# VARIABLES (%s, %d) MUST NOT BE RE-ORDERED OR REMOVED
+# If the changes you make here don't work, it's because you are using invalid characters or syntax for YAML files
+Language:
+  Error:
+    AlreadyAccepted: "You've already accepted your invitation."
+    AlreadyInvited: "%s has already been invited to %s."
+    AlreadyOwner: "Already the owner!"
+    AmountParam: "Command missing required parameters. Type \"/xpb help\" for more information."
+    BankCharacters: "Group Bank names must be between %s and %s characters long, and can contain only alphanumeric characters and spaces."
+    CannotAffordBank: "Insufficient %s. Group Banks cost %d %s."
+    CantDemoteSelf: "You can't demote yourself!"
+    CantInviteSelf: "You can't invite yourself."
+    CantKickOwner: "You can't kick the owner!"
+    CantKickSelf: "You can't kick yourself!"
+    CantPaySelf: "You can only pay other players."
+    CantPromoteSelf: "You can't promote yourself!"
+    ChangeOwnerRank: "You can't change the owner's rank!"
+    ConsoleNoBalance: "Console has no balance information."
+    ConsoleOnly: "This command can only be executed from Console."
+    CreativeNoDeposit: "Depositing and withdrawing is disabled in Creative mode."
+    GroupBankExists: "Group Bank \"%s\" already exists."
+    GroupBankNotExists: "Group Bank doesn't exist."
+    HasNoInvitation: "%s does not have an invitation to %s."
+    HighestRank: "&6%s &fcan't be promoted any further!"
+    InsufficientXP: "Insufficient %s."
+    InvalidBankName: "Invalid input. Group Bank names can only contain alphanumeric characters and spaces."
+    InvalidInput: "Invalid input."
+    InvalidParam: "Invalid parameter. Type \"&6/xpb help&f\" for a list of commands."
+    InvalidTax: "Tax rate must be between 0.01 and 100 percent."
+    LessThanOne: "<amount> must be greater than zero."
+    LessThanZero: "<amount> can not be a negative value."
+    LowestRank: "&6%s &fcan't be demoted any further!"
+    MustBeOwner: "Only Group Bank owners may pass this command."
+    NicknameLength: "Nicknames can only be up to 12 characters long."
+    NoConnection: "Could not establish connection to database."
+    NoMOTD: "No MOTD is currently set."
+    NoNick: "No nickname to remove."
+    NoPermission: "You do not have permission to pass that command."
+    NotAMemberOf: "&6%s &fis not a member of &a%s&f."
+    NotEnoughToDivvy: "There's not enough %s to go around!"
+    NotInvited: "You haven't been invited to %s."
+    OwnerNoQuit: "As the owner, you must either promote another member to owner or disband the group to quit."
+    PlayerAlreadyGrouped: "&6%s &fis already a member of a Group Bank."
+    PlayerAlreadyMember: "%s is already a member of a Group Bank."
+    PlayerCommand: "This command is not available from the console."
+    PlayerNotExist: "Player doesn't exist."
+    PlayerNotGrouped: "&6%s &fis not a member of a Group Bank."
+    PlayerNotOnline: "Player isn't online."
+    PlayerNoXP: "Player has no %s."
+    RankTooLow: "You are not ranked high enough to pass this command."
+    SenderGroupMember: "You are already a member of a Group Bank."
+    SenderNotMember: "You are not a Group Bank member."
+    TooManyParam: "Command passed with too many parameters. Type \"/xpb help\" for more information."
+    UseMySQL: "'UseMySQL' must be enabled in config.yml to begin conversion."
+    
+  Prefixed:
+    AutoBankDisabled: "Auto-banking disabled."
+    AutoBankEnabled: "Auto-banking enabled."
+    AutoGroupBankDisabled: "Auto-banking to &a%s &fdisabled."
+    AutoGroupBankEnabled: "Auto-banking to &a%s &fenabled."
+    BankCreationSuccess: "Group Bank &a%s&f created successfully."
+    BeginSpy: "Group Chat spying enabled."
+    CalcLevels: "Level &6%s &frequires &6%d XP&f."
+    CalcLevelToLevel: "&6%d XP &fis required to level from level &6%s &fto level &6%s&f."
+    CurrentTax: "The current tax rate is &6%s%s&f."
+    Demoted: "&6%s &fhas been demoted from rank &6%d &fto rank &6%d&f."
+    DepositedXP: "&6%d %s &fdeposited."
+    DepositedXPToGroup: "&6%s &fdeposited &6%d %s &fto &a%s&f's coffers."
+    Disbanded: "&a%s &fhas been disbanded."
+    DisbandedBy: "&a%s &fhas been disbanded by &6%s&f. Remaining balance has been divvied."
+    Divvy: "&6%s &fdivvies up &6%d %s &fof &a%s&f's holdings. Your share of the loot is &6%d %s&f."
+    EndSpy: "Group Chat spying disabled."
+    GaveXPB: "Deposited &6%s %s &fto &6%s&f's account."
+    GivenXP: "Gave &6%d &fXP to &6%s&f."
+    GivenXPB: "The gods have bestowed &6%s %s &fupon you."
+    GotPaid: "&6%s &fsent you &6%d %s&f."
+    GroupChatDisabled: "Group chat disabled."
+    GroupChatEnabled: "Group chat enabled."
+    GroupInterestGained: "&a%s &fsees a &6%s%s &freturn of &6%d %s &fon its investments."
+    GroupMemberJoined: "&6%s &fhas joined &a%s&f."
+    GroupMemberLeft: "&6%s &fhas left &a%s&f."
+    InterestGained: "Your contributions to &a%s &fnet you a &6%s%s &fdividend of &6%d %s&f."
+    Invitation: "&6%s &fhas invited you to join the &a%s &fGroup Bank."
+    InvitedPlayer: "&6%s &finvited &6%s &fto &a%s&f."
+    JoinedGroup: "You have joined the &a%s &fGroup Bank. Welcome!"
+    Kicked: "You have been kicked from &a%s&f."
+    MOTDCleared: "&6MOTD &fcleared."
+    MOTDSet: "&6%s &fsets the &6MOTD &fto: %s"
+    NewOwner: "&6%s &fhas assumed control of &a%s&f."
+    NewTax: "&a%s &fwill now levy a &6%s%s &ftax on all group member earnings."
+    NoTax: "At this time, no tax is being levied."
+    OfflineBalance: "&6%s&f's Balance: &6%d %s"
+    Paid: "You sent &6%d %s&f to &6%s&f."
+    PlayerKicked: "&6%s &fhas been kicked from &a%s&f."
+    PlayerNicked: "&6%s &fshall henceforth be known as &6%s&f."
+    PluginReloaded: "Plugin reloaded."
+    Promoted: "&6%s &fhas been promoted from rank &6%d &fto rank &6%d&f."
+    QuitGroup: "You have left &a%s&f."
+    SetXP: "Set &6%s&f's experience to &6%d &fXP."
+    SetXPB: "Set &6%s&f's balance to &6%s %s."
+    Taxed: "&a%s &fhas taken its &6%s%s &fcut of &6%s %s &ffrom your latest earnings."
+    TookXP: "Took &6%d &fXP from &6%s&f."
+    TookXPB: "Debited &6%d %s &ffrom &6%s&f's account."
+    TriedToDemote: "&6%s &ftried to demote you!"
+    TriedToKick: "&6%s &ftried to kick you from the Group Bank!"
+    Uninvited: "&a%s &fhas rescinded its invitation."
+    UninvitedPlayer: "&6%s &fhas cancelled &6%s&f's invitation to &a%s&f."
+    WithdrewXP: "&6%d %s &fwithdrawn."
+    WithdrewXPFromGroup: "&6%s &fwithdrew &6%d %s &ffrom &a%s&f's coffers."
+    XPAutoBanked: "You have auto-banked &6%d %s&f since last update."
+    XPAutoGroupBanked: "You have auto-banked &6%d %s &fto &a%s &fsince last update."
+    XPBTaken: "The gods punish you for your hubris! &6%d %s &fis drained from your account."
+  
+  Help:
+    HelpAutoBank: "Toggles auto-banking"
+    HelpBalance: "Display balance information"
+    HelpBalanceOther: "Display player's balance"
+    HelpCalcLevels: "Calculates XP"
+    HelpContrib: "List contributions made by members"
+    HelpCreate: "Creates a Group Bank"
+    HelpDemote: "Demotes group member"
+    HelpDeposit: "Deposit <amount> into bank"
+    HelpDepositLevels: "Deposit levels into bank"
+    HelpDisband: "Deletes Group Bank"
+    HelpDisbandOther: "Disband named Group Bank"
+    HelpDivvy: "Withdraw for all group members"
+    HelpG: "Toggle/Send message to group chat"
+    HelpGB: "View Group Bank information"
+    HelpGBDeposit: "Deposit <amount> into Group Bank"
+    HelpGBDLevels: "Deposit levels into Group Bank"
+    HelpGBTop: "List Group Banks by balance"
+    HelpGBWithdraw: "Withdraw from Group Bank"
+    HelpGBWLevels: "Withdraw levels from Group Bank"
+    HelpGive: "Credits player"
+    HelpGiveLevels: "Give levels XP"
+    HelpGiveXP: "Give XP to player"
+    HelpGroupAutoBank: "Toggles auto-banking to Group Bank"
+    HelpInvite: "Invite player to Group Bank"
+    HelpKick: "Kick player from Group Bank"
+    HelpJoin: "Join Group Bank"
+    HelpMOTD: "View/edit Group Bank MOTD"
+    HelpNick: "Set group member's nickname"
+    HelpPay: "Send money to players"
+    HelpPromote: "Promote group member"
+    HelpQuit: "Leave Group Bank"
+    HelpReload: "Reloads plugin config"
+    HelpSet: "Sets player's balance"
+    HelpSetLevel: "Set player's level"
+    HelpSetowner: "Appoint new Group Bank owner"
+    HelpSetXP: "Set player's XP"
+    HelpSpy: "Spies on Group Chat"
+    HelpTake: "Debits player"
+    HelpTakeLevels: "Take levels XP"
+    HelpTakeXP: "Take XP from player"
+    HelpTax: "View/set Group Bank tax"
+    HelpTitle: "Help"
+    HelpTop: "Lists player accounts by balance"
+    HelpUninvite: "Cancel Group Bank invitation"
+    HelpWho: "View a bank's details"
+    HelpWithdraw: "Withdraw from bank"
+    HelpWithdrawLevels: "Withdraw levels from bank"
+    
+  Default:
+    AccountListTitle: "Accounts"
+    BalanceLine1: "&6Level: %d &f(%d/%d)"
+    BalanceLine2: "&6Total %s: &f%d (%d TNL)"
+    BalanceLine3: "&6Banked %s: &f%d"
+    BalanceTitle: "Balance"
+    BankCreated: "Queued XPBank database entry for Group Bank %s."
+    BeginConversion: "Converting data..."
+    ContribListTitle: "Contributions"
+    EndConversion: "Conversion complete."
+    GroupBalance: "&6Group %s: &f%d"
+    GroupBankListTitle: "Group Banks"
+    GroupBankTitle: "&a%s Group Bank"
+    GroupInterest: "Dispensed Group Bank interest gains."
+    GroupWelcome: "Welcome to your new Group Bank!"
+    MOTD: "&6MOTD: &f"
+    NoBanks: "No Group Banks exist at this time."
+    OfflinePlayers: "&6Players Offline: &f"
+    OnlinePlayers: "&6Players Online: &f"
+    Owner: "&6Owner: &f"
+    PlayerCreated: "Queued XPBank database entry for %s."
+    PlayerInterest: "Dispensed Account interest gains."
+    PlayerIsOwner: "%s is the owner of %s."
+    PlayerNotOwner: "%s is not the owner of %s."
+    TotalContrib: "Total Contributions: &6%d %s"
+    TypeForHelp: "Type \"&6/xpb help&f\" for a list of commands"

@@ -1,0 +1,402 @@
+#==============================================================================
+# HL - Music Choicer
+#------------------------------------------------------------------------------
+# Este script permite que o jogador escolha a música que quer
+# ouvir enquanto joga.
+#------------------------------------------------------------------------------
+# Autor: HugoLinux
+#==============================================================================
+# Para adicionar músicas,crie "Audio/Musicas", adicione uma música e renomeie 
+#para musicX, sendo x um número de 1 a 10, as músicas devem ser
+# nomeadas de forma crescente(music1,music2,music3,etc), após
+# colocar as músicas, configure o script, com as instruções
+# abaixo.
+#==============================================================================
+
+NUMM  = 2  # Número de músicas que o menu terá(no máximo 10)
+Mus0  = "Nada" # O que aparecerá caso esteja tocando nada
+Mus1  = "Johnny B. Good"  # Nome da 1ª música
+Mus2  = "Eduardo e Mônica" # Nome da 2ª música
+Mus3  = "" # Nome da 3ª música
+Mus4  = "" # Nome da 4ª música
+Mus5  = "" # Nome da 5ª música
+Mus6  = "" # Nome da 6ª música
+Mus7  = "" # Nome da 7ª música
+Mus8  = "" # Nome da 8ª música
+Mus9  = "" # Nome da 9ª música
+Mus10 = "" # Nome da 10ª música
+
+Musf1  = ".mp3" # Extensão da 1ª música
+Musf2  = ".mp3" # Extensão da 2ª música
+Musf3  = "" # Extensão da 3ª música
+Musf4  = "" # Extensão da 4ª música
+Musf5  = "" # Extensão da 5ª música
+Musf6  = "" # Extensão da 6ª música
+Musf7  = "" # Extensão da 7ª música
+Musf8  = "" # Extensão da 8ª música
+Musf9  = "" # Extensão da 9ª música
+Musf10 = "" # Extensão da 10ª música
+
+
+class Scene_Menu
+  def main
+    # Criar janela de comando
+    s1 = $data_system.words.item
+    s2 = $data_system.words.skill
+    s3 = $data_system.words.equip
+    s4 = "Status"
+    s5 = "Salvar"
+    s6 = "Musicas"
+    s7 = "Fim de Jogo"
+    @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7])
+    @command_window.index = @menu_index
+    @command_window.height = 224
+    # Se o número de membros do Grupo de Heróis for 0
+    if $game_party.actors.size == 0
+      # Desabilar as janelas de Item, Habilidades, Equipamento e Status
+      @command_window.disable_item(0)
+      @command_window.disable_item(1)
+      @command_window.disable_item(2)
+      @command_window.disable_item(3)
+    end
+    # Se Salvar for Proibido
+    if $game_system.save_disabled
+      # Desabilitar Salvar
+      @command_window.disable_item(4)
+    end
+    # Criar janela de Tempo de Jogo
+    @playtime_window = Window_PlayTime.new
+    @playtime_window.x = 0
+    @playtime_window.y = 224
+    # Criar janela de Número Passos
+    @steps_window = Window_Steps.new
+    @steps_window.x = 0
+    @steps_window.y = 320
+    # Criar janela de Dinheiro
+    @gold_window = Window_Gold.new
+    @gold_window.x = 0
+    @gold_window.y = 416
+    # Criar janela de Status
+    @status_window = Window_MenuStatus.new
+    @status_window.x = 160
+    @status_window.y = 0
+    # Executar transição
+    Graphics.transition
+    # Loop principal
+    loop do
+      # Atualizar a tela de jogo
+      Graphics.update
+      # Atualizar a entrada de informações
+      Input.update
+      # Atualizar Frame
+      update
+      # Abortar loop se a tela for alterada
+      if $scene != self
+        break
+      end
+    end
+    # Preparar para transiçõa
+    Graphics.freeze
+    # Exibição das janelas
+    @command_window.dispose
+    @playtime_window.dispose
+    @steps_window.dispose
+    @gold_window.dispose
+    @status_window.dispose
+  end
+
+  def update_command
+    # Se o botão B for pressionado
+    if Input.trigger?(Input::B)
+      # Reproduzir SE de cancelamento
+      $game_system.se_play($data_system.cancel_se)
+      # Alternar para a tela do mapa
+      $scene = Scene_Map.new
+      return
+    end
+    # Se o botão C for pressionado
+    if Input.trigger?(Input::C)
+      # Se o comando for outro senão Salvar, Fim de Jogo e o número de Heróis no
+      # Grupo for 0
+      if $game_party.actors.size == 0 and @command_window.index < 4
+        # Reproduzir SE de erro
+        $game_system.se_play($data_system.buzzer_se)
+        return
+      end
+      # Ramificação por posição do cursor na janela de comandos
+      case @command_window.index
+      when 0  # Itens
+        # Reproduzir SE de OK
+        $game_system.se_play($data_system.decision_se)
+        # Alternar para a tela de Itens
+        $scene = Scene_Item.new
+      when 1  # Habilidades
+        # Play decision SE
+        $game_system.se_play($data_system.decision_se)
+        # Ativar o status da janela
+        @command_window.active = false
+        @status_window.active = true
+        @status_window.index = 0
+      when 2  # Equipamentos
+        # Reproduzir SE de OK
+        $game_system.se_play($data_system.decision_se)
+        # Ativar o status da janela
+        @command_window.active = false
+        @status_window.active = true
+        @status_window.index = 0
+      when 3  # Status
+        # Reproduzir SE de OK
+        $game_system.se_play($data_system.decision_se)
+        # Ativar o status da janela
+        @command_window.active = false
+        @status_window.active = true
+        @status_window.index = 0
+      when 4  # Salvar
+        # Se Salvar for proibido
+        if $game_system.save_disabled
+          # Reproduzir SE de erro
+          $game_system.se_play($data_system.buzzer_se)
+          return
+        end
+        # Reproduzir SE de OK
+        $game_system.se_play($data_system.decision_se)
+        # Alternar para a tela de save
+        $scene = Scene_Save.new
+      when 5
+        $game_system.se_play($data_system.decision_se)
+        $scene = HL_Music_Choicer.new
+      when 6  # Fim de Jogo
+        # Reproduzir SE de OK
+        $game_system.se_play($data_system.decision_se)
+        # Alternar para a tela de Fim de Jogo
+        $scene = Scene_End.new
+        #$scene = Scene_End.new
+      end
+      return
+    end
+  end
+end
+
+class Scene_Title
+  def main
+    $last_music_nm = "Nada"
+    # Se estiver em Teste de Batalha
+    if $BTEST
+      battle_test
+      return
+    end
+    # Carregar o Banco de Dados
+    $data_actors        = load_data("Data/Actors.rxdata")
+    $data_classes       = load_data("Data/Classes.rxdata")
+    $data_skills        = load_data("Data/Skills.rxdata")
+    $data_items         = load_data("Data/Items.rxdata")
+    $data_weapons       = load_data("Data/Weapons.rxdata")
+    $data_armors        = load_data("Data/Armors.rxdata")
+    $data_enemies       = load_data("Data/Enemies.rxdata")
+    $data_troops        = load_data("Data/Troops.rxdata")
+    $data_states        = load_data("Data/States.rxdata")
+    $data_animations    = load_data("Data/Animations.rxdata")
+    $data_tilesets      = load_data("Data/Tilesets.rxdata")
+    $data_common_events = load_data("Data/CommonEvents.rxdata")
+    $data_system        = load_data("Data/System.rxdata")
+    # Criar um Sistema
+    $game_system = Game_System.new
+    # Criar um gráfico de título
+    @sprite = Sprite.new
+    @sprite.bitmap = RPG::Cache.title($data_system.title_name)
+    # Criar uma janela de comandos
+    s1 = "Novo Jogo"
+    s2 = "Continuar"
+    s3 = "Sair"
+    @command_window = Window_Command.new(192, [s1, s2, s3])
+    @command_window.back_opacity = 160
+    @command_window.x = 320 - @command_window.width / 2
+    @command_window.y = 288
+    # O comando Continuar (s2) tem uma determinante
+    # Aqui é checado se existe algum arquivo de save
+    # Se estiver habilitado, tornar @continue_enabled verdadeiro; se estiver
+    # desabilitado, tornar falso
+    @continue_enabled = false
+    for i in 0..3
+      if FileTest.exist?("Save#{i+1}.rxdata")
+        @continue_enabled = true
+      end
+    end
+    # Se Continuar estiver habilitado, mover o cursor para "Continuar"
+    # Se estiver desabilitado, o texto será mostrado em cinza
+    if @continue_enabled
+      @command_window.index = 1
+    else
+      @command_window.disable_item(1)
+    end
+    # Reproduzir BGM de Título
+    $game_system.bgm_play($data_system.title_bgm)
+    # Parar de reproduzir BGS e ME
+    Audio.me_stop
+    Audio.bgs_stop
+    # Executar transição
+    Graphics.transition
+    # Loop principal
+    loop do
+      # Atualizar a tela de jogo
+      Graphics.update
+      # Atualizar a entrada de informações
+      Input.update
+      # Atualizar o frame
+      update
+      # Abortar o loop caso a tela tenha sido alterada
+      if $scene != self
+        break
+      end
+    end
+    # Preparar para transição
+    Graphics.freeze
+    # Exibir a janela de comandos
+    @command_window.dispose
+    # Exibir o gráfico de Título
+    @sprite.bitmap.dispose
+    @sprite.dispose
+  end
+end 
+
+
+class HL_Music_Choicer
+  def main
+    @mus = {}
+    @mus[0]  = Mus0
+    @mus[1]  = Mus1
+    @mus[2]  = Mus2
+    @mus[3]  = Mus3
+    @mus[4]  = Mus4
+    @mus[5]  = Mus5
+    @mus[6]  = Mus6
+    @mus[7]  = Mus7
+    @mus[8]  = Mus8
+    @mus[9]  = Mus9
+    @mus[10] = Mus10
+       
+    @musf = {}
+    @musf[1]  = Musf1
+    @musf[2]  = Musf2
+    @musf[3]  = Musf3
+    @musf[4]  = Musf4
+    @musf[5]  = Musf5
+    @musf[6]  = Musf6
+    @musf[7]  = Musf7
+    @musf[8]  = Musf8
+    @musf[9]  = Musf9
+    @musf[10] = Musf10
+    s1 = "Parar"
+    s2 = @mus[1]
+    if NUMM >1
+     s3 = @mus[2]
+    end
+    if NUMM >2
+     s4 = @mus[3]
+    end
+    if NUMM >3
+     s5 = @mus[4]
+    end
+    if NUMM >4
+     s6 = @mus[5]
+    end
+    if NUMM >5
+     s7 = @mus[6]
+   end
+    if NUMM >6
+     s8 = @mus[7]
+    end   
+    if NUMM >7
+     s9 = @mus[8]
+    end   
+    if NUMM >8
+     s10 = @mus[9]
+    end   
+    if NUMM >9
+     s11 = @mus[10]
+    end   
+    case NUMM
+    when 2
+    @command_window = Window_Command.new(320, [s1, s2, s3])
+    when 3
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4])   
+    when 4
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5])   
+    when 5
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6])   
+    when 6
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6, s7])
+    when 7
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6, s7, s8])
+    when 8
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6, s7, s8, s9])
+    when 9
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10])
+    when 10
+    @command_window = Window_Command.new(320, [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11])
+    end
+    @command_window.index = 0
+    @command_window.opacity = 0
+    @left_window = Window_Base.new(0,0,320,480)
+    @up_window = Window_Base.new(320,0,320,120)
+    @up_window.contents = Bitmap.new(320 - 32, 120 - 32)
+    @up_window.contents.font.name = $fontface
+    @up_window.contents.font.size = $fontsize
+    @up_window.contents.clear
+    @up_window.contents.font.color = Color.new(192, 224, 255, 255)
+    @up_window.contents.draw_text(0, 0, 320, 32, "Você está ouvindo:")   
+    @up_window.contents.font.color = Color.new(255, 255, 255, 255)
+    @up_window.contents.draw_text(0, 32, 320, 32, $last_music_nm)
+    @down_window = Window_Base.new(320,120,320,360)
+    # Executar transição
+    Graphics.transition
+    # Loop principal
+    loop do
+      # Atualizar a tela de jogo
+      Graphics.update
+      # Atualizar a entrada de informações
+      Input.update
+      # Atualizar Frame
+      update
+      if $scene != self
+        break
+      end
+    end
+    # Preparar para transiçõa
+    Graphics.freeze
+    # Exibição das janelas
+    @command_window.dispose
+    @left_window.dispose
+    @up_window.dispose
+    @down_window.dispose
+  end
+ 
+  def update
+    @command_window.update
+    @left_window.update
+    @up_window.update
+    @down_window.update
+    update_command
+  end
+  def update_command
+    if Input.trigger?(Input::B)
+      $game_system.se_play($data_system.cancel_se)
+      $scene = Scene_Menu.new
+    end
+    if Input.trigger?(Input::C)
+      $game_system.se_play($data_system.decision_se)
+        if @command_window.index == 0
+          Audio.bgm_stop
+        else
+          Audio.bgm_play("Audio/Musicas/" + "music" + @command_window.index.to_s + @musf[@command_window.index])
+        end   
+        @up_window.contents.clear
+        @up_window.contents.font.color = Color.new(192, 224, 255, 255)
+        @up_window.contents.draw_text(0, 0, 320, 32, "Você está ouvindo:")
+        @up_window.contents.font.color = Color.new(255, 255, 255, 255)
+        @up_window.contents.draw_text(0, 32, 320, 32, @mus[@command_window.index])
+        $last_music_nm = @mus[@command_window.index]
+      return
+    end
+  end
+end

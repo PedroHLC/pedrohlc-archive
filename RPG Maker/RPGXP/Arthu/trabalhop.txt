@@ -1,0 +1,36 @@
+*diga, como é seu sistema?
+*opa, vai ser complicado, dexa pra lá...
+      PedroHLC        (Ajudem me na minha campanha de arrecadamento de nudges enviados :))        diz (10:20):
+*           já ta pronto            
+Krasudreal diz (10:20):
+*eeeeeeeeeeeee!
+*legal...
+      PedroHLC        (Ajudem me na minha campanha de arrecadamento de nudges enviados :))        diz (10:21):
+*           tenho um limte que pode ser controlado por uma variavel, e se o item tive mais peso que a mochila suporta vc simplesmente naum pode carregar            
+Krasudreal diz (10:21):
+*hum...
+Krasudreal diz (10:22):
+*e como faria para abrir o inventório e mandar vc remover itens até acabar com o sobre-peso?
+      PedroHLC        (Ajudem me na minha campanha de arrecadamento de nudges enviados :))        diz (10:22):
+*           ai é que falta mais isso naum é impossivel            
+Krasudreal diz (10:23):
+*espere...
+*1º toda vez que c remove um iten pode dar um tipo de refresh no peso...
+Krasudreal diz (10:25):
+*2º se variavel (peso) > que variavel (peso máximo) então janela do inventório abre...
+Krasudreal diz (10:26):
+*3º se variavel (peso) > que variavel (peso máximo) então apareçe ao lado dos marcadores de peso "remova seus itens até que você esteja dentro do limite" (ou algo assim)
+Krasudreal diz (10:27):
+*acha que isso seria o bastante?
+      PedroHLC        (Ajudem me na minha campanha de arrecadamento de nudges enviados :))        diz (10:27):
+*           ah, blz, mas se ele jogar um item imnportante fora?            
+Krasudreal diz (10:28):
+*ah... mas aí precisamos de um script que bloqueie isso de jogar item important fora...
+      PedroHLC        (Ajudem me na minha campanha de arrecadamento de nudges enviados :))        diz (10:29):
+*           blz, vo fazer um isstem, ai vc bota id dos itens que não poderão sr jogados fora            
+Krasudreal diz (10:29):
+*ou precisemos só de um scripter...
+*sim...
+*isso que pensei...
+Krasudreal diz (10:30):
+*poderia anotar todas as linhas que poderão ser customisadas nesse sistema de peso?

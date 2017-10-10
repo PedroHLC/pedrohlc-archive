@@ -1,0 +1,88 @@
+#============================================================================
+#Este script foi baseado no mesmo sistema usado nos NetPlays
+#By: PedroHLC
+#============================================================================
+class Window_GradientBar < Window_Selectable
+  #--------------------------------------------------------------------------
+  def initialize
+    #Define o tamanho da janela
+    super(0, 0, 660, 500)
+    #Define aonde sera possivel exibir imagens
+    self.contents = Bitmap.new(width, height)
+    # não mostra a janela só o conteudo
+    self.opacity = 0
+    #Define como é a Barra
+    @image_name = "Bar"
+    @image_width = 550
+    @image_height = 16
+    #Configura o herói a ser usado
+    @actor = $game_party.actors[0]
+    #Configura o valor antigo e o novo
+    @old_hp = @actor.hp
+    #Começa a exibir a janela
+    refresh
+  end
+  #--------------------------------------------------------------------------
+  def draw_gradient_bar(x, y, file, width, height, min, max)
+    #Define a imagem a ser usada
+    bar = RPG::Cache.picture(file)
+    #Define o tamanho original da barra
+    zoom_x = width != nil ? width : width
+    zoom_y = height != nil ? height : height
+    #Define a porcentagem da barra pelo valor atual e o maximo possivel
+    percent = min / max.to_f
+    #Define o tamanho orginal da barra através do valor já definido
+    bar_dest_rect = Rect.new(x,y,zoom_x * percent,zoom_y)
+    #Define o tamanho atual da barra através da porcentagem
+    bar_source_rect = Rect.new(0,0,bar.width * percent,bar.height)
+    #Exibe a Barra
+    self.contents.stretch_blt(bar_dest_rect, bar, bar_source_rect)
+  end
+  #--------------------------------------------------------------------------
+  def refresh
+    #Limpa toda a janela
+    self.contents.clear
+    #Define que o valor antigo será igual ao novo
+    @old_hp = @actor.hp
+    #Manda o valor da barra e manda exibi-la
+    draw_gradient_bar(2, 2, @image_name, @image_width, @image_height, @actor.hp, @actor.maxhp)
+  end
+  #--------------------------------------------------------------------------
+  def something_changed?
+    #Se não houve alterações não atualize(Tira o Lag)
+    return false if Graphics.frame_count % 30 != 0
+    #Se houve alteração atualiza
+    return true if @old_hp != @actor.hp
+    #Se nada aconteceu não atualize
+    return false
+  end
+  #--------------------------------------------------------------------------
+  def update
+    #Verifica se é pra atualizar
+    refresh if something_changed?
+  end
+end
+#============================================================================
+class Scene_Map
+  #--------------------------------------------------------------------------
+  #Configura para que uma nova informação seja adicionada ao main
+  alias gradient_bar_demo_main main
+  #Configura para que uma nova informação seja adicionada ao update
+  alias gradient_bar_demo_update update
+  #--------------------------------------------------------------------------
+  def main
+    #Cria a Window_GradientBar ao começo do main
+    @gradient_bar_demo = Window_GradientBar.new
+    #Faz a função original do main
+    gradient_bar_demo_main
+    #Disponibiliza a Window_GradientBar ao começo do main
+    @gradient_bar_demo.dispose
+  end
+  #--------------------------------------------------------------------------
+  def update
+    #Atualiza a Window_GradientBar
+    @gradient_bar_demo.update
+    #Faz a função original do update
+    gradient_bar_demo_update
+  end
+end

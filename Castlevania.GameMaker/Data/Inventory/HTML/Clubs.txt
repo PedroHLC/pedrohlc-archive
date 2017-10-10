@@ -1,0 +1,88 @@
+<tr>
+<td><a href="/wiki/File:Sotn-mace-1-.gif" class="image" title="Sotn-mace-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100820003928/castlevania/images/b/bc/Sotn-mace-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Mace" title="Mace">Mace</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Iron Cudgel</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Master_Librarian%27s_Shop" title="Master Librarian&#39;s Shop" class="mw-redirect">Master Librarian's Shop</a><br />
+</td><td><b>Effect</b>:  Flail (slow)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-mstar-1-.gif" class="image" title="Sotn-mstar-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100820004128/castlevania/images/a/ad/Sotn-mstar-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Morning_Star" title="Morning Star">Morning Star</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Spiked Iron Club</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +11<br />
+</td><td><b>Find</b>:  <a href="/wiki/Royal_Chapel" title="Royal Chapel">Royal Chapel</a><br /><b>Drop</b>:  <a href="/wiki/Flail_Guard" title="Flail Guard" class="mw-redirect">Flail Guard</a><br />
+</td><td><b>Effect</b>:  Flail (slow)<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-shldrod-1-.gif" class="image" title="Sotn-shldrod-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100820005716/castlevania/images/3/38/Sotn-shldrod-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Extra Effective With Shield</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +11, DEF +2<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Colosseum" title="Colosseum">Colosseum</a><br />
+</td><td><b>Effect</b>:  Flail (slow); Back-Forward Attack - Gradius Shield; Hold Shield and Attack Twice - Special Effect depending on type of shield<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-hlyrod-1-.gif" class="image" title="Sotn-hlyrod-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100820004503/castlevania/images/3/38/Sotn-hlyrod-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Holy_Rod" title="Holy Rod">Holy Rod</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Anointed Rod</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Holy<br />
+</td><td>ATK +12<br />
+</td><td><b>Find</b>:  <a href="/wiki/Long_Library" title="Long Library">Long Library</a><br />
+</td><td><b>Effect</b>:  Flail (fast); Back-Forward Attck - Holy Blast<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-strflail-1-.gif" class="image" title="Sotn-strflail-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100820004823/castlevania/images/d/da/Sotn-strflail-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Star_Flail" title="Star Flail">Star Flail</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Flail With Spiked Balls</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +13<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Clock_Tower" title="Clock Tower">Clock Tower</a><br />
+</td><td><b>Effect</b>:  Flail (fast); Back-Forward Attack - Power flail<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-moonrod-1-.gif" class="image" title="Sotn-moonrod-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100820005156/castlevania/images/c/cd/Sotn-moonrod-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Moon_Rod" title="Moon Rod">Moon Rod</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Rod With Lunar Markings</i>
+</td><td><i><a href="/wiki/Club" title="Club" class="mw-redirect">Club</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK +17<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Clock_Tower" title="Reverse Clock Tower">Reverse Clock Tower</a><br />
+</td><td><b>Effect</b>:  Flail; Roll Attack - Quadruple Crescent Attack (4 MP)<br />
+</td></tr>

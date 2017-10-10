@@ -1,0 +1,12 @@
+##Don't change this!
+Version: 1.2.4
+
+
+General:
+    Require_Permission_To_Use_Portals: false
+    Require_Channel_Specific_Permissions: false
+    Use_Creation_Rotation: true
+    Use_Portal_Effects: true
+    ##Ignore this if you do not have a multiworld plugin, otherwise set this accordingly, this is to ensure the world loads before the portals.
+    Multiworld_Plugin: My Worlds
+    

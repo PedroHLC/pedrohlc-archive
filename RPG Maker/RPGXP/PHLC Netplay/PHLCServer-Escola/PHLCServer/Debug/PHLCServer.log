@@ -1,0 +1,20 @@
+﻿Build started 28/07/2011 16:13:34.
+     1>Project "E:\Projetos\RPGXP\PHLC Netplay\PHLCServer-Escola\PHLCServer\PHLCServer.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\PHLCServer.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projetos\RPGXP\PHLC Netplay\PHLCServer-Escola\Debug\PHLCServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\mysql\lib ws2_32.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PHLCServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Projetos\RPGXP\PHLC Netplay\PHLCServer-Escola\Debug\PHLCServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Projetos\RPGXP\PHLC Netplay\PHLCServer-Escola\Debug\PHLCServer.lib" /MACHINE:X86 Debug\PHLCServer.exe.embed.manifest.res
+         Debug\PHLCServer.obj
+         Debug\stdafx.obj
+         libmysql.dll
+     1>libmysql.dll : fatal error LNK1107: invalid or corrupt file: cannot read at 0x2D8
+     1>Done Building Project "E:\Projetos\RPGXP\PHLC Netplay\PHLCServer-Escola\PHLCServer\PHLCServer.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.46

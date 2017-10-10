@@ -1,0 +1,36 @@
+[Song]
+{
+	Name = "DBGT"
+	Artist = "Unknown Artist"
+	Charter = "Unknown Charter"
+	Offset = 0
+	Resolution = 192
+	Player2 = bass
+	Difficulty = 0
+	PreviewStart = 0.00
+	PreviewEnd = 0.00
+	Genre = "rock"
+	MediaType = "cd"
+	MusicStream = "DBGT.mp3"
+}
+[SyncTrack]
+{
+	0 = B 120990
+	0 = TS 4
+	3456 = B 119750
+}
+[Events]
+{
+}
+[ExpertSingle]
+{
+	4224 = N 0 0
+	4224 = N 2 0
+	4224 = S 2 384
+	4320 = N 0 0
+	4416 = N 0 0
+	4416 = N 2 0
+	4512 = N 0 0
+	4608 = N 0 0
+	4608 = N 2 0
+}

@@ -1,0 +1,18 @@
+On <<Sat 17 Jul 2010, 11:40:22>> the error <<Section180:30: syntax error ()>> occured.
+On <<Sat 17 Jul 2010, 11:40:22>> the error <<Section180:30: syntax error
+rescue Errno::ENOENT ()>> occured.
+On <<Sat 17 Jul 2010, 11:40:22>> the error <<Section180:30: syntax error
+rescue Errno::ENOENT
+      ^ ()>> occured.
+On <<Sat 17 Jul 2010, 11:40:22>> the error <<compile error
+Section180:30: syntax error
+rescue Errno::ENOENT
+      ^ ()>> occured.
+On <<Sat 17 Jul 2010, 11:50:25>> the error <<Section129:10: syntax error ()>> occured.
+On <<Sat 17 Jul 2010, 11:50:25>> the error <<compile error
+Section129:10: syntax error ()>> occured.
+On <<Sat 17 Jul 2010, 12:32:17>> the error <<wrong # of arguments (1 for 4) (#<Scene_Presentation:0x9725588>)>> occured.
+On <<Sat 17 Jul 2010, 14:57:59>> the error <<Data is not a module ()>> occured.
+On <<Sat 17 Jul 2010, 15:27:11>> the error <<cannot convert nil into String (#<Scene_Connect:0x955f010>)>> occured.
+On <<Sat 17 Jul 2010, 15:42:11>> the error <<wrong number of arguments(1 for 2) (#<Scene_Title:0x94518c8>)>> occured.
+On <<Sat 17 Jul 2010, 15:44:20>> the error <<End of file reached (#<Scene_Load:0x9578588>)>> occured.

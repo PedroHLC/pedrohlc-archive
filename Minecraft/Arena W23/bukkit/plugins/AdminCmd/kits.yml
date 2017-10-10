@@ -1,0 +1,12 @@
+﻿kits:
+    eat:
+        delay: 120
+        items:
+          'apple': 2
+    nb:
+        delay: 120
+        items:
+          'wood_axe': 1
+          'wood_pickaxe': 1
+          'apple': 2
+          'torch': 5

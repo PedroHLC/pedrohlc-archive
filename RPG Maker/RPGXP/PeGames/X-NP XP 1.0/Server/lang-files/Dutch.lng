@@ -1,0 +1,69 @@
+[main-tab]
+TabSheet1=Main
+GroupBox1=Algemeen
+ServerName=Server Naam
+MaxPlayers=Max. aant. Spelers
+Port=Server Poort
+GroupBox4=Overige Opties
+AutoStart=Start Auto. bij openen
+Version=Versie
+
+[security-tab]
+TabSheet5=Veiligheid
+TabSheet6=Geregistreerde Gebruikers
+ListView-Username=Gebruikersnaam
+ListView-Password=Wachtwoord
+ListView-Group=Groep
+EditLabel-Username=Gebruikersnaam
+EditLabel-Password=Wachtwoord
+EditLabel-Group=Groep
+Add=Voeg toe
+Delete=Verwijder
+Bans=Gebanned
+IPBans=IP Gebanned
+IPBox=Vul Ip hier in en klik op enter.
+
+[stats-tab]
+TabSheet2=Statistieken
+GroupBox5=Algemeen
+Label-Players=Spelers:
+Label-MPlayers=Meest aantal Spelers:
+GroupBox2=Bandbreedte stats./ in bytes
+Label-Incoming=Inkomende:
+Label-Outgoing=Uitgaande:
+Label-TBR=Totaal aant. Bytes Ontvangen:
+Label-TBS=Totaal aant. Bytes Verzonden:
+GroupBox3=Socket Exceptions
+Label-OnAccept=Geaccepteerd:
+Label-OnConnect=Verbonden:
+Label-OnDisconnect=Verbroken:
+Label-OnRead=Gelezen:
+Label-OnError=Error:
+
+[debug-tab]
+TabSheet3=Debug
+ShowRaw=Laat RAW zien
+
+[options-tab]
+TabSheet8=Opties
+GroupBox6=Taal
+Button3=Toepassen
+
+[chat-tab]
+TabSheet8=Chat
+
+[status-bar]
+Online=Online
+Offline=Offline
+Players=Spelers
+
+[mainmenu]
+Start=Start
+Stop=Stop
+Exit=Afsluiten
+Options=Opties
+Scripting=Scripting
+Help=Help
+About=Over...
+Contents=Inhoud...
+

@@ -1,0 +1,8 @@
++ Encriptação de graficos e audios opcionais
++ Auto inserção dos scripts necessario
++ Compativel com as 3 engines (ALREADY WORKING)
++ Patch de Key inteligente (ALREADY WORKING)
++ Partes aleatórias da Key usando o time como ela
++ Função Expermientar no final da encriptação
++ AES usando CCrypt
++ use MD5 to hide key

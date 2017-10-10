@@ -1,0 +1,293 @@
+core:
+    locale: en
+    flushInterval: 10
+    cacheSize: 10000
+    precache: -1
+    showNotices: true
+    showMyNotices: false
+    opIsLWCAdmin: true
+    disableHistory: false
+    townyBorders: false
+    groupPrefix: group.
+    updateNotifier: true
+optional:
+    onlyProtectWhenOwnerIsOnline: false
+    onlyProtectWhenOwnerIsOffline: false
+    exemptBlocks: []
+    optOut: false
+    blacklistedBlocks:
+    - '166'
+    - '154'
+    blacklistedPlayers:
+    - plr
+    useProtectionLimits: true
+database:
+    adapter: sqlite
+    path: plugins/LWC/lwc.db
+    host: localhost
+    database: lwc
+    username: ''
+    password: ''
+    prefix: lwc_
+    ping_interval: 300
+protections:
+    denyRedstone: false
+    autoRegister: private
+    ignoreBlockDestruction: false
+    ignoreLeftClick: false
+    ignoreRightClick: false
+    ignoreExplosions: false
+    allowEntityBreakDoor: false
+    allowEntityInteract: false
+    quiet: true
+    blocks:
+        blocks: null
+        chest:
+            enabled: true
+        furnace:
+            enabled: true
+        dispenser:
+            enabled: true
+        sign:
+            enabled: true
+        wooden_door:
+            enabled: true
+        iron:
+            enabled: true
+        iron_door:
+            enabled: true
+        iron_fence:
+            enabled: true
+        trap_door:
+            enabled: true
+        stone:
+            enabled: true
+        wood:
+            enabled: true
+        log:
+            enabled: true
+        block_of_iron:
+            enabled: true
+        sandstone:
+            enabled: true
+        gold_ore:
+            enabled: true
+        iron_ore:
+            enabled: true
+        diamond_ore:
+            enabled: true
+        redstone_ore:
+            enabled: true
+        stone_bricks:
+            enabled: true
+        smooth_brick:
+            enabled: true
+        lapis:
+            enabled: true
+        brick:
+            enabled: true
+        moss_stone:
+            enabled: true
+        soul_sand:
+            enabled: true
+        glowstone:
+            enabled: true
+        sponge:
+            enabled: true
+        ice:
+            enabled: true
+        snow:
+            enabled: true
+        jack_o_lantern:
+            enabled: true
+        iron_bars:
+            enabled: true
+        glass_pane:
+            enabled: true
+        nether_brick:
+            enabled: true
+        nether_brick_fence:
+            enabled: true
+        end_stone:
+            enabled: true
+        glass:
+            enabled: true
+        wool:
+            enabled: true
+        orange_wool:
+            enabled: true
+        gray_wool:
+            enabled: true
+        light_gray_wool:
+            enabled: true
+        black_wool:
+            enabled: true
+        cyan_wool:
+            enabled: true
+        blue_wool:
+            enabled: true
+        light_blue_wool:
+            enabled: true
+        magenta_wool:
+            enabled: true
+        yellow:
+            enabled: true
+        lime_wool:
+            enabled: true
+        green_wool:
+            enabled: true
+        pink_wool:
+            enabled: true
+        red_wool:
+            enabled: true
+        purple_wool:
+            enabled: true
+        stone_slab:
+            enabled: true
+        Double_step:
+            enabled: true
+        wood_slab:
+            enabled: true
+        sandstone_slab:
+            enabled: true
+        brick_slab:
+            enabled: true
+        jukebox:
+            enabled: true
+        wooden_stairs:
+            enabled: true
+        sandstone_stairs:
+            enabled: true
+        stone_stairs:
+            enabled: true
+        smooth_stairs:
+            enabled: true
+        brick_stairs:
+            enabled: true
+        stone_bricks_stairs:
+            enabled: true
+        pressure_plate:
+            enabled: true
+        trapdoor:
+            enabled: true
+        enchantment_table:
+            enabled: true
+        painting:
+            enabled: true
+        bed:
+            enabled: true
+        cake:
+            enabled: true
+        fence:
+            enabled: true
+        gold:
+            enabled: true
+        diamond:
+            enabled: true
+        ender_portal_frame:
+            enabled: true
+        pumpkin:
+            enabled: true
+        thin_glass:
+            enabled: true
+        step:
+            enabled: true
+        wood_step:
+            enabled: true
+        smooth_brick_step:
+            enabled: true
+        obsidian:
+            enabled: true
+        netherrack:
+            enabled: true
+        bookshelf:
+            enabled: true
+        ender_chest:
+            enabled: true
+        anvil:
+            enabled: true
+        mossy_cobblestone:
+            enabled: true
+        item_frame:
+            enabled: true
+        emerald_block:
+            enabled: true
+        wood_stairs:
+            enabled: true
+        spurce_wood_stairs:
+            enabled: true
+        nether_brick_stairs:
+            enabled: true
+        mob_spawner:
+            enabled: true
+        torch:
+            enabled: true
+        piston_base:
+            enabled: true
+        ladder:
+            enabled: true
+        fence_gate:
+            enabled: true
+        cobble_wall:
+            enabled: true
+        note:
+            enabled: true
+        skull:
+            enabled: true
+        web:
+            enabled: true
+        flower_pot:
+            enabled: true
+        clay:
+            enabled: true
+        lever:
+            enabled: true
+            autoRegister: false
+        redstone_torch_on:
+            enabled: true
+            autoRegister: false
+        redstone_torch_off:
+            enabled: true
+            autoRegister: false
+        piston_sticky_base:
+            enabled: true
+            autoRegister: false
+        piston_extension:
+            enabled: true
+            autoRegister: false
+        diode__on:
+            enabled: true
+            autoRegister: false
+        diode__off:
+            enabled: true
+            autoRegister: false
+        redstone_wire:
+            enabled: true
+            autoRegister: false
+        wood_button:
+            enabled: true
+            autoRegister: false
+        tripwire_hook:
+            enabled: true
+            autoRegister: false
+        redstone_lamp_off:
+            enabled: true
+            autoRegister: false
+        redstone_lamp_on:
+            enabled: true
+            autoRegister: false
+        tnt:
+            enabled: true
+            autoRegister: false
+        trapped_chest:
+            autoRegister: private
+            enabled: true
+    denyHoppers: true
+    readonly-modify: false
+    readonly-remove: false
+modes:
+    droptransfer:
+        enabled: true
+        crossWorld: false
+    persist:
+        enabled: true

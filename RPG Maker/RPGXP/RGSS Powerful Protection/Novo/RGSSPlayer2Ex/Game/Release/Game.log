@@ -1,0 +1,23 @@
+﻿Build started 09/12/2011 22:08:48.
+     1>Project "L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Game\Game.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Game.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\Game.res" Game.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.lib" /MACHINE:X86 Release\Game.res
+         Release\main.obj
+            Creating library L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.lib and object L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.exp
+         Generating code
+         Finished generating code
+         Game.vcxproj -> L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Release\Game.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\Game.unsuccessfulbuild".
+         Touching "Release\Game.lastbuildstate".
+     1>Done Building Project "L:\Projetos\RPGXP\RGSS Powerful Protection\Novo\RGSSPlayer2Ex\Game\Game.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.47

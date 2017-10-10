@@ -1,0 +1,32 @@
+<i>1</i>
+<v>icon=Sotn-mace-1-</v>
+<v>title=Mace</v>
+<v>description=Iron Cudgel</v>
+<v>atk_plus=</v>
+<i>2</i>
+<v>icon=Sotn-mstar-1-</v>
+<v>title=Morning Star</v>
+<v>description=Spiked Iron Club</v>
+<v>atk_plus=11</v>
+<i>3</i>
+<v>icon=Sotn-shldrod-1-</v>
+<v>title=Shield Rod</v>
+<v>description=Extra Effective With Shield</v>
+<v>atk_plus=11</v>
+<v>def_plus=2</v>
+<i>4</i>
+<v>icon=Sotn-hlyrod-1-</v>
+<v>title=Holy Rod</v>
+<v>description=Anointed Rod</v>
+<v>attribute=Holy</v>
+<v>atk_plus=12</v>
+<i>5</i>
+<v>icon=Sotn-strflail-1-</v>
+<v>title=Star Flail</v>
+<v>description=Flail With Spiked Balls</v>
+<v>atk_plus=13</v>
+<i>6</i>
+<v>icon=Sotn-moonrod-1-</v>
+<v>title=Moon Rod</v>
+<v>description=Rod With Lunar Markings</v>
+<v>atk_plus=17</v>

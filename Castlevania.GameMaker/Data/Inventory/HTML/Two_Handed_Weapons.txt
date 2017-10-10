@@ -1,0 +1,245 @@
+﻿<tr>
+<td><a href="/wiki/File:Sotn-claymore-1-.gif" class="image" title="Sotn-claymore-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100808173825/castlevania/images/3/38/Sotn-claymore-1-.gif" width="50" height="50" border="0" /></a>
+
+</td><td><b><a href="/wiki/Claymore" title="Claymore">Claymore</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Scotch Two-Handed Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +26<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Underground_Caverns" title="Underground Caverns">Underground Caverns</a><br /><b>Drop</b>:  <a href="/wiki/Valhalla_Knight" title="Valhalla Knight" class="mw-redirect">Valhalla Knight</a><br />
+</td><td><b>Effect</b>:  Slow swing; Back-Forward Attack - Dash Thrust (4 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-flamberge-1-.gif" class="image" title="Sotn-flamberge-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100808175139/castlevania/images/c/cd/Sotn-flamberge-1-.gif" width="50" height="50" border="0" /></a>
+
+</td><td><b><a href="/wiki/Flamberge" title="Flamberge">Flamberge</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Flame-Edged Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +31<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Cloaked_Knight" title="Cloaked Knight" class="mw-redirect">Cloaked Knight</a><br />
+</td><td><b>Effect</b>:  Slow swing; Back-Forward Attack - Dash Thrust (5 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-swrdofdwn-1-.gif" class="image" title="Sotn-swrdofdwn-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100808175715/castlevania/images/2/26/Sotn-swrdofdwn-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Sword_of_Dawn" title="Sword of Dawn" class="mw-redirect">Sword of Dawn</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Summons Dawn Warriors</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +27<br />
+</td><td><b>Find</b>:  <a href="/index.php?title=Reverse_Keep&amp;action=edit&amp;redlink=1" class="new" title="Reverse Keep (page does not exist)">Reverse Keep</a><br />
+
+</td><td><b>Effect</b>:  Slow swing; Roll Attack - Summon Dawn Warrior (4 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-estoc-1-.gif" class="image" title="Sotn-estoc-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100808175044/castlevania/images/c/c5/Sotn-estoc-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Estoc" title="Estoc">Estoc</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>German thrust sword [2 hand]</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +39<br />
+</td><td><b>Find</b>:  <a href="/wiki/Olrox%27s_Quarters" title="Olrox&#39;s Quarters">Olrox's Quarters</a><br /><b>Drop</b>:  <a href="/wiki/Valhalla_Knight" title="Valhalla Knight" class="mw-redirect">Valhalla Knight</a><br />
+</td><td><b>Effect</b>:  Always Dash Thrusts<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-zweihndr-1-.gif" class="image" title="Sotn-zweihndr-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100808175910/castlevania/images/1/10/Sotn-zweihndr-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Zwei_Hander" title="Zwei Hander" class="mw-redirect">Zwei Hander</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>German Two-handed Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +38<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Blue_Venus_Weed" title="Blue Venus Weed" class="mw-redirect">Blue Venus Weed</a><br />
+</td><td><b>Effect</b>:  Slow swing; Back-Forward Attack - Dash Thrust (4 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-obsdnswrd-1-.gif" class="image" title="Sotn-obsdnswrd-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100808175602/castlevania/images/2/26/Sotn-obsdnswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Obsidian_Sword" title="Obsidian Sword">Obsidian Sword</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Two-handed Obsidian Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+
+</td><td>ATT +42<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Lesser_Demon" title="Lesser Demon">Lesser Demon</a><br />
+</td><td><b>Effect</b>:  Slow swing; Back-Forward Attack - Dash Thrust (4 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-grtswrd-1-.gif" class="image" title="Sotn-grtswrd-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100808175210/castlevania/images/5/53/Sotn-grtswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Great Sword of Aubec</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Great_Sword" title="Great Sword">Great Sword</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +65<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Guardian" title="Guardian" class="mw-redirect">Guardian</a><br />
+
+</td><td><b>Effect</b>:  Slow swing; Back-Forward Attack - Dash Thrust<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-redrust-1-.gif" class="image" title="Sotn-redrust-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100808175640/castlevania/images/3/34/Sotn-redrust-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Red_Rust" title="Red Rust">Red Rust</a>&nbsp;(アカサビ - Akasabi)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Rusty Red Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Curse<br />
+</td><td>ATT -2<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Bone_Scimitar" title="Bone Scimitar" class="mw-redirect">Bone Scimitar</a><br />
+</td><td><b>Effect</b>:  Very slow swing (no diagonal attack); occasionally "jams";<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-takemitsu-1-.gif" class="image" title="Sotn-takemitsu-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100808175745/castlevania/images/c/cf/Sotn-takemitsu-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Takemitsu" title="Takemitsu">Takemitsu</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Bamboo Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Hit<br />
+
+</td><td>ATT +1<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a>, <a href="/wiki/Flea_Man" title="Flea Man" class="mw-redirect">Flea Man</a><br />
+</td><td><b>Effect</b>:  Very slow swing (no diagonal attack)<br />
+</td></tr>
+
+
+
+
+<tr>
+
+<td><a href="/wiki/File:Equip-Namakura-1-.gif" class="image" title="Equip-Namakura-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100808175426/castlevania/images/d/d6/Equip-Namakura-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Nakamura" title="Nakamura" class="mw-redirect">Nakamura</a>&nbsp;(Namakura)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Poorly-Made Sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Sword&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Sword (page does not exist)">2 Handed Sword</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Curse<br />
+
+</td><td>ATT -5<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Blade_Soldier" title="Blade Soldier" class="mw-redirect">Blade Soldier</a><br />
+</td><td><b>Effect</b>:  Fast swing (but low swing rate)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-muramasa-1-.gif" class="image" title="Sotn-muramasa-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100808180006/castlevania/images/0/03/Sotn-muramasa-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Muramasa" title="Muramasa">Muramasa</a>&nbsp;(ようとうむらまさ - Youtou Muramasa)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>A blood-thirsty sword</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Curse<br />
+</td><td>ATT +5; increases as blood is absorbed<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Scarecrow" title="Scarecrow">Scarecrow</a> and <a href="/wiki/Vandal_Sword" title="Vandal Sword" class="mw-redirect">Vandal Sword</a><br />
+
+</td><td><b>Effect</b>:  Slow Swing at first, Slash Flurry when leveled up; Continuous <a href="/wiki/Dark_Metamorphosis" title="Dark Metamorphosis">Dark Metamorphosis</a> effect;<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-katana-1-.gif" class="image" title="Sotn-katana-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100808175246/castlevania/images/8/8f/Sotn-katana-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Katana" title="Katana">Katana</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Unsigned Katana</i>
+
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +32<br />
+</td><td><b>Find</b>:  <a href="/wiki/Necromancy_Lab" title="Necromancy Lab" class="mw-redirect">Necromancy Lab</a><br /><b>Drop</b>:  <a href="/wiki/Tombstone" title="Tombstone">Tombstone</a><br />
+
+</td><td><b>Effect</b>:  Fast swing; Roll attack - Slash Flurry<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-osafunektna-1-.gif" class="image" title="Sotn-osafunektna-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100809132658/castlevania/images/c/c1/Sotn-osafunektna-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Osafune_Katana" title="Osafune Katana" class="mw-redirect">Osafune Katana</a>&nbsp;(びぜんおさふね - Bizen Osafune)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Osafune-made katana.</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>Atk +50, Def -10<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Caverns" title="Reverse Caverns">Reverse Caverns</a><br />
+</td><td><b>Effect</b>:  Fast swing; Roll Attack - Warp attack; Back-Forward Attack - Slash Flurry<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Yasutsuna-1-.gif" class="image" title="Equip-Yasutsuna-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100808175833/castlevania/images/5/52/Equip-Yasutsuna-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Yasutsuna" title="Yasutsuna">Yasutsuna</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Yasutsuna-Made Katana</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+
+</td><td>ATT +60 DEF -20<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Werewolf" title="Werewolf">Werewolf</a><br />
+</td><td><b>Effect</b>:  Slash Flurry while walking<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Masamune-1-.gif" class="image" title="Equip-Masamune-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100808175343/castlevania/images/7/7d/Equip-Masamune-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Masamune" title="Masamune">Masamune</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Legendary Masamune Katana</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a> (<a href="/wiki/Katana" title="Katana">Katana</a>)</i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATT +55 DEF -30<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Black_Panther" title="Black Panther">Black Panther</a><br />
+
+</td><td><b>Effect</b>:  Slash Flurry; Roll attack - Attack then warp attack (ATT +110)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-nunchck-1-.gif" class="image" title="Sotn-nunchck-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100808175502/castlevania/images/4/4f/Sotn-nunchck-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Tonfa" title="Tonfa">Nunchaku</a>&nbsp;(トンファー - Tonfa)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Strikes Enemy Twice</i>
+</td><td><i><a href="/index.php?title=2_Handed_Weapon&amp;action=edit&amp;redlink=1" class="new" title="2 Handed Weapon (page does not exist)">2 Handed Weapon</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: Hit<br />
+</td><td>ATT +10<br />
+</td><td><b>Find</b>:  <a href="/wiki/Underground_Caverns" title="Underground Caverns">Underground Caverns</a><br />
+</td><td>
+</td></tr>

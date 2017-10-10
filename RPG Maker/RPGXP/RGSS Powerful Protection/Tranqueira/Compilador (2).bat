@@ -1,0 +1,1 @@
+"C:\Ruby186\bin\exerb.bat" "Y:\Projetos\RPGXP\RGSS Powerful Protection\Novo\Compilador.rb"

@@ -1,0 +1,5 @@
+; dlltool --base-file C:\Users\PedroHLC\AppData\Local\Temp/cca05468.base --output-exp Projeto1.exp --dllname Projeto1.dll --output-def libProjeto1.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\PedroHLC\AppData\Local\Temp/cca05468.def --output-lib libProjeto1.a
+EXPORTS
+	slower @ 1
+	test @ 2
+	faster @ 3

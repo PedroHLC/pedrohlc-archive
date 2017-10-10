@@ -1,0 +1,124 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: -153.86102833569893
+    y: 63.5
+    z: 157.43888003585514
+    yaw: -263.98
+    pitch: 19.69718
+  firstTime: false
+  last-ip: 177.126.54.190
+  immunityLvl: 1
+  lastConnection: 1360968828994
+  totalTime: 53143699
+  lastDisconnect: 1360880166416
+  gameMode: !!org.bukkit.GameMode 'SURVIVAL'
+home:
+  base:
+    world: world
+    x: -145.75485454278865
+    y: 67.0
+    z: 164.64415023805157
+    yaw: -106.6395
+    pitch: 18.599995
+  inbase:
+    world: world
+    x: -152.39397471077223
+    y: 62.0
+    z: 157.58076220435137
+    yaw: -89.4093
+    pitch: 10.261129
+  intelha:
+    world: world
+    x: -228.39904064002343
+    y: 73.0
+    z: 302.51400327764185
+    yaw: 265.96057
+    pitch: 87.59999
+  world:
+    world: world
+    x: -228.53309977766952
+    y: 65.0
+    z: 302.3956881297012
+    yaw: 173.6789
+    pitch: 19.940863
+  spleef:
+    world: world
+    x: -280.8870835514052
+    y: 67.0
+    z: 194.8694345242022
+    yaw: -352.341
+    pitch: 26.549984
+  telha:
+    world: world
+    x: -228.70429919578953
+    y: 76.5
+    z: 302.6031265620733
+    yaw: 93.36309
+    pitch: 90.0
+  loja:
+    world: world
+    x: -254.6492831125074
+    y: 64.0
+    z: 247.81194006504074
+    yaw: 177.84058
+    pitch: 90.0
+  queda:
+    world: world
+    x: -255.35143171839746
+    y: 38.0
+    z: -190.13252183284985
+    yaw: 264.2113
+    pitch: 22.192192
+  paulo:
+    world: world
+    x: -238.85951689434822
+    y: 64.5
+    z: 118.5724045583902
+    yaw: 254.3455
+    pitch: -3.2333086
+  water:
+    world: world
+    x: -146.89284436420195
+    y: 60.0
+    z: 162.64240282700544
+    yaw: -39.36462
+    pitch: 63.228012
+  getwater:
+    world: world
+    x: -137.65660044010443
+    y: 63.0
+    z: 115.22736906455724
+    yaw: -170.05838
+    pitch: 65.999626
+  warter:
+    world: world
+    x: -135.7269944697771
+    y: 60.0
+    z: 162.5174408266376
+    yaw: -43.31482
+    pitch: 45.453114
+  lojalum:
+    world: world
+    x: -255.181841457534
+    y: 65.0
+    z: 275.7289690561802
+    yaw: 232.69452
+    pitch: 21.533905
+  neve:
+    world: world
+    x: 140.64720044617837
+    y: 68.0
+    z: -445.80556443622385
+    yaw: 193.96497
+    pitch: 16.706137
+  floresta:
+    world: world
+    x: 111.30000001192093
+    y: 72.0
+    z: -376.9957151711943
+    yaw: 9.4053955
+    pitch: 28.55598
+powers: {}
+kitsUse:
+  nb: 1360971039658

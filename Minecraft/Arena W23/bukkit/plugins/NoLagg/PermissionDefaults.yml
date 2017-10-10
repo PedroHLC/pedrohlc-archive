@@ -1,0 +1,100 @@
+#> Below are the default permissions set for plugin 'NoLagg'.
+#> These permissions are ignored if the permission is set for a group or player.
+#> Use the defaults as a base to keep the permissions file small
+#> Need help with this file? Please visit:
+#> http://dev.bukkit.org/server-mods/bkcommonlib/pages/general/permission-defaults/
+nolagg:
+  reload:
+    *:
+      default: op
+      description: Allows a player to reload NoLagg
+    default: op
+    description: Allows a player to reload NoLagg
+  common:
+    clear:
+      *:
+        default: op
+        description: Allows a player to clear all entities on the server
+      default: op
+      description: Allows a player to clear all entities on the server
+    gc:
+      *:
+        default: op
+        description: Allows a player to garbage collect the server memory
+      default: op
+      description: Allows a player to garbage collect the server memory
+    resend:
+      default: op
+      description: Allows a player to resend all the chunks around to all players
+  chunks:
+    sending:
+      *:
+        default: op
+        description: The player can view sending information about himself
+      default: op
+      description: The player can view sending information about himself
+  examine:
+    run:
+      *:
+        default: op
+        description: Allows a player to examine the server
+      default: op
+      description: Allows a player to examine the server
+  lighting:
+    fix:
+      *:
+        default: op
+        description: Allows a player to fix lighting issues in chunks around him
+      default: op
+      description: Allows a player to fix lighting issues in chunks around him
+  monitor:
+    use:
+      *:
+        default: op
+        description: Allows a player to monitor server stats
+      default: op
+      description: Allows a player to monitor server stats
+    log:
+      *:
+        default: op
+        description: Allows a player to toggle server stats being written to a log file
+      default: op
+      description: Allows a player to toggle server stats being written to a log file
+    clearlog:
+      *:
+        default: op
+        description: Allows a player to clear the NoLagg log file
+      default: op
+      description: Allows a player to clear the NoLagg log file
+    showtickrate:
+      *:
+        default: true
+        description: Allows a player to see the tick rate of the server
+      default: true
+      description: Allows a player to see the tick rate of the server
+    showmemory:
+      *:
+        default: op
+        description: Allows a player to see the current memory usage of the server
+      default: op
+      description: Allows a player to see the current memory usage of the server
+    notifylagging:
+      *:
+        default: op
+        description: Lets the player receive a message if the tick rate dropped signficiantly
+      default: op
+      description: Lets the player receive a message if the tick rate dropped signficiantly
+  tnt:
+    info:
+      *:
+        default: op
+        description: The player can show TNT information
+      default: op
+      description: The player can show TNT information
+    clear:
+      *:
+        default: op
+        description: The player can stop TNT detonation
+      default: op
+      description: The player can stop TNT detonation
+

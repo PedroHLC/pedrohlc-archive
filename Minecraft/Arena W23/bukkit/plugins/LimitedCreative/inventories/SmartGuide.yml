@@ -1,0 +1,93 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 83
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 83
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    damage: 125
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 90
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 98
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        LOOT_BONUS_MOBS: 3
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 19
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_DAMAGE: 1
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 31
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 14
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 7
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 35
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOSSY_COBBLESTONE
+    amount: 3
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: APPLE
+    amount: 2
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRAVEL
+    amount: 3
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PICKAXE
+    damage: 26
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_ORE
+    amount: 4
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 21

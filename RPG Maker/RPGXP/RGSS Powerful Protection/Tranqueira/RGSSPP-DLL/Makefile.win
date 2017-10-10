@@ -1,0 +1,37 @@
+# Project: Projeto1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Projeto1_private.res
+OBJ  = dllmain.o $(RES)
+LINKOBJ  = dllmain.o $(RES)
+LIBS =  -L"C:/DevCpp/lib" --no-export-all-symbols --add-stdcall-alias  
+INCS =  -I"C:/DevCpp/include" 
+CXXINCS =  -I"C:/DevCpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/DevCpp/include/c++/3.4.2/backward"  -I"C:/DevCpp/include/c++/3.4.2/mingw32"  -I"C:/DevCpp/include/c++/3.4.2"  -I"C:/DevCpp/include" 
+BIN  = Projeto1.dll
+CXXFLAGS = $(CXXINCS) -DBUILDING_DLL=1  
+CFLAGS = $(INCS) -DBUILDING_DLL=1  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Projeto1.dll all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=libProjeto1.def
+STATICLIB=libProjeto1.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --driver-name c++ --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+dllmain.o: dllmain.cpp
+	$(CPP) -c dllmain.cpp -o dllmain.o $(CXXFLAGS)
+
+Projeto1_private.res: Projeto1_private.rc 
+	$(WINDRES) -i Projeto1_private.rc --input-format=rc -o Projeto1_private.res -O coff 

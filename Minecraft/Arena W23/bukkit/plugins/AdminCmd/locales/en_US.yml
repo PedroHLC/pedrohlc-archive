@@ -1,0 +1,13 @@
+﻿MOTD: '§6Welcome §f%player §6there is currently §4%nb players connected:
+
+  §6%connected
+
+  §2You''ve played so far: §b#elapsedTotalTime#
+
+  §2Your last login was: §b%lastlogin'
+MOTDNewUser: '§6Welcome §f%player §6there is currently §4%nb players connected:
+
+  §6%connected'
+NEWS: "§2Novidades:\n\t'Repair Shop' adicionado, no centro da 'Staff Shop'!\n\t'Feirinha\
+  \ Pública' criada, próximo aos portais!"
+Rules: '- Não vou ditar regras, só não estrague o servidor.'

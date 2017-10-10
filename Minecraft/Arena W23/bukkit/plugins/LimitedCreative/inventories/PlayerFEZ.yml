@@ -1,0 +1,63 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor: {}
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_SWORD
+    damage: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: PORK
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: APPLE
+    amount: 9
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: APPLE
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 23
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: FEATHER
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_CHICKEN
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    amount: 3
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEEDS
+    amount: 7
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: PUMPKIN
+    amount: 2
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 64
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 28
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PICKAXE

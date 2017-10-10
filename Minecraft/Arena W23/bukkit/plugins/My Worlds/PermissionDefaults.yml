@@ -1,0 +1,155 @@
+#> Below are the default permissions set for plugin 'My Worlds'.
+#> These permissions are ignored if the permission is set for a group or player.
+#> Use the defaults as a base to keep the permissions file small
+#> Need help with this file? Please visit:
+#> http://dev.bukkit.org/server-mods/bkcommonlib/pages/general/permission-defaults/
+myworlds:
+  world:
+    list:
+      default: op
+      description: Sets if the player can list all worlds on the server
+    info:
+      default: op
+      description: Sets if the player can see world information, such as the seed and size
+    config:
+      default: op
+      description: Sets if the player can manually load and save the world configuration
+    portals:
+      default: op
+      description: Sets if the player can list all portals on the server
+    listgenerators:
+      default: op
+      description: Sets if the player can list all chunk generators on the server
+    setportal:
+      default: op
+      description: Sets if the player can change the default portal destination on the world
+    load:
+      default: op
+      description: Sets if the player can load unloaded worlds (not create)
+    loadspecial:
+      default: op
+      description: Sets if a player can load a world with a new chunk generator (can corrupt worlds!)
+    unload:
+      default: op
+      description: Sets if the player can unload loaded worlds (not create)
+    create:
+      default: op
+      description: Sets if the player can create worlds (not replace)
+    spawn:
+      default: op
+      description: Sets if the player can teleport to world spawn points
+    evacuate:
+      default: op
+      description: Sets if the player can clear a world from its players
+    repair:
+      default: op
+      description: Sets if the player can repair damaged worlds (only if broken)
+    save:
+      default: op
+      description: Sets if the player can save worlds
+    setsaving:
+      default: op
+      description: Sets if the player can toggle world auto-saving on or off
+    delete:
+      default: op
+      description: Sets if the player can permanently delete worlds
+    copy:
+      default: false
+      description: Sets if the player can clone worlds
+    difficulty:
+      default: op
+      description: Sets if the player can change the difficulty setting of worlds
+    togglepvp:
+      default: op
+      description: Sets if the player can change the PvP setting of worlds
+    opping:
+      default: op
+      description: Sets if the player can add or remove operators to/from a world
+    togglespawnloaded:
+      default: op
+      description: Sets if the player can toggle spawn chunk loading on or off
+    spawning:
+      default: op
+      description: Sets if the player can allow and deny mobs spawning
+    weather:
+      default: op
+      description: Sets if the player can change the weather on worlds
+    time:
+      default: op
+      description: Sets if the player can change the time on worlds
+    gamemode:
+      default: op
+      description: Sets if the player can change the gamemode of a world
+    setspawn:
+      default: op
+      description: Sets if the player can change the spawn point of a world
+    setforcedspawn:
+      default: op
+      description: Sets if the player can change whether all players force-respawn at the world spawn
+    inventory:
+      default: op
+      description: Sets if the player can alter the inventory states of a world
+    togglerespawn:
+      default: op
+      description: Sets if the player can toggle the forced respawn to the world spawn
+    spoutweather:
+      default: op
+      description: Sets if player can toggle virtual weather changes using Spout Plugin
+    forming:
+      default: op
+      description: Sets if the player can toggle snow and ice forming on or off
+    reloadwe:
+      default: op
+      description: Sets if players can toggle if worlds reload when empty
+    teleport:
+      *:
+        default: op
+        description: Sets the worlds a player can teleport to using /tpp and /world spawn
+    enter:
+      *:
+        default: op
+        description: Sets if the player can enter a certain world through portals
+    build:
+      *:
+        default: op
+        description: Sets if the player can build in a certain world
+    chat:
+      *:
+        default: true
+        description: Sets if the player can chat while being in a certain world
+        *:
+          default: op
+          description: Sets if the player can chat from every world to every world
+    ignoregamemode:
+      default: false
+      description: Sets if the player game mode is not changed by the world game mode
+    use:
+      *:
+        default: op
+        description: Sets if the player can interact with blocks in a certain world
+    keepinventory:
+      default: false
+      description: Sets if the player keeps his inventory while switching worlds
+  tpp:
+    default: op
+    description: Sets if the player can teleport to worlds or portals
+  portal:
+    create:
+      default: op
+      description: Sets if the player can create teleport signs
+    override:
+      default: op
+      description: Sets if the player can replace existing portals
+    use:
+      *:
+        default: true
+        description: Sets if the player can use portals
+    teleport:
+      *:
+        default: op
+        description: Sets the portals a player can teleport to using /tpp
+    enter:
+      *:
+        default: op
+        description: Sets if the player can enter a certain portal
+

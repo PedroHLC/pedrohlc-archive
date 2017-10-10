@@ -1,0 +1,169 @@
+<i>1</i>
+<v>icon=Sotn-gladius-1-</v>
+<v>title=Gladius</v>
+<v>description=Sword of ancient Rome.</v>
+<v>attribute=Cut</v>
+<i>2</i>
+<v>icon=Sotn-scimitar-1-</v>
+<v>title=Scimitar</v>
+<v>description=Single edged curved sword</v>
+<v>attribute=Cut</v>
+<i>3</i>
+<v>icon=Sotn-cutlass-1-</v>
+<v>title=Cutlass</v>
+<v>description=Sword of the English Navy</v>
+<v>attribute=Cut</v>
+<i>4</i>
+<v>icon=Sotn-saber-1-</v>
+<v>title=Saber</v>
+<v>description=Light cavalry sword</v>
+<v>attribute=Cut</v>
+<i>5</i>
+<v>icon=Sotn-falchion-1-</v>
+<v>title=Falchion</v>
+<v>description=Norman curved sword</v>
+<i>6</i>
+<v>icon=Sotn-brdswrd-1-</v>
+<v>title=Broadsword</v>
+<v>description=Simple mercenary's sword</v>
+<v>attribute=Cut</v>
+<v>atk_plus=12</v>
+<i>7</i>
+<v>icon=Sotn-bekatowa-1-</v>
+<v>title=Bekatowa</v>
+<v>description=Plain, easy-to-use war sword</v>
+<v>attribute=Cut</v>
+<i>8</i>
+<v>icon=Sotn-dmscsswrd-1-</v>
+<v>title=Damascus Sword</v>
+<v>description=Fine Sword Honed To Razor-Edge</v>
+<v>attribute=Cut</v>
+<v>atk_plus=17</v>
+<i>9</i>
+<v>icon=Sotn-hnterswrd-1-</v>
+<v>title=Hunter Sword</v>
+<v>description=Ivory handled hunting sword</v>
+<v>attribute=Cut</v>
+<i>10</i>
+<v>icon=Sotn-bstrdswrd-1-</v>
+<v>title=Bastard Sword</v>
+<v>description=Standard sword</v>
+<v>attribute=Cut</v>
+<v>atk_plus=20</v>
+<i>11</i>
+<v>icon=Sotn-talwar-1-</v>
+<v>title=Talwar</v>
+<v>description=Curved Indian sword.</v>
+<v>attribute=Cut</v>
+<v>atk_plus=22</v>
+<i>12</i>
+<v>icon=Sotn-swrdofhadr-1-</v>
+<v>title=Sword of Hador</v>
+<v>description=House of Hador heirloom</v>
+<i>13</i>
+<v>icon=Sotn-luminus-1-</v>
+<v>title=Luminus</v>
+<v>attribute=Cut</v>
+<i>14</i>
+<v>icon=Sotn-harper-1-</v>
+<v>title=Harper</v>
+<v>description=The sword named Harper</v>
+<v>attribute=Cut</v>
+<i>15</i>
+<v>icon=Sotn-gram-1-</v>
+<v>title=Gram</v>
+<v>description=The sword named Gram</v>
+<v>attribute=Cut</v>
+<i>16</i>
+<v>icon=Sotn-drkblade-1-</v>
+<v>title=Dark Blade</v>
+<v>description=Sword forged by elves</v>
+<v>attribute=Cut</v>
+<i>17</i>
+<v>icon=Sotn-alucart-1-</v>
+<v>title=Alucart Sword</v>
+<v>description=Resembles family sword</v>
+<v>attribute=Cut</v>
+<v>atk_plus=2</v>
+<i>18</i>
+<v>icon=Sotn-tyrfing-1-</v>
+<v>title=Tyrfing</v>
+<v>description=Cursed dark sword</v>
+<v>attribute=Curse</v>
+<i>19</i>
+<v>icon=Sotn-mmmgilswrd-1-</v>
+<v>title=Mormegil</v>
+<v>description=Black sword - strong vs. holy</v>
+<v>attribute=Dark</v>
+<i>20</i>
+<v>icon=Sotn-vjaya</v>
+<v>title=Thunderbrand</v>
+<v>description=Lightning sword of Indra</v>
+<v>attribute=Thunder</v>
+<i>21</i>
+<v>icon=Sotn-icebrand</v>
+<v>title=Icebrand</v>
+<v>description=Ice sword of Mim</v>
+<v>attribute=Ice</v>
+<i>22</i>
+<v>icon=Sotn-firebrand</v>
+<v>title=Firebrand</v>
+<v>description=Fire sword of Oberon</v>
+<v>attribute=Fire</v>
+<i>23</i>
+<v>icon=Sotn-hlyswrd-1-</v>
+<v>title=Holy Sword</v>
+<v>description=Cross hilt - strong vs. undead</v>
+<v>attribute=Holy</v>
+<i>24</i>
+<v>icon=Sotn-trmnseast-1-</v>
+<v>title=Terminus Est</v>
+<v>description=Poisoned executioner's sword</v>
+<v>attribute=Poison</v>
+<i>25</i>
+<v>icon=Equip-Gurthang-1-</v>
+<v>title=Gurthang</v>
+<v>description=Gets stronger when bloodied</v>
+<v>attribute=Cut</v>
+<v>atk_plus=25</v>
+<v>def_plus=1</v>
+<i>26</i>
+<v>icon=Equip-Marsil-1-</v>
+<v>title=Marsil</v>
+<v>description=Powerful sword of flame</v>
+<v>attribute=Fire</v>
+<i>27</i>
+<v>icon=Equip-Mourneblade-1-</v>
+<v>title=Mourneblade</v>
+<v>description=Feeds upon enemy's souls</v>
+<v>attribute=Cut</v>
+<i>28</i>
+<v>icon=Equip-Mablung_Sword-1-</v>
+<v>title=Mablung Sword</v>
+<v>description=Spirit sword - improves DEF</v>
+<v>attribute=Cut</v>
+<i>29</i>
+<v>icon=Sotn-alucard-1-</v>
+<v>title=Alucard Sword</v>
+<v>description=Mother's family heirloom</v>
+<v>attribute=Cut</v>
+<i>30</i>
+<v>icon=Sotn-bdlaire-1-</v>
+<v>title=Badelaire</v>
+<v>description=Power increases with game play</v>
+<v>attribute=Cut</v>
+<i>31</i>
+<v>icon=Sotn-swordfam-1-</v>
+<v>title=Sword Familiar</v>
+<v>description=Sentient sword familiar.</v>
+<v>attribute=Cut</v>
+<i>32</i>
+<v>icon=Sotn-vorpalbld-1-</v>
+<v>title=Vorpal Blade</v>
+<v>description=Slices cleanly through enemies</v>
+<v>attribute=Cut</v>
+<i>33</i>
+<v>icon=Sotn-crssin-1-</v>
+<v>title=Crissaegrim</v>
+<v>description=Countless blades dice enemy</v>
+<v>attribute=Cut</v>

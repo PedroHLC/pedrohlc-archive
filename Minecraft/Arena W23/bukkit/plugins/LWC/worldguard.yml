@@ -1,0 +1,9 @@
+worldguard:
+    enabled: false
+    allowRegionPermissions: true
+    allowProtectionsOutsideRegions: true
+    requireBuildRights: true
+    regions:
+    - '*'
+    blacklistedRegions:
+    - Region1

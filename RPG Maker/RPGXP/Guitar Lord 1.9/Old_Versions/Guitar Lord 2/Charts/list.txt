@@ -1,0 +1,9 @@
+[
+["Best of You","Foo Fighters",0,0,0,1],
+["November Rain","Guns N' Roses",1,1,1,1],
+["Yugioh GX Theme","Nick",0,0,0,1],
+["Dan Dan Kokoro Hikareteku","Zard",0,0,0,1],
+["Buffy Theme","Nerf Herder",0,0,0,1]
+]
+#Use: ["Nome do arquivo","Titulo","Autor",easy,medium,hard,expert],
+#Lembre-se: 0 = Nao Tem, 1 = Tem

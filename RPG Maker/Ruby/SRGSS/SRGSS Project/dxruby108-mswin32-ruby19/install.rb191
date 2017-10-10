@@ -1,0 +1,19 @@
+#!ruby -Ks
+# 簡易インストーラ
+
+require 'rbconfig'
+require 'fileutils'
+include Config
+
+if CONFIG["ruby_version"] != "1.9.1" then
+  puts "1.9.1じゃないと動かせません"
+  exit
+end
+
+FileUtils.mkdir_p(CONFIG["sitearchdir"])
+file = CONFIG["sitearchdir"] + "/" + "dxruby.so"
+FileUtils.install("dxruby.so" , file, :preserve => true)
+file = CONFIG["sitearchdir"] + "/" + "dxrubyex.so"
+FileUtils.install("dxrubyex.so" , file, :preserve => true)
+
+puts "DXRubyのインストールに成功しました"

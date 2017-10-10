@@ -1,0 +1,32 @@
+config:
+  languageFile: english
+  prefix: '[Elevators]'
+  database:
+    type: mysql
+    server:
+      mysqlLocation: localhost
+      mysqlPort: '3306'
+      mysqlDatabase: minecraft
+      mysqlUsername: root
+      mysqlPassword: ''
+    file:
+      sqlliteFile: elevators
+  command:
+    radius: 10
+  create:
+    maxRadius: 10
+  defaultMovementSpeedLevel: 1
+  secondsWaitBeforeElevStarts: 2
+  removeElevBlocksOnDelete: true
+  maxBuild:
+    Normal: 30
+    Advanced: 70
+    Master: 140
+    Extreme: 180
+    Admin: 260
+    Op: -1
+  maxBlockRadius:
+    Normal: 16
+    Advanced: 32
+    Admin: 64
+    Op: -1

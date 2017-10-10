@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">Wireless Sound Output</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_manager">Wireless Sound Output</string>
+    <string name="man_play">Play</string>
+    <string name="man_stop">Stop</string>
+    <string name="man_lbl_hostname">Host Name:</string>
+    <string name="man_lbl_hostport">Host Port:</string>
+    <string name="man_lbl_samprt">Sample Rate (Hz):</string>
+    <string name="man_lbl_chcfg">Channel Config:</string>
+    <string name="man_lbl_audfmt">Audio Format:</string>
+    <string name="man_lbl_buffsz">Audio Buffer Size (Bytes):</string>
+    <string name="man_lbl_ctrl">Control Buttons:</string>
+    <string name="man_lbl_streamfmt">Stream Format:</string>
+    <string name="chn_stereo">Stereo</string>
+    <string name="chn_mono">Mono</string>
+
+    <string-array name="channels_configs">
+        <item>@string/chn_stereo</item>
+        <item>@string/chn_mono</item>
+    </string-array>
+
+    <string name="aud_pcm16">PCM 16bit</string>
+    <string name="aud_pcm8">PCM 8bit</string>
+
+    <string-array name="audio_formats">
+        <item>@string/aud_pcm16</item>
+        <item>@string/aud_pcm8</item>
+    </string-array>
+
+    <string name="str_rawudp">RAWAUDIO in UDP (Beta)</string>
+    <string name="str_rawrtp">RAWAUDIO in RTP (Alpha)</string>
+    <string name="str_rawtcp">RAWAUDIO in TCP</string>
+
+    <string-array name="stream_formats">
+        <item>@string/str_rawenet</item>
+        <item>@string/str_rawtcp</item>
+    </string-array>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    
+    <string name="man_lbl_mainswitch_off">Play</string>
+    <string name="man_lbl_mainswitch_on">Stop</string>
+    <string name="str_rawenet">RAWAUDIO in ENET</string>
+
+</resources>

@@ -1,0 +1,111 @@
+unknownError: '&cUnknown error detected.'
+langUnknownMode: '&cUnknown command was entered. Type ''/elev help'' to see all the
+  correct commands.'
+langWrongValue: '&cInvalid parameters were entered. Type ''/elev help'' to see all
+  the correct parameters.'
+langNoPermission: '&cNo permission to do so.'
+langNoPermissionElev: '&cNo permission to use/change this lift.'
+langNoArgs: '&cYou haven''t entered a command. Type ''/elev help'' to see the commands.'
+langElevOnlyOverOneWorld: '&cYou can create a lift for only one world.'
+langIsInCreateMode: '&aNow you create a lift. Write ''/ elev cancel'' to cancel or
+  ''/ elev finish'' to save.'
+langIsInCreateMode_TryAgain: '&cYou create a lift already!'
+langIsInCreateMode_NotActive: '&cYou dont create a elevator!'
+langIsInCreateWorldEdit: '&aAdded Blocks from WorldEdit! (%V%)'
+langIsInCreateWorldEditFailed: '&cAdding WorldEdit blocks failed!'
+langIsInCreateWorldEditRemove: '&aRemoved Blocks from WorldEdit! (%V%)'
+langIsInCreateWorldEditRemoveFailed: '&cRemoving WorldEdit blocks failed!'
+langFinish: '&aAll right. All changes have been saved.'
+langCancel: '&aCreating has been canceled.'
+langHaveMaxRadius: '&cYou can only build in a certain one blockradius.'
+langHaveMaxBlocks: '&cYou can no more build blocks.'
+langHereIsAnotherElevator: '&cHere''s already an other elevator.'
+langNothingToCancel: '&cIt has been found nothing to cancel.'
+langFinishNotIn: '&cIt is done currently nothing that can be completed.'
+langFinishNoBlocksForElevator: '&cNo blocks were marked. Elevator could not be saved.'
+langNoElevInNear: '&cNo lift nearby.'
+langElevMustInNear: '&cThe elevator must be nearby.'
+langPasswordNeeded: '&cStrangers need a password here. Type ''/elev password Here
+  Pass'' and try again.'
+langPasswordWasSaved: '&aPassword is cached.'
+langCannotMoveWayNotEmpty: '&cThe elevator is stuck. There is something in the way.'
+langElevNotExists: '&cThis elevator does not exist!'
+langAddedStage: '&aFloor was added successfully!'
+langRemovedStage: '&aFloor was removed successfully!'
+langNoToRemove: '&cThere is no floor to remove.'
+langAlreadyAStage: '&cHere already is a floor for this elevator.'
+langNoStageForUp: '&cNo upper floors remain.'
+langNoStageForDown: '&cDownward no floors remain.'
+langElevatorIsMoving: '&cThis elevator is already moving! Can not move it.'
+langElevatorIsCalled: '&aElevator was called.'
+langElevatorIsReady: '&aElevator is ready already.'
+langElevatorIsNotApplyToMoveHere: '&cHere you can not call the elevator.'
+langElevatorDeleted: '&aElevator has been deleted successfully.'
+langElevatorIsStopped: '&aElevator is stopped.'
+langElevatorDriveDown: '&aThe lift goes down now. (%V1% %V2%)'
+langElevatorDriveUp: '&aThe lift goes up now. (%V1% %V2%)'
+langOwnersWasSave: '&aThe elevator owners were varied.'
+langMembersWasSave: '&aThe elevator co-users were varied.'
+langElevNeedOwner: '&cAn elevator takes at least one owner.'
+langElevWrongSpeedType: '&cIncorrect parameters. Possible parameters are ''fast'',
+  ''normal'', ''slow'' and ''Very Slow'''
+langElevSetSpeed: '&aLift speed has been set.'
+langTooLongText: '&cThis text is too long.'
+langElevSetName: '&aElevator name was set.'
+langElevSetPublic: '&aElevator has now switched to public.'
+langElevSetPrivate: '&aElevator was switched to the private mode.'
+langElevSetPassword: '&aElevator Password has been set successfully.'
+langElevDisabled: '&aElevator has been disabled.'
+langElevEnabled: '&aElevator has been activated.'
+langElevIsDisabled: '&cThis elevator is disabled.'
+langElevIsAlEnabled: '&cThis elevator has already been activated.'
+langElevIsAlDisabled: '&cThis elevator was already disabled.'
+langElevChooseButton: '&aClick on a button to prove to him. Use ''/elev cancel'' to
+  cancel.'
+langElevButtonWhereCreating: '&cYou can create buttons until after the lift link..'
+langElevButtonCreated: '&aButton added.'
+langCallButtonNotInElev: '&cA button in an elevator is not working. Canceled.'
+langAdminDeletedUsers: '&6All lifts of the user are deleted.'
+langAdminDeletedWorld: '&6All elevators in the world have been deleted.'
+langAdminDeleted: '&6All elevators have been deleted.'
+langReloaded: '&6Plugin reloaded.'
+langDefaultFirstCreateElevName: '%V%''s elevator.'
+langWordStageOnly: Floor
+langWordStageMulti: Floors
+langSpeedValue0: Fast
+langSpeedValue1: Normal
+langSpeedValue2: Slow
+langSpeedValue3: Very Slow
+langHelpPage: 'Elevator help: Page %1% of %2%.'
+langHelpPageInfo: Gives information over the next elevator.
+langHelpPageCreate: Creates a Elevator.
+langHelpPageAddSelection: Adding blocks from WorldEdit selection.
+langHelpPageRemoveSelection: Removing Blocks from WorldEdit selection.
+langHelpPageFinish: Finishes the current creation.
+langHelpPageCancel: Cancels all creations.
+langHelpPageDelete: Deletes a elevator.
+langHelpPageAddstage: Adds a floor.
+langHelpPageRemovestage: Deletes a floor
+langHelpPageButtonup: Creating a Button upwards
+langHelpPageButtondown: Creating a button downwards.
+langHelpPageButtoncall: Creating of a call button
+langHelpPageButtondelete: Deleting of Buttons
+langHelpPageUp: Go up an elevator.
+langHelpPageDown: Go down an elevator.
+langHelpPageCall: Elevator call.
+langHelpPagePassword: Elevator password cache.
+langHelpPageAddowner: Elevator owners add.
+langHelpPageRemoveowner: Elevator owners remove.
+langHelpPageAddmember: Add lift member.
+langHelpPageRemovemember: Delete lift member.
+langHelpPageSetspeed: Elevator speed set.
+langHelpPageSetname: Elevator name set.
+langHelpPageSetpublic: Setting Public Elevator.
+langHelpPageSetpassword: Create Elevator password.
+langHelpPageSetprivate: Private elevator set.
+langHelpPageEnable: Elevator activate.
+langHelpPageDisable: Elevator deactivate.
+langHelpPageAdminRemoveUser: All elevators delete of the user.
+langHelpPageAdminRemoveWorld: All elevators in the world delete.
+langHelpPageAdminClearDatabase: All elevators delete.
+langHelpPageAdminReload: Reload plugin.

@@ -1,0 +1,523 @@
+Recebido(PEDRO-HLC): <20>'Test Completed'</20>
+Enviado(ALL/TODOS): <20>'Test Completed'</20>Enviado(ALL/TODOS-PEDRO-HLC): <9>-1</9>
+Recebido(PEDRO-HLC): <20>'Test Completed'</20>
+Enviado(ALL/TODOS): <20>'Test Completed'</20>Enviado(ALL/TODOS-PEDRO-HLC): <9>-1</9>
+Recebido(PEDRO-HLC): <0>'e'</0>
+Enviado(PEDRO-HLC): <0 0>'e' n=Lugia</0>
+Recebido(PEDRO-HLC): <mod>'request'</mod>
+Enviado(PEDRO-HLC): <mod>Bem vindo ao GodOnline, tenha um bom jogo!</mod>
+Recebido(PEDRO-HLC): <ver>0.10031</ver>
+Enviado(PEDRO-HLC): <ver>0.10031</ver>
+Recebido(PEDRO-HLC): <login pedrohlc>q</login>
+Enviado(PEDRO-HLC): <login>'allow','admin'</login>
+Enviado(PEDRO-HLC): <1>1</1>
+Enviado(PEDRO-HLC): <2>pedrohlc</2>
+Enviado(PEDRO-HLC): <exec>$no_pvp=0;</exec>
+Recebido(PEDRO-HLC): <2>'req'</2>
+Enviado(PEDRO-HLC): <2>pedrohlc</2>
+Recebido(PEDRO-HLC): <check>'req'</check>
+Enviado(PEDRO-HLC): <check>'admin'</check>
+Recebido(PEDRO-HLC): <cs>pedrohlc,3</cs>
+Enviado(PEDRO-HLC): <cselect>0,NE,NE</cselect>
+Enviado(PEDRO-HLC): <cselect>1,001-PedroHLC01,PedroHLC</cselect>
+Enviado(PEDRO-HLC): <cselect>2,NE,NE</cselect>
+Enviado(PEDRO-HLC): <cselect>3,NE,NE</cselect>
+Recebido(PEDRO-HLC): <load pedrohlc>2</load>
+Enviado(PEDRO-HLC): <load 2>[99999,99999,12,10,8,99999,99999,2020,2018,[],0,'001-PedroHLC01',2,4,6,1,0,0,10000570,'PedroHLC',101294,1,11,'[33,1,0,0,38]',99999,99999,'',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84],0,[[23, 20003400],],[],[[33, 1],],[],'']</load>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc'; @character_name = '001-PedroHLC01'; @map_id = 12; @x = 10; @y = 8; @direction = 2;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc'; @character_name = '001-PedroHLC01'; @map_id = 12; @x = 10; @y = 8; @direction = 2;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 8;@direction = 2;@move_speed = 4;@upp = 101294;@skills = '[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84]';</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 8;@direction = 2;@move_speed = 4;@upp = 101294;@skills = '[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84]';</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 8;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 8;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 8;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 8;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 4;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 8;@direction = 4;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 9;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 9;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 10;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 10;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 11;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 11;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 10;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 10;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 13;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 13;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 10;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 9;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 8;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 8;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 7;@direction = 4;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 14;@y = 7;@direction = 4;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 13;@y = 7;@direction = 4;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 13;@y = 7;@direction = 4;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 7;@direction = 4;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 12;@y = 7;@direction = 4;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 8;@y = 7;@direction = 4;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 8;@y = 7;@direction = 4;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 9;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 9;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 9;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 9;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 10;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 11;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 15;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 17;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 17;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 19;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 20;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 22;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 22;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 24;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 24;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 7;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 7;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 8;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 8;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 10;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 10;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 13;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 13;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 15;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 15;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 20;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 20;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 22;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 22;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 26;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 26;@y = 26;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 27;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 29;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 29;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 26;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 26;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 27;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 27;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 34;@y = 28;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 35;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 35;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 35;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 35;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 36;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 37;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 28;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 28;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 29;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 30;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 30;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 95;@direction = 2;@move_speed = 6;@move_speed = 6;@step_anime = 1;@always_on_top = 1;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 38;@y = 95;@direction = 2;@move_speed = 6;@move_speed = 6;@step_anime = 1;@always_on_top = 1;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 41;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 41;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 41;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 41;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 42;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 42;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 42;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 42;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 43;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 43;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 43;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 43;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 44;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 44;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 44;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 44;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 45;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 45;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 45;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 45;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 46;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 46;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 46;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 46;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 47;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 47;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 47;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 47;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 48;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 48;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 48;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 48;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 49;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 49;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 49;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 49;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 50;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 50;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 50;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 50;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 51;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 51;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 51;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 51;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 52;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 52;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 52;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 52;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 53;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 53;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 53;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 53;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 54;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 54;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 54;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 54;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 55;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 55;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 55;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 55;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 56;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 56;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 56;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 56;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 57;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 57;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 57;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 57;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 58;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 58;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 58;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 58;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 59;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 59;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 59;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 59;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 60;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 60;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 60;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 60;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 61;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 61;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 61;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 61;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 62;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 62;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 62;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 62;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 63;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 63;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 63;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 63;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 64;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 64;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 64;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 64;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 65;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 65;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 65;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 65;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 66;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 66;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 66;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 66;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 67;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 67;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 67;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 67;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 68;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 68;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 68;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 68;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 69;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 69;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 69;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 69;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 70;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 70;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 70;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 70;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 71;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 71;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 71;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 71;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 72;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 72;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 72;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 72;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 73;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 73;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 73;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 73;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 74;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 74;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 74;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 74;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 75;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 75;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 75;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 75;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 76;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 76;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 76;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 76;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 77;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 77;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 77;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 77;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 78;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 78;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 78;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 78;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 79;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 79;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 79;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 79;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 80;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 80;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 80;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 80;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 81;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 81;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 91;@y = 95;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 12;@x = 91;@y = 95;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;@exp = 10000570;@hp = @maxhp = 99999;@sp = @maxsp = 99999;@upp = 101294;@str = 99999;@dex = 99999;@agi = 99999;@int = 99999;@atk = 999;@pdef = 2020;@mdef = 2018;@eva = 100;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;@exp = 10000570;@hp = @maxhp = 99999;@sp = @maxsp = 99999;@upp = 101294;@str = 99999;@dex = 99999;@agi = 99999;@int = 99999;@atk = 999;@pdef = 2020;@mdef = 2018;@eva = 100;</5>
+Recebido(PEDRO-HLC): <5>@hp = 99999; @sp = 99999; @agi = 99999; @eva = 100; @pdef = 2020; @mdef = 2018; @states = []; @level = 139</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@hp = 99999; @sp = 99999; @agi = 99999; @eva = 100; @pdef = 2020; @mdef = 2018; @states = []; @level = 139</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 7;@y = 3;@direction = 2;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 6;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 6;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 4;@move_speed = 4;@step_anime = 0;@always_on_top = 0;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 4;@move_speed = 4;@step_anime = 0;@always_on_top = 0;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 6;@move_speed = 6;@step_anime = 1;@always_on_top = 1;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 6;@move_speed = 6;@step_anime = 1;@always_on_top = 1;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 4;@move_speed = 4;@step_anime = 0;@always_on_top = 0;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 8;@y = 3;@direction = 6;@move_speed = 4;@move_speed = 4;@step_anime = 0;@always_on_top = 0;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 3;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 3;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 3;@direction = 6;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 3;@direction = 6;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 4;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 4;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 4;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 4;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <5>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Enviado(ALL/TODOS-PEDRO-HLC): <5 1>@username = 'pedrohlc';@character_name = '001-PedroHLC01';@map_id = 6;@x = 9;@y = 5;@direction = 2;@move_speed = 4;</5>
+Recebido(PEDRO-HLC): <9>1</9>
+Enviado(ALL/TODOS-PEDRO-HLC): <9>1</9>
+Enviado(ALL/TODOS-PEDRO-HLC): <9>1</9>

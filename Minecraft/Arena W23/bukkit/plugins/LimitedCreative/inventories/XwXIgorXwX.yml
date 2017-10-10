@@ -1,0 +1,85 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor: {}
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 3
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 368
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+    damage: 34
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 62
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SAND
+    amount: 18
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE
+    amount: 12
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE_DUST
+    amount: 2
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    damage: 3
+    amount: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    amount: 15
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PICKAXE
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 28
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 52
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 3
+    amount: 22
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 4
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: JUNGLE_WOOD_STAIRS
+    amount: 20

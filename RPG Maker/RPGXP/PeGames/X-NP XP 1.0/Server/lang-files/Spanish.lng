@@ -1,0 +1,69 @@
+[main-tab]
+TabSheet1=Principal
+GroupBox1=General
+ServerName=Server Name
+MaxPlayers=Maximo Personas
+Port=Server Puerto
+GroupBox4=Mas Opciones
+AutoStart=Autoiniciar cuando abierto
+Version=Versión
+
+[security-tab]
+TabSheet5=Securidad
+TabSheet6=Usuarios Certificados
+ListView-Username=Nombre
+ListView-Password=Contraseña
+ListView-Group=Grupo
+EditLabel-Username=Nombre
+EditLabel-Password=Contraseña
+EditLabel-Group=Grupo
+Add=Añada
+Delete=Suprimen
+Bans=Prohibiciones
+IPBans=IP Prohibiciones
+IPBox=Mecanografíe el IP aquí, después presione entran
+
+[stats-tab]
+TabSheet2=Cifras
+GroupBox5=General
+Label-Players=Jugadores:
+Label-MPlayers=Jugadores máximos:
+GroupBox2=Stats de la anchura de banda/en octetos
+Label-Incoming=Entrante:
+Label-Outgoing=Saliente:
+Label-TBR=Los Octetos Totales Recibieron:
+Label-TBS=Los Octetos Totales Enviaron:
+GroupBox3=Socket Excepciones
+Label-OnAccept=Cuando Aceptar:
+Label-OnConnect=Cuando Unir:
+Label-OnDisconnect=Cuando Desconectar:
+Label-OnRead=Cuando Leer:
+Label-OnError=Cuando Error:
+
+[debug-tab]
+TabSheet3=Ajuste
+ShowRaw=Mostrar la Materia prima
+
+[options-tab]
+TabSheet8=Opciones
+GroupBox6=Lengua
+Button3=Aplicar
+
+[chat-tab]
+TabSheet8=Charlar
+
+[status-bar]
+Online=En línea
+Offline=Fuera de línea
+Players=Jugadores
+
+[mainmenu]
+Start=Comenzar
+Stop=Parar
+Exit=Salir
+Options=Opciones
+Scripting=Escriptos
+Help=Assistencia
+About=Sobre
+Contents=Contenidos
+

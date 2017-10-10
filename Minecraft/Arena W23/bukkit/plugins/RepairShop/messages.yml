@@ -1,0 +1,16 @@
+Prefix: '&b[Repair]'
+version: 2.0
+Messages:
+  not_enough_money: <Prefix> &7You don't have enough money!
+  repair_message: <Prefix> &7Your <type> has been repaired for <cost> <currency>!
+  create_successfull: <Prefix> &7The repair shop has been created successfully!
+  repair_create_message: <Prefix> &7In this shop you can repair <type> for <cost> <currency>!
+  no_permission: <Prefix> &7You don't have permission to do that!
+  wrong_format: <Prefix> &7Your sign had the wrong format!
+  shop_owner_not _exist: <Prefix> &7This Shop owner doesnt exist!
+  error_occured: <Prefix> &7An error occured. Please contact the shop owner!
+  no_chest_found: <Prefix> &7No chest has been found. Please contact the shop owner!
+  invalid_repair_type: <Prefix> &7This is an invalid repair type!
+  no_resources: <Prefix> &7There are no resources in this shop!
+  notify_player_bought: <Prefix> &7<Player> has repaired <type> for <cost> <currency> in your shop.
+  running_out_of_resources: <Prefix> &7One of your shops is running out of resources!

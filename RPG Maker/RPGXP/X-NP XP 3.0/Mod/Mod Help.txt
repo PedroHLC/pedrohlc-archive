@@ -1,0 +1,6 @@
+Nesta pasta são armazenados os MODS de jogo.
+
+Você pode customizar itens, skins e o logo do seu servidor.
+Use o LdM Item Maker para criar novos itens
+Todos os ícones devem ficar nesta pasta!
+Coloque as 5 1ªs letras do seu SK para funcionar!

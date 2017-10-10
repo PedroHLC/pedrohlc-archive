@@ -1,0 +1,6 @@
+16:10:21.810 [INFO] *DebugLog.setFile* : Logger created [14] 
+16:10:21.814 [INFO] *AdminCmd.onEnable* : Plugin Version : 7.3.5 (BUILD 06.04.2013 @ 18:26:29) [14] 
+16:10:21.823 [INFO] *FileManager.<clinit>* : Git Version : 238f4e54fca459b1d91c38c4df940f8afdcc9dbc [14] 
+16:10:21.886 [INFO] *ExtendedConfiguration.save* : Saving file : plugins/AdminCmd/config.yml [14] 
+16:10:26.315 [SEVERE] *EmptyPlayer.<init>* : Empty Player instancied with name : serverConsole [14] 
+16:10:26.326 [INFO] *FilePlayerFactory.<init>* : User's file found : MinecraftChick.yml musicxlover.yml pedro61.yml PedroHLC.yml PedroZ.yml PlayerFEZ.yml PulsoGamer.yml ramonsantosh.yml Raul.yml SmartGuide.yml Smeagol.yml torbon2000.yml Troolll.yml WarriorofFire999.yml XwXIgorXwX.yml ___.yml 5tsunami.yml bambam.yml C418.yml Cunhex.yml DirtyCheese.yml DOOR_DORR.yml Duffz.yml DuffzTheBoss.yml EmoXD9.yml EvilSeph.yml ezio43.yml Feromonas.yml GhostArcher.yml Grumm.yml HyuugaNeji.yml Jeb_.yml joaokaka89.yml kress.yml Louzada22.yml LuanLum.yml MalukoFlex_.yml maxhero.yml MestreDosMagos.yml Milan.yml [14] 

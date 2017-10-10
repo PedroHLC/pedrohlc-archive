@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleJChat4Droids</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="option_lbl">O que deseja fazer?</string>
+    <string name="option1">Estou com sorte!</string>
+    <string name="option2">Quero ser cliente!</string>
+    <string name="option3">Quero ser servidor!</string>
+    <string name="go">Ir...</string>
+    <string name="ip">127.0.0.1</string>
+    <string name="send">Enviar.</string>
+    <string name="exit">Sair.</string>
+    <string name="version">1.2</string>
+    <string name="searching">Procurando um servidor...</string>
+    <string name="newmsg">Nova mensagem</string>
+
+</resources>

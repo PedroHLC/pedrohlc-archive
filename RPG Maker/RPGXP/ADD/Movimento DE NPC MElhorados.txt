@@ -1,0 +1,103 @@
+#=================================================================
+# Melhorar Movimentos de NPC
+# Autor: Madajuv
+#=================================================================
+# Muda os comando de movimento aleatório, de seguir herói
+# e de fugir de herói, adicionando neles a opção de andar
+# na diagonal, o que agiliza os movimentos.
+#=================================================================
+
+class Game_Character
+  def move_random
+    case rand(8)
+    when 0 
+      move_down(false)
+    when 1 
+      move_left(false)
+    when 2
+      move_right(false)
+    when 3 
+      move_up(false)
+    when 4
+      move_lower_left
+    when 5
+      move_lower_right
+    when 6
+      move_upper_left
+    when 7
+      move_upper_right
+    end   
+  end
+  def move_toward_player
+    sx = @x - $game_player.x
+    sy = @y - $game_player.y
+    if sx == 0 and sy == 0
+      return
+    end
+    abs_sx = sx.abs
+    abs_sy = sy.abs
+    if abs_sx == abs_sy
+      rand(2) == 0 ? abs_sx += 1 : abs_sy += 1
+    end
+    if @x > $game_player.x and @y > $game_player.y
+      move_upper_left
+    elsif @x < $game_player.x and @y > $game_player.y
+      move_upper_right
+    elsif @x > $game_player.x and @y < $game_player.y
+      move_lower_left
+    elsif @x < $game_player.x and @y < $game_player.y
+      move_lower_right
+    else
+      if abs_sx == abs_sy
+        rand(2) == 0 ? abs_sx += 1 : abs_sy += 1
+      end
+      if abs_sx > abs_sy
+        sx > 0 ? move_left : move_right
+        if not moving? and sy != 0
+          sy > 0 ? move_up : move_down
+        end
+      else
+        sy > 0 ? move_up : move_down
+        if not moving? and sx != 0
+          sx > 0 ? move_left : move_right
+        end
+      end
+    end
+  end
+  def move_away_from_player
+    sx = @x - $game_player.x
+    sy = @y - $game_player.y
+    if sx == 0 and sy == 0
+      return
+    end
+    abs_sx = sx.abs
+    abs_sy = sy.abs
+    if @x > $game_player.x and @y > $game_player.y
+      move_lower_right
+    elsif @x < $game_player.x and @y > $game_player.y
+      move_lower_left
+    elsif @x > $game_player.x and @y < $game_player.y
+      move_upper_right
+    elsif @x < $game_player.x and @y < $game_player.y
+      move_upper_left
+    else   
+      if abs_sx == abs_sy
+        rand(2) == 0 ? abs_sx += 1 : abs_sy += 1
+      end
+      if abs_sx > abs_sy
+        sx > 0 ? move_right : move_left
+        if not moving? and sy != 0
+          sy > 0 ? move_down : move_up
+        end
+      else
+        sy > 0 ? move_down : move_up
+        if not moving? and sx != 0
+          sx > 0 ? move_right : move_left
+        end
+      end
+    end
+    if not moving?
+      move_random
+    end
+  end
+end

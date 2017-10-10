@@ -1,0 +1,11 @@
+# Thank you for using SaveIt on your Server.
+# If you don't understand something please visit: https://www.dropbox.com/s/zj1ue8ez3udmn9c/Saving%20It%20Documentation.pdf
+DelayInMinutes: 8
+ExtraOptions: {}
+Worlds:
+- world
+EnableSaveMSG: true
+SaveMSG: '&aSalvando mundo...'
+SaveMSG2: '&aMundo salvo!'
+CheckForUpdates: false
+EnablePowerSave: false

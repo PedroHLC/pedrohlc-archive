@@ -1,0 +1,6 @@
+KillMu v0.5 BETA
+Developed by PedroHLC (plaracampos@hotmail.com)
+________________________________________________________________________________________________
+Fake trojan alert for the game knowed as Mü Online
+________________________________________________________________________________________________
+Falsa mensagem de vírus para o jogo Mü Online

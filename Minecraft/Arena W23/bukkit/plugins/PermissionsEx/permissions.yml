@@ -1,0 +1,64 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - admincmd.spawn.tp
+    - admincmd.player.afk
+    - admincmd.player.quit
+    - admincmd.kit.*
+    - iConomy.holdings
+    - iConomy.holdings.others
+    - iConomy.top
+    - iConomy.payment
+    - frameProtect.autoprotect.*
+    - frameProtect.protect.*
+    - treeassist.replant
+    - treeassist.autoremove
+    - RepairShop.use
+    - XPB.player
+    - coloredTexts.*
+    - -coloredTexts.setcolor.*
+    - -coloredTexts.effects.magic
+    - -coloredTexts.groups.*
+    - -admincmd.tp.world.*
+    - -bukkit.command.plugins
+    - -jbr.*
+    - -AnvilGlitchPass.bypass
+    - -RepairShop.create.*
+    worlds:
+      world:
+        permissions:
+        - admincmd.tp.home
+        - admincmd.warp.tp
+  Vip:
+    inheritance:
+    - default
+  Mod:
+    inheritance:
+    - default
+    permissions:
+    - -admincmd.server.*
+    - admincmd.*
+    - admincmd.tp.world.*
+  Admin:
+    permissions:
+    - admincmd.server.*
+    - admincmd.*
+    - frameProtect.admin
+    - frameProtect.*
+    - bukkit.command.plugins
+    - jbr.*
+    - treeassist.*
+    - coloredTexts.*
+    - treeassist.*
+    - RepairShop.Admin
+    - XPB.player
+    - XPB.admin
+users:
+  PedroHLC:
+    group:
+    - Admin
+  maxhero:
+    group:
+    - Admin
+  TestPlayer0: {}

@@ -1,0 +1,48 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 1
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SANDSTONE
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SNOW_BLOCK
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: FLINT_AND_STEEL
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLASS
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: LAPIS_BLOCK
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET

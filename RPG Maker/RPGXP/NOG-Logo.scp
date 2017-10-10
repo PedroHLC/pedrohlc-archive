@@ -1,0 +1,37 @@
+class Logo 
+  def initialize
+    Audio.me_play("Audio/ME/015-Mystery01", 100, 100)
+    Graphics.transition(Graphics.frame_rate)
+    Graphics.freeze
+    @sprite_glow_1 = Sprite.new
+    @sprite_glow_1.bitmap = RPG::Cache.load_bitmap("Graphics/Logo/", "Logo", 0)
+    Graphics.transition(80 * Graphics.frame_rate / 40, "Graphics/Logo/Animação")
+    Graphics.freeze
+    Graphics.transition(100 * Graphics.frame_rate / 40)
+    @black = Sprite.new
+    @black.bitmap = Bitmap.new(640, 480)
+    @black.bitmap.fill_rect(0, 0, 640, 480, Color.new(0, 0, 0))
+    @black.opacity = 0
+    updates = 100
+    for i in 0...updates
+      Graphics.update
+      Input.update
+      if Input.trigger?(Input::C)
+        break
+      end
+    end
+    max = 80
+    for i in 0..max
+      @black.opacity = i * 255 / max.to_f
+      Graphics.update
+    end
+    # Dispose
+    Graphics.freeze
+    @black.bitmap.dispose
+    @black.dispose
+    @sprite_glow_1.bitmap.dispose
+    @sprite_glow_1.dispose
+  end
+  
+end
+Logo.new

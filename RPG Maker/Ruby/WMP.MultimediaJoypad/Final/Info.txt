@@ -1,0 +1,21 @@
+WMP Multimedia Joypad v1.0.1
+Developed by PedroHLC (plaracampos@hotmail.com)
+________________________________________________________________________________________________
+Use a joystick to music navigation in Microsoft Windows Media Player (9, 10, 11 and 12)
+The program is invisible, to know it state, or close it, use the process list.
+________________________________________________________________________________________________
+Use um joystick para navegar entre as músicas no Microsoft Windows Media Player (9, 10, 11 e 12)
+O programa é invisível, para saber seu estado, ou fecha-lo, use a lista de processos.
+________________________________________________________________________________________________
+(Dualshock joypad) Default configuration \ Configurações originais:
+X = Play & Pause \ Tocar & Pausar
+Square \ Quadrado = Forward\Anterior
+O  = Next \Próximo
+Triangle \ Triângulo = Stop \ Parar
+Start = Volume Up \ Aumentar o volume
+Select = Volume Down \ Abaixar o volume
+R1 = Fast & Normal \ Rápida & Normal
+________________________________________________________________________________________________
+Manual Configuration could be opened with notepad
+________________________________________________________________________________________________
+A Configuração manual pode ser aberta pelo bloco de notas

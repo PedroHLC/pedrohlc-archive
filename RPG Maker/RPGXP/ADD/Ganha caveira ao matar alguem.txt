@@ -1,0 +1,16 @@
+Bem, é um tópico muito simples, sobre uma pequena utilidade muito fácil de se usar, mas quase nenhum, ou quase um xD, maker conhece ele. Para seguir o Tutorial, você não precisa instalar nenhum script novo . Só modificar um script já existente no Netplay.
+Ele só funciona para Netplays acima do 2.1
+
+Nesse tópico vou ensinar como dropar um item ao estilo Caveira de Ragnarok quando você morre no PvP.
+
+1º - Abra seu script PvP. Ele vai estar com esse nome : [ABS] PVP System.
+
+2º - Procure por essa parte :
+
+Audio.me_play("Audio/ME/" + VICTORY, 80, 100)
+
+3º Bote isso :
+
+$game_party.gain_item(id do item caveira na database, quantidade de items) # Caveira
+
+Pronto, agora é só criar o Item na Database, e trocar na linha de script que eu passei, o seu ID, e a quantidade ;]

@@ -1,0 +1,16 @@
+# RPG Maker VX Powerful Protection
+# Por: PedroHLC
+# Versão: 0.6.1 BETA
+
+Antes de inciar é aconcelhado fazer um backup de seu jogo
+
+Para encryptar seu jogo siga os seguintes passos:
+0) Faça backup do seu projeto
+1) Apague qualquer metodo Cache.load_bitmap q vc tiver
+2) Insira um "$game_loading.dispose" antes do "Graphics.transition" da primeira scene do jogo a ser executada (ex: Scene_Title)
+3) Extraia o aplicativo na pasta do seu projeto
+4) Copie todos os audios, fontes e imagens do RTP que você irá uzar para a pasta o projeto
+5) Abra o compilador(.exe) e siga as instruções na tela
+6) Faça um backup da pasta Data e após isso delete a original
+7) Renomeie a pasta Data_Compiled para Data
+8) Apague o compilador.exe e o leia-me.txt

@@ -1,0 +1,34 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET

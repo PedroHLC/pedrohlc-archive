@@ -1,0 +1,67 @@
+#> Below are the localization nodes set for plugin 'NoLagg'.
+#> For colors, use the & character followed up by 0 - F
+#> Need help with this file? Please visit:
+#> http://dev.bukkit.org/server-mods/bkcommonlib/pages/general/localization/
+commands:
+  nolagg:
+    description: The general command of NoLagg
+    usage: /lag [args...]
+  nolagg resend:
+    description: Resends all nearby chunks to the player
+    usage:
+    - /lag resend ([chunkRadius])
+    - /lag resend 5
+    - ''
+  nolagg monitor:
+    description: Regularly sends server performance statistics
+    usage: /lag monitor
+  nolagg clear:
+    description: Clears entities from the server
+    usage:
+    - /lag clear(all) [entitytypes]
+    - /lag clear creeper tnt
+    - /lag clearall tnt items
+    - ''
+  nolagg memory:
+    description: Shows server memory
+    usage: /lag mem
+  nolagg clearlog:
+    description: Clears the NoLagg log file
+    usage: /lag clearlog
+  nolagg stat:
+    description: Sends a single performance statistics snapshot
+    usage: /lag stat
+  nolagg lagmem:
+    description: Shows both server memory and tick rate
+    usage: /lag lagmem
+  nolagg log:
+    description: Starts or stops NoLagg writing statistics to file
+    usage: /lag log
+  nolagg sending:
+    description: Shows sending information to the user
+    usage: /lag sending
+  nolagg gc:
+    description: Garbage collects the server memory
+    usage: /lag gc
+  nolagg examine:
+    description: Starts examining server tick rate performance
+    usage:
+    - /lag examine ([time])
+    - /lag examine 500
+    - ''
+  nolagg tnt:
+    description: Shows TNT statistics or stops TNT detonation
+    usage:
+    - /lag tnt
+    - /lag tnt clear
+  nolagg fix:
+    description: Fixes the lighting of a world
+    usage:
+    - /lag fix ([chunkRadius])
+    - /lag fixall
+    - /lag fixworld
+    - /lag fixworld world2
+    - ''
+spawnlimiter:
+  nodrop: '&e[NoLagg] &cCan not drop this item: Item spawn limit reached!'
+

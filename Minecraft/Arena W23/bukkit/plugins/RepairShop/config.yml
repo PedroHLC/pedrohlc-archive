@@ -1,0 +1,36 @@
+Check_for_Updates_onStartUp: true
+currency: Jades
+Action: RIGHT_CLICK
+NoChest_PlayerShop: true
+version: 2.2
+Resources:
+  DIAMOND_TOOLS:
+    Amount: 3
+  GOLD_TOOLS:
+    Amount: 3
+  IRON_TOOLS:
+    Amount: 3
+  STONE_TOOLS:
+    Amount: 3
+  WOOD_TOOLS:
+    Amount: 3
+  DIAMOND_WEAPON:
+    Amount: 4
+  GOLD_WEAPON:
+    Amount: 4
+  IRON_WEAPON:
+    Amount: 4
+  STONE_WEAPON:
+    Amount: 4
+  WOOD_WEAPON:
+    Amount: 4
+  BOW_WEAPON:
+    Amount: 4
+  DIAMOND_ARMOR:
+    Amount: 5
+  GOLD_ARMOR:
+    Amount: 5
+  IRON_ARMOR:
+    Amount: 5
+  LEATHER_ARMOR:
+    Amount: 5

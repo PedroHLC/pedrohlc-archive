@@ -1,0 +1,64 @@
+pt_br:
+  title: Supreme Netplay's Server
+  exit: Sair
+  options: Opções
+  server_start: Iniciar
+  server_close: Parar
+  english: Inglês
+  portuguese: Português Br
+  save: Aplicar
+  ip: Host
+  port: Porta
+  config: Config
+  debug_msg: Relatório (Lag)
+  no_pvp: PvP Desligado?
+  restart: Configuracoes salvas com sucesso!
+  server_socket_start: Iniciando a Socket
+  server_socket_end: Socket conectada com sucesso!
+  server_name: Nome
+  server_sql_start: Iniciando a SQL
+  server_sql_user: Login
+  server_sql_psw: Senha
+  server_sql_db: Database
+  server_sql_end: SQL iniciada com sucesso!
+  server_ready: Servidor inicializado com sucesso e pronto para jogar!
+  server_logged: Entrou
+  server_received: Recebido
+  server_sended: Enviado
+  error: Erro
+  server_shutdown_button: Aperte F11 para desligar o server com seguranca
+  server_shutdown_start: O Server esta sendo desligado, isso pode demorar!
+  server_shutdown_end: Tchau-tchau!
+  
+en:
+  title: Supreme Netplay's Server
+  exit: Close
+  options: Options
+  server_start: Start
+  server_close: Stop
+  english: English
+  portuguese: Portuguese Br
+  save: Apply
+  ip: Host
+  port: Port
+  config: Config
+  debug_msg: Debug on? (Slow)
+  no_pvp: PvP off?
+  restart: Options sucess saved!
+  server_socket_start: Starting the socket
+  server_socket_end: Socket started!
+  server_name: Name
+  server_sql_start: Starting the SQL
+  server_sql_user: Login
+  server_sql_psw: Password
+  server_sql_db: Database
+  server_sql_end: SQL started!
+  server_ready: Server ready to play!
+  server_logged: Logged
+  server_received: Received
+  server_sended: Sended
+  server_close_msg: The server is shutting down!
+  error: Error
+  server_shutdown_button: Press F11 to shutdown the server without problems...
+  server_shutdown_start: The server is shutting down, this will take some time!
+  server_shutdown_end: Godd-bye!

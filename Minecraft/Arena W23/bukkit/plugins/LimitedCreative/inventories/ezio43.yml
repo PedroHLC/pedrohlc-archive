@@ -1,0 +1,126 @@
+# DO NOT MODIFY THIS FILE
+version: 4
+armor:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 122
+        BLUE: 52
+        GREEN: 138
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 122
+        BLUE: 52
+        GREEN: 138
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 122
+        BLUE: 52
+        GREEN: 138
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 102
+        BLUE: 51
+        GREEN: 127
+inv:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 10
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+    damage: 5
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 46
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 27
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 53
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    damage: 62
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    damage: 62
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    damage: 1
+    amount: 9
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 60
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 36
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 46
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 60
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 64
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    damage: 21
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+    amount: 5

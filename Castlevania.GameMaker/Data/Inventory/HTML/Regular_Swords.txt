@@ -1,0 +1,497 @@
+<tr>
+<td><a href="/wiki/File:Sotn-gladius-1-.gif" class="image" title="Sotn-gladius-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807174807/castlevania/images/9/90/Sotn-gladius-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Gladius" title="Gladius">Gladius</a>&nbsp;(??????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Sword of ancient Rome.</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+3<br />
+</td><td><b>Find</b>:  <a href="/wiki/Outer_Wall" title="Outer Wall">Outer Wall</a> (after defeating <a href="/wiki/Doppleganger" title="Doppleganger" class="mw-redirect">Doppleganger</a>)<br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-scimitar-1-.gif" class="image" title="Sotn-scimitar-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175619/castlevania/images/f/f0/Sotn-scimitar-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Scimitar" title="Scimitar">Scimitar</a>&nbsp;(????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Single edged curved sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+5<br />
+</td><td><b>Find</b>:  <a href="/wiki/Underground_Caverns" title="Underground Caverns">Underground Caverns</a> (<a href="/wiki/Scylla" title="Scylla">Scylla</a> battle)<br /><b>Drop</b>:  <a href="/wiki/Skull_Lord" title="Skull Lord" class="mw-redirect">Skull Lord</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-cutlass-1-.gif" class="image" title="Sotn-cutlass-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174510/castlevania/images/b/b5/Sotn-cutlass-1-.gif" width="50" height="43" border="0" /></a>
+</td><td><b><a href="/wiki/Cutlass" title="Cutlass">Cutlass</a>&nbsp;(????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Sword of the English Navy</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+7<br />
+</td><td><b>Find</b>:  <a href="/wiki/Royal_Chapel" title="Royal Chapel">Royal Chapel</a><br /><b>Drop</b>:  <a href="/wiki/Sword_Lord" title="Sword Lord" class="mw-redirect">Sword Lord</a>, <a href="/wiki/Corner_Guard" title="Corner Guard">Corner Guard</a>, <a href="/wiki/Owl_Knight" title="Owl Knight">Owl Knight</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-saber-1-.gif" class="image" title="Sotn-saber-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175537/castlevania/images/d/d3/Sotn-saber-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Saber" title="Saber">Saber</a>&nbsp;(????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Light cavalry sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+9<br />
+</td><td><b>Buy</b>: 1500&nbsp;<b>Drop</b>:  <a href="/wiki/Armor_Lord" title="Armor Lord" class="mw-redirect">Armor Lord</a>, <a href="/wiki/Magic_Tome" title="Magic Tome" class="mw-redirect">Magic Tome</a><br />
+</td><td>
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-falchion-1-.gif" class="image" title="Sotn-falchion-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174709/castlevania/images/6/6f/Sotn-falchion-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Falchion" title="Falchion">Falchion</a>&nbsp;(??????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Norman curved sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>ATK+10<br />
+
+</td><td><b>Find</b>:  Castle Keep<br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-brdswrd-1-.gif" class="image" title="Sotn-brdswrd-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807174350/castlevania/images/5/52/Sotn-brdswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Broadsword" title="Broadsword">Broadsword</a>&nbsp;(??????? - Katzbalger)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Simple mercenary's sword</i>
+
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK +12<br />
+</td><td><b>Find</b>:  <a href="/wiki/Olrox%27s_Quarters" title="Olrox&#39;s Quarters">Olrox's Quarters</a> (hidden)<br /><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-bekatowa-1-.gif" class="image" title="Sotn-bekatowa-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807174306/castlevania/images/8/83/Sotn-bekatowa-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Bekatowa" title="Bekatowa" class="mw-redirect">Bekatowa</a>&nbsp;(???? - Bakatowa)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Plain, easy-to-use war sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK+14<br />
+</td><td><b>Find</b>:  <a href="/wiki/Clock_Tower" title="Clock Tower">Clock Tower</a> (requires <a href="/wiki/Form_of_Bat" title="Form of Bat">Form of Bat</a>)<br /><b>Drop</b>:  <a href="/wiki/Sword_Lord" title="Sword Lord" class="mw-redirect">Sword Lord</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-dmscsswrd-1-.gif" class="image" title="Sotn-dmscsswrd-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174602/castlevania/images/7/79/Sotn-dmscsswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Damascus_Sword" title="Damascus Sword">Damascus Sword</a>&nbsp;(????????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Fine Sword Honed To Razor-Edge</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK +17<br />
+</td><td><b>Buy</b>: $4000&nbsp;<b>Drop</b>:  <a href="/wiki/Corner_Guard" title="Corner Guard">Corner Guard</a><br />
+</td><td>
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-hnterswrd-1-.gif" class="image" title="Sotn-hnterswrd-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807175112/castlevania/images/b/b4/Sotn-hnterswrd-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Hunter_Sword" title="Hunter Sword" class="mw-redirect">Hunter Sword</a>&nbsp;(??????? - Jagdplaute)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Ivory handled hunting sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +20; <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> -1<br />
+
+</td><td><b>Drop</b>:  <a href="/wiki/Blade" title="Blade" class="mw-redirect">Blade</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-bstrdswrd-1-.gif" class="image" title="Sotn-bstrdswrd-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807174232/castlevania/images/2/22/Sotn-bstrdswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Bastard_Sword" title="Bastard Sword">Bastard Sword</a>&nbsp;(????????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Standard sword</i>
+
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td>ATK +20<br />
+</td><td><b>Find</b>:  <a href="/index.php?title=Reverse_Keep&amp;action=edit&amp;redlink=1" class="new" title="Reverse Keep (page does not exist)">Reverse Keep</a><br /><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a><br />
+</td><td>
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-talwar-1-.gif" class="image" title="Sotn-talwar-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175828/castlevania/images/7/73/Sotn-talwar-1-.gif" width="50" height="43" border="0" /></a>
+</td><td><b><a href="/wiki/Talwar" title="Talwar">Talwar</a>&nbsp;(???? - Talwar)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Curved Indian sword.</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+
+</td><td>ATK +22<br />
+</td><td><b>Find</b>:  <a href="/index.php?title=Anti-Chapel&amp;action=edit&amp;redlink=1" class="new" title="Anti-Chapel (page does not exist)">Anti-Chapel</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-swrdofhadr-1-.gif" class="image" title="Sotn-swrdofhadr-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175749/castlevania/images/e/e7/Sotn-swrdofhadr-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Sword_of_Hador" title="Sword of Hador">Sword of Hador</a>&nbsp;(????? - Sword of <a href="http://en.wikipedia.org/wiki/Helge" class="extiw" title="wikipedia:Helge">Helge</a>)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>House of Hador heirloom</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +24<br />
+</td><td><b>Find</b>:  <a href="/wiki/Death_Wing%27s_Lair" title="Death Wing&#39;s Lair">Death Wing's Lair</a><br />
+</td><td>
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-luminus-1-.gif" class="image" title="Sotn-luminus-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807175161/castlevania/images/4/4d/Sotn-luminus-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Luminus" title="Luminus">Luminus</a>&nbsp;(?????? - Orcrist)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td>'
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br /><b>Consume</b>: Sword forged by <a href="/index.php?title=Elves&amp;action=edit&amp;redlink=1" class="new" title="Elves (page does not exist)">elves</a>&nbsp;
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +26<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Clock_Tower" title="Reverse Clock Tower">Reverse Clock Tower</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-harper-1-.gif" class="image" title="Sotn-harper-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174845/castlevania/images/9/93/Sotn-harper-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Harper" title="Harper">Harper</a>&nbsp;(????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>The sword named Harper</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +28<br />
+</td><td><b>Buy</b>: $12,000&nbsp;
+</td><td>
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-gram-1-.gif" class="image" title="Sotn-gram-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100815000925/castlevania/images/7/7c/Sotn-gram-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Gram" title="Gram">Gram</a>&nbsp;(????? - Famous Sword Gram)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>The sword named Gram</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +30<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Colosseum" title="Reverse Colosseum">Reverse Colosseum</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-drkblade-1-.gif" class="image" title="Sotn-drkblade-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174635/castlevania/images/a/af/Sotn-drkblade-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Dark_Blade" title="Dark Blade">Dark Blade</a>&nbsp;(??????? - Glamdring)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Sword forged by elves</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +35; <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> +2<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Caverns" title="Reverse Caverns">Reverse Caverns</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-alucart-1-.gif" class="image" title="Sotn-alucart-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807174114/castlevania/images/3/3d/Sotn-alucart-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Alucart_Sword" title="Alucart Sword">Alucart Sword</a>&nbsp;(????????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Resembles family sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a> (and "<a href="/wiki/Alucart" title="Alucart">Alucart</a>")&nbsp;
+
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK +2<br />
+</td><td><b>Find</b>:  <a href="/wiki/Marble_Gallery" title="Marble Gallery">Marble Gallery</a> (need <a href="/wiki/Double_Jump" title="Double Jump" class="mw-redirect">Double Jump</a> and <a href="/wiki/Stopwatch" title="Stopwatch">Stopwatch</a>)<br />
+</td><td><b>Effect</b>:  Equipping with <a href="/wiki/Alucart_Shield" title="Alucart Shield">Alucart Shield</a> and <a href="/wiki/Alucart_Mail" title="Alucart Mail">Alucart Mail</a> puts you in <a href="/wiki/Alucart_Status" title="Alucart Status" class="mw-redirect">Alucart Status</a> for a +30 <a href="/index.php?title=LCK&amp;action=edit&amp;redlink=1" class="new" title="LCK (page does not exist)">LCK</a><br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-tyrfing-1-.gif" class="image" title="Sotn-tyrfing-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807175951/castlevania/images/f/f7/Sotn-tyrfing-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Tyrfing" title="Tyrfing">Tyrfing</a>&nbsp;(??????? - Tyrfingr)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Cursed dark sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Curse" title="Curse">Curse</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> -30<br />
+</td><td><b>Find</b>:  <a href="/wiki/Castle_Keep" title="Castle Keep">Castle Keep</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-mmmgilswrd-1-.gif" class="image" title="Sotn-mmmgilswrd-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807175411/castlevania/images/2/24/Sotn-mmmgilswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Mormegil" title="Mormegil">Mormegil</a>&nbsp;(???????? - Holy Buster)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Black sword - strong vs. holy</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Dark" title="Dark">Dark</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +25<br />
+</td><td><b>Find</b>:  <a href="/wiki/Catacombs" title="Catacombs">Catacombs</a><br />
+
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-vjaya.gif" class="image" title="Sotn-vjaya.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100101004260/castlevania/images/b/b7/Sotn-vjaya.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Thunderbrand" title="Thunderbrand" class="mw-redirect">Thunderbrand</a>&nbsp;(??????? - Thunder Sword of Indra)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Lightning sword of Indra</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td><b>Attrib</b>: <a href="/wiki/Thunder" title="Thunder" class="mw-redirect">Thunder</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +25<br />
+</td><td><b>Buy</b>: $10000&nbsp;
+</td><td><b>Effect</b>:  Thunder blast (ATK 40 for 5 MP)<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-icebrand.gif" class="image" title="Sotn-icebrand.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100101003754/castlevania/images/7/7a/Sotn-icebrand.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Icebrand" title="Icebrand" class="mw-redirect">Icebrand</a>&nbsp;(?????? - Ice Sword of Rahab)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Ice sword of Mim</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Ice" title="Ice" class="mw-redirect">Ice</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +25<br />
+</td><td><b>Buy</b>: $10000&nbsp;<b>Find</b>:  <a href="/wiki/Catacombs" title="Catacombs">Catacombs</a><br /><b>Drop</b>:  <a href="/wiki/Fishhead" title="Fishhead" class="mw-redirect">Fishhead</a><br />
+</td><td><b>Effect</b>:  Ice blast (ATK 40 for 5 MP)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-firebrand.gif" class="image" title="Sotn-firebrand.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100101004024/castlevania/images/1/1c/Sotn-firebrand.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Firebrand" title="Firebrand" class="mw-redirect">Firebrand</a>&nbsp;(?????? - Fire Sword of Agni)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Fire sword of Oberon</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Fire" title="Fire" class="mw-redirect">Fire</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +25<br />
+</td><td><b>Buy</b>: $10000&nbsp;<b>Drop</b>:  <a href="/wiki/Lossoth" title="Lossoth" class="mw-redirect">Lossoth</a><br />
+</td><td><b>Effect</b>:  Fire blast (ATK 40 for 5 MP)<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-hlyswrd-1-.gif" class="image" title="Sotn-hlyswrd-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175040/castlevania/images/1/1a/Sotn-hlyswrd-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Holy_Sword" title="Holy Sword">Holy Sword</a>&nbsp;(???????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Cross hilt - strong vs. undead</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Holy" title="Holy">Holy</a><br /><b>Consume</b>: 5 <a href="/wiki/MP" title="MP" class="mw-redirect">MP</a>&nbsp;
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +26<br />
+</td><td><b>Find</b>:  <a href="/wiki/Colosseum" title="Colosseum">Colosseum</a> (need flying, US and EU only)<br /><b>Drop</b>:  <a href="/wiki/Vandal_Sword" title="Vandal Sword" class="mw-redirect">Vandal Sword</a><br />
+</td><td><b>Effect</b>:  Holy Burst (ATK +35)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-trmnseast-1-.gif" class="image" title="Sotn-trmnseast-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175909/castlevania/images/d/d6/Sotn-trmnseast-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Terminus_Est" title="Terminus Est" class="mw-redirect">Terminus Est</a>&nbsp;(?????? - Hrunting)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Poisoned executioner's sword</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Poison" title="Poison">Poison</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +32, <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> +2<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Nova_Skeleton" title="Nova Skeleton">Nova Skeleton</a><br />
+</td><td><b>Effect</b>:  Poisons most enemies<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Gurthang-1-.gif" class="image" title="Equip-Gurthang-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807174917/castlevania/images/5/5b/Equip-Gurthang-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Gurthang" title="Gurthang" class="mw-redirect">Gurthang</a>&nbsp;(??????? - Dainslef)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Gets stronger when bloodied</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Cut<br />
+</td><td>ATK +25, DEF +1<br />
+
+</td><td><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a> (in <a href="/index.php?title=Anti-Chapel&amp;action=edit&amp;redlink=1" class="new" title="Anti-Chapel (page does not exist)">Anti-Chapel</a>)<br />
+</td><td><b>Effect</b>:  Absorbs HP when cutting a bloody enemy; Roll Attack:  Stronger Swing (ATK +40); Doubles damage during <a href="/wiki/Dark_Metamorphosis" title="Dark Metamorphosis">Dark Metamorphosis</a><br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Marsil-1-.gif" class="image" title="Equip-Marsil-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807175325/castlevania/images/2/21/Equip-Marsil-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Marsil" title="Marsil" class="mw-redirect">Marsil</a>&nbsp;(??????? - Leavatain)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Powerful sword of flame</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Fire" title="Fire" class="mw-redirect">Fire</a><br /><b>Consume</b>: 5 <a href="/wiki/MP" title="MP" class="mw-redirect">MP</a>&nbsp;
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +33; <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> +1<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Fire_Demon" title="Fire Demon" class="mw-redirect">Fire Demon</a>, <a href="/wiki/Ifreet" title="Ifreet" class="mw-redirect">Ifreet</a><br />
+</td><td><b>Effect</b>:  Inferno blast (ATK 60)<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Mourneblade-1-.gif" class="image" title="Equip-Mourneblade-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807175458/castlevania/images/6/69/Equip-Mourneblade-1-.gif" width="50" height="46" border="0" /></a>
+</td><td><b><a href="/wiki/Mourneblade" title="Mourneblade">Mourneblade</a>&nbsp;(???????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Feeds upon enemy's souls</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +36; <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> +1<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Azaghal" title="Azaghal" class="mw-redirect">Azaghal</a><br />
+</td><td><b>Effect</b>:  <a href="/wiki/Soul_Steal" title="Soul Steal">Soul Steal</a> when attacks<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Mablung_Sword-1-.gif" class="image" title="Equip-Mablung Sword-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100807175239/castlevania/images/b/b4/Equip-Mablung_Sword-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Mablung_Sword" title="Mablung Sword">Mablung Sword</a>&nbsp;(??????? - Lemuria Sword)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Spirit sword - improves DEF</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +39, <a href="/wiki/DEF" title="DEF" class="mw-redirect">DEF</a> +2<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a> (in <a href="/index.php?title=Anti-Chapel&amp;action=edit&amp;redlink=1" class="new" title="Anti-Chapel (page does not exist)">Anti-Chapel</a>)<br />
+</td><td><b>Effect</b>:  <a href="/index.php?title=Shield_Fusion&amp;action=edit&amp;redlink=1" class="new" title="Shield Fusion (page does not exist)">Shield Fusion</a><br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-alucard-1-.gif" class="image" title="Sotn-alucard-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174038/castlevania/images/8/88/Sotn-alucard-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Alucard_Sword" title="Alucard Sword">Alucard Sword</a>&nbsp;(????????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Mother's family heirloom</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br /><b>Consume</b>: Special attack uses 5 <a href="/wiki/MP" title="MP" class="mw-redirect">MP</a>&nbsp;
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> + 42<br />
+</td><td><b>Find</b>:  Start with, <a href="/index.php?title=Reverse_Mines&amp;action=edit&amp;redlink=1" class="new" title="Reverse Mines (page does not exist)">Reverse Mines</a><br />
+</td><td><b>Effect</b>:  Teleport and attack from behind (50 <a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a>)<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-bdlaire-1-.gif" class="image" title="Sotn-bdlaire-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100807174149/castlevania/images/b/bb/Sotn-bdlaire-1-.gif" width="50" height="36" border="0" /></a>
+</td><td><b><a href="/wiki/Badelaire" title="Badelaire">Badelaire</a>&nbsp;(????????? - Scimitar of Barzai)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Power increases with game play</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> + <a href="/wiki/Game_Time" title="Game Time">Game Time</a> (in hours)<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Final_Stage:_Bloodlines" title="Final Stage: Bloodlines">Final Stage: Bloodlines</a>, <a href="/wiki/Forbidden_Library" title="Forbidden Library">Forbidden Library</a><br />
+</td><td>
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-swordfam-1-.gif" class="image" title="Sotn-swordfam-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807175716/castlevania/images/d/df/Sotn-swordfam-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Sword_Familiar" title="Sword Familiar">Sword Familiar</a>&nbsp;(Japanese name = ??????)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+
+</td><td><i>Sentient sword familiar.</i>
+</td><td><i><a href="/wiki/Familiar" title="Familiar">Familiar</a>, <a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br /><b>Consume</b>: 30 <a href="/wiki/MP" title="MP" class="mw-redirect">MP</a> for Sword Brothers&nbsp;
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> + Level of Sword (50 through 99)<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Olrox%27s_Quarters" title="Olrox&#39;s Quarters">Olrox's Quarters</a> (requires <a href="/wiki/Form_of_Bat" title="Form of Bat">Form of Bat</a>); found in a different location in the original japanese version.<br />
+</td><td><b>Effect</b>:  When used as a familiar, attacks enemies independently of Alucard and can gain several abilities.  <a href="/wiki/Sword_Brothers" title="Sword Brothers">Sword Brothers</a> spell.<br />
+</td></tr>
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-vorpalbld-1-.gif" class="image" title="Sotn-vorpalbld-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100807180023/castlevania/images/6/63/Sotn-vorpalbld-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Vorpal_Blade" title="Vorpal Blade">Vorpal Blade</a>&nbsp;(???????? - Sonic Blade)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Slices cleanly through enemies</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +25<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Archer" title="Archer">Archer</a><br />
+</td><td><b>Effect</b>:  Can be swung multiple times per second<br />
+</td></tr>
+
+
+
+
+<tr>
+
+<td><a href="/wiki/File:Sotn-crssin-1-.gif" class="image" title="Sotn-crssin-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100807174430/castlevania/images/0/08/Sotn-crssin-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Crissaegrim" title="Crissaegrim" class="mw-redirect">Crissaegrim</a>&nbsp;(??????? - Valmanway)</b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Countless blades dice enemy</i>
+</td><td><i><a href="/wiki/Sword" title="Sword">Sword</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: <a href="/wiki/Cut" title="Cut" class="mw-redirect">Cut</a><br />
+</td><td><a href="/wiki/ATK" title="ATK" class="mw-redirect">ATK</a> +36<br />
+
+</td><td><b>Drop</b>:  <a href="/wiki/Schmoo" title="Schmoo">Schmoo</a><br />
+</td><td><b>Effect</b>:  Multi-swing per attack while walking<br />
+</td></tr>

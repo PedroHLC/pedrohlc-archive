@@ -1,0 +1,94 @@
+<i>1</i>
+<v>icon=Sotn-claymore-1-</v>
+<v>title=Claymore</v>
+<v>description=Scotch Two-Handed Sword</v>
+<v>attribute=Cut</v>
+<v>att_plus=26</v>
+<i>2</i>
+<v>icon=Sotn-flamberge-1-</v>
+<v>title=Flamberge</v>
+<v>description=Flame-Edged Sword</v>
+<v>attribute=Cut</v>
+<v>att_plus=31</v>
+<i>3</i>
+<v>icon=Sotn-swrdofdwn-1-</v>
+<v>title=Sword of Dawn</v>
+<v>description=Summons Dawn Warriors</v>
+<v>attribute=Cut</v>
+<v>att_plus=27</v>
+<i>4</i>
+<v>icon=Sotn-estoc-1-</v>
+<v>title=Estoc</v>
+<v>description=German thrust sword [2 hand]</v>
+<v>attribute=Cut</v>
+<i>5</i>
+<v>icon=Sotn-zweihndr-1-</v>
+<v>title=Zwei Hander</v>
+<v>description=German Two-handed Sword</v>
+<v>attribute=Cut</v>
+<v>att_plus=38</v>
+<i>6</i>
+<v>icon=Sotn-obsdnswrd-1-</v>
+<v>title=Obsidian Sword</v>
+<v>description=Two-handed Obsidian Sword</v>
+<v>attribute=Cut</v>
+<v>att_plus=42</v>
+<i>7</i>
+<v>icon=Sotn-grtswrd-1-</v>
+<v>title=Great Sword</v>
+<v>description=Great Sword of Aubec</v>
+<v>attribute=Cut</v>
+<v>att_plus=65</v>
+<i>8</i>
+<v>icon=Sotn-redrust-1-</v>
+<v>title=Red Rust</v>
+<v>description=Rusty Red Sword</v>
+<v>attribute=Curse</v>
+<i>9</i>
+<v>icon=Sotn-takemitsu-1-</v>
+<v>title=Takemitsu</v>
+<v>description=Bamboo Sword</v>
+<v>attribute=Hit</v>
+<v>att_plus=1</v>
+<i>10</i>
+<v>icon=Equip-Namakura-1-</v>
+<v>title=Nakamura</v>
+<v>description=Poorly-Made Sword</v>
+<v>attribute=Curse</v>
+<i>11</i>
+<v>icon=Sotn-muramasa-1-</v>
+<v>title=Muramasa</v>
+<v>description=A blood-thirsty sword</v>
+<v>attribute=Curse</v>
+<v>att_plus=5; increases as blood is absorbed</v>
+<i>12</i>
+<v>icon=Sotn-katana-1-</v>
+<v>title=Katana</v>
+<v>description=Unsigned Katana</v>
+<v>attribute=Cut</v>
+<v>att_plus=32</v>
+<i>13</i>
+<v>icon=Sotn-osafunektna-1-</v>
+<v>title=Osafune Katana</v>
+<v>description=Osafune-made katana.</v>
+<v>attribute=Cut</v>
+<i>14</i>
+<v>icon=Equip-Yasutsuna-1-</v>
+<v>title=Yasutsuna</v>
+<v>description=Yasutsuna-Made Katana</v>
+<v>attribute=Cut</v>
+<v>att_plus=60</v>
+<v>def_less=20</v>
+<i>15</i>
+<v>icon=Equip-Masamune-1-</v>
+<v>title=Masamune</v>
+<v>description=Legendary Masamune Katana</v>
+<v>attribute=Cut</v>
+<v>att_plus=55</v>
+<v>def_less=30</v>
+<i>16</i>
+<v>icon=Sotn-nunchck-1-</v>
+<v>title=Nunchaku</v>
+<v>description=Strikes Enemy Twice</v>
+<v>attribute=Hit</v>
+<v>att_plus=10</v>

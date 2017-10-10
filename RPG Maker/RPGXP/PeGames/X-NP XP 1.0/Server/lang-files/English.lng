@@ -1,0 +1,69 @@
+[main-tab]
+TabSheet1=Main
+GroupBox1=General
+ServerName=Server Name
+MaxPlayers=Max Players
+Port=Server Port
+GroupBox4=Addtional Options
+AutoStart=AutoStart on Open
+Version=Version
+
+[security-tab]
+TabSheet5=Security
+TabSheet6=Registered Users
+ListView-Username=Username
+ListView-Password=Password
+ListView-Group=Group
+EditLabel-Username=Username
+EditLabel-Password=Password
+EditLabel-Group=Group
+Add=Add
+Delete=Delete
+Bans=Bans
+IPBans=IP Bans
+IPBox=Type IP here, then press enter
+
+[stats-tab]
+TabSheet2=Stats
+GroupBox5=General
+Label-Players=Players:
+Label-MPlayers=Most Players:
+GroupBox2=Bandwidth Stats / in bytes
+Label-Incoming=Incoming:
+Label-Outgoing=Outgoing:
+Label-TBR=Total Bytes Received:
+Label-TBS=Total Bytes Sent:
+GroupBox3=Socket Exceptions
+Label-OnAccept=OnAccept:
+Label-OnConnect=OnConnect:
+Label-OnDisconnect=OnDisconnect:
+Label-OnRead=OnRead:
+Label-OnError=OnRead:
+
+[debug-tab]
+TabSheet3=Debug
+ShowRaw=Show Raw
+
+[options-tab]
+TabSheet8=Options
+GroupBox6=Language
+Button3=Apply
+
+[chat-tab]
+TabSheet8=Chat
+
+[status-bar]
+Online=Online
+Offline=Offline
+Players=Players
+
+[mainmenu]
+Start=Start
+Stop=Stop
+Exit=Exit
+Options=Options
+Scripting=Scripting
+Help=Help
+About=About
+Contents=Contents
+

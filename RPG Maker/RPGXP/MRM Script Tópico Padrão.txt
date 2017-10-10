@@ -1,0 +1,31 @@
+[b][i][u][color=blue]Introdução:[/color][/u][/i][/b]
+[b]Titulo[/b]:
+[b]Autor[/b]:
+[b]Descrição[/b]:
+[b]Versão[/b]:
+[b]Linguagem[/b]:
+[b]Créditos para[/b]:
+[b]Fonte[/b]:
+
+[b][i][u][color=blue]Instalação:[/color][/u][/i][/b]
+[b]Requerimentos[/b]:
+[b]1[/b])
+[b]Tutorial[/b]:
+[b]1[/b])
+[b]2[/b])
+
+[b][i][u][color=blue]Script:[/color][/u][/i][/b]
+[code]
+Coloque o script aqui!
+[/code]
+
+[b][i][u][color=blue]Screens:[/color][/u][/i][/b]
+
+[b][i][u][color=blue]Demo:[/color][/u][/i][/b]
+[url=site]http://img14.imageshack.us/img14/8128/downloadt.png[/url]
+
+
+[center][color=orange][size=1]
+[u][i][b]Tópico por:[/b][/i][/u]PedroHLC
+[u][i][b]versão do Modelo:[/b][/i][/u]0.6
+[/size][/color][/center]

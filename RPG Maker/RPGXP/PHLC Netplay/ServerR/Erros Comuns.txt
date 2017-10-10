@@ -1,0 +1,22 @@
+++"O programa não pode ser iniciado porque está faltando LIBMYSQL.dll no seu computador. Tente reinstalá-lo para resolver esse problema."
+Copie o arquivo libmySQL.dll em "%ProgramFiles%\MySQL\MySQL Server 5.1\bin" (substitua 5.1 pela versão do seu MySQL) para a pasta do servidor
+
+++"Unknow: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)."
+O servidor já está aberto e/ou a porta já está sendo usada
+
+++"Unknow: O endereço solicitado não é válido no contexto."
+O 'SERVER_HOST' definido em config.rb é inválido, utilize um 'Endereço IPv4' válido da rede local
+
+++"Unknow: Unknown MySQL server host"
+o 'DB_HOST' definido em config.rb é inválido, verifique corretamente o endereço do mysql
+
+++"Unknow: Access denied for user"
+O nome do usuário do mysql, 'DB_USER' definido em config.rb está incorreto ou não existe; e/ou a senha do usuário do mysql, 'DB_PASS' definido em config.rb está incorreto
+
+++"Unknow: Unknown database"
+A database definida em config.rb não existe
+
+++"query: not connected"
+(A sua versão do MySQL é muito recente)
+Faça o download desse arquivo e coloque-o na pasta do servidor substituindo o original:
+http://instantrails.rubyforge.org/svn/trunk/InstantRails-win/InstantRails/mysql/bin/libmySQL.dll

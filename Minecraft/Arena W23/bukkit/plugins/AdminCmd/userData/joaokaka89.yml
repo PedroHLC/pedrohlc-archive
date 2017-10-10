@@ -1,0 +1,20 @@
+﻿infos:
+  lastLoc:
+    world: world
+    x: -236.45884767575222
+    y: 64.0
+    z: 247.34475983552727
+    yaw: 1.3501037
+    pitch: 7.7999954
+  presentation: ''
+  gameMode: SURVIVAL
+  firstTime: false
+  last-ip: 187.64.167.240
+  immunityLvl: 1
+  lastDisconnect: 1357316789768
+  lastConnection: 1357316712105
+  totalTime: 390409
+home: {}
+powers: {}
+kitsUse:
+  nb: 1357315646056

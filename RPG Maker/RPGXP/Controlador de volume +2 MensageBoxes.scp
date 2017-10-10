@@ -1,0 +1,78 @@
+#=============================================================================
+# Controlador de volume + 2 MensageBoxes
+# por:      PedroHLC
+# versão:   1.1
+#
+#=============================================================================
+# Dois novos MessageBox
+# Audio com controle de volume
+
+module Mb
+  $mb = Win32API.new('user32', 'MessageBox', 'ippi', 'i')
+  class << self
+    def print(data, title)
+      $mb.call(0, data, title, 64)
+    end
+    def choose(data, title)
+      temp = $mb.call(0, data, title, 36) != 7
+      return temp
+    end
+  end
+end
+
+module Audio
+  class << self
+    alias modifications_bgm_play bgm_play
+    alias modifications_bgs_play bgs_play
+    alias modifications_me_play me_play
+    alias modifications_se_play se_play
+    def bgm_play(name, volume, pitch)
+      if $bgm_volume != nil
+        old_volume = (volume - 100)
+        volume = ($bgm_volume + old_volume)
+      end
+      modifications_bgm_play(name, volume, pitch)
+    end
+    def me_play(name, volume, pitch)
+      if $me_volume != nil
+        old_volume = (volume - 100)
+        volume = ($me_volume + old_volume)
+      end
+      modificationos_me_play(name, volume, pitch)
+    end
+    def bgs_play(name, volume, pitch)
+      if $bgs_volume
+        old_volume = (volume - 100)
+        volume = ($bgs_volume + old_volume)
+      end
+      modifications_bgs_play(name, volume, pitch)
+    end
+    def se_play(name, volume, pitch)
+      if $se_volume
+        old_volume = (volume - 100)
+        volume = ($se_volume + old_volume)
+      end
+      modifications_se_play(name, volume, pitch)
+    end
+    def volume(var)
+      if var <= 100 and var >= 0
+        $bgm_volume = var
+        $me_volume  = var
+        $bgs_volume = var
+        $se_volume  = var
+      end
+    end
+    def bgm_volume
+      return $bgm_volume
+    end
+    def me_volume
+      return $me_volume
+    end
+    def bgs_volume
+      return $bgs_volume
+    end
+    def se_volume
+      return $se_volume
+    end
+  end
+end

@@ -1,0 +1,11 @@
+﻿warps: {}
+informations:
+  mobLimits: {}
+spawns: {}
+spawn: !!be.Balor.World.SimpleLocation
+  pitch: -1.4999986
+  world: world_arena
+  x: 34.03773288439883
+  y: 5.0
+  yaw: -270.81104
+  z: 2.2572572381821736

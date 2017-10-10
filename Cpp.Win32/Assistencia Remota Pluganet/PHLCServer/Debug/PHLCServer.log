@@ -1,0 +1,49 @@
+﻿Build started 15/04/2012 10:51:10.
+     1>Project "L:\Projetos\Pluganet\Assistencia Remota Pluganet\PHLCServer\PHLCServer.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\PHLCServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\MySQL\Connector C 6.0.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\PHLCServer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt /FAu stdafx.cpp
+         stdafx.cpp
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\MySQL\Connector C 6.0.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\PHLCServer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt /FAu PHLCServer.cpp
+         PHLCServer.cpp
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\simplemysql.hpp(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\simplemysql.hpp(50): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\simplemysql.hpp(52): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\simplemysql.hpp(53): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\simplemysql.hpp(79): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\client.cpp(94): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\client.cpp(121): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\phlcserver.cpp(65): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'vsprintf'
+     1>l:\projetos\pluganet\assistencia remota pluganet\phlcserver\phlcserver.cpp(89): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PHLCServer.exe.embed.manifest.res" Debug\PHLCServer_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MySQL\Connector C 6.0.2\lib\debug" ws2_32.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PHLCServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.lib" /MACHINE:X86 Debug\PHLCServer.exe.embed.manifest.res
+         Debug\PHLCServer.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\PHLCServer.exe.embed.manifest" /manifest Debug\PHLCServer.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PHLCServer.exe.embed.manifest.res" Debug\PHLCServer_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MySQL\Connector C 6.0.2\lib\debug" ws2_32.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PHLCServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.lib" /MACHINE:X86 Debug\PHLCServer.exe.embed.manifest.res
+         Debug\PHLCServer.obj
+         Debug\stdafx.obj
+         PHLCServer.vcxproj -> L:\Projetos\Pluganet\Assistencia Remota Pluganet\Debug\PHLCServer.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\PHLCServer.unsuccessfulbuild".
+         Touching "Debug\PHLCServer.lastbuildstate".
+     1>Done Building Project "L:\Projetos\Pluganet\Assistencia Remota Pluganet\PHLCServer\PHLCServer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.31

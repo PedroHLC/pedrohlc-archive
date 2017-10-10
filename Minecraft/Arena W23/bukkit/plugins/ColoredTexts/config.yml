@@ -1,0 +1,21 @@
+OpHasAllPerms: false
+ColoredNamesInChat: true
+ColoredNamesInTab: true
+ColoredTextInChat: true
+ColoredTextOnSigns: true
+ShowColorsCommand: true
+SetChatColors: true
+SetChatEffects: true
+ColoredTextsHelp: true
+ColoredNamesWhenJoining: true
+ColoredNamesWhenLeaving: true
+UseCustomJoinMessage: true
+UseCustomLeaveMessage: true
+CustomJoinMessage: ''
+CustomLeaveMessage: ''
+AutoUpdate: true
+SetColors:
+  PedroHLC: '6'
+  MestreDosMagos: '6'
+  LuanLum: e
+SetEffects: {}

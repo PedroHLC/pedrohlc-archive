@@ -1,0 +1,2 @@
+#Insira nessa array todas as palavras que deverao ser bloqueadas
+["merda","fuck","fdp","puta"]

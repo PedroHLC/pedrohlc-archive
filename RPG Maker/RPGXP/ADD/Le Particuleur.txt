@@ -1,0 +1,1070 @@
+#Nom : Particuleur
+#Version :1.5d XP
+#Demandeur : Kimono
+#Auteur, Concepteur : Fabien (fabien_35@hotmail.com)
+#Mode d'emploi : "inserer script" > particuleur(type,cible)
+#                 exemple : particuleur("feu",3)
+#liste des types d'effets :
+["orbite","fumee","feu","explosion","aura","orbite2","orbite3",
+"lance_flamme","projectile","saupoudrage","brume","coup_sword","navi"]
+
+
+# indication divers
+#   brume possède un réglage aleas_rho
+#   les effets HOR (soleil, halos et reflets) doivent être effacer via le nom de la fct, ex : "soleil"
+#==Interface=============================
+def particuleur(type,cible,*params)
+  $particuleur[cible]=EffetP.new(cible,type,cible,params,true,false,[],1,0,0,31,0.1) 
+end
+#----------------------------------------
+def particuleur2(nom,type,cible,*params)
+  $particuleur[nom]=EffetP.new(nom,type,cible,params,true,false,[],1,0,0,31,0.1)
+end
+#---------------------------------------
+def stop_particuleur(nom)
+  $particuleur[nom].fin=true
+end
+#==Code==================================
+$particuleur=Hash.new
+EffetP = Struct.new( "EffetP", :nom, :type, :cible, :params, :ini, :fin, :particules, :carte, :intensite, :compteur, :dsprite_z, :dtzoom, :stock, :bitmap, :dx, :dy, :aleas_x, :aleas_y, :aleas_rho, :longueur, :vx0, :vy0, :tone, :opacity, :blend_type, :angle, :flou, :altitude)
+Particule = Struct.new( "Particule", :x, :y, :z, :vx, :vy, :vz, :sprite, :aleas, :dsprite_z, :stock, :source, :zoom_final)
+class Spriteset_Map
+  alias dispose_particuleur dispose
+  alias update_particuleur update
+#----------------------------------------
+  def dispose
+    dispose_particuleur
+    $particuleur.each_value{|effet|
+        effet.particules.each{|particule|
+         if not particule.is_a?(Array)
+           particule.sprite.dispose
+        else  # certaines "particules" étant des arrays de particules...
+          particule.each{|elt|elt.sprite.dispose if elt.is_a?(Sprite)}     
+        end}}
+    $particuleur=Hash.new
+  end
+#----------------------------------------
+  def update
+    update_particuleur
+    $particuleur.each_pair{|nom,effet| # INI de chaque effet s'ils ont besoin
+       if effet.ini
+         effet.particules.each{|particule|particule.sprite.dispose} if not effet.particules.empty?
+         effet.particules = []
+       end
+       #MAJ DE L'EFFET :
+       eval effet.type+"_maj(effet)"
+       effet.compteur+=effet.intensite   
+       while effet.compteur >1
+         eval(effet.type+"_nouvelle_particule(effet)")
+         effet.compteur -= 1
+       end   
+       effet.ini=false
+       # SUPPRESSION DES EFFETS :
+       $particuleur.delete nom if effet.fin and effet.particules.empty? }
+  end
+#-Suivent quelques outils pour les effets---------------------------- 
+ def ev(id=0)
+  return (id==0 ? $game_player : $game_map.events[id] )
+ end
+#----------------------------------------
+ def coords(cible)
+  cible=cible[0] if cible.is_a?(Array)
+  cible=cible.sprite if cible.is_a?(Particule)
+  if cible.is_a?(Sprite)
+    return [cible.x,cible.y]
+  elsif cible.is_a?(String)
+    return [0,0]
+  else   
+    return [ev(cible).screen_x,ev(cible).screen_y]
+  end
+ end   
+#----------------------------------------
+ def sgn(x)
+   return 0 if x==0
+   return x/x.abs
+ end
+#----------------------------------------
+ def pix_visible_aleatoire(cible) # renvoie l'un des pixels visibles d'une image
+   cible = cible[0] if cible.is_a?(Array)
+   cible = @character_sprites[cible-1] if cible.is_a?(Integer)
+   cible = cible.sprite if cible.is_a?(Particule)
+   loop do # ici on prend un pixel au hasard et on verif qu'il est non-transparent
+     x = rand(cible.src_rect.width)
+     y = rand(cible.src_rect.height)
+     return [x,y] if cible.bitmap.get_pixel(x,y).alpha != 0
+   end 
+ end
+#---------------------------------------
+ def pix_visible?(cible,x,y) # ici le x,y est la distance au coin 7 de l'image
+   cible = cible[0] if cible.is_a?(Array)
+   cible = @character_sprites[cible] if not cible.is_a?(Sprite)
+   p "Erreur. Probable qu'il y ait un trou dans les id des évts." if cible==nil
+   x += cible.ox
+   y += cible.oy
+   return false if x<0 or y<0
+   return false if x>cible.src_rect.width or y>cible.src_rect.height
+   return (cible.bitmap.get_pixel(x,y).alpha != 0)
+ end
+#--------------------------------------
+ def colisions_evt?(id,particule)
+   return false if particule.z > 48 or id==particule.source   
+   ev = (id==0 ? $game_player : $game_map.events[id])   
+   dx,dy=particule.x-ev.screen_x,particule.y-ev.screen_y
+   dx-=$game_map.display_x/4
+   dy-=$game_map.display_y/4
+   if (dx.abs<16 and dy.abs<16)
+     if pix_visible?(id,dx,dy-particule.z*2)
+       particule.vx=particule.vy=particule.vz=0
+       return true
+     end     
+   end
+   return false
+ end     
+#----------------------------------------
+def ini_classique(effet,bitmap) # fabrication standard d'une particule
+   particule = Particule.new
+   particule.sprite = Sprite.new(@viewport1)
+   if effet.bitmap.is_a?(String)
+     particule.sprite.bitmap=RPG::Cache.load_bitmap("Graphics/Pictures/Particules/", effet.bitmap)
+   elsif bitmap.is_a?(String)
+     particule.sprite.bitmap=RPG::Cache.load_bitmap("Graphics/Pictures/Particules/", bitmap)
+   else
+     particule.sprite.bitmap=bitmap
+   end     
+   particule.vx, particule.vy, particule.vz = 0, 0, 0
+   x,y=coords(effet.cible) # renvoie les coords de l'evt ou autre
+   x+=effet.dx if effet.dx != nil # dx et dy sont de petits décalages en pixels
+   y+=effet.dy if effet.dy != nil # pour régler la position plus finement que/id
+   x+=(rand-0.5)*effet.aleas_x if effet.aleas_x != nil # incertitude x et y
+   y+=(rand-0.5)*effet.aleas_y if effet.aleas_y != nil #
+   if effet.aleas_rho != nil
+     rho=Math.sqrt(rand)*effet.aleas_rho
+     theta=rand*2*Math::PI
+     x += rho*Math.cos(theta)
+     y += rho*Math.sin(theta)
+   end   
+   particule.sprite.zoom_x = particule.sprite.zoom_y = (effet.dtzoom==nil ? 1 : 0 )
+   particule.zoom_final = 1
+   particule.vx=effet.vx0 if effet.vx0 != nil
+   particule.vy=effet.vy0 if effet.vy0 != nil
+   particule.dsprite_z=effet.dsprite_z
+   particule.x, particule.y, particule.z = x, y, 0
+   particule.sprite.blend_type=1
+   particule.sprite.origine 5
+   particule.sprite.zoom_x=particule.sprite.zoom_y=0
+   if effet.carte != nil
+     particule.x+=$game_map.display_x/(4*effet.carte)
+     particule.y+=$game_map.display_y/(4*effet.carte)
+   end   
+   particule.sprite.tone= effet.tone if effet.tone.is_a?(Tone)
+   return particule
+end
+#----------------------------------------
+ def maj_classique(effet,particule,ax=0,ay=0,az=0) # mise à jour standard d'une partcule
+     particule.x += particule.vx
+     particule.y += particule.vy
+     particule.z += particule.vz
+     particule.vx += ax
+     particule.vy += ay
+     particule.vz += az
+     particule.sprite.x = particule.x
+     particule.sprite.y = particule.y
+     particule.sprite.z = (particule.sprite.y*4 - $game_map.display_y + 3) / 4 + particule.dsprite_z
+     if effet.carte != nil
+       particule.sprite.x-=$game_map.display_x/(4*effet.carte)
+       particule.sprite.y-=$game_map.display_y/(4*effet.carte)
+     end 
+     particule.sprite.zoom_x+=effet.dtzoom if particule.sprite.zoom_x < particule.zoom_final
+     particule.sprite.zoom_y+=effet.dtzoom if particule.sprite.zoom_y < particule.zoom_final
+     
+   end
+#-------------------------------------------
+def dispose_brutale(effet)
+   effet.particules.each{|particule|particule.sprite.dispose}
+   effet.particules=[]
+end
+######################################################################### 
+# A partir de maintenant sont stockés les différents effets.
+#########################################################################
+ def orbite_maj(effet)
+   n=0
+   for particule in effet.particules
+       angle=360*n/(effet.particules.size+1)+Graphics.frame_count/particule.aleas
+       n+=1
+       particule.x = ev(effet.cible).screen_x + 30*Math.cos(angle)
+       particule.y = ev(effet.cible).screen_y - 25 + 20*Math.sin(angle)
+       particule.sprite.angle = 90-angle*180/Math::PI
+   end     
+   dispose_brutale(effet) if effet.fin
+end
+#-----------------------------------------------------------   
+def orbite_nouvelle_particule(effet,n=10)
+  n.times {
+   gen_particule("flamme2","boule",40,40,255,0,0,2,1)
+   particule=ini_classique(effet,"flamme2")
+   particule.aleas = 10+rand(360)*Math::PI/180
+   particule.sprite.blend_type = 1
+   particule.sprite.origine 5
+   particule.sprite.zoom_y=0.6
+   effet.particules.push particule}
+ end
+#---------------------------------------------------------
+ def fumee_maj(effet)   
+   if effet.ini
+     effet.aleas_x=effet.aleas_y=8
+     effet.dy=-24
+     effet.intensite=2
+     effet.dsprite_z=0     
+   end
+   for particule in effet.particules
+    maj_classique(effet,particule,(rand-0.5)**9,-(0.5+particule.vy)/20.0)   
+    longueur=(effet.longueur != nil ? effet.longueur: 1)
+    particule.sprite.opacity-=(Math.hypot(particule.vx.to_f,particule.vy)*longueur)
+    particule.vx/=1.02
+    particule.vy/=1.02
+    particule.sprite.tone.red+=1
+    particule.sprite.tone.blue+=1
+    particule.sprite.tone.green+=1
+    particule.dsprite_z+=-particule.vy
+   end   
+   effet.particules.delete_if{|particule|particule.sprite.opacity<=0}
+   dispose_brutale(effet) if effet.fin
+ end
+#-----------------------------------------------------------
+ def fumee_nouvelle_particule(effet)   
+   gen_particule("Blanc","boule",32,32,255,255,255,3/4.0)
+   particule = ini_classique(effet,"Blanc")
+   particule.sprite.blend_type = 0
+   particule.zoom_final=1/3+rand*2/3
+   particule.sprite.tone=Tone.new(-250,-250,-250)
+   particule.sprite.angle=rand(360)
+   effet.particules.push particule
+ end
+ #---------------------------------------------------------
+def feu_maj(effet)
+   if effet.ini
+     effet.aleas_x,effet.aleas_y=15,10 
+     effet.dx,effet.dy=0,-5
+     effet.intensite = 3     
+   end
+   for particule in effet.particules
+     maj_classique(effet,particule, (rand-0.5)**5, -(0.5+particule.vy)/10.0)
+     particule.sprite.opacity-=particule.vy.abs/2+Math.sqrt((particule.source-particule.x).abs)
+   end   
+   effet.particules.delete_if{|particule|particule.sprite.opacity<=0}
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def feu_nouvelle_particule(effet)   
+   gen_particule("fl","boule",32,32,255,60,30,1)
+   particule = ini_classique(effet,"fl")   
+   particule.sprite.opacity=100
+   particule.zoom_final=rand/2
+   particule.source=ev(effet.cible).screen_x+effet.dx
+   particule.source+= (effet.carte ==nil ? $game_map.display_x/4 : $game_map.display_x/(4*effet.carte) )
+   effet.particules.push particule
+ end
+ #-------------------------------------------------------------
+  def explosion_maj(effet)
+    if effet.ini
+     effet.aleas_x,effet.aleas_y=8,10 
+     effet.dx,effet.dy=0,-2
+     effet.intensite=0
+   end   
+   effet.params[0]=0 if effet.params[0]==nil
+   effet.params[0]+=1
+   50.times {explosion_nouvelle_particule(effet)} if effet.params[0]<10
+   for particule in effet.particules
+     maj_classique(effet,particule)     
+     particule.sprite.opacity-=Math.hypot(particule.vx,particule.vy)*3     
+   end   
+   effet.particules.delete_if{|particule|particule.sprite.opacity<=0} 
+   ev=ev(0)
+   effet.particules.delete_if{|particule|Math.hypot(ev.screen_x-particule.sprite.x,ev.screen_y-particule.sprite.y-16)<16 }
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def explosion_nouvelle_particule(effet)     
+   gen_particule("fla","boule",40,40,255,0,0,1)
+   particule=ini_classique(effet,"fla")
+   particule.sprite.z=300 
+   particule.sprite.tone=Tone.new(255,50,30)
+   angle=rand
+   particule.vx= 3*Math.cos(angle*2*Math::PI)
+   particule.vy= 3*Math.sin(angle*2*Math::PI)
+   particule.sprite.angle=rand*360
+   effet.particules.push particule
+ end
+#------------------------------------------------------------
+def aura_maj(effet)
+  if effet.ini
+     effet.aleas_x,effet.aleas_y=20,-32
+     effet.dx,effet.dy=0,16
+     effet.intensite=2
+     effet.dsprite_z = rand(500)
+   end
+   for particule in effet.particules
+     maj_classique(effet,particule,(rand-0.5)**5,(-0.5-particule.vy)/20.0)   
+     particule.sprite.x=ev(effet.cible).screen_x+particule.x#-$game_map.display_x/4
+     particule.sprite.y=ev(effet.cible).screen_y+particule.y#-$game_map.display_y/4
+     #particule.sprite.tone.green+=10 if particule.sprite.tone.green<50
+     particule.sprite.opacity-=Math.hypot(particule.vx,particule.vy)*7
+   end   
+   effet.particules.delete_if{|particule|particule.sprite.opacity<=0}
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def aura_nouvelle_particule(effet)   
+   gen_particule("flam","boule",40,40,255,0,0,0.5)
+   particule=ini_classique(effet,"flam")
+   particule.sprite.tone=Tone.new(-255,0,255)
+   particule.sprite.opacity=250
+   particule.zoom_final = rand/4
+   particule.x=+rand(20)-10
+   particule.y=-rand(32)     
+   effet.particules.push particule
+ end
+ #-------------------------------------------------------------
+ def orbite2_maj(effet)
+   orbite2_nouvelle_particule(effet,1) if Graphics.frame_count%4==0
+     for particule in effet.particules
+       particule.x+=particule.aleas/6.0
+       particule.z+=particule.aleas*((particule.z-50)/50.0)**2+0.05
+
+       x = particule.z*Math.cos(particule.y)*Math.cos(particule.x)
+       y = particule.z*Math.cos(particule.y)*Math.sin(particule.x)
+       z = particule.z*Math.sin(particule.y)
+       
+       particule.sprite.x = x + ev(effet.cible).screen_x
+       particule.sprite.y = (y-z)/2 + ev(effet.cible).screen_y - 20
+       particule.sprite.z = (y < 0 ? 10 : 1000)
+       particule.sprite.opacity=63*(3+y/particule.z)
+     end
+    effet.particules.delete_if{|particule|particule.z>640}
+    dispose_brutale(effet) if effet.fin
+end
+#-----------------------------------------------------------   
+def orbite2_nouvelle_particule(effet,n=100)
+  n.times {
+   particule = Particule.new
+   particule.sprite = Sprite.new(@viewport1)
+   particule.sprite.bitmap=gen_particule("blanc","boule",20,20,100,50,255,2)
+   particule.sprite.blend_type = 1
+   particule.sprite.origine 5
+   particule.sprite.zoom_x=particule.sprite.zoom_y=0
+   particule.aleas = 0.5+rand/2
+   particule.x = 2*Math::PI*rand # angle phi
+   particule.y = (rand-0.5)*Math::PI #angle theta
+   particule.z = 0# rayon
+   effet.particules.push particule}
+ end
+ #------------------------------------------------------------
+  def orbite3_maj(effet)
+   20.to_i.times {orbite3_nouvelle_particule(effet)} if effet.particules.size<200
+   for particule in effet.particules
+     particule.x+=particule.vx
+     particule.y+=particule.vy   
+     particule.vx/=1.03
+     particule.vy/=1.03
+     particule.vx=10*sgn(particule.vx) if particule.vx.abs>10
+     particule.vy=10*sgn(particule.vy) if particule.vy.abs>10
+     particule.sprite.x=particule.x-$game_map.display_x/4
+     particule.sprite.y=particule.y-$game_map.display_y/4
+     particule.sprite.z=(particule.sprite.y*4 + 3) / 4 + 32
+    for cible in effet.cible
+     dx=particule.sprite.x-ev(cible).screen_x
+     dy=particule.sprite.y-ev(cible).screen_y+20
+     dy*=1.3
+     distance=((dx*dx+dy*dy)/6000.0)**2-0.1
+     distance=distance/(1+distance/200.0)**4     
+     particule.vx+= dy/300.0 - sgn(dx)*distance +(rand-0.5)/10.0   
+     particule.vy+= - dx/300.0 - sgn(dy)*distance +(rand-0.5)/10.0   
+   end   
+     if particule.sprite.zoom_x<1
+       particule.sprite.zoom_x+=0.05
+       particule.sprite.zoom_y+=0.05
+     end       
+   end   
+  # effet.particules.delete_if{|particule|particule.sprite.opacity<=0} 
+  # ev=ev(0)
+  # effet.particules.delete_if{|particule|Math.hypot(ev.screen_x-particule.sprite.x,ev.screen_y-particule.sprite.y-16)<16 }
+  dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def orbite3_nouvelle_particule(effet)
+   gen_particule("flamm","boule",40,40,255,0,0,1)
+   particule=ini_classique(effet,"flamm")
+   particule.sprite.z=300 
+   particule.sprite.tone=Tone.new(255,40,5)
+   effet.cible=[effet.cible] if not effet.cible.is_a?(Array)
+   particule.x=ev(effet.cible[0]).screen_x+$game_map.display_x/4
+   particule.y=ev(effet.cible[0]).screen_y+$game_map.display_y/4-20
+   particule.aleas=[Math.cos(particule.aleas),Math.sin(particule.aleas)]
+   particule.vx= particule.aleas[0]
+   particule.vy= particule.aleas[1]
+   particule.sprite.angle=rand*360
+   effet.particules.push particule
+ end
+ #-----------------------------------------------------------
+   def lance_flamme_maj(effet)
+     if effet.ini
+       effet.aleas_x,effet.aleas_y=8,10
+       effet.dx,effet.dy=0,-20
+       effet.intensite=5
+     end     
+    for particule in effet.particules     
+     maj_classique(effet,particule)
+     particule.sprite.tone.red+=30 if particule.sprite.tone.green<255
+     particule.sprite.tone.green+=8 if particule.sprite.tone.green<70   
+     particule.sprite.tone.blue-=20 if particule.sprite.tone.green>20
+     particule.sprite.opacity-=Math.hypot(particule.vx,particule.vy)*3   
+   end   
+   effet.particules.delete_if{|particule|particule.sprite.opacity<=0} 
+   ev=ev(1)
+   effet.particules.delete_if{|particule|Math.hypot(ev.screen_x-particule.sprite.x,ev.screen_y-particule.sprite.y-16)<16 }
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def lance_flamme_nouvelle_particule(effet)   
+   gen_particule("flamme","boule",20,20,255,0,0,1)
+   particule=ini_classique(effet,"flamme")
+   particule.sprite.tone=Tone.new(-255,0,255)
+   particule.zoom_final=0.3+rand
+   angle=[135,90,45,180,0,0,-135,-90,-45][ev(effet.cible).direction-1]*Math::PI/180
+   angle+=(rand-0.5)/8.0
+   particule.vx= 5*Math.cos(angle)
+   particule.vy= 5*Math.sin(angle)   
+   effet.particules.push particule
+ end
+  #--------------------------------------------------------
+ def brume_maj(effet)
+   if effet.ini
+     effet.aleas_rho=100 if  effet.aleas_rho==nil
+     effet.intensite=0
+     effet.dsprite_z=24
+      densite =0.002 # nombre de sprite par pixel²
+     surface=2*Math::PI*effet.aleas_rho*effet.aleas_rho
+     nbr=(densite*surface).to_i
+     while effet.particules.size < nbr
+       brume_nouvelle_particule(effet)       
+     end     
+   end   
+     for particule in effet.particules
+       maj_classique(effet,particule,(rand-0.5)**5,(rand-0.5)**5)       
+       particule.vx/=1.07
+       particule.vy/=1.07
+       effet.cible=[effet.cible] if not effet.cible.is_a?(Array)
+       for cible in effet.cible
+          next if not ev(cible).moving?
+          dx=particule.sprite.x-ev(cible).screen_x
+          dy=particule.sprite.y-ev(cible).screen_y+20
+          next if dx.abs+dy.abs>100
+          dy*=1.3
+          distance=0.2*Math.hypot(dx,dy)**2+1     
+          vx,vy=ev(cible).vitesse_event
+          particule.vx+= sgn(dx)/distance + vx/distance
+          particule.vy+= sgn(dy)/distance + vy/distance
+        end   
+     end
+   #effet.particules.delete_if{|particule|particule.sprite.opacity<=0}   
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def brume_nouvelle_particule(effet)   
+   gen_particule("brume","boule",48,48,255,255,255,1)
+   particule = ini_classique(effet,"brume")   
+   particule.sprite.tone=Tone.new(0,255,250)
+   particule.sprite.opacity=rand*200+55
+   particule.zoom_final = rand/4+0.75
+   particule.sprite.blend_type=0
+   effet.particules.push particule
+ end
+#---------------------------------------------------------
+def saupoudrage_maj(effet)
+  if effet.ini
+    effet.dx,effet.dy = 0,0
+    effet.intensite=1
+  end 
+   for particule in effet.particules
+     particule.sprite.opacity-=2
+     maj_classique(effet,particule,(rand-0.5)**5,0,-0.1)
+     particule.vx/=1.2
+     particule.vy/=1.2
+     particule.vz/=1.2
+     particule.z=0 if particule.z<0
+     particule.vz=particule.vx=particule.vy=0 if particule.z==0     
+     particule.sprite.y-= particule.z
+     particule.sprite.z = (particule.sprite.y*4 + 3) / 4 + 48
+   end
+  effet.particules.delete_if{|particule|particule.sprite.opacity<=0}   
+  dispose_brutale(effet) if effet.fin
+end
+#---------------------------------------------------------
+def saupoudrage_nouvelle_particule(effet)   
+   #création du sprite
+   gen_particule("blue","boule",16,16,40,100,250,1)
+   particule = ini_classique(effet,"blue")
+   # calcul de coords divers :
+  if effet.cible.is_a?(Particule)
+     particule.x = effet.cible.x+rand(8)-4
+     particule.y = effet.cible.y+rand(8)-4
+     particule.z = effet.cible.z+rand(8)-4
+     particule.vx,particule.vy=effet.cible.vx,effet.cible.vy
+   else
+     # si la source est un evt
+     sprite_cible=@character_sprites[effet.cible-1]
+     #calcul des vitesses initiales
+     particule.vx,particule.vy=ev(effet.cible).vitesse_event
+     #calcul position sur l'evt
+     x,yz=pix_visible_aleatoire(effet.cible)
+     y = rand(sprite_cible.src_rect.width) - sprite_cible.src_rect.width/2 + 4
+     #attribution
+     particule.x = sprite_cible.x+$game_map.display_x/4 + x - sprite_cible.src_rect.width/2
+     particule.y = sprite_cible.y+$game_map.display_y/4 - y
+     particule.z = yz - y
+   end   
+   #divers
+   particule.zoom_final=rand/2
+   particule.vz=0   
+   effet.particules.push particule
+ end
+#-----------------------------------------------------------
+ 
+
+#======================================================================   
+end
+class Sprite
+  def origine(direction=5)
+    self.ox = self.oy = 0
+    self.ox = self.bitmap.width if direction %3==0
+    self.ox = self.bitmap.width/2 if direction %3==2
+    self.oy = self.bitmap.height if direction < 7
+    self.oy /=2 if direction > 3
+  end
+end
+#----------------------------------------------------
+class Game_Character
+   def vitesse_event
+   v = (2 ** @move_speed)/4 # vitesse du perso emetteur
+   v = 0 if not moving?
+   vx = [0, -v, 0, v, -v, 0, v, -v, 0, v][@direction]
+   vy = [0, v, v, v, 0, 0, 0, -v ,-v, -v][@direction]
+   return [vx,vy]
+ end
+end
+#-----------------------
+
+
+
+
+class Spriteset_Map
+  def onde_nouvelle_particule(effet)
+   #gen_particule("navi","boule",16,16,255,250,250,2)
+   particule=ini_classique(effet,"onde")
+   particule.sprite.z=1000
+   particule.sprite.zoom_x=particule.sprite.zoom_y=particule.aleas=0
+   particule.sprite.blend_type=1
+   particule.z=32
+   effet.particules.push particule
+ end
+ #---------------------------
+ def onde_maj(effet)
+     effet.carte=0 if effet.ini
+     onde_nouvelle_particule(effet) if effet.particules.empty? 
+     particule= effet.particules[0] 
+     particule.sprite.x=particule.x-$game_map.display_x/4
+     particule.sprite.y=particule.y-$game_map.display_y/4
+     particule.sprite.zoom_x=particule.sprite.zoom_x*1.05+0.01
+     particule.sprite.zoom_y=particule.sprite.zoom_x
+   #  particule.sprite.z=(particule.sprite.y*4 + 3) / 4 + 32
+       dispose_brutale if effet.fin
+ end
+#--------------------------
+def coup_sword_nouvelle_particule(effet)
+   particule=ini_classique(effet,"Sword")
+   particule.sprite.origine(3) 
+   particule.sprite.z=1000
+   particule.sprite.zoom_x=particule.sprite.zoom_y=1
+   particule.sprite.blend_type=0 
+   angle=180-90-[135,90,45,180,0,0,-135,-90,-45][ev(effet.cible).direction-1]
+   particule.sprite.angle=angle
+   particule.sprite.z = 0 if  particule.sprite.angle >= 215
+   particule.sprite.z = 0 if  particule.sprite.angle < 45
+   particule.sprite.visible=false
+   vx,vy=ev(effet.cible).vitesse_event
+   particule.vx = vx
+   particule.vy = vy
+   particule.stock=0
+   effet.particules.push particule
+   particuleur("traine_sprite",particule.sprite)   
+ end
+ #------------------------------------------
+ def coup_sword_maj(effet)
+   if effet.ini
+        effet.dy= -16
+        effet.intensite=0
+   end 
+       return if effet.fin   
+    coup_sword_nouvelle_particule(effet) if effet.particules.empty? 
+    particule=effet.particules[0] 
+    particule.sprite.angle+=35
+    particule.sprite.zoom_x=particule.sprite.zoom_y=1-0.4*(particule.stock-3).abs/3.0
+    particule.stock+=1
+    particule.sprite.x = ev(effet.cible).screen_x
+    particule.sprite.y = ev(effet.cible).screen_y-16
+    particule.sprite.z = (particule.sprite.y*4 + 3) / 4 + 32
+    particule.sprite.z +=40
+    particule.sprite.z -= 40 if  particule.sprite.angle >= 250
+    particule.sprite.z -= 40 if  particule.sprite.angle < 90
+    if particule.stock>=7
+      particule.sprite.dispose
+      effet.fin=true
+    end   
+
+  end
+  #-------------------------
+def navi_nouvelle_particule(effet)
+   gen_particule("navi","boule",16,16,255,250,250,2)
+   particule=ini_classique(effet,"navi")
+   particule.sprite.z=1000
+   particule.sprite.zoom_x=particule.sprite.zoom_y=1
+   particule.sprite.blend_type=0 
+   particule.z=32
+   particule.vx,particule.vy = ev(effet.cible).vitesse_event
+   maj_classique(effet,particule)
+   particuleur2("navi_saupoudrage",'saupoudrage', particule)
+   effet.particules.push particule
+ end
+ #---------------------------
+ def navi_maj(effet)
+    if effet.ini
+       effet.dy= -16
+       effet.intensite=0
+   end 
+   navi_nouvelle_particule(effet) if effet.particules.empty? 
+   particule= effet.particules[0] 
+     particule.x+=particule.vx
+     particule.y+=particule.vy   
+     particule.vx/=1.03
+     particule.vy/=1.03
+     particule.vx=10*sgn(particule.vx) if particule.vx.abs>10
+     particule.vy=10*sgn(particule.vy) if particule.vy.abs>10
+     particule.sprite.x=particule.x-$game_map.display_x/4
+     particule.sprite.y=particule.y-$game_map.display_y/4
+     particule.sprite.z=(particule.sprite.y*4 + 3) / 4 + 32
+     effet.cible=[effet.cible] if not effet.cible.is_a?(Array)
+    for cible in effet.cible
+     dx=particule.sprite.x-ev(cible).screen_x
+     dy=particule.sprite.y-ev(cible).screen_y+20
+     distance=((dx*dx+dy*dy)/6000.0)**3-0.01
+     distance=distance/(1+distance/200.0)**4     
+     particule.vx+= + dy/1000.0 - sgn(dx)*distance +(rand-0.5)
+     particule.vy+= - dx/1000.0 - sgn(dy)*distance +(rand-0.5) 
+   end   
+   particule.sprite.angle=-57.3*Math.atan2(particule.vy,particule.vx)-90
+   v=Math.hypot(particule.vx,particule.vy)/2
+   particule.sprite.zoom_x=1.1**-v
+   particule.sprite.y-= particule.z   
+   dispose_brutale(effet) if effet.fin
+ end
+ #--------------------------------------------------- 
+end
+#---------------------------------------------------------   
+def projectile_maj(effet)
+   effet.intensite=0 if effet.ini
+   while not effet.stock.empty?  #pour cette effet, params contient les projectiles à lancer
+     projectile_nouvelle_particule(effet)
+   end
+   for doublet in effet.particules
+     particule,ombre=doublet
+     maj_classique effet,particule     
+     particule.vz-=0.3
+     if particule.z<=0 # plantée dans le sol
+       particule.z = 0
+       particule.vx=particule.vy=particule.vz=0
+     elsif particule.stock != nil  # plantée dans un event
+       particule.vx,particule.vy = 0,0#ev(particule.stock).vitesse_event       
+       particule.vz=0
+       particule.stock=nil if ev(particule.stock).mort
+     else # en vol
+       particule.sprite.angle=57.3*Math.atan2(-particule.vy+particule.vz*2,particule.vx)
+       ombre.sprite.angle=57.3*Math.atan2(-particule.vy,particule.vx)       
+       if particule.z < 48
+       for id in $particuleur[effet.nom].cible
+          if colisions_evt?(id,particule)
+             particule.stock=id
+             (id==0 ? $game_player : $game_map.events[id]).pv-=1
+          end
+       end
+       end
+     end     
+     ombre.sprite.x=particule.sprite.x
+     ombre.sprite.y=particule.sprite.y
+     ombre.sprite.zoom_x=1.0/(particule.vz.abs/2+1)
+     particule.sprite.y-=particule.z*2   
+     ombre.sprite.opacity=particule.sprite.opacity/Math.sqrt(2+particule.z.abs/3)
+   end   
+   effet.particules.delete_if{|particule|
+           particule[0].sprite.opacity-=effet.particules.size/20 if particule[0].z<=0 or particule[0].stock != nil
+           particule[0].sprite.opacity<=0 }
+   dispose_brutale(effet) if effet.fin
+ end
+ #---------------------------------------------------------
+ def projectile_nouvelle_particule(effet)
+   id_tireur,vx,vy,vz = effet.stock.shift   
+   particule=ini_classique(effet,"Arrow")
+   particule.source=id_tireur
+   particule.sprite.origine(6)
+   particule.sprite.zoom_x=particule.sprite.zoom_y=1
+   particule.sprite.blend_type=0
+   particule.x = ev(id_tireur).screen_x+$game_map.display_x/4
+   particule.y = ev(id_tireur).screen_y+$game_map.display_y/4
+   angle=[135,90,45,180,0,0,-135,-90,-45][ev(id_tireur).direction-1]*Math::PI/180
+   angle+=(rand-0.5)/30.0
+   particule.vx = vx
+   particule.vy = vy
+   particule.vz = vz
+   particule.z=10
+   particule.sprite.angle = 57.3*Math.atan2(-particule.vy+particule.vz*2,particule.vx)
+   ombre = ini_classique(effet,"Arrow")
+   ombre.sprite.origine(6)
+   ombre.sprite.zoom_x=ombre.sprite.zoom_y=ombre.aleas=1
+   ombre.sprite.blend_type=2
+   effet.particules.push [particule,ombre]
+ end
+ #----------------------------------------
+def traine_sprite_maj(effet) 
+   effet.intensite=0if effet.ini
+   if effet.cible==nil or effet.cible.disposed?
+     effet.fin=true if effet.particules.empty?
+   else
+     traine_sprite_nouvelle_particule(effet) if effet.params==1
+   end 
+   effet.params=1
+   for particule in effet.particules
+     particule.sprite.opacity/=1.5+effet.particules.size/10.0
+     particule.sprite.x=particule.x-$game_map.display_x/4
+     particule.sprite.y=particule.y-$game_map.display_y/4
+   end
+  effet.particules.delete_if{|particule|particule.sprite.opacity<=0}   
+  dispose_brutale(effet) if effet.fin
+end
+#---------------------------------------------------------
+def traine_sprite_nouvelle_particule(effet)
+  if effet.particules.empty?   
+    particule = Particule.new
+    particule.sprite=Sprite.new(effet.cible.viewport)
+    particule.sprite.bitmap = effet.cible.bitmap   
+    for truc in ["x","y","z","ox","oy","angle","opacity","blend_type","zoom_x","zoom_y"]
+     eval("particule.sprite."<<truc<<" = effet.cible."<<truc)   
+    end     
+     particule.x= particule.sprite.x + $game_map.display_x/4
+     particule.y= particule.sprite.y + $game_map.display_y/4
+     effet.particules.push particule
+     return
+  end
+  antecedent = effet.particules[-1].sprite
+  n=16
+  for i in 1..n
+   particule = Particule.new
+   particule.sprite=Sprite.new(effet.cible.viewport)
+   particule.sprite.bitmap = effet.cible.bitmap
+   j=n-i
+   for truc in ["x","y","z","ox","oy","angle","opacity","blend_type","zoom_x","zoom_y"]
+     eval("particule.sprite."<<truc<<" = (effet.cible."<<truc<<"*i +  antecedent."<<truc<<"*j)/n.to_f")   
+   end
+   particule.x= particule.sprite.x + $game_map.display_x/4
+   particule.y= particule.sprite.y + $game_map.display_y/4
+   effet.particules.push particule
+ end
+end
+#---------------------------------------------------------
+# La fonction qui suit part de la portée max du tireur et de la constante de gravité "g"
+# pour calculer selon des lois physiques le vecteur vitesse initiale
+# Elle touchera sa cible même en mouvement, sauf si celle-ci accélère(ralentit,tourne...)
+# Postulat : le tireur tire tj de toute ses forces (plausible : les dégats st max)
+ def calcul_ballistique(id_tireur,id_cible,portee_tireur=15,g=0.3) #la portée est en carreaux 
+   portee_tireur*=32.0 # conversion de la portée de carreaux en pixels
+   v0 = Math.sqrt(g*portee_tireur.to_f) #calcul de la vitesse initiale
+   tireur = (id_tireur==0 ? $game_player : $game_map.events[id_tireur])
+   cible = (id_cible==0 ? $game_player : $game_map.events[id_cible])
+   dx = cible.screen_x-tireur.screen_x
+   dy = cible.screen_y-tireur.screen_y
+   distance = Math.hypot(dx,dy)
+   argument = distance / portee_tireur # g = v0²/portée et arg= d*g/v0²=d/portee
+   if argument.abs>1
+    # p "Hors de portée ! "<<distance.round.to_s<<" > "<<portee_tireur.to_s
+     angle=3.1415/4
+   else
+     angle=0.5*Math.asin(argument)
+   end   
+   #L'angle est calculé, maintenant le temps de trajet :
+   tau = (Math.cos(angle) != 0 ? tau=distance/(v0*Math.cos(angle)) : 999)
+   #Ici intervient une subtilité : et si la cible se déplace ?
+   if cible.moving?
+      #Faisons l'approximation que le tau sera le même. Calcul new cible
+      vx,vy=cible.vitesse_event
+      dx += vx*tau
+      dy += vy*tau
+      #et on recalcule l'angle
+      distance = Math.hypot(dx,dy)
+      argument = distance / portee_tireur # g = v0²/portée et arg= d*g/v0²=d/portee
+      if argument.abs>1
+      # p "Hors de portée ! "<<distance.round.to_s<<" > "<<portee_tireur.to_s
+        angle=3.1415/4
+       else
+        angle=0.5*Math.asin(argument)
+      end   
+      tau = (Math.cos(angle) != 0 ? tau=distance/(v0*Math.cos(angle)) : 999)     
+    end   
+   # On a tout ce qu'il faut pour calculer les composantes de la vitesse ini
+   vx=dx/tau
+   vy=dy/tau
+   vz=v0*Math.sin(angle)
+   return [vx,vy,vz]
+ end
+#----------------------------------------------------------------------
+def tirer(id_tireur,id_cible,portee_tireur=15,cibles=[])
+  vx,vy,vz = calcul_ballistique(id_tireur,id_cible,portee_tireur,0.3)
+ if not $particuleur.has_key?("Projectiles")
+     particuleur2("Projectiles","projectile",id_tireur)
+   end   
+ $particuleur["Projectiles"].stock= [] if $particuleur["Projectiles"].stock==nil
+ $particuleur["Projectiles"].stock.push([id_tireur,vx,vy,vz])
+ if not $particuleur["Projectiles"].cible.is_a? (Array)
+   $particuleur["Projectiles"].cible=[$particuleur["Projectiles"].cible]
+ end
+ $particuleur["Projectiles"].cible.concat(cibles)
+ $particuleur["Projectiles"].cible.uniq!
+end
+#-----------------------------------------------------------------------
+def arroser(id_tireur,id_cible,portee_tireur=15)
+  vx,vy,vz = calcul_ballistique(id_tireur,id_cible,portee_tireur,0.3)
+ if not $particuleur.has_key?("Projectiles")
+     particuleur2("Projectiles","projectile",id_tireur)
+ end   
+ $particuleur["Projectiles"][2].push([id_tireur,vx+rand-0.5,vy+rand-0.5,vz+rand-0.5])
+#---------------
+end
+#==============================================================
+
+#==LE FABRICANT DE BMP=================================================
+def gen_bmp(w,h,r,v,b,a="255")
+  bmp=Bitmap.new(w,h)
+  r,v,b=r.to_s,v.to_s,b.to_s
+  (0...h).each{|y| Graphics.update ;  (0...w).each{|x|
+     bmp.set_pixel(x,y,Color.new(eval(r), eval(v),eval(b),eval(a)))
+     }}
+  return bmp
+end
+#---------------------------
+def gen_boule(w=20,h=20,r="255",v="255",b="255",puissance=1.0,n=0,m=0)
+  return gen_bmp(w,h,r,v,b,"d=Math.hypot(x-w/2,y-h/2);theta=Math.atan2(x-w/2,y-h/2);f=(1+Math.cos("<<m.to_s<<"*theta+"<<n.to_s<<"*4*Math::PI*d/w.to_f))/2;f*(255-255*(2.0*d/w)**"<<puissance.to_s<<")") 
+end
+
+def gen_onde(w=20,h=20,r="255",v="255",b="255",puissance=1.0,k=0,rot=0,loc="d/20.0-4")
+  return gen_bmp(w,h,r,v,b,
+  "d=Math.hypot(x-w/2,y-h/2);theta=Math.atan2(x-w/2,y-h/2);g=Math.exp(-("<<loc<<")**2);f=(1+Math.cos("<<k.to_s<<"*theta+"<<rot.to_s<<"*4*Math::PI*d/w.to_f))/2;f*g*255") 
+end
+#---------------------------
+def gen_particule(nom,type,w,h,r,v,b,a="255")
+   path="Graphics/Pictures/Particules/"<<nom # on va charger ou créér ce bmp
+   if not RPG::Cache.a?(path) and not FileTest.exist?(path)     
+     commande="gen_"<<type<<"("<<w.to_s<<","<<h.to_s<<","<<r.to_s<<","<<v.to_s<<","<<b.to_s<<","<<a.to_s<<")"
+     RPG::Cache.ajouter(eval(commande),path)
+   end
+   return RPG::Cache.load_bitmap("",path)
+end
+#==========================
+module RPG
+  module Cache
+  def self.ajouter(bmp,path)
+      @cache[path] = bmp
+      return bmp
+  end
+  def self.a?(path)
+    if @cache.include?(path)
+      return true if not @cache[path].disposed?
+    end
+    return false
+  end 
+end
+end
+#==========================
+def soleil(*ids)
+  particuleur("hor","soleil")
+  $particuleur["soleil"].stock=ids
+  $particuleur["soleil"].tone=Tone.new(255,255,255)
+  $particuleur["soleil"].angle= 45
+  $particuleur["soleil"].opacity = 128
+  $particuleur["soleil"].blend_type= 2
+  $particuleur["soleil"].flou= 1
+  $particuleur["soleil"].dy=-8
+  $particuleur["soleil"].dsprite_z= -1
+  $particuleur["soleil"].longueur= 2
+end
+#----------------------------------------------------------
+def lum_ponctuelle(id,*ids)
+  nom="hor"+id.to_s
+  particuleur2(nom,"hor",id) 
+  $particuleur[nom].stock=ids
+  $particuleur[nom].tone=Tone.new(255,255,255)
+  $particuleur[nom].altitude=256
+  $particuleur[nom].angle= "angle(effet.cible,particule.source)*180/Math::PI-180"
+  $particuleur[nom].opacity = "200-distance(effet.cible,particule.source)*20/100.0"
+  $particuleur[nom].longueur= "distance(effet.cible,particule.source)/(1+(effet.altitude-32).abs)"
+  $particuleur[nom].blend_type= 2
+  $particuleur[nom].flou= 1
+  $particuleur[nom].dy=-8
+  $particuleur[nom].dsprite_z= -1
+end
+#----------------------------------------------------------
+def halos(*ids)
+  particuleur("hor","halos")
+  $particuleur["halos"].stock=ids
+  $particuleur["halos"].tone=Tone.new(255,255,255)
+  $particuleur["halos"].opacity = 128
+  $particuleur["halos"].blend_type= 1
+  $particuleur["halos"].flou= 3
+  $particuleur["halos"].dsprite_z= -1
+end
+#----------------------------------------
+def reflets(*ids)
+  particuleur("hor","reflets")
+  $particuleur["reflets"].stock=ids 
+  $particuleur["reflets"].opacity = 200
+  $particuleur["reflets"].dsprite_z= -1000
+  $particuleur["reflets"].angle=180
+  $particuleur["reflets"].flou= 3
+end
+#----------------------------
+def angle(id1,id2)
+  ev1 =  (id1==0 ? $game_player: $game_map.events[id1])
+  ev2 =  (id2==0 ? $game_player: $game_map.events[id2])
+  dx=ev2.real_x-ev1.real_x
+  dy=ev2.real_y-ev1.real_y
+  return Math.atan2(dx,dy)
+end
+#----------------------------
+def distance(id1,id2)
+  ev1 =  (id1==0 ? $game_player: $game_map.events[id1])
+  ev2 =  (id2==0 ? $game_player: $game_map.events[id2])
+  dx=ev2.real_x-ev1.real_x
+  dy=ev2.real_y-ev1.real_y
+  return Math.hypot(dx,dy)
+end
+#=========================================== 
+class Spriteset_Map
+ #----------------------------------------
+ def hor_maj(effet)
+    if effet.ini # ini des réglages de l'effet
+      effet.intensite = 0
+     effet.dsprite_z = -1 if effet.dsprite_z == nil
+   end   
+   while not effet.stock.empty?  #pour cette effet stock contient les ids sur lesquels créer un effet
+     hor_nouvelle_particule(effet)
+   end
+   for particule in effet.particules # on passe à la mise à jour de chaque particule
+     original = @character_sprites[particule.source-1] # ceci est particule.sprite_chara de la cible
+        #on va utiliser l'update du particule.sprite_chara poru l'actualise.
+     particule.sprite.character=original.character
+     particule.sprite.character.character_name = original.character.character_name+"hor"+effet.flou.to_s
+     particule.sprite.update     
+     # réparation de l'effet du flou pour le chara normal
+     original.character.character_name=original.character.character_name[0...-4]
+     #on doit maintenant appliquer les propriétés de l'effet
+     particule.sprite.z += effet.dsprite_z   # on passe l'effet en dessous du modèle
+     particule.sprite.x +=effet.dx if effet.dx != nil
+     particule.sprite.y +=effet.dy if effet.dy != nil     
+     particule.sprite.opacity = eval effet.opacity.to_s if effet.opacity != nil   
+     next if particule.sprite.opacity < 2
+     particule.sprite.angle = eval effet.angle.to_s if effet.angle != nil
+     particule.sprite.tone = effet.tone  if effet.tone.is_a?(Tone)
+     particule.sprite.zoom_y= eval effet.longueur.to_s if effet.longueur != nil
+     particule.sprite.zoom_y =10 if particule.sprite.zoom_y>10     
+     particule.sprite.blend_type = effet.blend_type if effet.blend_type != nil
+     if effet.nom == "halos"
+        # centrage de l'origine
+        particule.sprite.oy=particule.sprite.src_rect.height/2
+        particule.sprite.y-=original.src_rect.height/2
+      elsif effet.nom == "reflets"
+        particule.sprite.mirror = true       
+    end     
+  end   
+    dispose_brutale(effet) if effet.fin
+    end
+ #---------------------------------------------------------
+ def hor_nouvelle_particule(effet)
+   id = effet.stock.shift
+   original=@character_sprites[id-1]
+   particule=ini_classique(effet,chara_flou(original.bitmap,effet.flou))
+   particule.sprite = Sprite_Character.new(original.viewport,original.character)
+   particule.source=id
+   RPG::Cache.stocker_bitmap("Graphics/Characters/",
+                                            original.character.character_name+"hor"+effet.flou.to_s,
+                                            chara_flou(original,effet.flou))
+   effet.particules.push particule
+ end
+ #----------------------------------------
+end
+#================================================
+def chara_flou(original,intensite=1)
+  #préparation de l'image de base, si ce n'est pas déjà un bitmap
+  nbr_poses_x,nbr_poses_y=1,1
+  original=RPG::Cache.picture(original) if original.is_a?(String)
+   if original.is_a?(Numeric)
+    original=0 ? original=$game_player : original=$game_map.events[original]
+    original=original.character_name
+      nbr_poses_x,nbr_poses_y=12,8
+      sign = original[/^[\!\$]./]
+      nbr_poses_x,nbr_poses_y=3,4 if sign != nil and sign.include?('$')
+    original=RPG::Cache.character(original,0)
+  elsif original.is_a?(Sprite_Character)
+     nbr_poses_x,nbr_poses_y=12,8
+     sign = original.character.character_name[/^[\!\$]./]
+     nbr_poses_x,nbr_poses_y=3,4 if sign != nil and sign.include?('$')
+     original=original.bitmap
+   end 
+  nbr_poses_x,nbr_poses_y=4,4 # ACTIVER CETTE LIGNE SOUS RMXP
+  return original if intensite==0
+  #flou horizontal
+  bitmap1=Bitmap.new(original.width+nbr_poses_x*2*intensite,original.height)
+  for n in 0..2*intensite
+    for x in 0...nbr_poses_x
+      bitmap1.blt(x*bitmap1.width/nbr_poses_x+n,0,
+        original,Rect.new(x*original.width/nbr_poses_x,0,original.width/nbr_poses_x,original.height),
+        255/(2*intensite) )
+    end
+  end 
+   #flou vertical
+  bitmap2=Bitmap.new(bitmap1.width,original.height+nbr_poses_y*2*intensite)
+  for n in 0..2*intensite
+    for y in 0...nbr_poses_y
+      bitmap2.blt(0,y*bitmap2.height/nbr_poses_y+n,
+        bitmap1,Rect.new(0,y*bitmap1.height/nbr_poses_y,bitmap1.width,bitmap1.height/nbr_poses_y),
+        255/(2*intensite) )
+    end
+  end
+   # restitution de l'opacité originelle
+  bitmapf=Bitmap.new(original.width+nbr_poses_x*2*intensite,original.height+nbr_poses_y*2*intensite)
+  2*intensite.times do
+    bitmapf.blt(0,0,bitmap2,bitmap2.rect)
+  end
+ 
+  bitmap1.dispose
+  bitmap2.dispose
+  return bitmapf
+end
+#===================================================================
+module RPG
+ module Cache   
+    def self.stocker_bitmap(folder_name, filename,bitmap)
+      path = folder_name + filename
+      @cache[path] = bitmap if filename != ""
+    end
+  end
+end
+#===========================
+class Game_Character
+  attr_accessor :character_name           
+end

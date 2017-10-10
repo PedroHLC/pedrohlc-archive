@@ -1,0 +1,1150 @@
+Thu Jun 30 16:07:18 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:07:20 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:09:59 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:10:01 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:11:04 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:11:05 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:11:10 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:11:10 UTC 2011; #<Thread:0x3afc728 run> - Debug:
+Thread started.
+Thu Jun 30 16:11:10 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:11:10 UTC 2011; #<Thread:0x3afc338 run> - Debug:
+Thread started.
+Thu Jun 30 16:11:10 UTC 2011; #<Client:0x3afc290> - Debug:
+Client connected. #<TCPSocket:0x3afc428>
+Thu Jun 30 16:11:10 UTC 2011; #<Client:0x3afc668> - Debug:
+Client connected. #<TCPSocket:0x3afc818>
+Thu Jun 30 16:11:10 UTC 2011; #<Client:0x3afc668> - Debug:
+Client disconnected.
+Thu Jun 30 16:11:10 UTC 2011; #<Client:0x3afc290> - Debug:
+Client disconnected.
+Thu Jun 30 16:11:11 UTC 2011; #<Thread:0x3afc338 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:11:11 UTC 2011; #<Thread:0x3afc728 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:11:19 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:11:19 UTC 2011; #<Thread:0x3af0218 run> - Debug:
+Thread started.
+Thu Jun 30 16:11:19 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:11:19 UTC 2011; #<Thread:0x3907068 run> - Debug:
+Thread started.
+Thu Jun 30 16:11:19 UTC 2011; #<Client:0x3906bd0> - Debug:
+Client connected. #<TCPSocket:0x3af0068>
+Thu Jun 30 16:11:19 UTC 2011; #<Client:0x3af0170> - Debug:
+Client connected. #<TCPSocket:0x3af0308>
+Thu Jun 30 16:11:19 UTC 2011; #<Client:0x3af0170> - Debug:
+Client disconnected.
+Thu Jun 30 16:11:20 UTC 2011; #<Thread:0x3af0218 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:12:17 UTC 2011; #<Client:0x3906bd0> - Debug:
+Client disconnected.
+Thu Jun 30 16:12:18 UTC 2011; #<Thread:0x3907068 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:13:08 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:13:08 UTC 2011; Main Thread - Debug:
+Server forcibly stopping...
+Thu Jun 30 16:13:08 UTC 2011; Main Thread - Debug:
+Server forcibly stopped.
+Thu Jun 30 16:13:27 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:13:28 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:15:13 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:15:26 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:15:28 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:15:40 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:15:40 UTC 2011; #<Thread:0x3b715d8 run> - Debug:
+Thread started.
+Thu Jun 30 16:15:40 UTC 2011; #<Client:0x3b71518> - Debug:
+Client connected. #<TCPSocket:0x3b716c8>
+Thu Jun 30 16:15:40 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:15:40 UTC 2011; #<Thread:0x3b71080 run> - Debug:
+Thread started.
+Thu Jun 30 16:15:40 UTC 2011; #<Client:0x3b70fd8> - Debug:
+Client connected. #<TCPSocket:0x3b71170>
+Thu Jun 30 16:15:40 UTC 2011; #<Client:0x3b71518> - Debug:
+Client disconnected.
+Thu Jun 30 16:15:40 UTC 2011; #<Client:0x3b70fd8> - Debug:
+Client disconnected.
+Thu Jun 30 16:15:41 UTC 2011; #<Thread:0x3b715d8 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:15:41 UTC 2011; #<Thread:0x3b71080 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:15:50 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:15:50 UTC 2011; #<Thread:0x3200a18 run> - Debug:
+Thread started.
+Thu Jun 30 16:15:50 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:15:50 UTC 2011; #<Thread:0x3202710 run> - Debug:
+Thread started.
+Thu Jun 30 16:15:50 UTC 2011; #<Client:0x3202b90> - Debug:
+Client connected. #<TCPSocket:0x3201ee8>
+Thu Jun 30 16:15:50 UTC 2011; #<Client:0x32012e8> - Debug:
+Client connected. #<TCPSocket:0x3200280>
+Thu Jun 30 16:15:50 UTC 2011; #<Client:0x32012e8> - Debug:
+Client disconnected.
+Thu Jun 30 16:15:51 UTC 2011; #<Thread:0x3200a18 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:16:15 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:16:17 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:16:22 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:22 UTC 2011; #<Thread:0x3a79520 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:22 UTC 2011; #<Client:0x3a79460> - Debug:
+Client connected. #<TCPSocket:0x3a79610>
+Thu Jun 30 16:16:22 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:22 UTC 2011; #<Thread:0x3a78fc8 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:22 UTC 2011; #<Client:0x3a78f20> - Debug:
+Client connected. #<TCPSocket:0x3a790b8>
+Thu Jun 30 16:16:22 UTC 2011; #<Client:0x3a79460> - Debug:
+Client disconnected.
+Thu Jun 30 16:16:22 UTC 2011; #<Client:0x3a78f20> - Debug:
+Client disconnected.
+Thu Jun 30 16:16:23 UTC 2011; #<Thread:0x3a78fc8 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:16:23 UTC 2011; #<Thread:0x3a79520 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:16:32 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:32 UTC 2011; #<Thread:0x380d528 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:32 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:32 UTC 2011; #<Thread:0x380d030 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:32 UTC 2011; #<Client:0x380cf70> - Debug:
+Client connected. #<TCPSocket:0x380d210>
+Thu Jun 30 16:16:32 UTC 2011; #<Client:0x380d480> - Debug:
+Client connected. #<TCPSocket:0x380d618>
+Thu Jun 30 16:16:32 UTC 2011; #<Client:0x380d480> - Debug:
+Client disconnected.
+Thu Jun 30 16:16:32 UTC 2011; #<Client:0x380cf70> - Debug:
+Client disconnected.
+Thu Jun 30 16:16:33 UTC 2011; #<Thread:0x380d030 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:16:34 UTC 2011; #<Thread:0x380d528 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:16:41 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:41 UTC 2011; #<Thread:0x380d720 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:41 UTC 2011; #<Client:0x380d810> - Debug:
+Client connected. #<TCPSocket:0x380d438>
+Thu Jun 30 16:16:41 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:16:41 UTC 2011; #<Thread:0x3811968 run> - Debug:
+Thread started.
+Thu Jun 30 16:16:41 UTC 2011; #<Client:0x3812160> - Debug:
+Client connected. #<TCPSocket:0x3810de0>
+Thu Jun 30 16:16:41 UTC 2011; #<Client:0x380d810> - Debug:
+Client disconnected.
+Thu Jun 30 16:16:42 UTC 2011; #<Thread:0x380d720 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:20:11 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jun 30 16:20:13 UTC 2011; Main Thread - Debug:
+Server started.
+Thu Jun 30 16:20:36 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:36 UTC 2011; #<Thread:0x3a57b48 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:36 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:36 UTC 2011; #<Thread:0x3a58238 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:36 UTC 2011; #<Client:0x3a583e8> - Debug:
+Client connected. #<TCPSocket:0x3a58010>
+Thu Jun 30 16:20:36 UTC 2011; #<Client:0x3a57d28> - Debug:
+Client connected. #<TCPSocket:0x3a579e0>
+Thu Jun 30 16:20:36 UTC 2011; #<Client:0x3a57d28> - Debug:
+Client disconnected.
+Thu Jun 30 16:20:36 UTC 2011; #<Client:0x3a583e8> - Debug:
+Client disconnected.
+Thu Jun 30 16:20:37 UTC 2011; #<Thread:0x3a58238 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:20:37 UTC 2011; #<Thread:0x3a57b48 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:20:45 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:45 UTC 2011; #<Thread:0x3aa32e0 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:45 UTC 2011; #<Client:0x3aa2f50> - Debug:
+Client connected. #<TCPSocket:0x3aa3688>
+Thu Jun 30 16:20:45 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:45 UTC 2011; #<Thread:0x3aa14e0 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:45 UTC 2011; #<Client:0x3aa0f88> - Debug:
+Client connected. #<TCPSocket:0x3aa15e8>
+Thu Jun 30 16:20:45 UTC 2011; #<Client:0x3aa2f50> - Debug:
+Client disconnected.
+Thu Jun 30 16:20:45 UTC 2011; #<Client:0x3aa0f88> - Debug:
+Client disconnected.
+Thu Jun 30 16:20:46 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:46 UTC 2011; #<Thread:0x3a98e70 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:46 UTC 2011; #<Client:0x3a98dc8> - Debug:
+Client connected. #<TCPSocket:0x3a99488>
+Thu Jun 30 16:20:46 UTC 2011; Main Thread - Debug:
+New connection received.
+Thu Jun 30 16:20:46 UTC 2011; #<Thread:0x3a97a48 run> - Debug:
+Thread started.
+Thu Jun 30 16:20:46 UTC 2011; #<Client:0x3a96c20> - Debug:
+Client connected. #<TCPSocket:0x3a97d60>
+Thu Jun 30 16:20:46 UTC 2011; #<Client:0x3a98dc8> - Debug:
+Client disconnected.
+Thu Jun 30 16:20:46 UTC 2011; #<Thread:0x3aa14e0 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:20:46 UTC 2011; #<Thread:0x3aa32e0 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:20:47 UTC 2011; #<Thread:0x3a98e70 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:21:05 UTC 2011; Main Thread - Debug:
+Server stopping...
+Thu Jun 30 16:21:05 UTC 2011; #<Client:0x3a96c20> - Debug:
+Client disconnected.
+Thu Jun 30 16:21:06 UTC 2011; #<Thread:0x3a97a48 run> - Debug:
+Thread stopped.
+Thu Jun 30 16:21:06 UTC 2011; Main Thread - Debug:
+Server stopped.
+Thu Jul 07 00:18:55 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jul 07 00:18:56 UTC 2011; Main Thread - Debug:
+Server forcibly stopping...
+Thu Jul 07 00:18:56 UTC 2011; Main Thread - Debug:
+Server forcibly stopped.
+Thu Jul 07 00:19:01 UTC 2011; Main Thread - Debug:
+Server starting...
+Thu Jul 07 00:19:01 UTC 2011; Main Thread - Debug:
+Server forcibly stopping...
+Thu Jul 07 00:19:01 UTC 2011; Main Thread - Debug:
+Server forcibly stopped.
+Mon Jul 11 18:44:35 UTC 2011; Main Thread - Debug:
+Server starting...
+Mon Jul 11 18:44:35 UTC 2011; Main Thread - Debug:
+Server forcibly stopping...
+Mon Jul 11 18:44:35 UTC 2011; Main Thread - Debug:
+Server forcibly stopped.
+Mon Jul 11 18:44:40 UTC 2011; Main Thread - Debug:
+Server starting...
+Mon Jul 11 18:44:40 UTC 2011; Main Thread - Debug:
+Server forcibly stopping...
+Mon Jul 11 18:44:40 UTC 2011; Main Thread - Debug:
+Server forcibly stopped.
+Mon Jul 11 18:45:26 UTC 2011; Main Thread - Debug:
+Server starting...
+Mon Jul 11 18:45:27 UTC 2011; Main Thread - Debug:
+Server started.
+Mon Jul 11 18:47:06 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:06 UTC 2011; #<Thread:0x3b06820 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:06 UTC 2011; #<Client:0x3b05d88> - Debug:
+Client connected. #<TCPSocket:0x3b06cb8>
+Mon Jul 11 18:47:06 UTC 2011; #<Client:0x3b05d88> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:07 UTC 2011; #<Thread:0x3b06820 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:12 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:12 UTC 2011; #<Thread:0x3ad61a8 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:12 UTC 2011; #<Client:0x3ad60e8> - Debug:
+Client connected. #<TCPSocket:0x3ad6370>
+Mon Jul 11 18:47:12 UTC 2011; #<Client:0x3ad60e8> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:13 UTC 2011; #<Thread:0x3ad61a8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:19 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:19 UTC 2011; #<Thread:0x2497410 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:19 UTC 2011; #<Client:0x2498028> - Debug:
+Client connected. #<TCPSocket:0x2496f18>
+Mon Jul 11 18:47:19 UTC 2011; #<Client:0x2498028> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:20 UTC 2011; #<Thread:0x2497410 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:25 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:25 UTC 2011; #<Thread:0x3af0ef0 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:25 UTC 2011; #<Client:0x3af12b0> - Debug:
+Client connected. #<TCPSocket:0x3aefc30>
+Mon Jul 11 18:47:25 UTC 2011; #<Client:0x3af12b0> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:26 UTC 2011; #<Thread:0x3af0ef0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:31 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:31 UTC 2011; #<Thread:0x3b35818 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:31 UTC 2011; #<Client:0x3b36358> - Debug:
+Client connected. #<TCPSocket:0x3b34b58>
+Mon Jul 11 18:47:31 UTC 2011; #<Client:0x3b36358> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:32 UTC 2011; #<Thread:0x3b35818 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:37 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:37 UTC 2011; #<Thread:0x3af7040 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:37 UTC 2011; #<Client:0x3af6c38> - Debug:
+Client connected. #<TCPSocket:0x3af78b0>
+Mon Jul 11 18:47:37 UTC 2011; #<Client:0x3af6c38> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:38 UTC 2011; #<Thread:0x3af7040 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:47:44 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:47:44 UTC 2011; #<Thread:0x3ad2e00 run> - Debug:
+Thread started.
+Mon Jul 11 18:47:44 UTC 2011; #<Client:0x3ad2c38> - Debug:
+Client connected. #<TCPSocket:0x3ad2f20>
+Mon Jul 11 18:47:44 UTC 2011; #<Client:0x3ad2c38> - Debug:
+Client disconnected.
+Mon Jul 11 18:47:45 UTC 2011; #<Thread:0x3ad2e00 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:48:06 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:48:06 UTC 2011; #<Thread:0x3b06ca0 run> - Debug:
+Thread started.
+Mon Jul 11 18:48:06 UTC 2011; #<Client:0x3b06898> - Debug:
+Client connected. #<TCPSocket:0x3b07408>
+Mon Jul 11 18:48:06 UTC 2011; #<Client:0x3b06898> - Debug:
+Client disconnected.
+Mon Jul 11 18:48:07 UTC 2011; #<Thread:0x3b06ca0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:48:13 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:48:13 UTC 2011; #<Thread:0x3ad59e0 run> - Debug:
+Thread started.
+Mon Jul 11 18:48:13 UTC 2011; #<Client:0x3ad58d8> - Debug:
+Client connected. #<TCPSocket:0x3ad5bf0>
+Mon Jul 11 18:48:13 UTC 2011; #<Client:0x3ad58d8> - Debug:
+Client disconnected.
+Mon Jul 11 18:48:14 UTC 2011; #<Thread:0x3ad59e0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:49:29 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:49:29 UTC 2011; #<Thread:0x3adc448 run> - Debug:
+Thread started.
+Mon Jul 11 18:49:29 UTC 2011; #<Client:0x3adc5c8> - Debug:
+Client connected. #<TCPSocket:0x3adc1f0>
+Mon Jul 11 18:49:29 UTC 2011; #<Client:0x3adc5c8> - Debug:
+Client disconnected.
+Mon Jul 11 18:49:30 UTC 2011; #<Thread:0x3adc448 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:49:35 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:49:35 UTC 2011; #<Thread:0x3b1c900 run> - Debug:
+Thread started.
+Mon Jul 11 18:49:35 UTC 2011; #<Client:0x3b1cf60> - Debug:
+Client connected. #<TCPSocket:0x3b1b3b8>
+Mon Jul 11 18:49:35 UTC 2011; #<Client:0x3b1cf60> - Debug:
+Client disconnected.
+Mon Jul 11 18:49:36 UTC 2011; #<Thread:0x3b1c900 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:49:42 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:49:42 UTC 2011; #<Thread:0x3b035f8 run> - Debug:
+Thread started.
+Mon Jul 11 18:49:42 UTC 2011; #<Client:0x3b03490> - Debug:
+Client connected. #<TCPSocket:0x3b03a18>
+Mon Jul 11 18:49:42 UTC 2011; #<Client:0x3b03490> - Debug:
+Client disconnected.
+Mon Jul 11 18:49:43 UTC 2011; #<Thread:0x3b035f8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:49:49 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:49:49 UTC 2011; #<Thread:0x3ad2ab8 run> - Debug:
+Thread started.
+Mon Jul 11 18:49:49 UTC 2011; #<Client:0x3ad29f8> - Debug:
+Client connected. #<TCPSocket:0x3ad2cf8>
+Mon Jul 11 18:49:49 UTC 2011; #<Client:0x3ad29f8> - Debug:
+Client disconnected.
+Mon Jul 11 18:49:50 UTC 2011; #<Thread:0x3ad2ab8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:49:56 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:49:56 UTC 2011; #<Thread:0x3ad3cb8 run> - Debug:
+Thread started.
+Mon Jul 11 18:49:56 UTC 2011; #<Client:0x3ad3da8> - Debug:
+Client connected. #<TCPSocket:0x3ad39d0>
+Mon Jul 11 18:49:56 UTC 2011; #<Client:0x3ad3da8> - Debug:
+Client disconnected.
+Mon Jul 11 18:49:57 UTC 2011; #<Thread:0x3ad3cb8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:03 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:03 UTC 2011; #<Thread:0x3b0b320 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:03 UTC 2011; #<Client:0x3b0b908> - Debug:
+Client connected. #<TCPSocket:0x3b0b0f8>
+Mon Jul 11 18:50:03 UTC 2011; #<Client:0x3b0b908> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:04 UTC 2011; #<Thread:0x3b0b320 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:10 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:10 UTC 2011; #<Thread:0x3b0ac00 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:10 UTC 2011; #<Client:0x3b0ab28> - Debug:
+Client connected. #<TCPSocket:0x3b0af18>
+Mon Jul 11 18:50:10 UTC 2011; #<Client:0x3b0ab28> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:11 UTC 2011; #<Thread:0x3b0ac00 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:18 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:18 UTC 2011; #<Thread:0x3ad5fb0 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:18 UTC 2011; #<Client:0x3ad5db8> - Debug:
+Client connected. #<TCPSocket:0x3ad60d0>
+Mon Jul 11 18:50:18 UTC 2011; #<Client:0x3ad5db8> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:19 UTC 2011; #<Thread:0x3ad5fb0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:24 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:24 UTC 2011; #<Thread:0x2498868 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:24 UTC 2011; #<Client:0x2498d00> - Debug:
+Client connected. #<TCPSocket:0x2498058>
+Mon Jul 11 18:50:24 UTC 2011; #<Client:0x2498d00> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:25 UTC 2011; #<Thread:0x2498868 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:32 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:32 UTC 2011; #<Thread:0x3af9998 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:32 UTC 2011; #<Client:0x3afa1d8> - Debug:
+Client connected. #<TCPSocket:0x3af8e88>
+Mon Jul 11 18:50:32 UTC 2011; #<Client:0x3afa1d8> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:33 UTC 2011; #<Thread:0x3af9998 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:39 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:39 UTC 2011; #<Thread:0x3b190d8 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:39 UTC 2011; #<Client:0x3b18e80> - Debug:
+Client connected. #<TCPSocket:0x3b1a440>
+Mon Jul 11 18:50:39 UTC 2011; #<Client:0x3b18e80> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:40 UTC 2011; #<Thread:0x3b190d8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:45 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:45 UTC 2011; #<Thread:0x3ae41a0 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:45 UTC 2011; #<Client:0x3ae3d38> - Debug:
+Client connected. #<TCPSocket:0x3ae4800>
+Mon Jul 11 18:50:45 UTC 2011; #<Client:0x3ae3d38> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:46 UTC 2011; #<Thread:0x3ae41a0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:50:52 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:50:52 UTC 2011; #<Thread:0x248d3a8 run> - Debug:
+Thread started.
+Mon Jul 11 18:50:52 UTC 2011; #<Client:0x248bf08> - Debug:
+Client connected. #<TCPSocket:0x248de70>
+Mon Jul 11 18:50:52 UTC 2011; #<Client:0x248bf08> - Debug:
+Client disconnected.
+Mon Jul 11 18:50:53 UTC 2011; #<Thread:0x248d3a8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:51:01 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:51:01 UTC 2011; #<Thread:0x3afdad8 run> - Debug:
+Thread started.
+Mon Jul 11 18:51:01 UTC 2011; #<Client:0x3afe0d8> - Debug:
+Client connected. #<TCPSocket:0x3afd280>
+Mon Jul 11 18:51:02 UTC 2011; #<Client:0x3afe0d8> - Debug:
+Client disconnected.
+Mon Jul 11 18:51:03 UTC 2011; #<Thread:0x3afdad8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:51:08 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:51:08 UTC 2011; #<Thread:0x3b1fff0 run> - Debug:
+Thread started.
+Mon Jul 11 18:51:08 UTC 2011; #<Client:0x3b1f660> - Debug:
+Client connected. #<TCPSocket:0x3b20b00>
+Mon Jul 11 18:51:08 UTC 2011; #<Client:0x3b1f660> - Debug:
+Client disconnected.
+Mon Jul 11 18:51:09 UTC 2011; #<Thread:0x3b1fff0 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:51:14 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:51:14 UTC 2011; #<Thread:0x3ae80e8 run> - Debug:
+Thread started.
+Mon Jul 11 18:51:14 UTC 2011; #<Client:0x3ae7f50> - Debug:
+Client connected. #<TCPSocket:0x3ae9180>
+Mon Jul 11 18:51:14 UTC 2011; #<Client:0x3ae7f50> - Debug:
+Client disconnected.
+Mon Jul 11 18:51:15 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:51:15 UTC 2011; #<Thread:0x3adebd8 run> - Debug:
+Thread started.
+Mon Jul 11 18:51:15 UTC 2011; #<Client:0x3ade980> - Debug:
+Client connected. #<TCPSocket:0x3aded40>
+Mon Jul 11 18:51:24 UTC 2011; #<Thread:0x3ae80e8 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:51:56 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:51:56 UTC 2011; #<Thread:0x3ad4c18 run> - Debug:
+Thread started.
+Mon Jul 11 18:51:56 UTC 2011; #<Client:0x3ad4b28> - Debug:
+Client connected. #<TCPSocket:0x3ad4d38>
+Mon Jul 11 18:51:56 UTC 2011; #<Client:0x3ad4b28> - Debug:
+Client disconnected.
+Mon Jul 11 18:51:57 UTC 2011; #<Thread:0x3ad4c18 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:52:00 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:52:00 UTC 2011; #<Thread:0x2487090 run> - Debug:
+Thread started.
+Mon Jul 11 18:52:00 UTC 2011; #<Client:0x2486d30> - Debug:
+Client connected. #<TCPSocket:0x2487270>
+Mon Jul 11 18:52:00 UTC 2011; #<Client:0x2486d30> - Debug:
+Client disconnected.
+Mon Jul 11 18:52:00 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:52:00 UTC 2011; #<Thread:0x2480c88 run> - Debug:
+Thread started.
+Mon Jul 11 18:52:00 UTC 2011; #<Client:0x2481348> - Debug:
+Client connected. #<TCPSocket:0x2480400>
+Mon Jul 11 18:52:01 UTC 2011; #<Thread:0x2487090 run> - Debug:
+Thread stopped.
+Mon Jul 11 18:52:06 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:52:06 UTC 2011; #<Thread:0x3b0ead0 run> - Debug:
+Thread started.
+Mon Jul 11 18:52:06 UTC 2011; #<Client:0x3b0ea10> - Debug:
+Client connected. #<TCPSocket:0x3b0ecb0>
+Mon Jul 11 18:52:06 UTC 2011; #<Client:0x3b0ea10> - Debug:
+Client disconnected.
+Mon Jul 11 18:52:07 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 18:52:07 UTC 2011; #<Thread:0x3b0da80 run> - Debug:
+Thread started.
+Mon Jul 11 18:52:07 UTC 2011; #<Client:0x3b0d9c0> - Debug:
+Client connected. #<TCPSocket:0x3b0dc60>
+Mon Jul 11 18:52:07 UTC 2011; #<Thread:0x3b0ead0 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:01:56 UTC 2011; #<Client:0x3b0d9c0> - Debug:
+Client disconnected.
+Mon Jul 11 19:01:56 UTC 2011; #<Client:0x3b0d9c0> - Debug:
+Client disconnection caused problems.
+Mon Jul 11 19:01:56 UTC 2011; #<Thread:0x3b0da80 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:04:01 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:04:01 UTC 2011; #<Thread:0x3ad2cc8 run> - Debug:
+Thread started.
+Mon Jul 11 19:04:01 UTC 2011; #<Client:0x3ad2bf0> - Debug:
+Client connected. #<TCPSocket:0x3ad2ef0>
+Mon Jul 11 19:04:01 UTC 2011; #<Client:0x3ad2bf0> - Debug:
+Client disconnected.
+Mon Jul 11 19:04:02 UTC 2011; #<Thread:0x3ad2cc8 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:04:05 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:04:05 UTC 2011; #<Thread:0x3ad7b40 run> - Debug:
+Thread started.
+Mon Jul 11 19:04:05 UTC 2011; #<Client:0x3ad7db0> - Debug:
+Client connected. #<TCPSocket:0x3ad78d0>
+Mon Jul 11 19:04:05 UTC 2011; #<Client:0x3ad7db0> - Debug:
+Client disconnected.
+Mon Jul 11 19:04:06 UTC 2011; #<Thread:0x3ad7b40 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:04:06 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:04:06 UTC 2011; #<Thread:0x3ae41d0 run> - Debug:
+Thread started.
+Mon Jul 11 19:04:06 UTC 2011; #<Client:0x3ae4368> - Debug:
+Client connected. #<TCPSocket:0x3ae3f90>
+Mon Jul 11 19:04:11 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:04:11 UTC 2011; #<Thread:0x3af4d48 run> - Debug:
+Thread started.
+Mon Jul 11 19:04:11 UTC 2011; #<Client:0x3af46d0> - Debug:
+Client connected. #<TCPSocket:0x3af5090>
+Mon Jul 11 19:04:11 UTC 2011; #<Client:0x3af46d0> - Debug:
+Client disconnected.
+Mon Jul 11 19:04:12 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:04:12 UTC 2011; #<Thread:0x3ae3d38 run> - Debug:
+Thread started.
+Mon Jul 11 19:04:12 UTC 2011; #<Client:0x3ae3c78> - Debug:
+Client connected. #<TCPSocket:0x3ae3f30>
+Mon Jul 11 19:04:12 UTC 2011; #<Thread:0x3af4d48 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:04:53 UTC 2011; #<Client:0x3ade980> - Debug:
+Client disconnected.
+Mon Jul 11 19:04:53 UTC 2011; #<Client:0x3ade980> - Debug:
+Client disconnection caused problems.
+Mon Jul 11 19:04:53 UTC 2011; #<Thread:0x3adebd8 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:06:57 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:06:57 UTC 2011; #<Thread:0x249ce88 run> - Debug:
+Thread started.
+Mon Jul 11 19:06:57 UTC 2011; #<Client:0x249cc00> - Debug:
+Client connected. #<TCPSocket:0x249d2f0>
+Mon Jul 11 19:06:57 UTC 2011; #<Client:0x249cc00> - Debug:
+Client disconnected.
+Mon Jul 11 19:06:58 UTC 2011; #<Thread:0x249ce88 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:07:06 UTC 2011; Main Thread - Debug:
+New connection received.
+Mon Jul 11 19:07:06 UTC 2011; #<Thread:0x3af0f50 run> - Debug:
+Thread started.
+Mon Jul 11 19:07:06 UTC 2011; #<Client:0x3af09e0> - Debug:
+Client connected. #<TCPSocket:0x3af19d0>
+Mon Jul 11 19:07:06 UTC 2011; #<Client:0x3af09e0> - Debug:
+Client disconnected.
+Mon Jul 11 19:07:07 UTC 2011; #<Thread:0x3af0f50 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:07:37 UTC 2011; #<Client:0x3ae3c78> - Debug:
+Client disconnected.
+Mon Jul 11 19:07:37 UTC 2011; #<Client:0x3ae3c78> - Debug:
+Client disconnection caused problems.
+Mon Jul 11 19:07:37 UTC 2011; #<Thread:0x3ae3d38 run> - Debug:
+Thread stopped.
+Mon Jul 11 19:38:22 UTC 2011; Main Thread - Debug:
+Server stopping...
+Mon Jul 11 19:38:22 UTC 2011; #<Client:0x2481348> - Debug:
+Client disconnected.
+Mon Jul 11 19:38:23 UTC 2011; #<Thread:0x2480c88 run> - Debug:
+Thread stopped.
+2011-07-11 19:46:49 UTC; Main Thread - Debug:
+Server starting...
+2011-07-11 19:46:51 UTC; Main Thread - Debug:
+Server started.
+2011-07-11 19:49:09 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:49:09 UTC; #<Thread:0x1df0ac0 run> - Debug:
+Thread started.
+2011-07-11 19:49:09 UTC; #<Client:0x1df04a0> - Debug:
+Client connected. #<TCPSocket:0x1df0e00>
+2011-07-11 19:49:09 UTC; #<Client:0x1df04a0> - Debug:
+Client disconnected.
+2011-07-11 19:49:10 UTC; #<Thread:0x1df0ac0 run> - Debug:
+Thread stopped.
+2011-07-11 19:49:17 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:49:17 UTC; #<Thread:0x524a40 run> - Debug:
+Thread started.
+2011-07-11 19:49:17 UTC; #<Client:0x5256e0> - Debug:
+Client connected. #<TCPSocket:0x523de0>
+2011-07-11 19:49:17 UTC; #<Client:0x5256e0> - Debug:
+Client disconnected.
+2011-07-11 19:49:18 UTC; #<Thread:0x524a40 run> - Debug:
+Thread stopped.
+2011-07-11 19:49:24 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:49:24 UTC; #<Thread:0x1f003e0 run> - Debug:
+Thread started.
+2011-07-11 19:49:24 UTC; #<Client:0x1f00e40> - Debug:
+Client connected. #<TCPSocket:0x1eff160>
+2011-07-11 19:49:24 UTC; #<Client:0x1f00e40> - Debug:
+Client disconnected.
+2011-07-11 19:49:25 UTC; #<Thread:0x1f003e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:49:27 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:49:27 UTC; #<Thread:0x1eb8140 run> - Debug:
+Thread started.
+2011-07-11 19:49:27 UTC; #<Client:0x1eb7900> - Debug:
+Client connected. #<TCPSocket:0x1eb86a0>
+2011-07-11 19:49:27 UTC; #<Client:0x1eb7900> - Debug:
+Client disconnected.
+2011-07-11 19:49:28 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:49:28 UTC; #<Thread:0x1eaea20 run> - Debug:
+Thread started.
+2011-07-11 19:49:28 UTC; #<Client:0x1eae3a0> - Debug:
+Client connected. #<TCPSocket:0x1eaecc0>
+2011-07-11 19:49:28 UTC; #<Thread:0x1eb8140 run> - Debug:
+Thread stopped.
+2011-07-11 19:50:14 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:50:14 UTC; #<Thread:0x1ea2c60 run> - Debug:
+Thread started.
+2011-07-11 19:50:14 UTC; #<Client:0x1e98580> - Debug:
+Client connected. #<TCPSocket:0x1ea2ee0>
+2011-07-11 19:50:14 UTC; #<Client:0x1e98580> - Debug:
+Client disconnected.
+2011-07-11 19:50:15 UTC; #<Thread:0x1ea2c60 run> - Debug:
+Thread stopped.
+2011-07-11 19:50:21 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:50:21 UTC; #<Thread:0x1e470e0 run> - Debug:
+Thread started.
+2011-07-11 19:50:21 UTC; #<Client:0x1e46700> - Debug:
+Client connected. #<TCPSocket:0x1e47700>
+2011-07-11 19:50:21 UTC; #<Client:0x1e46700> - Debug:
+Client disconnected.
+2011-07-11 19:50:22 UTC; #<Thread:0x1e470e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:50:27 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:50:27 UTC; #<Thread:0x1e09800 run> - Debug:
+Thread started.
+2011-07-11 19:50:27 UTC; #<Client:0x1e08920> - Debug:
+Client connected. #<TCPSocket:0x1e2bc20>
+2011-07-11 19:50:27 UTC; #<Client:0x1e08920> - Debug:
+Client disconnected.
+2011-07-11 19:50:28 UTC; #<Thread:0x1e09800 run> - Debug:
+Thread stopped.
+2011-07-11 19:50:35 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:50:35 UTC; #<Thread:0x526d80 run> - Debug:
+Thread started.
+2011-07-11 19:50:35 UTC; #<Client:0x526920> - Debug:
+Client connected. #<TCPSocket:0x527560>
+2011-07-11 19:50:35 UTC; #<Client:0x526920> - Debug:
+Client disconnected.
+2011-07-11 19:50:36 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:50:36 UTC; #<Thread:0x1eb8820 run> - Debug:
+Thread started.
+2011-07-11 19:50:36 UTC; #<Client:0x1eb8480> - Debug:
+Client connected. #<TCPSocket:0x1eb8c60>
+2011-07-11 19:50:36 UTC; #<Thread:0x526d80 run> - Debug:
+Thread stopped.
+2011-07-11 19:51:43 UTC; #<Client:0x1eae3a0> - Debug:
+Client disconnected.
+2011-07-11 19:51:43 UTC; #<Client:0x1eae3a0> - Debug:
+Client disconnection caused problems.
+2011-07-11 19:51:43 UTC; #<Client:0x1eb8480> - Debug:
+Client problem detected. #<TCPSocket:0x1eb8c60>
+2011-07-11 19:51:43 UTC; #<Thread:0x1eaea20 run> - Debug:
+Thread stopped.
+2011-07-11 19:51:43 UTC; #<Client:0x1eb8480> - Debug:
+Client disconnected.
+2011-07-11 19:51:44 UTC; #<Thread:0x1eb8820 run> - Debug:
+Thread stopped.
+2011-07-11 19:51:59 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:51:59 UTC; #<Thread:0x1df7320 run> - Debug:
+Thread started.
+2011-07-11 19:51:59 UTC; #<Client:0x1df6ee0> - Debug:
+Client connected. #<TCPSocket:0x1df79c0>
+2011-07-11 19:51:59 UTC; #<Client:0x1df6ee0> - Debug:
+Client disconnected.
+2011-07-11 19:52:00 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:00 UTC; #<Thread:0x1df3480 run> - Debug:
+Thread started.
+2011-07-11 19:52:00 UTC; #<Client:0x1df2fc0> - Debug:
+Client connected. #<TCPSocket:0x1df36e0>
+2011-07-11 19:52:00 UTC; #<Client:0x1df2fc0> - Debug:
+Client disconnected.
+2011-07-11 19:52:00 UTC; #<Thread:0x1df7320 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:01 UTC; #<Thread:0x1df3480 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:05 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:05 UTC; #<Thread:0x147bde0 run> - Debug:
+Thread started.
+2011-07-11 19:52:05 UTC; #<Client:0x147b9c0> - Debug:
+Client connected. #<TCPSocket:0x147c0e0>
+2011-07-11 19:52:05 UTC; #<Client:0x147b9c0> - Debug:
+Client disconnected.
+2011-07-11 19:52:06 UTC; #<Thread:0x147bde0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:07 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:07 UTC; #<Thread:0x13a1900 run> - Debug:
+Thread started.
+2011-07-11 19:52:07 UTC; #<Client:0x13a14e0> - Debug:
+Client connected. #<TCPSocket:0x13a1fe0>
+2011-07-11 19:52:07 UTC; #<Client:0x13a14e0> - Debug:
+Client disconnected.
+2011-07-11 19:52:07 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:07 UTC; #<Thread:0x52a6a0 run> - Debug:
+Thread started.
+2011-07-11 19:52:07 UTC; #<Client:0x52a220> - Debug:
+Client connected. #<TCPSocket:0x52ae40>
+2011-07-11 19:52:08 UTC; #<Thread:0x13a1900 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:13 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:13 UTC; #<Thread:0x1ef1be0 run> - Debug:
+Thread started.
+2011-07-11 19:52:13 UTC; #<Client:0x1ef1820> - Debug:
+Client connected. #<TCPSocket:0x1ef1fa0>
+2011-07-11 19:52:13 UTC; #<Client:0x1ef1820> - Debug:
+Client disconnected.
+2011-07-11 19:52:14 UTC; #<Thread:0x1ef1be0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:15 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:15 UTC; #<Thread:0x1eb46e0 run> - Debug:
+Thread started.
+2011-07-11 19:52:15 UTC; #<Client:0x1eb4360> - Debug:
+Client connected. #<TCPSocket:0x1eb6a60>
+2011-07-11 19:52:15 UTC; #<Client:0x1eb4360> - Debug:
+Client disconnected.
+2011-07-11 19:52:15 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:15 UTC; #<Thread:0x1eb0ce0 run> - Debug:
+Thread started.
+2011-07-11 19:52:15 UTC; #<Client:0x1eaf8c0> - Debug:
+Client connected. #<TCPSocket:0x1eb15a0>
+2011-07-11 19:52:20 UTC; #<Thread:0x1eb46e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:27 UTC; #<Client:0x52a220> - Debug:
+Client disconnected.
+2011-07-11 19:52:28 UTC; #<Thread:0x52a6a0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:37 UTC; #<Client:0x1eaf8c0> - Debug:
+Client disconnected.
+2011-07-11 19:52:38 UTC; #<Thread:0x1eb0ce0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:44 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:44 UTC; #<Thread:0x1da7020 run> - Debug:
+Thread started.
+2011-07-11 19:52:44 UTC; #<Client:0x1da6b20> - Debug:
+Client connected. #<TCPSocket:0x1da7a40>
+2011-07-11 19:52:44 UTC; #<Client:0x1da6b20> - Debug:
+Client disconnected.
+2011-07-11 19:52:45 UTC; #<Thread:0x1da7020 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:51 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:51 UTC; #<Thread:0x1dce6c0 run> - Debug:
+Thread started.
+2011-07-11 19:52:51 UTC; #<Client:0x1dcf9c0> - Debug:
+Client connected. #<TCPSocket:0x1dcdd00>
+2011-07-11 19:52:51 UTC; #<Client:0x1dcf9c0> - Debug:
+Client disconnected.
+2011-07-11 19:52:52 UTC; #<Thread:0x1dce6c0 run> - Debug:
+Thread stopped.
+2011-07-11 19:52:57 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:52:57 UTC; #<Thread:0x1eb7cc0 run> - Debug:
+Thread started.
+2011-07-11 19:52:57 UTC; #<Client:0x1eb7160> - Debug:
+Client connected. #<TCPSocket:0x1eb82e0>
+2011-07-11 19:52:57 UTC; #<Client:0x1eb7160> - Debug:
+Client disconnected.
+2011-07-11 19:52:58 UTC; #<Thread:0x1eb7cc0 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:05 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:05 UTC; #<Thread:0x1e4f540 run> - Debug:
+Thread started.
+2011-07-11 19:53:05 UTC; #<Client:0x1e4f0c0> - Debug:
+Client connected. #<TCPSocket:0x1e4faa0>
+2011-07-11 19:53:05 UTC; #<Client:0x1e4f0c0> - Debug:
+Client disconnected.
+2011-07-11 19:53:06 UTC; #<Thread:0x1e4f540 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:11 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:11 UTC; #<Thread:0x1daef60 run> - Debug:
+Thread started.
+2011-07-11 19:53:11 UTC; #<Client:0x1dae900> - Debug:
+Client connected. #<TCPSocket:0x1dbc0a0>
+2011-07-11 19:53:11 UTC; #<Client:0x1dae900> - Debug:
+Client disconnected.
+2011-07-11 19:53:12 UTC; #<Thread:0x1daef60 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:21 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:21 UTC; #<Thread:0x1e4d1e0 run> - Debug:
+Thread started.
+2011-07-11 19:53:21 UTC; #<Client:0x1e4df20> - Debug:
+Client connected. #<TCPSocket:0x1e49980>
+2011-07-11 19:53:21 UTC; #<Client:0x1e4df20> - Debug:
+Client disconnected.
+2011-07-11 19:53:22 UTC; #<Thread:0x1e4d1e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:27 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:27 UTC; #<Thread:0x1eb8700 run> - Debug:
+Thread started.
+2011-07-11 19:53:27 UTC; #<Client:0x1eb8180> - Debug:
+Client connected. #<TCPSocket:0x1eb8f00>
+2011-07-11 19:53:27 UTC; #<Client:0x1eb8180> - Debug:
+Client disconnected.
+2011-07-11 19:53:28 UTC; #<Thread:0x1eb8700 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:37 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:37 UTC; #<Thread:0x1df3c60 run> - Debug:
+Thread started.
+2011-07-11 19:53:37 UTC; #<Client:0x1df3580> - Debug:
+Client connected. #<TCPSocket:0x1df3f20>
+2011-07-11 19:53:37 UTC; #<Client:0x1df3580> - Debug:
+Client disconnected.
+2011-07-11 19:53:38 UTC; #<Thread:0x1df3c60 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:43 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:43 UTC; #<Thread:0x13a2140 run> - Debug:
+Thread started.
+2011-07-11 19:53:43 UTC; #<Client:0x13a1b60> - Debug:
+Client connected. #<TCPSocket:0x13a2960>
+2011-07-11 19:53:43 UTC; #<Client:0x13a1b60> - Debug:
+Client disconnected.
+2011-07-11 19:53:44 UTC; #<Thread:0x13a2140 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:50 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:50 UTC; #<Thread:0x1ea48e0 run> - Debug:
+Thread started.
+2011-07-11 19:53:50 UTC; #<Client:0x1ea5360> - Debug:
+Client connected. #<TCPSocket:0x1ea3f00>
+2011-07-11 19:53:50 UTC; #<Client:0x1ea5360> - Debug:
+Client disconnected.
+2011-07-11 19:53:51 UTC; #<Thread:0x1ea48e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:53:57 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:53:57 UTC; #<Thread:0x1eaa9e0 run> - Debug:
+Thread started.
+2011-07-11 19:53:57 UTC; #<Client:0x1eaa520> - Debug:
+Client connected. #<TCPSocket:0x1eabe60>
+2011-07-11 19:53:57 UTC; #<Client:0x1eaa520> - Debug:
+Client disconnected.
+2011-07-11 19:53:58 UTC; #<Thread:0x1eaa9e0 run> - Debug:
+Thread stopped.
+2011-07-11 19:54:01 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:54:01 UTC; #<Thread:0x1e64100 run> - Debug:
+Thread started.
+2011-07-11 19:54:01 UTC; #<Client:0x1e63a80> - Debug:
+Client connected. #<TCPSocket:0x1e643c0>
+2011-07-11 19:54:01 UTC; #<Client:0x1e63a80> - Debug:
+Client disconnected.
+2011-07-11 19:54:01 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:54:01 UTC; #<Thread:0x1e50880 run> - Debug:
+Thread started.
+2011-07-11 19:54:01 UTC; #<Client:0x1e504e0> - Debug:
+Client connected. #<TCPSocket:0x1e55120>
+2011-07-11 19:54:06 UTC; #<Thread:0x1e64100 run> - Debug:
+Thread stopped.
+2011-07-11 19:55:20 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:55:20 UTC; #<Thread:0x1e087a0 run> - Debug:
+Thread started.
+2011-07-11 19:55:20 UTC; #<Client:0x1e07ec0> - Debug:
+Client connected. #<TCPSocket:0x1e2b7c0>
+2011-07-11 19:55:20 UTC; #<Client:0x1e07ec0> - Debug:
+Client disconnected.
+2011-07-11 19:55:21 UTC; #<Thread:0x1e087a0 run> - Debug:
+Thread stopped.
+2011-07-11 19:55:27 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:55:27 UTC; #<Thread:0x13a2f80 run> - Debug:
+Thread started.
+2011-07-11 19:55:27 UTC; #<Client:0x13a28e0> - Debug:
+Client connected. #<TCPSocket:0x13a32c0>
+2011-07-11 19:55:27 UTC; #<Client:0x13a28e0> - Debug:
+Client disconnected.
+2011-07-11 19:55:28 UTC; #<Thread:0x13a2f80 run> - Debug:
+Thread stopped.
+2011-07-11 19:55:31 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:55:31 UTC; #<Thread:0x1df3500 run> - Debug:
+Thread started.
+2011-07-11 19:55:31 UTC; #<Client:0x1df58a0> - Debug:
+Client connected. #<TCPSocket:0x1df0f40>
+2011-07-11 19:55:31 UTC; #<Client:0x1df58a0> - Debug:
+Client disconnected.
+2011-07-11 19:55:32 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:55:32 UTC; #<Thread:0x1e352c0 run> - Debug:
+Thread started.
+2011-07-11 19:55:32 UTC; #<Client:0x1e37080> - Debug:
+Client connected. #<TCPSocket:0x1e331c0>
+2011-07-11 19:55:32 UTC; #<Thread:0x1df3500 run> - Debug:
+Thread stopped.
+2011-07-11 19:56:43 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:56:43 UTC; #<Thread:0x1f02800 run> - Debug:
+Thread started.
+2011-07-11 19:56:43 UTC; #<Client:0x1f02440> - Debug:
+Client connected. #<TCPSocket:0x1f01b00>
+2011-07-11 19:56:44 UTC; #<Client:0x1f02440> - Debug:
+Client disconnected.
+2011-07-11 19:56:45 UTC; #<Thread:0x1f02800 run> - Debug:
+Thread stopped.
+2011-07-11 19:56:55 UTC; #<Client:0x1e37080> - Debug:
+Client disconnected.
+2011-07-11 19:56:55 UTC; #<Client:0x1e37080> - Debug:
+Client disconnection caused problems.
+2011-07-11 19:56:55 UTC; #<Thread:0x1e352c0 run> - Debug:
+Thread stopped.
+2011-07-11 19:57:21 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:57:21 UTC; #<Thread:0x13a1920 run> - Debug:
+Thread started.
+2011-07-11 19:57:21 UTC; #<Client:0x13a1380> - Debug:
+Client connected. #<TCPSocket:0x13a21c0>
+2011-07-11 19:57:21 UTC; #<Client:0x13a1380> - Debug:
+Client disconnected.
+2011-07-11 19:57:22 UTC; #<Thread:0x13a1920 run> - Debug:
+Thread stopped.
+2011-07-11 19:57:29 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:57:29 UTC; #<Thread:0x1f01b00 run> - Debug:
+Thread started.
+2011-07-11 19:57:29 UTC; #<Client:0x1f02880> - Debug:
+Client connected. #<TCPSocket:0x1f011c0>
+2011-07-11 19:57:29 UTC; #<Client:0x1f02880> - Debug:
+Client disconnected.
+2011-07-11 19:57:29 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 19:57:29 UTC; #<Thread:0x1ef2180 run> - Debug:
+Thread started.
+2011-07-11 19:57:29 UTC; #<Client:0x1ef1ca0> - Debug:
+Client connected. #<TCPSocket:0x1ef23c0>
+2011-07-11 19:57:30 UTC; #<Thread:0x1f01b00 run> - Debug:
+Thread stopped.
+2011-07-11 19:58:39 UTC; #<Client:0x1ef1ca0> - Debug:
+Client disconnected.
+2011-07-11 19:58:39 UTC; #<Client:0x1ef1ca0> - Debug:
+Client disconnection caused problems.
+2011-07-11 19:58:39 UTC; #<Thread:0x1ef2180 run> - Debug:
+Thread stopped.
+2011-07-11 19:59:32 UTC; #<Client:0x1e504e0> - Debug:
+Client disconnected.
+2011-07-11 19:59:32 UTC; #<Client:0x1e504e0> - Debug:
+Client disconnection caused problems.
+2011-07-11 19:59:32 UTC; #<Thread:0x1e50880 run> - Debug:
+Thread stopped.
+2011-07-11 20:05:23 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:05:23 UTC; #<Thread:0x1e30000 run> - Debug:
+Thread started.
+2011-07-11 20:05:23 UTC; #<Client:0x1e2fc40> - Debug:
+Client connected. #<TCPSocket:0x1e30520>
+2011-07-11 20:05:23 UTC; #<Client:0x1e2fc40> - Debug:
+Client disconnected.
+2011-07-11 20:05:24 UTC; #<Thread:0x1e30000 run> - Debug:
+Thread stopped.
+2011-07-11 20:05:29 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:05:29 UTC; #<Thread:0x147b540 run> - Debug:
+Thread started.
+2011-07-11 20:05:29 UTC; #<Client:0x147af40> - Debug:
+Client connected. #<TCPSocket:0x147b860>
+2011-07-11 20:05:29 UTC; #<Client:0x147af40> - Debug:
+Client disconnected.
+2011-07-11 20:05:30 UTC; #<Thread:0x147b540 run> - Debug:
+Thread stopped.
+2011-07-11 20:05:31 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:05:31 UTC; #<Thread:0x13a1600 run> - Debug:
+Thread started.
+2011-07-11 20:05:31 UTC; #<Client:0x13a10e0> - Debug:
+Client connected. #<TCPSocket:0x13a1b40>
+2011-07-11 20:05:59 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:05:59 UTC; #<Thread:0x1eb7040 run> - Debug:
+Thread started.
+2011-07-11 20:05:59 UTC; #<Client:0x1eb6420> - Debug:
+Client connected. #<TCPSocket:0x1eb7600>
+2011-07-11 20:05:59 UTC; #<Client:0x1eb6420> - Debug:
+Client disconnected.
+2011-07-11 20:06:00 UTC; #<Thread:0x1eb7040 run> - Debug:
+Thread stopped.
+2011-07-11 20:06:04 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:06:04 UTC; #<Thread:0x1e4cf80 run> - Debug:
+Thread started.
+2011-07-11 20:06:04 UTC; #<Client:0x1e49be0> - Debug:
+Client connected. #<TCPSocket:0x1e4d3e0>
+2011-07-11 20:06:04 UTC; #<Client:0x1e49be0> - Debug:
+Client disconnected.
+2011-07-11 20:06:05 UTC; #<Thread:0x1e4cf80 run> - Debug:
+Thread stopped.
+2011-07-11 20:06:05 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:06:05 UTC; #<Thread:0x1e08860 run> - Debug:
+Thread started.
+2011-07-11 20:06:05 UTC; #<Client:0x1e03600> - Debug:
+Client connected. #<TCPSocket:0x1e08fa0>
+2011-07-11 20:06:58 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:06:58 UTC; #<Thread:0x1ea35e0 run> - Debug:
+Thread started.
+2011-07-11 20:06:58 UTC; #<Client:0x1ea3260> - Debug:
+Client connected. #<TCPSocket:0x1ea38a0>
+2011-07-11 20:06:58 UTC; #<Client:0x1ea3260> - Debug:
+Client disconnected.
+2011-07-11 20:06:59 UTC; #<Thread:0x1ea35e0 run> - Debug:
+Thread stopped.
+2011-07-11 20:07:05 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:07:05 UTC; #<Thread:0x1dc82a0 run> - Debug:
+Thread started.
+2011-07-11 20:07:05 UTC; #<Client:0x1dc7d80> - Debug:
+Client connected. #<TCPSocket:0x1dc8600>
+2011-07-11 20:07:05 UTC; #<Client:0x1dc7d80> - Debug:
+Client disconnected.
+2011-07-11 20:07:06 UTC; #<Thread:0x1dc82a0 run> - Debug:
+Thread stopped.
+2011-07-11 20:07:10 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:07:10 UTC; #<Thread:0x523b00 run> - Debug:
+Thread started.
+2011-07-11 20:07:10 UTC; #<Client:0x523640> - Debug:
+Client connected. #<TCPSocket:0x523d80>
+2011-07-11 20:07:10 UTC; #<Client:0x523640> - Debug:
+Client disconnected.
+2011-07-11 20:07:10 UTC; Main Thread - Debug:
+New connection received.
+2011-07-11 20:07:10 UTC; #<Thread:0x147c8a0 run> - Debug:
+Thread started.
+2011-07-11 20:07:10 UTC; #<Client:0x147ed80> - Debug:
+Client connected. #<TCPSocket:0x147bee0>
+2011-07-11 20:07:11 UTC; #<Thread:0x523b00 run> - Debug:
+Thread stopped.
+2011-07-11 20:11:28 UTC; #<Client:0x1e03600> - Debug:
+Client disconnected.
+2011-07-11 20:11:28 UTC; #<Client:0x1e03600> - Debug:
+Client disconnection caused problems.
+2011-07-11 20:11:28 UTC; #<Thread:0x1e08860 run> - Debug:
+Thread stopped.
+2011-07-11 20:12:06 UTC; #<Client:0x147ed80> - Debug:
+Client disconnected.
+2011-07-11 20:12:07 UTC; #<Thread:0x147c8a0 run> - Debug:
+Thread stopped.
+2011-07-11 20:46:51 UTC; Maintenance Thread - Debug:
+Reconnecting to database...
+2011-07-11 20:46:51 UTC; Maintenance Thread - Debug:
+Database reconnection successful.

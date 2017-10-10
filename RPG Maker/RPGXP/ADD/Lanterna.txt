@@ -1,0 +1,103 @@
+#==============================================================================
+# Circle Of Light (Adds Circle Around your character
+#--------------------------------------------------------------------------
+#   Created By SephirothSpawn (12.08.05)
+#     Thanks to Nick for Coordinates Help
+#   Last Updated: 12.05.05
+#==============================================================================
+#==============================================================================
+# ** Game_Temp
+#==============================================================================
+class Game_Temp
+  #--------------------------------------------------------------------------
+  # * Public Instance Variables
+  #--------------------------------------------------------------------------
+  attr_accessor :cover_on, :col_on, :col_level, :col_flashlight
+  #--------------------------------------------------------------------------
+  # * Alias Listings
+  #--------------------------------------------------------------------------
+  alias col_int initialize
+  #--------------------------------------------------------------------------
+  # * Object Initialization
+  #--------------------------------------------------------------------------
+  def initialize
+    col_int
+    @cover_on, @col_on, @col_level, @col_flashlight = false, false, 1, false
+  end
+end
+#==============================================================================
+# ** Scene_Map
+#==============================================================================
+class Scene_Map
+  #--------------------------------------------------------------------------
+  # * Alias Listings
+  #--------------------------------------------------------------------------
+  alias col_main main
+  alias col_update update
+  #--------------------------------------------------------------------------
+  # * Main Processing
+  #--------------------------------------------------------------------------
+  def main
+    # Cover
+    @cover = Sprite.new
+      @cover.bitmap = RPG::Cache.fog("Cover", 0)
+      @cover.z, @cover.opacity = 9999, 200
+      @cover.visible = $game_temp.cover_on ? true : false
+    # Creates Circle Of Light Sprite
+    @circle_of_light = Sprite.new
+      if $game_temp.col_flashlight
+        file = "Flash Light_"
+        file += "D" if $game_player.direction == 2
+        file += "L" if $game_player.direction == 4
+        file += "R" if $game_player.direction == 6
+        file += "U" if $game_player.direction == 8
+      else
+        file = "Circle of Light_#{$game_temp.col_level}"
+      end
+      @circle_of_light.bitmap = RPG::Cache.fog(file, 0)
+      @circle_of_light.x = ($game_player.real_x / 4) - 624 - $game_map.display_x / 4
+      @circle_of_light.y = ($game_player.real_y / 4) + 32 - 480 - $game_map.display_y / 4
+      @circle_of_light.z, @circle_of_light.opacity = 9999, 200
+      @circle_of_light.visible = $game_temp.col_on ? true : false
+    # Orignal Scene_Map Main
+    col_main
+    # Disposes Circle Of Light Sprite
+    @circle_of_light.dispose
+  end
+  #--------------------------------------------------------------------------
+  # * Frame Update
+  #--------------------------------------------------------------------------
+  def update
+    # Updates Cover Visiblity
+    @cover.visible = $game_temp.cover_on ? true : false
+    # Updates Circle of Light Visibility
+    @circle_of_light.visible = $game_temp.col_on ? true : false
+    # Updates Circle Of Light Bitmap
+    if $game_temp.col_flashlight
+      file = "Flash Light_"
+      file += "D" if $game_player.direction == 2
+      file += "L" if $game_player.direction == 4
+      file += "R" if $game_player.direction == 6
+      file += "U" if $game_player.direction == 8
+    else
+      file = "Circle of Light_#{$game_temp.col_level}"
+    end
+    @circle_of_light.bitmap = RPG::Cache.fog(file, 0)
+    # Moves Sprite X
+    desired_x = ($game_player.real_x / 4) - 624 - $game_map.display_x / 4
+    if desired_x > @circle_of_light.x
+      @circle_of_light.x += 4
+    elsif desired_x < @circle_of_light.x
+      @circle_of_light.x -= 4
+    end
+    # Moves Sprite Y
+    desired_y = ($game_player.real_y / 4) - 472 - $game_map.display_y / 4
+    if desired_y > @circle_of_light.y
+      @circle_of_light.y += 4
+    elsif desired_y < @circle_of_light.y
+      @circle_of_light.y -= 4
+    end
+    # Orginal Scene_Map Update
+    col_update
+  end
+end

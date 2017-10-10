@@ -1,0 +1,27 @@
+﻿//+	LibOpenWalls PLANNING
+//-	LibOpenWalls is a freeware, cross-platform, lightweight and open-source next-generation 2D graphics library
+//-	Created by Pedro Henrique Lara Campos in 13-02-2013
+//
+//-	Was designed for being used in multiple languages running in various system.
+//-	Requires a system compatible with OpenGL (or its derivations) and C.
+//
+//-	Consists of these modules:
+//		[CORE]
+//			OpenWalls = for graphics M&R*
+//			OpenWallsC =  for complementing C language
+//			OpenWallsLanguage = for multiple languages support
+//			OpenWallsEvents = for intern event processing
+//		[COMPLEMENTS - HIGH PRIORITY]
+//			OpenWallsPC = for PCs only
+//			OpenWallsUI = for Interface M&R*
+//			OpenWallsGOps =  for graphics related operations (on paints only)
+//		[COMPLEMENTS - LOW PRIORITY]
+//			OpenWallsES = for Embedded Systems only
+//			OpenWallsGHWOps =  for graphics related operations (Hardware accelerated - on surfaces only)
+//			OpenWallFileMan = for formats-file managing
+//	*M&R: Manipulation and rendering
+//
+//-	Possible future ports includes: C++, JavaScript and D.
+//-	Possible future binds includes: Java, Python and LUA.
+//-	Runs in Linux, Windows, iOS and some embedded systems.
+//-	Targeted to be compatible with 3D engines, sound librarys.

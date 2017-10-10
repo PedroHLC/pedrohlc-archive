@@ -1,0 +1,2 @@
+﻿&6Welcome &f%player &6there is currently &4%nb players connected:
+&6%connected

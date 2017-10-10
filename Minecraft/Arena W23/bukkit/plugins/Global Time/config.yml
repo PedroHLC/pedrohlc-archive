@@ -1,0 +1,12 @@
+# Global Time v1.2.2 Config
+# Global times is a list of times shown when a player performs the /gt command
+# A list of timezones can be found here: http://dev.bukkit.org/server-mods/global-time/pages/list-of-times/
+# 
+#  Thanks for using Global Time! Questions? http://dev.bukkit.org/server-mods/global-time/
+verboseLogging: true
+IntervalTime: 60
+BroadcastMessage: §eHorario Local §3(%timezone%) -> §4%time%
+Global times:
+- Europe/Lisboa
+- US/New York
+- Africa/Cairo

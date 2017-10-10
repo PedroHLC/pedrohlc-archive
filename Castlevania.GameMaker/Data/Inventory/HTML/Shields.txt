@@ -1,0 +1,214 @@
+<tr>
+<td><a href="/wiki/File:Sotn-lshield-1-.gif" class="image" title="Sotn-lshield-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100821043413/castlevania/images/e/e5/Sotn-lshield-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Leather_Shield" title="Leather Shield">Leather Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Leather Shield - Low DEF</i>
+
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +1<br />
+</td><td><b>Find</b>:  <a href="/wiki/Alchemy_Laboratory" title="Alchemy Laboratory">Alchemy Laboratory</a>, <a href="/wiki/Master_Librarian%27s_Shop" title="Master Librarian&#39;s Shop" class="mw-redirect">Master Librarian's Shop</a><br /><b>Drop</b>:  <a href="/wiki/Slinger" title="Slinger">Slinger</a>, <a href="/wiki/Stone_Rose" title="Stone Rose" class="mw-redirect">Stone Rose</a><br />
+
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (10 MP) - Summon Cow for DEF +20<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-knigshld-1-.gif" class="image" title="Sotn-knigshld-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100821043256/castlevania/images/2/28/Sotn-knigshld-1-.gif" width="50" height="70" border="0" /></a>
+</td><td><b><a href="/wiki/Knight_Shield" title="Knight Shield">Knight Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Armored Knight's Shield</i>
+
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +2<br />
+</td><td><b>Find</b>:  <a href="/wiki/Colosseum" title="Colosseum">Colosseum</a> (just outside <a href="/wiki/Royal_Chapel" title="Royal Chapel">Royal Chapel</a>)<br /><b>Drop</b>:  <a href="/wiki/Spectral_Sword" title="Spectral Sword">Spectral Sword</a>, <a href="/wiki/Slinger" title="Slinger">Slinger</a><br />
+
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special - Summon war horse for ATK +20<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-irnshld-1-.gif" class="image" title="Sotn-irnshld-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100821043157/castlevania/images/f/f9/Sotn-irnshld-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Iron_Shield" title="Iron Shield">Iron Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Hard Iron Shield</i>
+
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +2<br />
+</td><td><b>Find</b>:  <a href="/wiki/Master_Librarian%27s_Shop" title="Master Librarian&#39;s Shop" class="mw-redirect">Master Librarian's Shop</a><br /><b>Drop</b>:  <a href="/wiki/Winged_Guard" title="Winged Guard" class="mw-redirect">Winged Guard</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (20 MP) - Summon giant warrior with twin blades attack<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-alucartsh-1-.gif" class="image" title="Sotn-alucartsh-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100820033350/castlevania/images/1/1b/Sotn-alucartsh-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Alucart_Shield" title="Alucart Shield">Alucart Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Resembles Family Shield</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +1<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Marble_Gallery" title="Marble Gallery">Marble Gallery</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (10 MP) - Question mark (?); Equip with <a href="/wiki/Alucart_Sword" title="Alucart Sword">Alucart Sword</a> and <a href="/wiki/Alucart_Mail" title="Alucart Mail">Alucart Mail</a> (<a href="/wiki/Alucart" title="Alucart">Alucart</a> status) - LCK +30<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-shmanshld-1-.gif" class="image" title="Sotn-shmanshld-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100821043614/castlevania/images/5/54/Sotn-shmanshld-1-.gif" width="50" height="64" border="0" /></a>
+</td><td><b><a href="/wiki/Shaman_Shield" title="Shaman Shield">Shaman Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Shield Used In Magic Ritual</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +4<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Clock_Tower" title="Clock Tower">Clock Tower</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (10 MP) - Summon flying goat for INT +20<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-hrldshld-1-.gif" class="image" title="Sotn-hrldshld-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100821043048/castlevania/images/1/15/Sotn-hrldshld-1-.gif" width="50" height="58" border="0" /></a>
+
+</td><td><b><a href="/wiki/Herald_Shield" title="Herald Shield">Herald Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Shield With Heart Crest</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +4<br />
+</td><td><b>Find</b>:  <a href="/wiki/Underground_Caverns" title="Underground Caverns">Underground Caverns</a><br />
+</td><td><b>Effect</b>:  Projectile Block that gains hearts; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special - Summon maiden for immunity against Fire and Thunder<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-AxeLord_shield-1-.gif" class="image" title="Equip-AxeLord shield-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100820033505/castlevania/images/4/46/Equip-AxeLord_shield-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/AxeLord_Shield" title="AxeLord Shield" class="mw-redirect">AxeLord Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Favorite Shield of Axe Lords</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +3<br />
+
+</td><td><b>Drop</b>:  <a href="/wiki/Axe_Knight" title="Axe Knight">Axe Knight</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (20 MP) - Summon Axe Knight<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-medshield-1-.gif" class="image" title="Sotn-medshield-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100821043521/castlevania/images/8/8a/Sotn-medshield-1-.gif" width="50" height="50" border="0" /></a>
+
+</td><td><b><a href="/wiki/Medusa_Shield" title="Medusa Shield">Medusa Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Gorgon-Headed Shield <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (30 MP) - Summon Medusa Head with homing eye beams</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +1, ATK +13<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Medusa_Head" title="Medusa Head">Medusa Head</a><br />
+
+</td><td><b>Effect</b>:  Projectile Block and shield attack<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Skull_shield-1-.gif" class="image" title="Equip-Skull shield-1-.gif"><img alt="" src="http://images2.wikia.nocookie.net/__cb20100821043732/castlevania/images/b/b3/Equip-Skull_shield-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Skull_Shield" title="Skull Shield">Skull Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Shield With Knight's Crest</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+
+</td><td>
+</td><td>DEF +4<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Bone_Ark" title="Bone Ark">Bone Ark</a>, <a href="/wiki/Yorick" title="Yorick">Yorick</a>, <a href="/wiki/Skull_Lord" title="Skull Lord" class="mw-redirect">Skull Lord</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (40 MP) - Summon skull with beam attack<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-gddshld-1-.gif" class="image" title="Sotn-gddshld-1-.gif"><img alt="" src="http://images1.wikia.nocookie.net/__cb20100821043016/castlevania/images/9/97/Sotn-gddshld-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Goddess_Shield" title="Goddess Shield">Goddess Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Engraved With Goddess Image</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +4<br />
+
+</td><td><b>Find</b>:  <a href="/wiki/Necromancy_Lab" title="Necromancy Lab" class="mw-redirect">Necromancy Lab</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (40MP) - Summon goddess for immunity against Dark<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Dark_shield-1-.gif" class="image" title="Equip-Dark shield-1-.gif"><img alt="" src="http://images3.wikia.nocookie.net/__cb20100821042829/castlevania/images/b/bc/Equip-Dark_shield-1-.gif" width="50" height="50" border="0" /></a>
+
+</td><td><b><a href="/wiki/Dark_Shield" title="Dark Shield">Dark Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Unholy Dark Shield</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +3, ATK +10<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Malachi" title="Malachi">Malachi</a><br />
+</td><td><b>Effect</b>:  Projectile Block and shield attack; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (30 MP) - Summon dark malicious head<br />
+
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Equip-Fire_shield-1-.gif" class="image" title="Equip-Fire shield-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100821042922/castlevania/images/d/df/Equip-Fire_shield-1-.gif" width="50" height="50" border="0" /></a>
+</td><td><b><a href="/wiki/Fire_Shield" title="Fire Shield">Fire Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Shield With Fire Properties</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td><b>Attrib</b>: Immunity vs Fire when equipped<br />
+
+</td><td>DEF +4<br />
+</td><td><b>Drop</b>:  <a href="/wiki/Fire_Demon" title="Fire Demon" class="mw-redirect">Fire Demon</a><br />
+</td><td><b>Effect</b>:  Projectile Block; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (50 MP)- Summon fire dragons<br />
+</td></tr>
+
+
+
+
+<tr>
+<td><a href="/wiki/File:Sotn-alucartsh-1-.gif" class="image" title="Sotn-alucartsh-1-.gif"><img alt="" src="http://images4.wikia.nocookie.net/__cb20100820033350/castlevania/images/1/1b/Sotn-alucartsh-1-.gif" width="50" height="54" border="0" /></a>
+</td><td><b><a href="/wiki/Alucard_Shield" title="Alucard Shield">Alucard Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a>
+</td><td><i>Strong Versus All Attacks</i>
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +5<br />
+</td><td><b>Find</b>:  <a href="/wiki/Reverse_Caverns" title="Reverse Caverns">Reverse Caverns</a><br />
+
+</td><td><b>Effect</b>:  Projectile Block with increases hearts; <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special (20 MP) - Multiple effects<br />
+</td></tr>
+
+
+
+
+<tr>
+<td>
+</td><td><b><a href="/wiki/Woodland_Shield" title="Woodland Shield">Woodland Shield</a></b><br /><a href="/wiki/Symphony_of_the_Night_Inventory" title="Symphony of the Night Inventory">Symphony of the Night</a> (Saturn only)
+
+</td><td>'
+</td><td><i><a href="/wiki/Shield" title="Shield">Shield</a></i><br /><a href="/wiki/Alucard" title="Alucard">Alucard</a>&nbsp;
+</td><td>
+</td><td>DEF +3<br />
+</td><td>
+</td><td><b>Effect</b>:  Projectil Block;  <a href="/wiki/Shield_Rod" title="Shield Rod">Shield Rod</a> special - Vine attack<br />
+</td></tr>

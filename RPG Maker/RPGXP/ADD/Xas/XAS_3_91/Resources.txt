@@ -1,0 +1,106 @@
+﻿RESOURCES (XAS DEMO PROJECT)
+
+----------------------------------------------------------------------
+> ANIMATIONS <
+
+MINT Room
+http://mintoroom.web.infoseek.co.jp/
+
+ATELIER-RGSS
+http://www.atelier-rgss.com
+
+ENTERBRAIN
+http://tkool.jp/products/rpgvx/eng/index.html
+
+
+----------------------------------------------------------------------
+CHARACTERS (BATTLER) 
+
+HOTOKE
+http://wild-pd.hp.infoseek.co.jp/
+
+Another Zero
+http://www5e.biglobe.ne.jp/~another0/index.htm
+
+PARASITE 2D6
+http://2d6.parasite.jp/
+
+ATELIER-RGSS
+http://www.atelier-rgss.com
+
+ENTERBRAIN
+http://tkool.jp/products/rpgvx/eng/index.html
+
+Mazera -  ( シアンのゆりかご )
+http://www.hcn.zaq.ne.jp/cagzd200/
+
+(Mori no oku no kakurezato)
+http://fayforest.sakura.ne.jp/
+
+
+----------------------------------------------------------------------
+ICONS
+
+White Cat
+http://whitecafe.sakura.ne.jp/
+
+Enterbrain.
+http://tkool.jp/products/rpgvx/eng/index.html
+
+
+----------------------------------------------------------------------
+FACES - PICTURES
+
+Ruruga
+(Mori no oku no kakurezato)
+http://fayforest.sakura.ne.jp/
+
+NARAMURA
+http://naramura.sakura.ne.jp/
+
+
+----------------------------------------------------------------------
+> TILESETS <
+
+Enterbrain.
+http://tkool.jp/products/rpgvx/eng/index.html
+
+
+----------------------------------------------------------------------
+> SE <
+
+TAM TAM
+http://www.tam-music.com/
+
+Enterbrain.
+http://tkool.jp/products/rpgvx/eng/index.html
+
+SNK (VOICES)
+http://www.snkplaymoreusa.com/
+
+----------------------------------------------------------------------
+> MUSIC <
+
+FredoM House
+http://www.tkcity.net/~hyouseki/
+
+Maoudamasii
+http://maoudamasii.eins5.com
+
+Nice Guy
+http://homepage2.nifty.com/niceguy/
+
+Takumi
+http://www.symphonic-net.com/takumi/
+
+TAM - music
+http://www.tam-music.com/
+
+
+MID UToPIA
+http://www.tky.3web.ne.jp/~amadeus/
+
+TOUHOU
+http://www16.big.or.jp/~zun/top.html
+
+----------------------------------------------------------------------

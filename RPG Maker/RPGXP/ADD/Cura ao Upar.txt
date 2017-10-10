@@ -1,0 +1,116 @@
+#=============================================================
+# â€¢ After Battle Changes
+#------------------------------------------------------------------------------
+# Slipknot
+# 1.1
+# 15/02/06
+#===============================================================================
+# Cura ao passar de Lv!
+#------------------------------------------------------------------------------
+module Battle_End_Options
+#--------------------------------------------------------------------------
+# â€¢ Split experience received?
+#--------------------------------------------------------------------------
+Split_Exp = true
+#--------------------------------------------------------------------------
+# â€¢ Full recover when actor increase level?
+#--------------------------------------------------------------------------
+Level_Up_Recover = true
+#--------------------------------------------------------------------------
+# â€¢ Phase 5 wait time
+#--------------------------------------------------------------------------
+End_Frames = 70
+#--------------------------------------------------------------------------
+end
+
+#------------------------------------------------------------------------------
+# Begin Scene_Battle Edit
+#------------------------------------------------------------------------------
+class Scene_Battle
+#--------------------------------------------------------------------------
+include Battle_End_Options
+#--------------------------------------------------------------------------
+def start_phase5
+@phase = 5
+$game_system.me_play($game_system.battle_end_me)
+$game_system.bgm_play($game_temp.map_bgm)
+exp = gold = old_exp = 0
+treasures = []
+for enemy in $game_troop.enemies
+unless enemy.hidden
+exp += enemy.exp
+gold += enemy.gold
+if rand(100) < enemy.treasure_prob
+if enemy.item_id > 0
+treasures.push($data_items[enemy.item_id])
+end
+if enemy.weapon_id > 0
+treasures.push($data_weapons[enemy.weapon_id])
+end
+if enemy.armor_id > 0
+treasures.push($data_armors[enemy.armor_id])
+end
+end
+end
+end
+treasures = treasures[0..5]
+psize = $game_party.actors.size-1
+old_exp = exp
+if Split_Exp
+can_get = 0
+0.upto(psize) do |x|
+actor = $game_party.actors[x]
+next if actor.cant_get_exp?
+can_get += 1
+end
+exp = (old_exp / can_get).ceil if can_get > 0
+end
+for i in 0..psize
+actor = $game_party.actors[i]
+unless actor.cant_get_exp?
+last_level = actor.level
+actor.exp += exp
+if actor.level > last_level
+@status_window.level_up(i)
+if Level_Up_Recover
+actor.hp = actor.maxhp
+actor.sp = actor.maxsp
+end
+end
+end
+end
+$game_party.gain_gold(gold)
+for item in treasures
+case item
+when RPG::Item
+$game_party.gain_item(item.id, 1)
+when RPG::Weapon
+$game_party.gain_weapon(item.id, 1)
+when RPG::Armor
+$game_party.gain_armor(item.id, 1)
+end
+end
+@result_window = Window_BattleResult.new(old_exp, gold, treasures)
+@phase5_wait_count = End_Frames
+end
+end
+#------------------------------------------------------------------------------
+# End Scene_Battle Edit
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+# Begin Game_Actor Edit
+#------------------------------------------------------------------------------
+class Game_Actor < Game_Battler
+#--------------------------------------------------------------------------
+def final_level?
+return @level >= $data_actors[@actor_id].final_level
+end
+#--------------------------------------------------------------------------
+def cant_get_exp?
+return true if final_level?
+super
+end
+end
+#------------------------------------------------------------------------------
+# End Game_Actor Edit
+#------------------------------------------------------------------------------

@@ -1,0 +1,80 @@
+_________________________________________________
+# MOG_Battle Ready V1.3            
+#_________________________________________________
+# By Moghunter       
+# http://www.atelier-rgss.com
+#_________________________________________________
+# Apresenta uma animação em picture no começo da batalha.
+# Aciona 2 transiçíµes de batalha.
+# É preciso ter uma imagem com nome de Ready na
+#pasta \Graphics\Picture.
+#_________________________________________________
+module MOG
+#Ativar a animação de imagem.  
+READY = true 
+#Tempo da imagem na tela.  
+RDFADE = 40  
+#Nome da transição extra.
+R_TRANSITION = "016-Diamond02"
+end
+$mogscript = {} if $mogscript == nil
+$mogscript["Battle_Ready"] = true
+################
+# Scene_Battle #
+################
+class Scene_Battle
+alias  mog17_main main
+def main
+Graphics.transition(30, "Graphics/Transitions/" + MOG::R_TRANSITION)
+Graphics.freeze
+if MOG::READY == true
+@ready = Sprite.new
+@ready.bitmap = RPG::Cache.picture("Ready") 
+@ready.visible = false
+@ready.y = -200
+@ready.zoom_y = 3
+@ready.z = 999
+@fade = MOG::RDFADE
+@ready_on = true
+end
+mog17_main  
+if MOG::READY == true
+if @ready != nil    
+@ready.dispose
+end
+end
+end
+alias mog17_update update 
+def update 
+if MOG::READY == true
+if @ready_on == true   
+for i in 0..80 
+if @ready != nil and @ready.zoom_y > 1
+@ready.y += 10
+@ready.zoom_y -= 0.1
+@ready.visible = true
+elsif @ready != nil and @ready.zoom_y <= 1 and @ready.opacity > 250
+@ready.y = 0
+@ready.zoom_y = 1
+@fade -= 1
+end 
+Graphics.update 
+end
+@ready_on = false
+end 
+if @fade <= 0 and @ready != nil
+@fade = 0
+end   
+if @fade <= 0 and @ready != nil
+@ready.opacity -= 7
+@ready.zoom_y += 0.2
+@ready.y -= 50   
+end
+if @ready != nil and @ready.opacity <= 0
+@ready.dispose 
+@ready = nil
+end 
+end 
+mog17_update
+end
+end

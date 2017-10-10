@@ -1,0 +1,35 @@
+﻿Tarefas:
+*Criar um sistema de Guild e Party
+*Criar um sistema de Kick e Ban
+*Colocar som de asas batendo quando chega perto de um char com asas
+*Refazer todas as Scenes e Window e por por imagem...
+*Casamento com exp e cash compartilhado
+
+LISTA DE SISTEMAS:
+    - Navegação Espacial
+    - Descrição de Planetas
+    - Pokemon Game System
+      - Sistema de Batalha
+      - Sistema de PC pra armazenar
+      - Sistema de Pokebolas
+      - Sistema de LVL Pra pokemons
+    - Digimon Game System
+      - Sistema de Batalha
+      - Sistema de PC pra armazenar
+      - Sistema de Dispositivo
+      - Sistema de LVL Pra Digimons
+    - Sistema de Veiculos
+    - Sistema de Ver Mapa Mundo
+    - Sistema de Transição de Mapa atravez de toque
+    - Sistema de Nome do Mapa e Planeta
+    - Sistema de Aprendizagem
+    - Sistema de Niveis pra Pets
+    - Sistema de Pets
+    - Sistema de Mineiro
+    - Sistema de Craft
+    - Sistema de Dia/Noite Conforme a Hora do Computador
+    - Sistema de Radioatividade
+    - Sistema de ºC
+    - Sistema de Venda por players
+    - Sistema de Trade avançado
+    - Sistema de chat no mapa

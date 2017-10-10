@@ -1,0 +1,4 @@
+qui mar 25 18:51:16 -0300 2010:
+ exit
+ ["J:/ruby/lib/ruby/site_ruby/1.8/glib2.rb:35:in `exit'", "J:/ruby/lib/ruby/site_ruby/1.8/glib2.rb:35:in `exit_application'", "./Client_Regular.rb:354:in `main'", "J:/GOD Online/Server/init.rb:51"]
+
